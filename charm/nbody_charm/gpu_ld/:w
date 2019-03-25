@@ -1,0 +1,318 @@
+#include "nbody.decl.h"
+#include "nbody.h"
+
+char * pConfigFile  = (char *) "nn.conf";
+char * pDatasetFile = (char *) NULL;
+char * pLibFile     = (char *) "libnn.so";
+
+
+// Funtion 
+
+char sEMSG[][ECFG_MSG_LEN] = {
+    "Success",
+    "Unknown argument",
+    "Configuration file not specified",
+    "Library not specified"
+};
+
+void ShowConfiguration(NbodyConfig * pConf) {
+
+    ckout << endl << endl << "Cluster env.    \t";
+    if (pConfig->mParams.cluster) {
+        ckout << "yes" << endl;
+/*
+        len = pConfig->mParams.nodeCnt;
+        cout << "\tNum nodes    \t" << len << endl << endl;
+        for (idx=0;idx<len;idx++) {
+            cout << "\t===== Node# " << idx << "=====" << endl;
+            cout << "\tName    \t" 
+                 << pConfig->mParams.nodeSettings[idx].nodeName << endl;
+            cout << "\tGPU    \t\t";
+            if (pConfig->mParams.nodeSettings[idx].useGPU) {
+                cout << "yes" << endl;
+                cout << "\tNum GPU \t"
+                     << pConfig->mParams.nodeSettings[idx].gpuCnt << endl;
+            }
+            else
+                cout << "no" << endl;
+            cout << endl;
+        }
+*/
+    }
+    else
+        ckout << "no" << endl;
+    ckout << "Time ressolu.\t\t" << pConfig->mParams.timeRes << endl;
+    ckout << "Duration.\t\t" << pConfig->mParams.duration << endl;
+    ckout << "Dataset\t\t\t" << pConfig->mParams.initialDatasetFile << endl;
+    ckout << "Library\t\t\t" << pConfig->mParams.library << endl;
+    ckout << endl << endl;
+
+}
+
+inline int SetPreference(int argc, char ** argv) {
+#define IS_OPTION(str) (!strcmp(argv[idx], str))
+
+    int idx = 1;
+
+    while (idx < argc) {
+        if IS_OPTION("-c") {
+            if ((idx + 1) >= argc)
+                return E_FILE_ARG;
+            pConfigFile = argv[++idx];
+        }
+        else if IS_OPTION("--config") {
+            if ((idx + 1) >= argc)
+                return E_FILE_ARG;
+            pConfigFile = argv[++idx];
+        }
+        else if IS_OPTION("-l") {
+            if ((idx + 1) >= argc)
+                return E_LIB_ARG;
+            pLibFile = argv[++idx];
+        }
+        else if IS_OPTION("--library") {
+            if ((idx + 1) >= argc)
+                return E_LIB_ARG;
+            pLibFile = argv[++idx];
+        }
+        else {
+            return E_UNKNOWN_ARG;
+        }
+
+        idx++;
+    }
+
+    return E_SUCCESS;
+
+#undef IS_OPTION
+}
+
+const char * GetEMSG(int errId) {
+    return sEMSG[errId - E_SUCCESS];
+}
+// Main Proxy
+
+CProxy_Main mainProxy;
+
+class Main : public CBase_Main {
+    double startTime;
+    int numParticles;
+    CProxy_Data dst;
+    ParticleDataset * pDataset;
+    NbodyConfig     * pConfig;
+    PRECISION sec, duration, step;
+public:
+    Main(CkArgMsg *m) {
+        int        mErrId;
+        bool       isCluster;
+        bool       isOshmem = false;
+        int        rank;
+        int        commSize;
+        char       name[218];
+        snprintf(name, sizeof(char) * 32, "app_%s",m->argv[0]);
+        if ((mErrId = SetPreference(m->argc, m->argv)) != E_SUCCESS) {
+            CkAbort("Error: Main");
+        }
+// PEs info
+        int penum = CkNumPes;
+
+// Read Configuration file
+        try {
+            pConfig = new NbodyConfig(pConfigFile);
+        }
+        catch (int errId) {
+            CkAbort("Error: pConfig allocation");
+        }
+// Read dataset file
+        pDatasetFile = const_cast<char *>(pConfig->GetValue(
+            pConfig->GetKeyString(_INITDATASET_)));
+
+        if (pDatasetFile != NULL) {
+            try {
+                pDataset     = new ParticleDataset(pDatasetFile);
+            }
+            catch (int errId) {
+                cerr << "Error: "
+                     << ParticleDataset::GetClassID(errId) << ": "
+                     << ParticleDataset::GetEMSG(errId) << endl;
+                CkAbort("Error: pDataset Initialization");
+            }
+        }
+        pDataset->SaveToFile(name);
+
+// Show configuration
+        ShowConfiguration(pConfig);
+// Initialize parameter
+
+        sec = 0.0;
+        numParticles = pDataset->mNumParticles;
+// Spawn PEs
+        dst = CkNew(pConfigFile, pDataset, numParticles, penum);
+// Begin the iteration 
+
+        step         = pConfig->mParams.timeRes;
+        duration     = pConfig->mParams.duration;
+        
+        dst.IterBegin(pDataset->mpParticle, numParticles, step, 
+            CkCallback(CkReductiontarget(Main, collect), thisProxy)); 
+
+    }
+   
+    void collect(CkReductionMsg *msg) {
+
+        while(current !=NULL) {
+            ParticleDataset::Particle * result = 
+                (ParticleDataset::Particle*) &current->data;
+            int localCnt  = result->localCnt;
+            int localDisp = result->localDisp;
+
+            memcpy(pDataset->mpParticle+localDisp, result, 
+                localCnt * sizeof(ParticleDataset::Particle));
+            current = current->next();
+        }
+        sec += step;
+        if (sec < duration) {
+            dst.IterBegin(pDataset->mpParticle, numParticles, step, 
+                CkCallback(CkReductiontarget(Main, collect), thisProxy)); 
+
+        } else {
+        double endTime  = CkWallTimer();
+        CkExit();
+        }
+    }
+
+};
+
+class Data : public CBase_Data {
+    NbodyConfig * plConfig;
+    ParticleDataset * plDataset;
+    ParticleDataset::Particle * localBuf;
+    int localCnt;
+    int localDisp;
+    int numParticles;
+    bool copy;
+public:
+    Data(char * pCF, NbodyConfig * pC, ParticleDataset * pL, int numParticles_) : numParticles(numParticles_) {
+// Initialize parameter
+        plConfig  = new NbodyConfig(pCF);
+        int penum = CkNumPes();
+        int peid  = CkMyPe();
+        bool copy = false;
+// Get data from main Proxy
+        plDataset = new ParticleDataset(numParticles); 
+        memcpy(plDataset->mpParticle, pL->mpParticle,
+            numParticles * sizeof(ParticleDataset::Particle));
+//Determine number of particles handled locally.
+        int divCnt = numParticles / penum;
+        int remCnt = numParticles % penum;
+        int total_pe = penum;
+        int idx = peid;
+//Adjust local particle-cpimnts and displacements.
+
+        if (idx == total_pe-1)
+           localCnt = numParticles - (idx * (divCnt + 1));
+        else
+           localCnt = divCnt + 1;
+        localDisp = idx * (divCnt + 1);
+
+        localBuf  = new ParticleDataset::Particle[localCnt];
+        localBuf->localCnt  = localCnt;
+        localBuf->localDisp = localDisp;
+
+        ckout << "[" << peid << "]: " << localDisp << "/" << localCnt << endl;
+    }
+    Data(CkMigrateMessage*) {}
+    void print_info () {
+        ckout << "My PE[" << CkMyPe() << "/"
+            << CkNumPes() << "]" << endl;
+
+    }
+
+    void DataLoad(ParticleDataset::Particle *dPar, int numPar) {
+        if (copy) {
+            memcpy(plDataset->mpParticle, dPar->mpParticle, 
+                numPar * sizeof(ParticleDataset::Particle));
+        } else
+            copy = true;    
+    }
+
+
+
+    void ComputationWork (int step) {
+#define SET_PARTICLE(str1, str2)        \
+    x##str1##Pos = localBuf[str2].xPos; \
+    y##str1##Pos = localBuf[str2].yPos; \
+    z##str1##Pos = localBuf[str2].zPos; \
+    x##str1##Vel = localBuf[str2].xVel; \
+    y##str1##Vel = localBuf[str2].yVel; \
+    z##str1##Vel = localBuf[str2].zVel; \
+    x##str1##Acc = localBuf[str2].xAcc; \
+    y##str1##Acc = localBuf[str2].yAcc; \
+    z##str1##Acc = localBuf[str2].zAcc; \
+    mass##str1 = localBuf[str2].mass
+
+#define SET_IPARTICLE(str1, str2)                   \
+    x##str1##Pos = plDataset->mpParticle[str2].xPos; \
+    y##str1##Pos = plDataset->mpParticle[str2].yPos; \
+    z##str1##Pos = plDataset->mpParticle[str2].zPos; \
+    mass##str1 = plDataset->mpParticle[str2].mass
+
+        PRECISION x1Pos, y1Pos, z1Pos;
+        PRECISION x1Vel, y1Vel, z1Vel;
+        PRECISION x1Acc, y1Acc, z1Acc;
+        PRECISION mass1;
+        PRECISION x2Pos, y2Pos, z2Pos;
+        PRECISION mass2;
+        PRECISION force, force_x, force_y, force_z;
+        PRECISION radius, radius_s;
+
+        PRECISION grav         = plConfig->mParams.gravConstant;
+
+        memcpy(localBuf, (plDataset->mpParticle + localDisp),
+            localCnt * sizeof(ParticleDataset::Particle));
+
+        for (int iIdx=0;iIdx<localCnt;iIdx++) {
+            SET_PARTICLE(1, iIdx);
+
+            force_x = 0; force_y = 0; force_z = 0;
+            for (int jIdx=0;jIdx<plDataset->NumParticles;jIdx++) {
+                if (jIdx != (localDisp + iIdx)) {
+                    SET_IPARTICLE(2, jIdx);
+
+                    radius_s  = ((x2Pos - x1Pos) * (x2Pos - x1Pos)) +
+                                ((y2Pos - y1Pos) * (y2Pos - y1Pos)) +
+                                ((z2Pos - z1Pos) * (z2Pos - z1Pos));
+                    radius    = sqrt(radius_s);
+                    force     = (grav * mass1 * mass2) / radius_s;
+                    force_x  += force * ((x2Pos - x1Pos) / radius);
+                    force_y  += force * ((y2Pos - y1Pos) / radius);
+                    force_z  += force * ((z2Pos - z1Pos) / radius);
+                }
+            }
+
+            x1Acc    = force_x / mass1;
+            y1Acc    = force_y / mass1;
+            z1Acc    = force_z / mass1;
+            x1Vel    += x1Acc * step;
+            y1Vel    += y1Acc * step;
+            z1Vel    += z1Acc * step;
+            x1Pos    += x1Vel * step;
+            y1Pos    += y1Vel * step;
+            z1Pos    += z1Vel * step;
+
+            localBuf[iIdx].xPos = x1Pos;
+            localBuf[iIdx].yPos = y1Pos;
+            localBuf[iIdx].zPos = z1Pos;
+            localBuf[iIdx].xVel = x1Vel;
+            localBuf[iIdx].yVel = y1Vel;
+            localBuf[iIdx].zVel = z1Vel;
+            localBuf[iIdx].xAcc = x1Acc;
+            localBuf[iIdx].yAcc = y1Acc;
+            localBuf[iIdx].zAcc = z1Acc;
+        }
+
+    }
+};
+
+
+#include "nbody.def.h"

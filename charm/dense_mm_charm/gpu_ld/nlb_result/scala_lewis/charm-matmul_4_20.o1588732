@@ -1,0 +1,2307 @@
+Charmrun> scalable start enabled. 
+Converse/Charm++ Commit ID: v6.7.0-1-gca55e1d
+Charm++> scheduler running in netpoll mode.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 4 unique compute nodes (20-way SMP).
+Charm++> cpu topology info is gathered in 0.007 seconds.
+The total number of PEs: 20 and Partion is: 25
+The workportion is: 200000
+		CID:0Hostname: : lewis4-r730-gpu3-node430
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 0.458123
+		CID:1Hostname: : lewis4-r730-gpu3-node430
+		CID:16Hostname: : lewis4-r730-gpu3-node433
+		CID:2Hostname: : lewis4-r730-gpu3-node430
+		CID:4Hostname: : lewis4-r730-gpu3-node430
+		CID:8Hostname: : lewis4-r730-gpu3-node431
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 0.458465
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 0.468155
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 0.458203
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 0.467734
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 0.458438
+		CID:17Hostname: : lewis4-r730-gpu3-node433
+		CID:18Hostname: : lewis4-r730-gpu3-node433
+		CID:9Hostname: : lewis4-r730-gpu3-node431
+		CID:3Hostname: : lewis4-r730-gpu3-node430
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 0.468822
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 0.467892
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 0.468332
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 0.45776
+		CID:5Hostname: : lewis4-r730-gpu3-node431
+		CID:6Hostname: : lewis4-r730-gpu3-node431
+		CID:10Hostname: : lewis4-r730-gpu3-node432
+		CID:12Hostname: : lewis4-r730-gpu3-node432
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 0.468072
+		CID:19Hostname: : lewis4-r730-gpu3-node433
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 0.467944
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 0.468066
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 0.468083
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 0.468487
+		CID:7Hostname: : lewis4-r730-gpu3-node431
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 0.468067
+		CID:11Hostname: : lewis4-r730-gpu3-node432
+		CID:13Hostname: : lewis4-r730-gpu3-node432
+		CID:14Hostname: : lewis4-r730-gpu3-node432
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 0.468153
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 0.468508
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 0.468254
+		CID:15Hostname: : lewis4-r730-gpu3-node433
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 0.468325
+Element 15 pause for LB on PE 15
+Element 1 pause for LB on PE 1
+Element 4 pause for LB on PE 4
+Resume iteration at step 0
+Element 0 pause for LB on PE 0
+Resume iteration at step 1
+Element 3 pause for LB on PE 3
+Element 2 pause for LB on PE 2
+Element 17 pause for LB on PE 17
+Element 16 pause for LB on PE 16
+Element 18 pause for LB on PE 18
+Element 19 pause for LB on PE 19
+Element 12 pause for LB on PE 12
+Element 10 pause for LB on PE 10
+Element 14 pause for LB on PE 14
+Element 11 pause for LB on PE 11
+Element 13 pause for LB on PE 13
+Element 7 pause for LB on PE 7
+Element 8 pause for LB on PE 8
+Element 9 pause for LB on PE 9
+Element 5 pause for LB on PE 5
+Element 6 pause for LB on PE 6
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.40503
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 1.87386
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29067
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29007
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.2899
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.28978
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.28959
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34195
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34166
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34082
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34162
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34083
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34024
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33987
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33945
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.3395
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34117
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34091
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.33997
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.33977
+Resume iteration at step 1
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.87457
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29197
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29203
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29159
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29129
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29119
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34071
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34077
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34018
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33992
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33959
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34199
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34176
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34132
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34113
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34113
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.3423
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.3426
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34275
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34159
+Resume iteration at step 2
+Element 0 pause for LB on PE 0
+Element 2 pause for LB on PE 2
+Element 1 pause for LB on PE 1
+Element 4 pause for LB on PE 4
+Element 3 pause for LB on PE 3
+Element 5 pause for LB on PE 5
+Element 6 pause for LB on PE 6
+Element 7 pause for LB on PE 7
+Element 8 pause for LB on PE 8
+Element 9 pause for LB on PE 9
+Element 16 pause for LB on PE 16
+Element 18 pause for LB on PE 18
+Element 19 pause for LB on PE 19
+Element 17 pause for LB on PE 17
+Element 12 pause for LB on PE 12
+Element 13 pause for LB on PE 13
+Element 10 pause for LB on PE 10
+Element 11 pause for LB on PE 11
+Element 14 pause for LB on PE 14
+Element 15 pause for LB on PE 15
+Resume iteration at step 3
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 0.917661
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 0.936086
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 0.936847
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 1.40505
+Kernel time: 2.29307
+Kernel time: 2.2926
+Kernel time: 2.2923
+Kernel time: 2.29201
+Kernel time: 2.33947
+Kernel time: 2.33884
+Kernel time: 2.33846
+Kernel time: 2.33824
+Kernel time: 2.34059
+Kernel time: 2.33986
+Kernel time: 2.33961
+Kernel time: 2.33932
+Kernel time: 2.34172
+Kernel time: 2.34144
+Kernel time: 2.3408
+Kernel time: 2.34072
+Resume iteration at step 3
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 0.936549
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.37427
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83247
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.8728
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.87393
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29078
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29033
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83229
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34082
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.3404
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34023
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.33974
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.33994
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33919
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34016
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33986
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34224
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.3419
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.3416
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34105
+Resume iteration at step 4
+Element 0 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 4 pause for LB on PE 4
+Element 3 pause for LB on PE 3
+Element 2 pause for LB on PE 2
+Element 17 pause for LB on PE 17
+Element 16 pause for LB on PE 16
+Element 18 pause for LB on PE 18
+Element 7 pause for LB on PE 7
+Element 8 pause for LB on PE 8
+Element 9 pause for LB on PE 9
+Element 5 pause for LB on PE 5
+Element 6 pause for LB on PE 6
+Element 19 pause for LB on PE 19
+Element 12 pause for LB on PE 12
+Element 10 pause for LB on PE 10
+Element 11 pause for LB on PE 11
+Element 13 pause for LB on PE 13
+Element 14 pause for LB on PE 14
+Element 15 pause for LB on PE 15
+Resume iteration at step 5
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.40531
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.40462
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.40434
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83374
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83339
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83326
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83275
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 0.459057
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33974
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.87131
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.87101
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34108
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34074
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.33992
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34007
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34307
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34279
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34176
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34246
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34205
+Resume iteration at step 5
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 0.936469
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 0.936191
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.37562
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.37552
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83374
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.8744
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.87413
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83275
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.37473
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34108
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34134
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34077
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34034
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.3401
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.8712
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.87087
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.87076
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34178
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34208
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.87315
+Resume iteration at step 6
+Element 1 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 4 pause for LB on PE 4
+Element 3 pause for LB on PE 3
+Element 9 pause for LB on PE 9
+Element 8 pause for LB on PE 8
+Element 2 pause for LB on PE 2
+Element 16 pause for LB on PE 16
+Element 7 pause for LB on PE 7
+Element 17 pause for LB on PE 17
+Element 19 pause for LB on PE 19
+Element 6 pause for LB on PE 6
+Element 10 pause for LB on PE 10
+Element 5 pause for LB on PE 5
+Element 18 pause for LB on PE 18
+Element 11 pause for LB on PE 11
+Element 14 pause for LB on PE 14
+Element 13 pause for LB on PE 13
+Element 12 pause for LB on PE 12
+Element 15 pause for LB on PE 15
+Resume iteration at step 7
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 0.9373
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 0.936452
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 1.40538
+Kernel time: 1.4051
+Kernel time: 1.83355
+Kernel time: 1.83341
+Kernel time: 2.29136
+Kernel time: 2.2916
+Kernel time: 1.8327
+Kernel time: 2.33962
+Kernel time: 2.33881
+Kernel time: 2.34177
+Kernel time: 2.3382
+Kernel time: 2.33864
+Kernel time: 1.87294
+Kernel time: 1.87322
+Kernel time: 2.34101
+Kernel time: 2.34017
+Kernel time: 2.34071
+Kernel time: 2.33974
+Resume iteration at step 7
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.37505
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.37487
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.40458
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83288
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83247
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.37462
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34007
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33973
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33895
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33879
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34211
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34182
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34154
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34095
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34118
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34254
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34226
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34197
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34165
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34135
+Resume iteration at step 8
+Element 1 pause for LB on PE 1
+Element 4 pause for LB on PE 4
+Element 0 pause for LB on PE 0
+Element 2 pause for LB on PE 2
+Element 7 pause for LB on PE 7
+Element 5 pause for LB on PE 5
+Element 6 pause for LB on PE 6
+Element 17 pause for LB on PE 17
+Element 19 pause for LB on PE 19
+Element 8 pause for LB on PE 8
+Element 3 pause for LB on PE 3
+Element 16 pause for LB on PE 16
+Element 18 pause for LB on PE 18
+Element 11 pause for LB on PE 11
+Element 12 pause for LB on PE 12
+Element 10 pause for LB on PE 10
+Element 13 pause for LB on PE 13
+Element 9 pause for LB on PE 9
+Element 14 pause for LB on PE 14
+Element 15 pause for LB on PE 15
+Resume iteration at step 9
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 0.917304
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29245
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29222
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29207
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29189
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34185
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34157
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34127
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34099
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34069
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34068
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.3404
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34011
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33981
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33948
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.3425
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34223
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34133
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34193
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34163
+Resume iteration at step 9
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 0.936396
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 1.40562
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83264
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.87338
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29063
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29047
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29033
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.28986
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33975
+Element 9 pause for LB on PE 9
+Element 1 pause for LB on PE 1
+Element 4 pause for LB on PE 4
+Resume iteration at step 10
+Element 0 pause for LB on PE 0
+Resume iteration at step 11
+Element 3 pause for LB on PE 3
+Element 2 pause for LB on PE 2
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34042
+Element 17 pause for LB on PE 17
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34108
+Element 15 pause for LB on PE 15
+Element 16 pause for LB on PE 16
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34033
+Element 18 pause for LB on PE 18
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34137
+Element 19 pause for LB on PE 19
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34071
+Element 12 pause for LB on PE 12
+Element 10 pause for LB on PE 10
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.341
+Element 14 pause for LB on PE 14
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.33989
+Element 11 pause for LB on PE 11
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.3413
+Element 13 pause for LB on PE 13
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33863
+Element 7 pause for LB on PE 7
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33829
+Element 8 pause for LB on PE 8
+Element 5 pause for LB on PE 5
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33907
+Element 6 pause for LB on PE 6
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.37408
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.3738
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.37379
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 1.87248
+Kernel time: 1.8722
+Kernel time: 1.87427
+Kernel time: 1.37357
+Kernel time: 1.37365
+Kernel time: 2.34017
+Kernel time: 1.87126
+Kernel time: 2.33972
+Kernel time: 2.34249
+Kernel time: 2.34183
+Kernel time: 2.34207
+Kernel time: 2.3418
+Kernel time: 2.34125
+Kernel time: 2.3423
+Kernel time: 2.342
+Kernel time: 2.34171
+Kernel time: 2.341
+Resume iteration at step 11
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83228
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29015
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.28993
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.28978
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.28936
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34252
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34225
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34137
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34166
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34195
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34198
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.3417
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34141
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34111
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34079
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34073
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34046
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34016
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33983
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33953
+Resume iteration at step 12
+Element 1 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 4 pause for LB on PE 4
+Element 3 pause for LB on PE 3
+Element 2 pause for LB on PE 2
+Element 5 pause for LB on PE 5
+Element 16 pause for LB on PE 16
+Element 8 pause for LB on PE 8
+Element 17 pause for LB on PE 17
+Element 18 pause for LB on PE 18
+Element 9 pause for LB on PE 9
+Element 6 pause for LB on PE 6
+Element 19 pause for LB on PE 19
+Element 10 pause for LB on PE 10
+Element 12 pause for LB on PE 12
+Element 11 pause for LB on PE 11
+Element 7 pause for LB on PE 7
+Element 14 pause for LB on PE 14
+Element 13 pause for LB on PE 13
+Element 15 pause for LB on PE 15
+Resume iteration at step 13
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83339
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29106
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.2909
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29014
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29073
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.3408
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34053
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34023
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33949
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33993
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34232
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34176
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34205
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34146
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34118
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.3416
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34187
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.3413
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34071
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34101
+Resume iteration at step 13
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.40418
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 1.8739
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29087
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29073
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29059
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29041
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29022
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33974
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33944
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33881
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33852
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34193
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34163
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34067
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34134
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34341
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34312
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34284
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34225
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34255
+Resume iteration at step 14
+Element 0 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 4 pause for LB on PE 4
+Element 2 pause for LB on PE 2
+Element 3 pause for LB on PE 3
+Element 17 pause for LB on PE 17
+Element 7 pause for LB on PE 7
+Element 5 pause for LB on PE 5
+Element 18 pause for LB on PE 18
+Element 8 pause for LB on PE 8
+Element 9 pause for LB on PE 9
+Element 6 pause for LB on PE 6
+Element 16 pause for LB on PE 16
+Element 19 pause for LB on PE 19
+Element 12 pause for LB on PE 12
+Element 10 pause for LB on PE 10
+Element 14 pause for LB on PE 14
+Element 11 pause for LB on PE 11
+Element 15 pause for LB on PE 15
+Element 13 pause for LB on PE 13
+Resume iteration at step 15
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.37386
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.87251
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.87222
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.28987
+Kernel time: 2.28941
+Kernel time: 2.28971
+Kernel time: 2.28924
+Kernel time: 2.34156
+Kernel time: 2.34129
+Kernel time: 2.34098
+Kernel time: 2.34069
+Kernel time: 2.34038
+Kernel time: 2.34005
+Kernel time: 1.87126
+Kernel time: 2.33976
+Kernel time: 2.34177
+Kernel time: 2.34167
+Kernel time: 2.34138
+Kernel time: 2.34075
+Kernel time: 2.34109
+Resume iteration at step 15
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 0.935947
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 0.93567
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 1.40534
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.40593
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29095
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29087
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29069
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29052
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29035
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34115
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.87082
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34087
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.87068
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.87038
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34037
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34016
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34199
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.3417
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34108
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34063
+Resume iteration at step 16
+Element 0 pause for LB on PE 0
+Element 2 pause for LB on PE 2
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 3
+Element 4 pause for LB on PE 4
+Element 9 pause for LB on PE 9
+Element 8 pause for LB on PE 8
+Element 17 pause for LB on PE 17
+Element 16 pause for LB on PE 16
+Element 11 pause for LB on PE 11
+Element 6 pause for LB on PE 6
+Element 5 pause for LB on PE 5
+Element 10 pause for LB on PE 10
+Element 18 pause for LB on PE 18
+Element 13 pause for LB on PE 13
+Element 19 pause for LB on PE 19
+Element 14 pause for LB on PE 14
+Element 12 pause for LB on PE 12
+Element 15 pause for LB on PE 15
+Element 7 pause for LB on PE 7
+Resume iteration at step 17
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 0.936654
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.37503
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.37491
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.40493
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29029
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83186
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83179
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34048
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.33973
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.33949
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.33915
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34249
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34222
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34192
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34133
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.3416
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.3409
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34066
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34003
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.3398
+Resume iteration at step 17
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.87468
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.87439
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29043
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.2906
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29025
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.28968
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29011
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34188
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34161
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34131
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34101
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34072
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34088
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.3403
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34061
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34001
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33968
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34277
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34248
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.87329
+Resume iteration at step 18
+Element 0 pause for LB on PE 0
+Element 2 pause for LB on PE 2
+Element 1 pause for LB on PE 1
+Element 4 pause for LB on PE 4
+Element 3 pause for LB on PE 3
+Element 5 pause for LB on PE 5
+Element 17 pause for LB on PE 17
+Element 18 pause for LB on PE 18
+Element 16 pause for LB on PE 16
+Element 19 pause for LB on PE 19
+Element 6 pause for LB on PE 6
+Element 8 pause for LB on PE 8
+Element 9 pause for LB on PE 9
+Element 7 pause for LB on PE 7
+Element 12 pause for LB on PE 12
+Element 14 pause for LB on PE 14
+Element 13 pause for LB on PE 13
+Element 15 pause for LB on PE 15
+Element 10 pause for LB on PE 10
+Element 11 pause for LB on PE 11
+Resume iteration at step 19
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.40503
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83363
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83349
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.87295
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.2915
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29133
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 1.83261
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34105
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34077
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34047
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34018
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33988
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34258
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.3423
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.342
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34171
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34141
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34087
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34029
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.87226
+Resume iteration at step 19
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 1.83317
+Kernel time: 1.87357
+Kernel time: 1.87414
+Kernel time: 1.87386
+Kernel time: 2.29141
+Kernel time: 2.29123
+Kernel time: 2.29108
+Kernel time: 2.29048
+Kernel time: 2.34187
+Kernel time: 2.34135
+Kernel time: 2.34106
+Kernel time: 2.34076
+Kernel time: 2.34158
+Kernel time: 2.34047
+Kernel time: 2.34017
+Kernel time: 2.34129
+Kernel time: 2.34061
+Kernel time: 2.34164
+Kernel time: 2.34198
+ Launching
+Kernel time: 1.87296
+Resume iteration at step 20
+Element 0 pause for LB on PE 0
+Element 2 pause for LB on PE 2
+Element 1 pause for LB on PE 1
+Element 4 pause for LB on PE 4
+Element 3 pause for LB on PE 3
+Element 9 pause for LB on PE 9
+Element 5 pause for LB on PE 5
+Element 8 pause for LB on PE 8
+Element 6 pause for LB on PE 6
+Element 7 pause for LB on PE 7
+Element 18 pause for LB on PE 18
+Element 17 pause for LB on PE 17
+Element 19 pause for LB on PE 19
+Element 12 pause for LB on PE 12
+Element 14 pause for LB on PE 14
+Element 16 pause for LB on PE 16
+Element 10 pause for LB on PE 10
+Element 13 pause for LB on PE 13
+Element 15 pause for LB on PE 15
+Element 11 pause for LB on PE 11
+Resume iteration at step 21
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 1.40492
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29214
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29201
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29185
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29167
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29153
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34157
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.3413
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34097
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34056
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.3404
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34164
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34135
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34066
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34036
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34299
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34418
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.3439
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.3436
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34331
+Resume iteration at step 21
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.87269
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29177
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29165
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29151
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29117
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29133
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34038
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34008
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33978
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33912
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34166
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34193
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34136
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34077
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34107
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34273
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34244
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34215
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34186
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34154
+Resume iteration at step 22
+Element 1 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 2 pause for LB on PE 2
+Element 4 pause for LB on PE 4
+Element 3 pause for LB on PE 3
+Element 5 pause for LB on PE 5
+Element 16 pause for LB on PE 16
+Element 8 pause for LB on PE 8
+Element 6 pause for LB on PE 6
+Element 9 pause for LB on PE 9
+Element 19 pause for LB on PE 19
+Element 18 pause for LB on PE 18
+Element 17 pause for LB on PE 17
+Element 7 pause for LB on PE 7
+Element 12 pause for LB on PE 12
+Element 13 pause for LB on PE 13
+Element 10 pause for LB on PE 10
+Element 14 pause for LB on PE 14
+Element 11 pause for LB on PE 11
+Element 15 pause for LB on PE 15
+Resume iteration at step 23
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 1.87229
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29179
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29169
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29153
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29136
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 2.29117
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34219
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34162
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.34027
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34191
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33996
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34132
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 2.34104
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33967
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 2.33897
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.3428
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34253
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34223
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34194
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.34164
+Resume iteration at step 23
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:17[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:15[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:4[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:16[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:3[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:5[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:7[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:8[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:9[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:6[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:18[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:12[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:11[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:13[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:10[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:14[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+		Total size: 84800000 wh: 2000 wid: 100 subnum: 200000
+		PE:19[lewis4-r730-gpu3-node433]: RUN: Device[0]
+ Launching
+Kernel time: 2.2913
+Kernel time: 2.29139
+Kernel time: 2.29116
+Kernel time: 2.29081
+Kernel time: 2.29096
+Kernel time: 2.34064
+Kernel time: 2.34224
+Kernel time: 2.34036
+Kernel time: 2.34006
+Kernel time: 2.34195
+Kernel time: 2.33974
+Kernel time: 2.33946
+Kernel time: 2.34166
+Kernel time: 2.34137
+Kernel time: 2.34107
+Kernel time: 2.34308
+Kernel time: 2.3428
+Kernel time: 2.34222
+Kernel time: 2.34193
+Kernel time: 2.34251
+Resume iteration at step 24
+Time: 82.000387
+Time: 81.986575

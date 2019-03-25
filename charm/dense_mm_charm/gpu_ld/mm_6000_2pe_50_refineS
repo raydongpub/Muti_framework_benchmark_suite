@@ -1,0 +1,623 @@
+Charm++> Running on MPI version: 2.1
+Charm++> level of thread support used: MPI_THREAD_SINGLE (desired: MPI_THREAD_SINGLE)
+Charm++> Running in non-SMP mode: numPes 2
+Converse/Charm++ Commit ID: v6.6.1-0-g74a2cc5
+Warning> Randomization of stack pointer is turned on in kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try run with '+isomalloc_sync'.  
+CharmLB> Verbose level 1, load balancing period: 0.5 seconds
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 2 unique compute nodes (20-way SMP).
+Charm++> cpu topology info is gathered in 0.002 seconds.
+[0] RefineSwapLB created
+The total number of PEs: 2 and Partion is: 2
+The workportion is: 360000
+My PE[0/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+My PE[25/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:0[c11u11.build.local]: RUN: Device[0]
+		PE:25[c11u15.build.local]: RUN: Device[1]
+ Launching
+ Launching
+Kernel Time: 0.568022
+My PE[1/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:1[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.20703
+My PE[26/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:26[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568475
+My PE[2/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:2[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.56857
+My PE[3/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:3[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.56834
+My PE[4/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:4[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.20667
+My PE[27/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:27[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 0.568158
+My PE[5/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:5[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568353
+My PE[6/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:6[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.21558
+My PE[28/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:28[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568337
+My PE[7/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:7[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568114
+My PE[8/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:8[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22243
+My PE[29/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:29[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 0.568151
+My PE[9/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:9[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.56844
+My PE[10/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:10[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22208
+My PE[30/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:30[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.567916
+My PE[11/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:11[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.567982
+My PE[12/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:12[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22722
+My PE[31/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:31[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 0.568327
+My PE[13/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:13[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568093
+My PE[14/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:14[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22856
+My PE[32/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:32[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568136
+My PE[15/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:15[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.567992
+My PE[16/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:16[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22737
+My PE[33/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:33[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 0.568237
+My PE[17/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:17[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.567957
+My PE[18/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:18[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.56836
+My PE[19/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:19[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22954
+My PE[34/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:34[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.56844
+My PE[20/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:20[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.56812
+My PE[21/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:21[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22703
+My PE[35/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:35[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 0.568271
+My PE[22/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:22[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.567907
+My PE[23/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:23[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22627
+My PE[36/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:36[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.567938
+My PE[24/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:24[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568273
+Kernel Time: 1.22166
+My PE[37/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:37[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 1.23006
+My PE[38/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:38[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22575
+My PE[39/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:39[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 1.22588
+My PE[40/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:40[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22296
+My PE[41/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:41[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 1.22748
+My PE[42/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:42[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22386
+My PE[43/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:43[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 1.22604
+My PE[44/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:44[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22241
+My PE[45/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:45[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 1.22377
+My PE[46/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:46[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22665
+My PE[47/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:47[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 1.22385
+My PE[48/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:48[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22179
+My PE[49/50]
+		****** iteration 0/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:49[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 1.22617
+
+CharmLB> RefineSwapLB: PE [0] step 0 starting at 14.906807 Memory: 171787.781250 MB
+CharmLB> RefineSwapLB: PE [0] strategy starting at 31.304830
+Average load 22.9688
+CharmLB> RefineSwapLB: PE [0] Memory: LBManager: 922 KB CentralLB: 4 KB
+CharmLB> RefineSwapLB: PE [0] #Objects migrating: 8, LBMigrateMsg size: 0.00 MB
+CharmLB> RefineSwapLB: PE [0] strategy finished at 31.304884 duration 0.000054 s
+My PE[26/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:26[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22509
+My PE[29/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:29[c11u15.build.local]: RUN: Device[1]
+ Launching
+My PE[1/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:1[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568017
+My PE[2/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:2[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22128
+My PE[30/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:30[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.56817
+My PE[3/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:3[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568245
+My PE[4/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:4[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.567994
+My PE[5/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:5[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.2245
+My PE[31/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:31[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 0.568104
+My PE[6/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:6[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568081
+My PE[7/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:7[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22566
+My PE[32/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:32[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568205
+My PE[8/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:8[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568039
+My PE[9/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:9[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22439
+My PE[33/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:33[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 0.568056
+My PE[10/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:10[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568094
+My PE[11/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:11[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.2233
+My PE[34/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:34[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568409
+My PE[12/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:12[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568093
+My PE[13/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:13[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22164
+My PE[35/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:35[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 0.568056
+My PE[14/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:14[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.56823
+My PE[15/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:15[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22513
+My PE[37/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:37[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 0.568007
+My PE[16/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:16[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568292
+My PE[17/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:17[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.2229
+My PE[38/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:38[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.56826
+My PE[18/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:18[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.567961
+My PE[19/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:19[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568109
+My PE[20/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:20[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22493
+My PE[39/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:39[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 0.568152
+My PE[21/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:21[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568303
+My PE[22/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:22[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.23105
+My PE[41/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:41[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 0.568083
+My PE[23/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:23[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568135
+My PE[24/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:24[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22899
+My PE[42/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:42[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568121
+My PE[25/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:25[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568071
+My PE[27/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:27[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22499
+My PE[43/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:43[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 0.567962
+My PE[28/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:28[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568334
+My PE[36/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:36[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22535
+My PE[45/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:45[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 0.568052
+My PE[40/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:40[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568088
+My PE[44/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:44[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.22668
+My PE[46/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:46[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568186
+My PE[48/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:48[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 0.568056
+CharmLB> RefineSwapLB: PE [0] step 0 finished at 50.798534 duration 35.891727 s
+
+Kernel Time: 1.22534
+My PE[47/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:47[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 1.22144
+My PE[49/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:49[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 1.22588
+My PE[0/50]
+		****** iteration 1/2 ******
+		Total size: 76320000 wh: 3000 wid: 120
+		PE:0[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 1.2257
+Time: 55.069631
+[Partition 0][Node 0] End of program

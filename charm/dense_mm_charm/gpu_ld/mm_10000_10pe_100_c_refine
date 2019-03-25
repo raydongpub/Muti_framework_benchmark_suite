@@ -1,0 +1,1131 @@
+Charm++> Running on MPI version: 2.1
+Charm++> level of thread support used: MPI_THREAD_SINGLE (desired: MPI_THREAD_SINGLE)
+Charm++> Running in non-SMP mode: numPes 10
+Converse/Charm++ Commit ID: v6.6.1-0-g74a2cc5
+Warning> Randomization of stack pointer is turned on in kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try run with '+isomalloc_sync'.  
+CharmLB> Verbose level 1, load balancing period: 0.5 seconds
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 10 unique compute nodes (20-way SMP).
+Charm++> cpu topology info is gathered in 0.003 seconds.
+[0] RefineLB created
+The total number of PEs: 10 and Partion is: 1
+The workportion is: 1000000
+		CID:0Hostname: : c11u11.build.local
+		CID:1Hostname: : c11u11.build.local
+		CID:2Hostname: : c11u11.build.local
+		CID:3Hostname: : c11u11.build.local
+		CID:4Hostname: : c11u11.build.local
+		CID:5Hostname: : c11u11.build.local
+		CID:6Hostname: : c11u11.build.local
+		CID:7Hostname: : c11u11.build.local
+		CID:8Hostname: : c11u11.build.local
+		CID:9Hostname: : c11u11.build.local
+My PE[0/100]
+		****** iteration 0/1 ******
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:0[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.68736
+My PE[1/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:1[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.6888
+My PE[2/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:2[c11u11.build.local]: RUN: Device[0]
+ Launching
+		CID:20Hostname: : c11u15.build.local
+		CID:10Hostname: : c11u13.build.local
+		CID:30Hostname: : c11u17.build.local
+		CID:40Hostname: : c11u19.build.local
+		CID:21Hostname: : c11u15.build.local
+		CID:11Hostname: : c11u13.build.local
+		CID:31Hostname: : c11u17.build.local
+		CID:41Hostname: : c11u19.build.local
+		CID:22Hostname: : c11u15.build.local
+		CID:12Hostname: : c11u13.build.local
+		CID:32Hostname: : c11u17.build.local
+Kernel Time: 2.69442
+My PE[3/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:3[c11u11.build.local]: RUN: Device[0]
+ Launching
+		CID:42Hostname: : c11u19.build.local
+		CID:23Hostname: : c11u15.build.local
+		CID:13Hostname: : c11u13.build.local
+		CID:33Hostname: : c11u17.build.local
+		CID:90Hostname: : c12u15.build.local
+		CID:43Hostname: : c11u19.build.local
+		CID:24Hostname: : c11u15.build.local
+		CID:14Hostname: : c11u13.build.local
+		CID:34Hostname: : c11u17.build.local
+		CID:91Hostname: : c12u15.build.local
+		CID:44Hostname: : c11u19.build.local
+		CID:25Hostname: : c11u15.build.local
+		CID:15Hostname: : c11u13.build.local
+		CID:35Hostname: : c11u17.build.local
+		CID:92Hostname: : c12u15.build.local
+		CID:45Hostname: : c11u19.build.local
+		CID:26Hostname: : c11u15.build.local
+		CID:16Hostname: : c11u13.build.local
+		CID:36Hostname: : c11u17.build.local
+		CID:93Hostname: : c12u15.build.local
+		CID:46Hostname: : c11u19.build.local
+		CID:27Hostname: : c11u15.build.local
+		CID:17Hostname: : c11u13.build.local
+		CID:37Hostname: : c11u17.build.local
+		CID:47Hostname: : c11u19.build.local
+		CID:94Hostname: : c12u15.build.local
+		CID:28Hostname: : c11u15.build.local
+		CID:18Hostname: : c11u13.build.local
+		CID:38Hostname: : c11u17.build.local
+		CID:48Hostname: : c11u19.build.local
+		CID:95Hostname: : c12u15.build.local
+		CID:29Hostname: : c11u15.build.local
+Kernel Time: 2.68676
+My PE[4/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:4[c11u11.build.local]: RUN: Device[0]
+My PE[20/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		CID:19Hostname: : c11u13.build.local
+		PE:20[c11u15.build.local]: RUN: Device[0]
+My PE[10/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:10[c11u13.build.local]: RUN: Device[0]
+ Launching
+ Launching
+		CID:39Hostname: : c11u17.build.local
+My PE[30/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:30[c11u17.build.local]: RUN: Device[0]
+		CID:49Hostname: : c11u19.build.local
+My PE[40/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		CID:96Hostname: : c12u15.build.local
+		PE:40[c11u19.build.local]: RUN: Device[0]
+ Launching
+ Launching
+ Launching
+		CID:97Hostname: : c12u15.build.local
+		CID:98Hostname: : c12u15.build.local
+		CID:99Hostname: : c12u15.build.local
+My PE[90/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:90[c12u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.69212
+My PE[5/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:5[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.77402
+My PE[11/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:11[c11u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80343
+My PE[41/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:41[c11u19.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.80335
+My PE[91/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:91[c12u15.build.local]: RUN: Device[0]
+ Launching
+		CID:50Hostname: : c11u21.build.local
+Kernel Time: 2.67946
+My PE[6/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:6[c11u11.build.local]: RUN: Device[0]
+ Launching
+		CID:51Hostname: : c11u21.build.local
+Kernel Time: 2.77653
+My PE[12/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:12[c11u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 5.81515
+My PE[21/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:21[c11u15.build.local]: RUN: Device[1]
+		CID:52Hostname: : c11u21.build.local
+Kernel Time: 5.76012
+My PE[31/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:31[c11u17.build.local]: RUN: Device[1]
+ Launching
+ Launching
+		CID:53Hostname: : c11u21.build.local
+		CID:60Hostname: : c12u9.build.local
+Kernel Time: 2.80334
+My PE[42/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:42[c11u19.build.local]: RUN: Device[0]
+ Launching
+		CID:70Hostname: : c12u11.build.local
+		CID:54Hostname: : c11u21.build.local
+		CID:61Hostname: : c12u9.build.local
+		CID:80Hostname: : c12u13.build.local
+		CID:71Hostname: : c12u11.build.local
+		CID:55Hostname: : c11u21.build.local
+		CID:62Hostname: : c12u9.build.local
+		CID:81Hostname: : c12u13.build.local
+Kernel Time: 2.80318
+My PE[92/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:92[c12u15.build.local]: RUN: Device[0]
+ Launching
+		CID:72Hostname: : c12u11.build.local
+		CID:56Hostname: : c11u21.build.local
+		CID:63Hostname: : c12u9.build.local
+		CID:82Hostname: : c12u13.build.local
+		CID:57Hostname: : c11u21.build.local
+		CID:73Hostname: : c12u11.build.local
+		CID:64Hostname: : c12u9.build.local
+		CID:83Hostname: : c12u13.build.local
+Kernel Time: 2.68331
+My PE[7/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:7[c11u11.build.local]: RUN: Device[0]
+ Launching
+		CID:58Hostname: : c11u21.build.local
+		CID:74Hostname: : c12u11.build.local
+		CID:65Hostname: : c12u9.build.local
+		CID:84Hostname: : c12u13.build.local
+Kernel Time: 2.77875
+My PE[13/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:13[c11u13.build.local]: RUN: Device[0]
+ Launching
+		CID:59Hostname: : c11u21.build.local
+My PE[50/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:50[c11u21.build.local]: RUN: Device[0]
+		CID:75Hostname: : c12u11.build.local
+		CID:66Hostname: : c12u9.build.local
+		CID:85Hostname: : c12u13.build.local
+ Launching
+		CID:76Hostname: : c12u11.build.local
+Kernel Time: 2.80381
+My PE[43/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:43[c11u19.build.local]: RUN: Device[1]
+		CID:67Hostname: : c12u9.build.local
+		CID:86Hostname: : c12u13.build.local
+ Launching
+		CID:77Hostname: : c12u11.build.local
+		CID:68Hostname: : c12u9.build.local
+		CID:87Hostname: : c12u13.build.local
+		CID:78Hostname: : c12u11.build.local
+		CID:69Hostname: : c12u9.build.local
+		CID:88Hostname: : c12u13.build.local
+My PE[60/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:60[c12u9.build.local]: RUN: Device[0]
+Kernel Time: 2.80285
+My PE[93/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:93[c12u15.build.local]: RUN: Device[0]
+ Launching
+		CID:79Hostname: : c12u11.build.local
+My PE[70/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:70[c12u11.build.local]: RUN: Device[0]
+ Launching
+		CID:89Hostname: : c12u13.build.local
+My PE[80/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:80[c12u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.69349
+My PE[8/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:8[c11u11.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.77483
+My PE[14/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:14[c11u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 5.73467
+My PE[22/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:22[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80504
+My PE[51/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:51[c11u21.build.local]: RUN: Device[1]
+Kernel Time: 5.83962
+My PE[32/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:32[c11u17.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.80342
+My PE[44/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:44[c11u19.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80361
+My PE[94/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:94[c12u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80391
+My PE[61/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:61[c12u9.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80397
+My PE[71/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:71[c12u11.build.local]: RUN: Device[0]
+Kernel Time: 2.69173
+My PE[9/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:9[c11u11.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.80348
+My PE[81/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:81[c12u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.77388
+My PE[15/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:15[c11u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80255
+My PE[52/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:52[c11u21.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80372
+My PE[45/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:45[c11u19.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.80296
+My PE[95/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:95[c12u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80369
+My PE[62/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:62[c12u9.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.69836
+Kernel Time: 2.80369
+My PE[72/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:72[c12u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80316
+My PE[82/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:82[c12u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.78531
+My PE[16/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:16[c11u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 5.87876
+My PE[23/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:23[c11u15.build.local]: RUN: Device[1]
+Kernel Time: 2.80488
+My PE[53/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:53[c11u21.build.local]: RUN: Device[1]
+ Launching
+ Launching
+Kernel Time: 5.85842
+My PE[33/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:33[c11u17.build.local]: RUN: Device[1]
+Kernel Time: 2.80352
+My PE[46/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:46[c11u19.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.80322
+My PE[96/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:96[c12u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80376
+My PE[63/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:63[c12u9.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80376
+My PE[73/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:73[c12u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80329
+My PE[83/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:83[c12u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.77408
+My PE[17/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:17[c11u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80296
+My PE[54/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:54[c11u21.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80359
+My PE[47/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:47[c11u19.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.80365
+My PE[97/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:97[c12u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80355
+My PE[64/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:64[c12u9.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80388
+My PE[74/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:74[c12u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80307
+My PE[84/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:84[c12u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.78128
+My PE[18/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:18[c11u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80693
+My PE[55/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:55[c11u21.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 5.86303
+My PE[24/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:24[c11u15.build.local]: RUN: Device[0]
+Kernel Time: 2.80382
+My PE[48/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:48[c11u19.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 5.87922
+My PE[34/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:34[c11u17.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80319
+My PE[98/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:98[c12u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80354
+My PE[65/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:65[c12u9.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80345
+My PE[75/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:75[c12u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80288
+My PE[85/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:85[c12u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.7835
+My PE[19/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:19[c11u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80278
+My PE[56/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:56[c11u21.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80344
+My PE[49/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:49[c11u19.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.80366
+My PE[99/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:99[c12u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80358
+My PE[66/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:66[c12u9.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80344
+My PE[76/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:76[c12u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.8035
+My PE[86/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:86[c12u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.77766
+Kernel Time: 2.80447
+My PE[57/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:57[c11u21.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.80349
+Kernel Time: 5.88071
+My PE[25/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:25[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 5.87411
+My PE[35/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:35[c11u17.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.80353
+Kernel Time: 2.80382
+My PE[67/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:67[c12u9.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80392
+My PE[77/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:77[c12u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80342
+My PE[87/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:87[c12u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80265
+My PE[58/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:58[c11u21.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80351
+My PE[68/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:68[c12u9.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80365
+My PE[78/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:78[c12u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80302
+My PE[88/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:88[c12u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80448
+My PE[59/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:59[c11u21.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 5.86955
+My PE[26/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:26[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 5.88089
+My PE[36/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:36[c11u17.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80332
+My PE[69/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:69[c12u9.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80368
+My PE[79/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:79[c12u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80345
+My PE[89/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:89[c12u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80228
+Kernel Time: 2.80369
+Kernel Time: 2.80386
+Kernel Time: 2.8033
+Kernel Time: 5.87143
+My PE[27/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:27[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 5.87897
+My PE[37/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:37[c11u17.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 5.87821
+My PE[28/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:28[c11u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 5.88049
+My PE[38/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:38[c11u17.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 5.87444
+My PE[29/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:29[c11u15.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 5.88009
+My PE[39/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:39[c11u17.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 5.88098
+Kernel Time: 5.87616
+
+CharmLB> RefineLB: PE [0] step 0 starting at 35.383342 Memory: 174347.316406 MB
+CharmLB> RefineLB: PE [0] strategy starting at 78.574316
+dMinOverload: 1.001000 dMaxOverload: 1.621000
+Testing curOverload 31 = 1.311000 [min,max]= 0, 62
+Testing curOverload 15 = 1.151000 [min,max]= 0, 31
+Testing curOverload 7 = 1.071000 [min,max]= 0, 15
+Testing curOverload 3 = 1.031000 [min,max]= 0, 7
+Testing curOverload 5 = 1.051000 [min,max]= 3, 7
+Testing curOverload 4 = 1.041000 [min,max]= 3, 5
+CharmLB> RefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 7 KB
+CharmLB> RefineLB: PE [0] #Objects migrating: 8, LBMigrateMsg size: 0.00 MB
+CharmLB> RefineLB: PE [0] strategy finished at 78.574407 duration 0.000091 s
+My PE[21/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:21[c11u15.build.local]: RUN: Device[1]
+My PE[32/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:32[c11u17.build.local]: RUN: Device[0]
+ Launching
+ Launching
+My PE[40/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:40[c11u19.build.local]: RUN: Device[0]
+ Launching
+My PE[80/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:80[c12u13.build.local]: RUN: Device[0]
+My PE[90/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:90[c12u15.build.local]: RUN: Device[0]
+My PE[0/100]
+		****** iteration 1/1 ******
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:0[c11u11.build.local]: RUN: Device[0]
+ Launching
+ Launching
+ Launching
+My PE[50/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:50[c11u21.build.local]: RUN: Device[0]
+My PE[10/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:10[c11u13.build.local]: RUN: Device[0]
+ Launching
+My PE[70/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:70[c12u11.build.local]: RUN: Device[0]
+ Launching
+My PE[60/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:60[c12u9.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 5.87642
+My PE[33/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:33[c11u17.build.local]: RUN: Device[1]
+Kernel Time: 5.88366
+My PE[22/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:22[c11u15.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.80329
+My PE[41/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:41[c11u19.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.6915
+My PE[1/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:1[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80341
+My PE[81/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:81[c12u13.build.local]: RUN: Device[0]
+Kernel Time: 2.80378
+My PE[91/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:91[c12u15.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.80405
+My PE[51/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:51[c11u21.build.local]: RUN: Device[1]
+Kernel Time: 2.77917
+My PE[11/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:11[c11u13.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.80416
+My PE[71/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:71[c12u11.build.local]: RUN: Device[0]
+Kernel Time: 2.80397
+My PE[61/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:61[c12u9.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.80352
+My PE[42/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:42[c11u19.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.68869
+My PE[2/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:2[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80305
+My PE[82/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:82[c12u13.build.local]: RUN: Device[0]
+Kernel Time: 2.80329
+My PE[92/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:92[c12u15.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.78087
+My PE[12/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:12[c11u13.build.local]: RUN: Device[0]
+Kernel Time: 2.80296
+My PE[52/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:52[c11u21.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.80364
+My PE[72/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:72[c12u11.build.local]: RUN: Device[0]
+Kernel Time: 2.80381
+My PE[62/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:62[c12u9.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 5.86769
+My PE[23/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:23[c11u15.build.local]: RUN: Device[1]
+Kernel Time: 5.87246
+My PE[34/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:34[c11u17.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.80325
+My PE[43/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:43[c11u19.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.68895
+My PE[3/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:3[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80307
+My PE[83/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:83[c12u13.build.local]: RUN: Device[0]
+Kernel Time: 2.80359
+My PE[93/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:93[c12u15.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.78195
+My PE[13/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:13[c11u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.8039
+My PE[53/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:53[c11u21.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.8033
+My PE[73/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:73[c12u11.build.local]: RUN: Device[0]
+Kernel Time: 2.80403
+My PE[63/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:63[c12u9.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.80301
+My PE[44/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:44[c11u19.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.68941
+My PE[4/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:4[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.8034
+My PE[84/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:84[c12u13.build.local]: RUN: Device[0]
+Kernel Time: 2.80338
+My PE[94/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:94[c12u15.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.77336
+My PE[14/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:14[c11u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80279
+My PE[54/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:54[c11u21.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80355
+My PE[74/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:74[c12u11.build.local]: RUN: Device[0]
+Kernel Time: 2.80361
+My PE[64/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:64[c12u9.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 5.86731
+My PE[36/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:36[c11u17.build.local]: RUN: Device[0]
+Kernel Time: 5.87913
+My PE[25/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:25[c11u15.build.local]: RUN: Device[1]
+ Launching
+ Launching
+Kernel Time: 2.80286
+My PE[45/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:45[c11u19.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.6898
+My PE[5/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:5[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.803
+My PE[85/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:85[c12u13.build.local]: RUN: Device[0]
+Kernel Time: 2.80279
+My PE[95/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:95[c12u15.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.77937
+My PE[15/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:15[c11u13.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.80465
+My PE[55/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:55[c11u21.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.80345
+My PE[75/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:75[c12u11.build.local]: RUN: Device[0]
+Kernel Time: 2.8035
+My PE[65/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:65[c12u9.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.68522
+My PE[6/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:6[c11u11.build.local]: RUN: Device[0]
+Kernel Time: 2.80337
+My PE[46/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:46[c11u19.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.8032
+My PE[86/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:86[c12u13.build.local]: RUN: Device[0]
+Kernel Time: 2.80265
+My PE[96/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:96[c12u15.build.local]: RUN: Device[0]
+Kernel Time: 2.77659
+My PE[16/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:16[c11u13.build.local]: RUN: Device[0]
+ Launching
+ Launching
+ Launching
+Kernel Time: 2.80294
+My PE[56/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:56[c11u21.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80335
+My PE[76/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:76[c12u11.build.local]: RUN: Device[0]
+Kernel Time: 2.80345
+My PE[66/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:66[c12u9.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 5.87091
+My PE[38/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:38[c11u17.build.local]: RUN: Device[0]
+Kernel Time: 5.88216
+My PE[26/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:26[c11u15.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.68402
+My PE[7/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:7[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.8031
+My PE[47/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:47[c11u19.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.77332
+My PE[17/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:17[c11u13.build.local]: RUN: Device[0]
+Kernel Time: 2.80344
+My PE[87/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:87[c12u13.build.local]: RUN: Device[0]
+Kernel Time: 2.80339
+My PE[97/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:97[c12u15.build.local]: RUN: Device[0]
+ Launching
+ Launching
+ Launching
+Kernel Time: 2.80376
+My PE[57/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:57[c11u21.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.80425
+My PE[77/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:77[c12u11.build.local]: RUN: Device[0]
+Kernel Time: 2.80357
+My PE[67/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:67[c12u9.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.68658
+My PE[8/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:8[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80327
+My PE[48/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:48[c11u19.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.77585
+My PE[18/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:18[c11u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80326
+My PE[88/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:88[c12u13.build.local]: RUN: Device[0]
+Kernel Time: 2.80306
+My PE[98/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:98[c12u15.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.80255
+My PE[58/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:58[c11u21.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80343
+My PE[78/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:78[c12u11.build.local]: RUN: Device[0]
+Kernel Time: 2.80378
+My PE[68/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:68[c12u9.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 5.87368
+My PE[39/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:39[c11u17.build.local]: RUN: Device[1]
+Kernel Time: 5.87183
+My PE[28/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:28[c11u15.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.68314
+My PE[9/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:9[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80347
+My PE[49/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:49[c11u19.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.77054
+My PE[19/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:19[c11u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80402
+My PE[89/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:89[c12u13.build.local]: RUN: Device[0]
+Kernel Time: 2.80306
+My PE[99/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:99[c12u15.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.80442
+My PE[59/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:59[c11u21.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.8039
+My PE[79/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:79[c12u11.build.local]: RUN: Device[0]
+Kernel Time: 2.80363
+My PE[69/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:69[c12u9.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.68849
+My PE[24/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:24[c11u11.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80363
+My PE[30/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:30[c11u19.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.77398
+My PE[27/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:27[c11u13.build.local]: RUN: Device[0]
+ Launching
+Kernel Time: 2.80312
+My PE[20/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:20[c12u13.build.local]: RUN: Device[0]
+Kernel Time: 2.8028
+My PE[31/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:31[c12u15.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.80244
+My PE[35/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:35[c11u21.build.local]: RUN: Device[1]
+ Launching
+Kernel Time: 2.8034
+My PE[37/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:37[c12u11.build.local]: RUN: Device[0]
+Kernel Time: 2.80336
+My PE[29/100]
+		Total size: 408000000 wh: 10000 wid: 100 subnum: 1000000
+		PE:29[c12u9.build.local]: RUN: Device[0]
+ Launching
+ Launching
+Kernel Time: 2.69243
+CharmLB> RefineLB: PE [0] step 0 finished at 114.768315 duration 79.384973 s
+
+Time: 114.768441
+Kernel Time: 5.87814
+Kernel Time: 5.87682
+Kernel Time: 2.80288
+Kernel Time: 2.78209
+Kernel Time: 2.8031
+Kernel Time: 2.80281
+Kernel Time: 2.80269
+Kernel Time: 2.80361
+Kernel Time: 2.80355
+[Partition 0][Node 0] End of program

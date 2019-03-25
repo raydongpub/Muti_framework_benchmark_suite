@@ -1,0 +1,47 @@
+group charm-matmul 
+ host nps1.ece.ncsu.edu ++cpus 5
+ host nps2.ece.ncsu.edu ++cpus 5
+ host nps4.ece.ncsu.edu ++cpus 5
+ host nps5.ece.ncsu.edu ++cpus 5
+#group charm-matmul-twe 
+# host lewis4-r730-gpu3-node430 ++cpus 10
+# host lewis4-r730-gpu3-node431 ++cpus 10
+#group charm-matmul-tht 
+# host lewis4-r730-gpu3-node430 ++cpus 18
+# host lewis4-r730-gpu3-node431 ++cpus 18
+#group charm-matmul-fot 
+# host lewis4-r730-gpu3-node430 ++cpus 25
+# host lewis4-r730-gpu3-node431 ++cpus 24
+#group charm-matmul-six 
+# host lewis4-r730-gpu3-node430 ++cpus 32
+# host lewis4-r730-gpu3-node431 ++cpus 32
+#group charm-matmul-ftwe 
+# host lewis4-r730-gpu3-node430 ++cpus 5
+# host lewis4-r730-gpu3-node431 ++cpus 5
+# host lewis4-r730-gpu3-node432 ++cpus 5
+# host lewis4-r730-gpu3-node433 ++cpus 5
+#group charm-matmul-ftht 
+# host lewis4-r730-gpu3-node430 ++cpus 9
+# host lewis4-r730-gpu3-node431 ++cpus 9
+# host lewis4-r730-gpu3-node432 ++cpus 9
+# host lewis4-r730-gpu3-node433 ++cpus 9
+#group charm-matmul-ffot 
+# host lewis4-r730-gpu3-node430 ++cpus 13
+# host lewis4-r730-gpu3-node431 ++cpus 13
+# host lewis4-r730-gpu3-node432 ++cpus 13
+# host lewis4-r730-gpu3-node433 ++cpus 10
+#group charm-matmul-fsix 
+# host lewis4-r730-gpu3-node430 ++cpus 16
+# host lewis4-r730-gpu3-node431 ++cpus 16
+# host lewis4-r730-gpu3-node432 ++cpus 16
+# host lewis4-r730-gpu3-node433 ++cpus 16
+#r730-node74 slots=3
+#r730-node75 slots=3
+#r730-node76 slots=3
+#r730-node77 slots=3
+#r730-node78 slots=3
+#r730-node79 slots=2
+#r730-node80 slots=2
+#r730-node81 slots=2
+#r730-node82 slots=2
+#r730-node83 slots=2

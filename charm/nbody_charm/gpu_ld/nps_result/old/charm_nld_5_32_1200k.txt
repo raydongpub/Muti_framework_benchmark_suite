@@ -1,0 +1,3552 @@
+Charm++> Running on MPI version: 3.1
+Charm++> level of thread support used: MPI_THREAD_SINGLE (desired: MPI_THREAD_SINGLE)
+Charm++> Running in non-SMP mode: numPes 32
+Converse/Charm++ Commit ID: v6.8.0-beta1-281-g9823be9
+Warning> Randomization of virtual memory (ASLR) is turned on in the kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try running with '+isomalloc_sync'.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 4 unique compute nodes (16-way SMP).
+Charm++> cpu topology info is gathered in 0.048 seconds.
+		PENUM: 32
+		Configurtion Complete
+DataFile: dset1200k.nn
+		DataLoad Complete537.000000
+
+
+Cluster env.    	yes
+time ressolu.		0.001000
+Duration.		0.020000
+
+
+Computation Begin
+[0/32]: 0/37500 Data: 0.000000
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.1003 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+[4/32]: 150000/37500 Data: 0.000000
+[2/32]: 75000/37500 Data: 0.000000
+[3/32]: 112500/37500 Data: 0.000000
+[1/32]: 37500/37500 Data: 0.000000
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0817 and number: 37500 and disp: 150000 global: 1200000
+		Data: nan
+	***Kernel: 24.0998 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+	***Kernel: 24.1092 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+	***Kernel: 24.0957 and number: 37500 and disp: 37500 global: 1200000
+		Data: nan
+[6/32]: 225000/37500 Data: 0.000000
+[7/32]: 262500/37500 Data: 0.000000
+[5/32]: 187500/37500 Data: 0.000000
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+[14/32]: 525000/37500 Data: 0.000000
+[19/32]: 712500/37500 Data: 0.000000
+[17/32]: 637500/37500 Data: 0.000000
+[20/32]: 750000/37500 Data: 0.000000
+[18/32]: 675000/37500 Data: 0.000000
+[10/32]: 375000/37500 Data: 0.000000
+[8/32]: 300000/37500 Data: 0.000000
+[12/32]: 450000/37500 Data: 0.000000
+[15/32]: 562500/37500 Data: 0.000000
+[9/32]: 337500/37500 Data: 0.000000
+[13/32]: 487500/37500 Data: 0.000000
+[11/32]: 412500/37500 Data: 0.000000
+[16/32]: 600000/37500 Data: 0.000000
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+	***Kernel: 24.0805 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+	***Kernel: 24.0812 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.1032 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+	***Kernel: 11.7604 and number: 37500 and disp: 562500 global: 1200000
+	***Kernel: 11.7343 and number: 37500 and disp: 450000 global: 1200000
+		Data: nan
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+[28/32]: 1050000/37500 Data: 0.000000
+[26/32]: 975000/37500 Data: 0.000000
+[27/32]: 1012500/37500 Data: 0.000000
+[25/32]: 937500/37500 Data: 0.000000
+[24/32]: 900000/37500 Data: 0.000000
+[30/32]: 1125000/37500 Data: 0.000000
+[31/32]: 1162500/37500 Data: 0.000000
+[29/32]: 1087500/37500 Data: 0.000000
+[22/32]: 825000/37500 Data: 0.000000
+[21/32]: 787500/37500 Data: 0.000000
+[23/32]: 862500/37500 Data: 0.000000
+	***Kernel: 5.86036 and number: 37500 and disp: 337500 global: 1200000
+		Data: nan
+	***Kernel: 16.9555 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+	***Kernel: 26.7284 and number: 37500 and disp: 487500 global: 1200000
+	***Kernel: 26.6992 and number: 37500 and disp: 375000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4624 and number: 37500 and disp: 300000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4417 and number: 37500 and disp: 712500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4579 and number: 37500 and disp: 637500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 19.0634 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 19.0798 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+	***Kernel: 19.0849 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+	***Kernel: 19.0874 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 19.4691 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.472 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.4846 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 19.4917 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 29.4433 and number: 37500 and disp: 525000 global: 1200000
+	***Kernel: 29.4631 and number: 37500 and disp: 600000 global: 1200000
+	***Kernel: 29.4495 and number: 37500 and disp: 750000 global: 1200000
+		Data: nan
+		Data: nan
+		Data: nan
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+	***Kernel: 14.4639 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 58.8862 and number: 37500 and disp: 412500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4371 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+	***Kernel: 29.4651 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+Element 4 pause for LB on PE 4
+Element 2 pause for LB on PE 2
+Element 3 pause for LB on PE 3
+Element 7 pause for LB on PE 7
+Element 1 pause for LB on PE 1
+Element 5 pause for LB on PE 5
+Element 6 pause for LB on PE 6
+Element 0 pause for LB on PE 0
+Element 17 pause for LB on PE 17
+Element 21 pause for LB on PE 21
+Element 15 pause for LB on PE 15
+Resume iteration at step 1
+Element 30 pause for LB on PE 30
+Element 9 pause for LB on PE 9
+Element 29 pause for LB on PE 29
+Element 23 pause for LB on PE 23
+Element 11 pause for LB on PE 11
+Element 27 pause for LB on PE 27
+Element 16 pause for LB on PE 16
+Element 13 pause for LB on PE 13
+Element 25 pause for LB on PE 25
+Element 22 pause for LB on PE 22
+Element 8 pause for LB on PE 8
+Element 28 pause for LB on PE 28
+Element 18 pause for LB on PE 18
+Element 12 pause for LB on PE 12
+Element 26 pause for LB on PE 26
+Element 19 pause for LB on PE 19
+Element 10 pause for LB on PE 10
+Element 31 pause for LB on PE 31
+Element 20 pause for LB on PE 20
+Element 14 pause for LB on PE 14
+Element 24 pause for LB on PE 24
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.078 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0888 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+	***Kernel: 24.0875 and number: 37500 and disp: 75000 global: 1200000
+	***Kernel: 24.0946 and number: 37500 and disp: 37500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 24.1035 and number: 37500 and disp: 150000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 11.7374 and number: 37500 and disp: 562500 global: 1200000
+	***Kernel: 11.608 and number: 37500 and disp: 337500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		Data: nan
+		Data: nan
+	***Kernel: 14.4054 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.0862 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.0931 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+	***Kernel: 24.092 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+	***Kernel: 5.85497 and number: 37500 and disp: 450000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+	***Kernel: 26.6201 and number: 37500 and disp: 487500 global: 1200000
+	***Kernel: 26.5818 and number: 37500 and disp: 375000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4535 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4512 and number: 37500 and disp: 600000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4566 and number: 37500 and disp: 750000 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 14.384 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 18.8861 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 18.9695 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.9686 and number: 37500 and disp: 975000 global: 1200000
+	***Kernel: 18.9692 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 19.2456 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.347 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.3724 and number: 37500 and disp: 1162500 global: 1200000
+	***Kernel: 19.3669 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4615 and number: 37500 and disp: 300000 global: 1200000
+	***Kernel: 29.4568 and number: 37500 and disp: 825000 global: 1200000
+	***Kernel: 29.4485 and number: 37500 and disp: 637500 global: 1200000
+		Data: nan
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 58.9154 and number: 37500 and disp: 412500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 58.8898 and number: 37500 and disp: 712500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4528 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0934 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0845 and number: 37500 and disp: 150000 global: 1200000
+	***Kernel: 24.0846 and number: 37500 and disp: 37500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 24.0995 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+	***Kernel: 24.0945 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 11.7306 and number: 37500 and disp: 450000 global: 1200000
+	***Kernel: 11.4001 and number: 37500 and disp: 337500 global: 1200000
+		Data: nan
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 14.4135 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 5.8561 and number: 37500 and disp: 562500 global: 1200000
+		Data: nan
+	***Kernel: 24.118 and number: 37500 and disp: 262500 global: 1200000
+	***Kernel: 24.1098 and number: 37500 and disp: 225000 global: 1200000
+	***Kernel: 24.0935 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+		Data: nan
+		Data: nan
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+	***Kernel: 26.5387 and number: 37500 and disp: 487500 global: 1200000
+	***Kernel: 26.6585 and number: 37500 and disp: 375000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4644 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4364 and number: 37500 and disp: 712500 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4574 and number: 37500 and disp: 637500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		Data: nan
+	***Kernel: 14.4127 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 18.924 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 18.9674 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+	***Kernel: 18.9644 and number: 37500 and disp: 1050000 global: 1200000
+	***Kernel: 18.9659 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 19.263 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.3658 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.3891 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 19.3897 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 29.4384 and number: 37500 and disp: 412500 global: 1200000
+	***Kernel: 29.4512 and number: 37500 and disp: 825000 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		Data: nan
+	***Kernel: 29.4576 and number: 37500 and disp: 750000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 58.89 and number: 37500 and disp: 300000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4429 and number: 37500 and disp: 600000 global: 1200000
+		Data: nan
+	***Kernel: 29.4505 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+Element 1 pause for LB on PE 1
+Element 4 pause for LB on PE 4
+Element 2 pause for LB on PE 2
+Element 7 pause for LB on PE 7
+Element 3 pause for LB on PE 3
+Element 6 pause for LB on PE 6
+Element 5 pause for LB on PE 5
+Element 0 pause for LB on PE 0
+Element 17 pause for LB on PE 17
+Element 9 pause for LB on PE 9
+Element 26 pause for LB on PE 26
+Resume iteration at step 3
+Element 13 pause for LB on PE 13
+Element 30 pause for LB on PE 30
+Element 18 pause for LB on PE 18
+Element 11 pause for LB on PE 11
+Element 29 pause for LB on PE 29
+Element 21 pause for LB on PE 21
+Element 10 pause for LB on PE 10
+Element 28 pause for LB on PE 28
+Element 19 pause for LB on PE 19
+Element 14 pause for LB on PE 14
+Element 31 pause for LB on PE 31
+Element 23 pause for LB on PE 23
+Element 8 pause for LB on PE 8
+Element 27 pause for LB on PE 27
+Element 16 pause for LB on PE 16
+Element 15 pause for LB on PE 15
+Element 25 pause for LB on PE 25
+Element 22 pause for LB on PE 22
+Element 12 pause for LB on PE 12
+Element 24 pause for LB on PE 24
+Element 20 pause for LB on PE 20
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.1007 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0783 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+	***Kernel: 24.0777 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+	***Kernel: 24.0951 and number: 37500 and disp: 150000 global: 1200000
+	***Kernel: 24.0948 and number: 37500 and disp: 37500 global: 1200000
+		Data: nan
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+	***Kernel: 11.7499 and number: 37500 and disp: 562500 global: 1200000
+	***Kernel: 11.6875 and number: 37500 and disp: 337500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		Data: nan
+		Data: nan
+	***Kernel: 14.4123 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.0873 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.0895 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+	***Kernel: 24.1 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+	***Kernel: 5.85757 and number: 37500 and disp: 450000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4442 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 26.6394 and number: 37500 and disp: 487500 global: 1200000
+	***Kernel: 26.6391 and number: 37500 and disp: 375000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4534 and number: 37500 and disp: 750000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.442 and number: 37500 and disp: 600000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 14.4114 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 16.7422 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+	***Kernel: 18.163 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.1556 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 18.1167 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+	***Kernel: 19.3657 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.434 and number: 37500 and disp: 1162500 global: 1200000
+	***Kernel: 19.4087 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 19.4191 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 29.4509 and number: 37500 and disp: 412500 global: 1200000
+	***Kernel: 29.4537 and number: 37500 and disp: 637500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4396 and number: 37500 and disp: 712500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		Data: nan
+	***Kernel: 58.893 and number: 37500 and disp: 300000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4498 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4422 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0918 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0981 and number: 37500 and disp: 112500 global: 1200000
+	***Kernel: 24.0961 and number: 37500 and disp: 150000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 24.0957 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+	***Kernel: 24.1099 and number: 37500 and disp: 37500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+	***Kernel: 11.7277 and number: 37500 and disp: 450000 global: 1200000
+	***Kernel: 11.4748 and number: 37500 and disp: 562500 global: 1200000
+		Data: nan
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 14.4055 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 5.85767 and number: 37500 and disp: 337500 global: 1200000
+		Data: nan
+	***Kernel: 24.0924 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.0931 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+	***Kernel: 24.1086 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+	***Kernel: 26.6678 and number: 37500 and disp: 487500 global: 1200000
+	***Kernel: 26.6482 and number: 37500 and disp: 375000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4537 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4425 and number: 37500 and disp: 600000 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		Data: nan
+	***Kernel: 29.4551 and number: 37500 and disp: 637500 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 14.4164 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 18.9884 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.9988 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 18.9804 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+	***Kernel: 18.9706 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+	***Kernel: 19.2909 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.3762 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.4017 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 19.3888 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 29.4461 and number: 37500 and disp: 412500 global: 1200000
+	***Kernel: 29.4417 and number: 37500 and disp: 712500 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4508 and number: 37500 and disp: 750000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 58.9018 and number: 37500 and disp: 300000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4346 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+	***Kernel: 29.4506 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 3
+Element 4 pause for LB on PE 4
+Element 2 pause for LB on PE 2
+Element 6 pause for LB on PE 6
+Element 5 pause for LB on PE 5
+Element 7 pause for LB on PE 7
+Element 0 pause for LB on PE 0
+Element 13 pause for LB on PE 13
+Element 17 pause for LB on PE 17
+Element 9 pause for LB on PE 9
+Element 15 pause for LB on PE 15
+Element 30 pause for LB on PE 30
+Resume iteration at step 5
+Element 11 pause for LB on PE 11
+Element 28 pause for LB on PE 28
+Element 22 pause for LB on PE 22
+Element 10 pause for LB on PE 10
+Element 25 pause for LB on PE 25
+Element 21 pause for LB on PE 21
+Element 8 pause for LB on PE 8
+Element 24 pause for LB on PE 24
+Element 23 pause for LB on PE 23
+Element 14 pause for LB on PE 14
+Element 31 pause for LB on PE 31
+Element 16 pause for LB on PE 16
+Element 12 pause for LB on PE 12
+Element 26 pause for LB on PE 26
+Element 20 pause for LB on PE 20
+Element 29 pause for LB on PE 29
+Element 19 pause for LB on PE 19
+Element 27 pause for LB on PE 27
+Element 18 pause for LB on PE 18
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.1059 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0837 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+	***Kernel: 24.0896 and number: 37500 and disp: 37500 global: 1200000
+		Data: nan
+	***Kernel: 24.0958 and number: 37500 and disp: 150000 global: 1200000
+		Data: nan
+	***Kernel: 24.0993 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+	***Kernel: 11.7312 and number: 37500 and disp: 562500 global: 1200000
+	***Kernel: 11.6928 and number: 37500 and disp: 337500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		Data: nan
+		Data: nan
+	***Kernel: 14.422 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.0744 and number: 37500 and disp: 187500 global: 1200000
+	***Kernel: 24.1028 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.0966 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 5.85796 and number: 37500 and disp: 450000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+	***Kernel: 26.6875 and number: 37500 and disp: 375000 global: 1200000
+	***Kernel: 26.6488 and number: 37500 and disp: 487500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4508 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4359 and number: 37500 and disp: 600000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4462 and number: 37500 and disp: 637500 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 14.383 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 19.0422 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 19.0541 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+	***Kernel: 19.0576 and number: 37500 and disp: 1050000 global: 1200000
+	***Kernel: 19.057 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 19.351 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.4176 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.4296 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 19.4323 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 29.4416 and number: 37500 and disp: 412500 global: 1200000
+	***Kernel: 29.4312 and number: 37500 and disp: 712500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4551 and number: 37500 and disp: 750000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 58.8968 and number: 37500 and disp: 300000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4343 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4378 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0716 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0775 and number: 37500 and disp: 37500 global: 1200000
+		Data: nan
+	***Kernel: 24.0912 and number: 37500 and disp: 150000 global: 1200000
+	***Kernel: 24.0889 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 24.1085 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 11.7413 and number: 37500 and disp: 450000 global: 1200000
+	***Kernel: 11.2313 and number: 37500 and disp: 562500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		Data: nan
+		Data: nan
+	***Kernel: 14.4186 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 5.8573 and number: 37500 and disp: 337500 global: 1200000
+		Data: nan
+	***Kernel: 24.0794 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+	***Kernel: 24.0933 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.1042 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+	***Kernel: 26.6649 and number: 37500 and disp: 487500 global: 1200000
+	***Kernel: 26.6419 and number: 37500 and disp: 375000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4495 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4489 and number: 37500 and disp: 750000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4376 and number: 37500 and disp: 600000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 14.4396 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 18.9304 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.987 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+	***Kernel: 18.9993 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 18.9661 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+	***Kernel: 19.4333 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.4442 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 19.4455 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.4167 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 29.4476 and number: 37500 and disp: 300000 global: 1200000
+	***Kernel: 29.4421 and number: 37500 and disp: 862500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		Data: nan
+	***Kernel: 29.4424 and number: 37500 and disp: 712500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		Data: nan
+	***Kernel: 58.8937 and number: 37500 and disp: 412500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4762 and number: 37500 and disp: 637500 global: 1200000
+		Data: nan
+	***Kernel: 29.4429 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+Element 6 pause for LB on PE 6
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 3
+Element 7 pause for LB on PE 7
+Element 2 pause for LB on PE 2
+Element 4 pause for LB on PE 4
+Element 5 pause for LB on PE 5
+Element 0 pause for LB on PE 0
+Element 21 pause for LB on PE 21
+Element 17 pause for LB on PE 17
+Element 8 pause for LB on PE 8
+Resume iteration at step 7
+Element 15 pause for LB on PE 15
+Element 30 pause for LB on PE 30
+Element 9 pause for LB on PE 9
+Element 26 pause for LB on PE 26
+Element 22 pause for LB on PE 22
+Element 13 pause for LB on PE 13
+Element 25 pause for LB on PE 25
+Element 16 pause for LB on PE 16
+Element 10 pause for LB on PE 10
+Element 28 pause for LB on PE 28
+Element 23 pause for LB on PE 23
+Element 14 pause for LB on PE 14
+Element 29 pause for LB on PE 29
+Element 19 pause for LB on PE 19
+Element 11 pause for LB on PE 11
+Element 24 pause for LB on PE 24
+Element 18 pause for LB on PE 18
+Element 12 pause for LB on PE 12
+Element 27 pause for LB on PE 27
+Element 20 pause for LB on PE 20
+Element 31 pause for LB on PE 31
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0726 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0799 and number: 37500 and disp: 150000 global: 1200000
+		Data: nan
+	***Kernel: 24.1003 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+	***Kernel: 24.1014 and number: 37500 and disp: 37500 global: 1200000
+	***Kernel: 24.0977 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+	***Kernel: 11.5921 and number: 37500 and disp: 562500 global: 1200000
+	***Kernel: 11.7457 and number: 37500 and disp: 450000 global: 1200000
+		Data: nan
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 14.4176 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.0671 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+	***Kernel: 24.0999 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.0878 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+	***Kernel: 5.85619 and number: 37500 and disp: 337500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+	***Kernel: 26.6672 and number: 37500 and disp: 375000 global: 1200000
+	***Kernel: 26.5378 and number: 37500 and disp: 487500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4695 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4505 and number: 37500 and disp: 712500 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4557 and number: 37500 and disp: 637500 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 14.4 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 18.3489 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 18.7534 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.894 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+	***Kernel: 18.8803 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+	***Kernel: 18.8717 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 18.9585 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 18.9586 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 18.9669 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 29.4617 and number: 37500 and disp: 300000 global: 1200000
+	***Kernel: 29.4474 and number: 37500 and disp: 825000 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4545 and number: 37500 and disp: 862500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 58.9003 and number: 37500 and disp: 412500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4572 and number: 37500 and disp: 600000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4374 and number: 37500 and disp: 750000 global: 1200000
+		Data: nan
+		Data: nan
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0868 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0914 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+	***Kernel: 24.0941 and number: 37500 and disp: 150000 global: 1200000
+	***Kernel: 24.1019 and number: 37500 and disp: 37500 global: 1200000
+		Data: nan
+	***Kernel: 24.1015 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+	***Kernel: 11.7152 and number: 37500 and disp: 562500 global: 1200000
+	***Kernel: 11.6794 and number: 37500 and disp: 337500 global: 1200000
+		Data: nan
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 14.4182 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.102 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.1022 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+	***Kernel: 24.1016 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+	***Kernel: 5.85701 and number: 37500 and disp: 450000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+	***Kernel: 26.6593 and number: 37500 and disp: 375000 global: 1200000
+	***Kernel: 26.5274 and number: 37500 and disp: 487500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4557 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4475 and number: 37500 and disp: 600000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4479 and number: 37500 and disp: 637500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		Data: nan
+	***Kernel: 14.4209 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 18.8825 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 18.9615 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.9542 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+	***Kernel: 18.9548 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+	***Kernel: 19.2836 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.3746 and number: 37500 and disp: 1162500 global: 1200000
+	***Kernel: 19.3469 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 19.3667 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 29.4366 and number: 37500 and disp: 300000 global: 1200000
+	***Kernel: 29.4286 and number: 37500 and disp: 712500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4527 and number: 37500 and disp: 750000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 58.8909 and number: 37500 and disp: 412500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4383 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.456 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+Element 1 pause for LB on PE 1
+Element 2 pause for LB on PE 2
+Element 3 pause for LB on PE 3
+Element 6 pause for LB on PE 6
+Element 4 pause for LB on PE 4
+Element 7 pause for LB on PE 7
+Element 5 pause for LB on PE 5
+Element 0 pause for LB on PE 0
+Element 17 pause for LB on PE 17
+Resume iteration at step 9
+Element 13 pause for LB on PE 13
+Element 29 pause for LB on PE 29
+Element 18 pause for LB on PE 18
+Element 10 pause for LB on PE 10
+Element 28 pause for LB on PE 28
+Element 21 pause for LB on PE 21
+Element 8 pause for LB on PE 8
+Element 31 pause for LB on PE 31
+Element 22 pause for LB on PE 22
+Element 15 pause for LB on PE 15
+Element 24 pause for LB on PE 24
+Element 23 pause for LB on PE 23
+Element 9 pause for LB on PE 9
+Element 30 pause for LB on PE 30
+Element 16 pause for LB on PE 16
+Element 14 pause for LB on PE 14
+Element 25 pause for LB on PE 25
+Element 20 pause for LB on PE 20
+Element 12 pause for LB on PE 12
+Element 26 pause for LB on PE 26
+Element 19 pause for LB on PE 19
+Element 11 pause for LB on PE 11
+Element 27 pause for LB on PE 27
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0947 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0751 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+	***Kernel: 24.0936 and number: 37500 and disp: 150000 global: 1200000
+	***Kernel: 24.0954 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 24.105 and number: 37500 and disp: 37500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 11.727 and number: 37500 and disp: 562500 global: 1200000
+	***Kernel: 11.5983 and number: 37500 and disp: 337500 global: 1200000
+		Data: nan
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 14.4184 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.1012 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.0953 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+	***Kernel: 24.0858 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+	***Kernel: 5.85665 and number: 37500 and disp: 450000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+	***Kernel: 26.6495 and number: 37500 and disp: 487500 global: 1200000
+	***Kernel: 26.5885 and number: 37500 and disp: 375000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4469 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4455 and number: 37500 and disp: 600000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4471 and number: 37500 and disp: 750000 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		Data: nan
+	***Kernel: 14.4167 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 18.1627 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.6676 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 18.6542 and number: 37500 and disp: 975000 global: 1200000
+	***Kernel: 18.648 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 19.2985 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.3556 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.3853 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 19.3768 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 29.4705 and number: 37500 and disp: 300000 global: 1200000
+	***Kernel: 29.4439 and number: 37500 and disp: 712500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4632 and number: 37500 and disp: 637500 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 58.9297 and number: 37500 and disp: 412500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4502 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4448 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.1008 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.073 and number: 37500 and disp: 37500 global: 1200000
+		Data: nan
+	***Kernel: 24.0908 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+	***Kernel: 24.0939 and number: 37500 and disp: 150000 global: 1200000
+		Data: nan
+	***Kernel: 24.1021 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 11.745 and number: 37500 and disp: 562500 global: 1200000
+	***Kernel: 11.6986 and number: 37500 and disp: 450000 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		Data: nan
+		Data: nan
+	***Kernel: 14.4091 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.0705 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.0816 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+	***Kernel: 24.0758 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+	***Kernel: 5.86069 and number: 37500 and disp: 337500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+	***Kernel: 26.6641 and number: 37500 and disp: 487500 global: 1200000
+	***Kernel: 26.6346 and number: 37500 and disp: 375000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.434 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4578 and number: 37500 and disp: 600000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4487 and number: 37500 and disp: 637500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		Data: nan
+	***Kernel: 14.4004 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 18.9345 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 18.9912 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.9817 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+	***Kernel: 18.9815 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+	***Kernel: 19.2645 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.3626 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 19.3364 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.3376 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 29.4581 and number: 37500 and disp: 300000 global: 1200000
+	***Kernel: 29.4432 and number: 37500 and disp: 712500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4532 and number: 37500 and disp: 750000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 58.9123 and number: 37500 and disp: 412500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4437 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4485 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+Element 4 pause for LB on PE 4
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 3
+Element 6 pause for LB on PE 6
+Element 2 pause for LB on PE 2
+Element 7 pause for LB on PE 7
+Element 5 pause for LB on PE 5
+Element 0 pause for LB on PE 0
+Element 17 pause for LB on PE 17
+Element 21 pause for LB on PE 21
+Element 9 pause for LB on PE 9
+Element 25 pause for LB on PE 25
+Resume iteration at step 11
+Element 16 pause for LB on PE 16
+Element 10 pause for LB on PE 10
+Element 24 pause for LB on PE 24
+Element 23 pause for LB on PE 23
+Element 8 pause for LB on PE 8
+Element 28 pause for LB on PE 28
+Element 22 pause for LB on PE 22
+Element 13 pause for LB on PE 13
+Element 30 pause for LB on PE 30
+Element 19 pause for LB on PE 19
+Element 11 pause for LB on PE 11
+Element 26 pause for LB on PE 26
+Element 18 pause for LB on PE 18
+Element 12 pause for LB on PE 12
+Element 27 pause for LB on PE 27
+Element 20 pause for LB on PE 20
+Element 15 pause for LB on PE 15
+Element 31 pause for LB on PE 31
+Element 14 pause for LB on PE 14
+Element 29 pause for LB on PE 29
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0958 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0731 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+	***Kernel: 24.0962 and number: 37500 and disp: 37500 global: 1200000
+		Data: nan
+	***Kernel: 24.1029 and number: 37500 and disp: 75000 global: 1200000
+	***Kernel: 24.1023 and number: 37500 and disp: 150000 global: 1200000
+		Data: nan
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 11.7463 and number: 37500 and disp: 450000 global: 1200000
+	***Kernel: 11.5966 and number: 37500 and disp: 562500 global: 1200000
+		Data: nan
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 14.4202 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.0716 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+	***Kernel: 5.85885 and number: 37500 and disp: 337500 global: 1200000
+		Data: nan
+	***Kernel: 24.1132 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.0997 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+	***Kernel: 26.6481 and number: 37500 and disp: 375000 global: 1200000
+	***Kernel: 26.6582 and number: 37500 and disp: 487500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4555 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4566 and number: 37500 and disp: 600000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4365 and number: 37500 and disp: 637500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 14.4084 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 18.9518 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+	***Kernel: 18.9574 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.9453 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+	***Kernel: 18.9384 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 19.3677 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.4013 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 19.3662 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.373 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 29.4498 and number: 37500 and disp: 412500 global: 1200000
+	***Kernel: 29.4396 and number: 37500 and disp: 712500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4395 and number: 37500 and disp: 750000 global: 1200000
+		Data: nan
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 58.8898 and number: 37500 and disp: 300000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4417 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4535 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0991 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0911 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+	***Kernel: 24.1007 and number: 37500 and disp: 37500 global: 1200000
+		Data: nan
+	***Kernel: 24.1067 and number: 37500 and disp: 150000 global: 1200000
+		Data: nan
+	***Kernel: 24.1105 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+	***Kernel: 11.687 and number: 37500 and disp: 337500 global: 1200000
+	***Kernel: 11.7314 and number: 37500 and disp: 562500 global: 1200000
+		Data: nan
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 14.4211 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.0666 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.0867 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+	***Kernel: 24.1006 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+	***Kernel: 5.85795 and number: 37500 and disp: 450000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+	***Kernel: 26.5919 and number: 37500 and disp: 375000 global: 1200000
+	***Kernel: 26.6489 and number: 37500 and disp: 487500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4547 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4479 and number: 37500 and disp: 600000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4345 and number: 37500 and disp: 637500 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 14.4068 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 18.4103 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.7349 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 18.7139 and number: 37500 and disp: 900000 global: 1200000
+	***Kernel: 18.7134 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 19.2975 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.3763 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 19.338 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.3403 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 29.437 and number: 37500 and disp: 300000 global: 1200000
+	***Kernel: 29.4521 and number: 37500 and disp: 712500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4479 and number: 37500 and disp: 750000 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 58.8786 and number: 37500 and disp: 412500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4488 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4644 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+		Data: nan
+Element 4 pause for LB on PE 4
+Element 3 pause for LB on PE 3
+Element 6 pause for LB on PE 6
+Element 2 pause for LB on PE 2
+Element 7 pause for LB on PE 7
+Element 1 pause for LB on PE 1
+Element 5 pause for LB on PE 5
+Element 0 pause for LB on PE 0
+Element 19 pause for LB on PE 19
+Element 10 pause for LB on PE 10
+Resume iteration at step 13
+Element 17 pause for LB on PE 17
+Element 11 pause for LB on PE 11
+Element 26 pause for LB on PE 26
+Element 21 pause for LB on PE 21
+Element 15 pause for LB on PE 15
+Element 24 pause for LB on PE 24
+Element 18 pause for LB on PE 18
+Element 14 pause for LB on PE 14
+Element 25 pause for LB on PE 25
+Element 20 pause for LB on PE 20
+Element 13 pause for LB on PE 13
+Element 28 pause for LB on PE 28
+Element 16 pause for LB on PE 16
+Element 8 pause for LB on PE 8
+Element 30 pause for LB on PE 30
+Element 23 pause for LB on PE 23
+Element 9 pause for LB on PE 9
+Element 27 pause for LB on PE 27
+Element 22 pause for LB on PE 22
+Element 12 pause for LB on PE 12
+Element 29 pause for LB on PE 29
+Element 31 pause for LB on PE 31
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0758 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0915 and number: 37500 and disp: 37500 global: 1200000
+	***Kernel: 24.0926 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 24.1006 and number: 37500 and disp: 150000 global: 1200000
+		Data: nan
+	***Kernel: 24.1094 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 11.7225 and number: 37500 and disp: 450000 global: 1200000
+	***Kernel: 11.7365 and number: 37500 and disp: 337500 global: 1200000
+		Data: nan
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 14.4305 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.0692 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.0896 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+	***Kernel: 24.0958 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+	***Kernel: 5.85747 and number: 37500 and disp: 562500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+	***Kernel: 26.6409 and number: 37500 and disp: 375000 global: 1200000
+	***Kernel: 26.4175 and number: 37500 and disp: 487500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4524 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4424 and number: 37500 and disp: 750000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4427 and number: 37500 and disp: 712500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 14.4049 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 18.8773 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 18.9513 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.9398 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+	***Kernel: 18.9393 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+	***Kernel: 19.2758 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.3633 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 19.3226 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.3319 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 29.4503 and number: 37500 and disp: 300000 global: 1200000
+	***Kernel: 29.4503 and number: 37500 and disp: 600000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.46 and number: 37500 and disp: 637500 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 58.8947 and number: 37500 and disp: 412500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4552 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+	***Kernel: 29.4603 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0935 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0665 and number: 37500 and disp: 150000 global: 1200000
+		Data: nan
+	***Kernel: 24.0912 and number: 37500 and disp: 75000 global: 1200000
+	***Kernel: 24.1007 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 24.1028 and number: 37500 and disp: 37500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+	***Kernel: 11.5777 and number: 37500 and disp: 337500 global: 1200000
+	***Kernel: 11.7397 and number: 37500 and disp: 562500 global: 1200000
+		Data: nan
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 14.4193 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.0737 and number: 37500 and disp: 225000 global: 1200000
+	***Kernel: 24.084 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 24.0728 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+	***Kernel: 5.85761 and number: 37500 and disp: 450000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+	***Kernel: 26.6362 and number: 37500 and disp: 375000 global: 1200000
+	***Kernel: 26.4668 and number: 37500 and disp: 487500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4661 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4564 and number: 37500 and disp: 637500 global: 1200000
+		Data: nan
+	***Kernel: 29.4448 and number: 37500 and disp: 712500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 14.4006 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 18.9952 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.9995 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+	***Kernel: 18.9918 and number: 37500 and disp: 900000 global: 1200000
+	***Kernel: 18.9961 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 19.3936 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.4263 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 19.4027 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.4072 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 29.4536 and number: 37500 and disp: 412500 global: 1200000
+	***Kernel: 29.445 and number: 37500 and disp: 862500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4412 and number: 37500 and disp: 600000 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 58.881 and number: 37500 and disp: 300000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4449 and number: 37500 and disp: 750000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4453 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+		Data: nan
+Element 2 pause for LB on PE 2
+Element 6 pause for LB on PE 6
+Element 7 pause for LB on PE 7
+Element 4 pause for LB on PE 4
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 3
+Element 5 pause for LB on PE 5
+Element 0 pause for LB on PE 0
+Resume iteration at step 15
+Element 17 pause for LB on PE 17
+Element 10 pause for LB on PE 10
+Element 30 pause for LB on PE 30
+Element 21 pause for LB on PE 21
+Element 13 pause for LB on PE 13
+Element 24 pause for LB on PE 24
+Element 18 pause for LB on PE 18
+Element 14 pause for LB on PE 14
+Element 25 pause for LB on PE 25
+Element 19 pause for LB on PE 19
+Element 15 pause for LB on PE 15
+Element 26 pause for LB on PE 26
+Element 20 pause for LB on PE 20
+Element 8 pause for LB on PE 8
+Element 28 pause for LB on PE 28
+Element 23 pause for LB on PE 23
+Element 9 pause for LB on PE 9
+Element 27 pause for LB on PE 27
+Element 22 pause for LB on PE 22
+Element 11 pause for LB on PE 11
+Element 31 pause for LB on PE 31
+Element 16 pause for LB on PE 16
+Element 12 pause for LB on PE 12
+Element 29 pause for LB on PE 29
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.092 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0923 and number: 37500 and disp: 37500 global: 1200000
+	***Kernel: 24.0906 and number: 37500 and disp: 150000 global: 1200000
+	***Kernel: 24.1021 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+		Data: nan
+		Data: nan
+	***Kernel: 24.1074 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 11.7501 and number: 37500 and disp: 562500 global: 1200000
+	***Kernel: 11.7295 and number: 37500 and disp: 450000 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		Data: nan
+		Data: nan
+	***Kernel: 14.4212 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.0872 and number: 37500 and disp: 225000 global: 1200000
+	***Kernel: 24.0991 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 24.0999 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+	***Kernel: 5.85898 and number: 37500 and disp: 337500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+	***Kernel: 26.6356 and number: 37500 and disp: 487500 global: 1200000
+	***Kernel: 26.6188 and number: 37500 and disp: 375000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.449 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4529 and number: 37500 and disp: 637500 global: 1200000
+		Data: nan
+	***Kernel: 29.4577 and number: 37500 and disp: 600000 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		Data: nan
+	***Kernel: 14.3875 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 19.0249 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 19.0405 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+	***Kernel: 19.0506 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 19.0145 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+	***Kernel: 19.3934 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.4214 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 19.4141 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.3793 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 29.4552 and number: 37500 and disp: 300000 global: 1200000
+	***Kernel: 29.4507 and number: 37500 and disp: 712500 global: 1200000
+	***Kernel: 29.4533 and number: 37500 and disp: 750000 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 58.8964 and number: 37500 and disp: 412500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4414 and number: 37500 and disp: 825000 global: 1200000
+	***Kernel: 29.4497 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+		Data: nan
+		Data: nan
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0925 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0715 and number: 37500 and disp: 150000 global: 1200000
+	***Kernel: 24.0812 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 24.0911 and number: 37500 and disp: 37500 global: 1200000
+		Data: nan
+	***Kernel: 24.0946 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+	***Kernel: 11.5784 and number: 37500 and disp: 562500 global: 1200000
+	***Kernel: 11.7383 and number: 37500 and disp: 450000 global: 1200000
+		Data: nan
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 14.3802 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.0806 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.0832 and number: 37500 and disp: 187500 global: 1200000
+	***Kernel: 24.1044 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 5.8604 and number: 37500 and disp: 337500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+	***Kernel: 26.6382 and number: 37500 and disp: 487500 global: 1200000
+	***Kernel: 26.62 and number: 37500 and disp: 375000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4536 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4437 and number: 37500 and disp: 712500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4605 and number: 37500 and disp: 637500 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 14.4283 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 18.851 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 18.9296 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.9223 and number: 37500 and disp: 900000 global: 1200000
+	***Kernel: 18.9162 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 19.2099 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.2993 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 19.2719 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.2798 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 29.4517 and number: 37500 and disp: 300000 global: 1200000
+	***Kernel: 29.4438 and number: 37500 and disp: 600000 global: 1200000
+		Data: nan
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4608 and number: 37500 and disp: 750000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 58.9018 and number: 37500 and disp: 412500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4448 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+	***Kernel: 29.4242 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+Element 7 pause for LB on PE 7
+Element 2 pause for LB on PE 2
+Element 3 pause for LB on PE 3
+Element 1 pause for LB on PE 1
+Element 5 pause for LB on PE 5
+Element 6 pause for LB on PE 6
+Element 4 pause for LB on PE 4
+Element 0 pause for LB on PE 0
+Element 21 pause for LB on PE 21
+Element 10 pause for LB on PE 10
+Element 28 pause for LB on PE 28
+Resume iteration at step 17
+Element 17 pause for LB on PE 17
+Element 14 pause for LB on PE 14
+Element 24 pause for LB on PE 24
+Element 23 pause for LB on PE 23
+Element 8 pause for LB on PE 8
+Element 26 pause for LB on PE 26
+Element 22 pause for LB on PE 22
+Element 13 pause for LB on PE 13
+Element 25 pause for LB on PE 25
+Element 16 pause for LB on PE 16
+Element 11 pause for LB on PE 11
+Element 30 pause for LB on PE 30
+Element 19 pause for LB on PE 19
+Element 15 pause for LB on PE 15
+Element 27 pause for LB on PE 27
+Element 18 pause for LB on PE 18
+Element 9 pause for LB on PE 9
+Element 29 pause for LB on PE 29
+Element 20 pause for LB on PE 20
+Element 12 pause for LB on PE 12
+Element 31 pause for LB on PE 31
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0801 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0925 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+	***Kernel: 24.0907 and number: 37500 and disp: 37500 global: 1200000
+		Data: nan
+	***Kernel: 24.0948 and number: 37500 and disp: 150000 global: 1200000
+	***Kernel: 24.0958 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 11.7494 and number: 37500 and disp: 562500 global: 1200000
+	***Kernel: 11.7116 and number: 37500 and disp: 450000 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		Data: nan
+		Data: nan
+	***Kernel: 14.4083 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.1071 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.104 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+	***Kernel: 24.092 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+	***Kernel: 5.8581 and number: 37500 and disp: 337500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+	***Kernel: 26.5665 and number: 37500 and disp: 375000 global: 1200000
+	***Kernel: 26.5935 and number: 37500 and disp: 487500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4514 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4404 and number: 37500 and disp: 600000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4706 and number: 37500 and disp: 637500 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 14.4161 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 17.8748 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.5474 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 18.5437 and number: 37500 and disp: 975000 global: 1200000
+	***Kernel: 18.543 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 19.2679 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.3555 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.3628 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 19.3687 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 29.4482 and number: 37500 and disp: 412500 global: 1200000
+	***Kernel: 29.4469 and number: 37500 and disp: 712500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4501 and number: 37500 and disp: 750000 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		Data: nan
+	***Kernel: 58.8935 and number: 37500 and disp: 300000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4374 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4515 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0891 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0803 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+	***Kernel: 24.0957 and number: 37500 and disp: 112500 global: 1200000
+		Data: nan
+	***Kernel: 24.0952 and number: 37500 and disp: 37500 global: 1200000
+	***Kernel: 24.0939 and number: 37500 and disp: 150000 global: 1200000
+		Data: nan
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+	***Kernel: 11.7222 and number: 37500 and disp: 337500 global: 1200000
+	***Kernel: 11.6808 and number: 37500 and disp: 450000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		Data: nan
+	***Kernel: 14.4265 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.0998 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.0806 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+	***Kernel: 24.1097 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+	***Kernel: 5.85663 and number: 37500 and disp: 562500 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+	***Kernel: 26.6339 and number: 37500 and disp: 375000 global: 1200000
+	***Kernel: 26.5995 and number: 37500 and disp: 487500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4573 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4479 and number: 37500 and disp: 600000 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4555 and number: 37500 and disp: 637500 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		Data: nan
+	***Kernel: 14.4105 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 18.8646 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 18.9559 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.9612 and number: 37500 and disp: 975000 global: 1200000
+	***Kernel: 18.9601 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 19.2873 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.3811 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+	***Kernel: 19.3495 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.3604 and number: 37500 and disp: 1012500 global: 1200000
+		Data: nan
+	***Kernel: 29.4526 and number: 37500 and disp: 300000 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 29.4373 and number: 37500 and disp: 750000 global: 1200000
+		Data: nan
+	***Kernel: 29.4559 and number: 37500 and disp: 712500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4593 and number: 37500 and disp: 412500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4447 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+	***Kernel: 29.4551 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+Element 2 pause for LB on PE 2
+Element 3 pause for LB on PE 3
+Element 7 pause for LB on PE 7
+Element 4 pause for LB on PE 4
+Element 1 pause for LB on PE 1
+Element 6 pause for LB on PE 6
+Element 5 pause for LB on PE 5
+Element 0 pause for LB on PE 0
+Element 10 pause for LB on PE 10
+Element 22 pause for LB on PE 22
+Element 13 pause for LB on PE 13
+Resume iteration at step 19
+Element 8 pause for LB on PE 8
+Element 30 pause for LB on PE 30
+Element 11 pause for LB on PE 11
+Element 28 pause for LB on PE 28
+Element 21 pause for LB on PE 21
+Element 14 pause for LB on PE 14
+Element 24 pause for LB on PE 24
+Element 17 pause for LB on PE 17
+Element 15 pause for LB on PE 15
+Element 26 pause for LB on PE 26
+Element 23 pause for LB on PE 23
+Element 9 pause for LB on PE 9
+Element 29 pause for LB on PE 29
+Element 19 pause for LB on PE 19
+Element 12 pause for LB on PE 12
+Element 31 pause for LB on PE 31
+Element 16 pause for LB on PE 16
+Element 25 pause for LB on PE 25
+Element 18 pause for LB on PE 18
+Element 27 pause for LB on PE 27
+Element 20 pause for LB on PE 20
+secs: 0.000000/0.020000[0/32]: 0/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.1011 and number: 37500 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[3/32]: 112500/37500 Data: nan
+secs: 0.000000/0.020000[4/32]: 150000/37500 Data: nan
+secs: 0.000000/0.020000[2/32]: 75000/37500 Data: nan
+secs: 0.000000/0.020000[1/32]: 37500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 24.0967 and number: 37500 and disp: 112500 global: 1200000
+	***Kernel: 24.0926 and number: 37500 and disp: 37500 global: 1200000
+	***Kernel: 24.092 and number: 37500 and disp: 150000 global: 1200000
+		Data: nan
+		Data: nan
+		Data: nan
+	***Kernel: 24.1004 and number: 37500 and disp: 75000 global: 1200000
+		Data: nan
+secs: 0.000000/0.020000[7/32]: 262500/37500 Data: nan
+secs: 0.000000/0.020000[6/32]: 225000/37500 Data: nan
+secs: 0.000000/0.020000[5/32]: 187500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+secs: 0.000000/0.020000[14/32]: 525000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+secs: 0.000000/0.020000[16/32]: 600000/37500 Data: nan
+secs: 0.000000/0.020000[20/32]: 750000/37500 Data: nan
+secs: 0.000000/0.020000[13/32]: 487500/37500 Data: nan
+secs: 0.000000/0.020000[15/32]: 562500/37500 Data: nan
+secs: 0.000000/0.020000[17/32]: 637500/37500 Data: nan
+secs: 0.000000/0.020000[10/32]: 375000/37500 Data: nan
+secs: 0.000000/0.020000[19/32]: 712500/37500 Data: nan
+secs: 0.000000/0.020000[18/32]: 675000/37500 Data: nan
+secs: 0.000000/0.020000[11/32]: 412500/37500 Data: nan
+secs: 0.000000/0.020000[9/32]: 337500/37500 Data: nan
+secs: 0.000000/0.020000[8/32]: 300000/37500 Data: nan
+secs: 0.000000/0.020000[12/32]: 450000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 11.7332 and number: 37500 and disp: 562500 global: 1200000
+	***Kernel: 14.4299 and number: 37500 and disp: 675000 global: 1200000
+		Data: nan
+	***Kernel: 24.0909 and number: 37500 and disp: 262500 global: 1200000
+		Data: nan
+	***Kernel: 24.0812 and number: 37500 and disp: 225000 global: 1200000
+		Data: nan
+	***Kernel: 24.1065 and number: 37500 and disp: 187500 global: 1200000
+		Data: nan
+	***Kernel: 17.5548 and number: 37500 and disp: 450000 global: 1200000
+	***Kernel: 17.5549 and number: 37500 and disp: 337500 global: 1200000
+		Data: nan
+		Data: nan
+		Data: nan
+secs: 0.000000/0.020000[24/32]: 900000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[30/32]: 1125000/37500 Data: nan
+secs: 0.000000/0.020000[29/32]: 1087500/37500 Data: nan
+secs: 0.000000/0.020000[28/32]: 1050000/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[31/32]: 1162500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+secs: 0.000000/0.020000[27/32]: 1012500/37500 Data: nan
+secs: 0.000000/0.020000[26/32]: 975000/37500 Data: nan
+secs: 0.000000/0.020000[25/32]: 937500/37500 Data: nan
+secs: 0.000000/0.020000[22/32]: 825000/37500 Data: nan
+secs: 0.000000/0.020000[21/32]: 787500/37500 Data: nan
+secs: 0.000000/0.020000[23/32]: 862500/37500 Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4461 and number: 37500 and disp: 525000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+Memcpy Counter: 37500 and global: 1200000
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 26.6455 and number: 37500 and disp: 487500 global: 1200000
+	***Kernel: 26.6414 and number: 37500 and disp: 375000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4356 and number: 37500 and disp: 600000 global: 1200000
+	***Kernel: 29.4339 and number: 37500 and disp: 750000 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 14.3903 and number: 37500 and disp: 787500 global: 1200000
+		Data: nan
+	***Kernel: 18.1623 and number: 37500 and disp: 900000 global: 1200000
+		Data: nan
+	***Kernel: 18.6761 and number: 37500 and disp: 1050000 global: 1200000
+		Data: nan
+	***Kernel: 18.6936 and number: 37500 and disp: 1125000 global: 1200000
+		Data: nan
+	***Kernel: 18.6445 and number: 37500 and disp: 975000 global: 1200000
+		Data: nan
+	***Kernel: 19.295 and number: 37500 and disp: 1087500 global: 1200000
+		Data: nan
+	***Kernel: 19.3573 and number: 37500 and disp: 937500 global: 1200000
+		Data: nan
+	***Kernel: 19.3719 and number: 37500 and disp: 1012500 global: 1200000
+	***Kernel: 19.3826 and number: 37500 and disp: 1162500 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4569 and number: 37500 and disp: 412500 global: 1200000
+	***Kernel: 29.4308 and number: 37500 and disp: 712500 global: 1200000
+Memcpy Counter: 37500 and global: 1200000
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 29.4482 and number: 37500 and disp: 637500 global: 1200000
+		Data: nan
+Memcpy Counter: 37500 and global: 1200000
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 58.9008 and number: 37500 and disp: 300000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4416 and number: 37500 and disp: 825000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 29.4551 and number: 37500 and disp: 862500 global: 1200000
+		Data: nan
+Time: 2893.195771
+[Partition 0][Node 0] End of program

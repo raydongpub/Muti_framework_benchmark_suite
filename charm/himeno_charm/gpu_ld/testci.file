@@ -1,0 +1,37 @@
+mainmodule himeno {
+    readonly CProxy_Main mainProxy;
+    readonly int num_chare_x;
+    readonly int num_chare_y;
+    readonly int num_chare_z;
+    mainchare Main {
+        entry Main(CkArgMsg *m);
+        entry [reductiontarget] void collect(float gosaval);
+        entry void done();
+    };
+    include "himeno.h";
+    array[3D] Data {
+        entry Data(BMT_Config config, int penum_);
+        entry void print_info();
+        entry void bmtstart();
+        entry void updateGhosts(int dir, int w, int h, PRECISION gh[w*h]);
+        entry void jacobi(CkCallback collect) {
+            atomic {
+                bmtstart();              
+            }
+            atomic {
+                begin_iteration();
+            }
+            for (remoteCount = 0; remoteCount < 6; remoteCount++) {
+                 when updateGhosts(int dir, int w, int h, PRECISION buf[w*h])        atomic {
+                     updateBoundary(dir, w, h, buf);
+                 }
+            }
+            atomic {
+                contribute(sizeof(PRECISION), &wgosa, CkReduction::sum_float, collect);
+                AtSync();
+            }
+
+        };
+    };
+};
+

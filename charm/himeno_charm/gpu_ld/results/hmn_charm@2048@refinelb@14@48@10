@@ -1,0 +1,2352 @@
+
+Running on 14 processors:  --hostfile ompihosts -x CUDA_VISIBLE_DEVICES=0,1,2,3 /home/rgu/data/workspace/charm/himeno_charm/gpu_ld/himeno -pe 4 4 3 -ds xl -c 48 +balancer RefineLB +LBDebug
+charmrun>  /usr/bin/setarch x86_64 -R  mpirun -np 14  --hostfile ompihosts -x CUDA_VISIBLE_DEVICES=0,1,2,3 /home/rgu/data/workspace/charm/himeno_charm/gpu_ld/himeno -pe 4 4 3 -ds xl -c 48 +balancer RefineLB +LBDebug
+Charm++> Running on MPI version: 2.1
+Charm++> level of thread support used: MPI_THREAD_SINGLE (desired: MPI_THREAD_SINGLE)
+Charm++> Running in non-SMP mode: numPes 14
+Converse/Charm++ Commit ID: v6.6.1-0-g74a2cc5
+Warning> Randomization of stack pointer is turned on in kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try run with '+isomalloc_sync'.  
+CharmLB> Verbose level 1, load balancing period: 0.5 seconds
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 10 unique compute nodes (20-way SMP).
+Charm++> cpu topology info is gathered in 0.004 seconds.
+[0] RefineLB created
+		PE dimension: 4:4:3 and chare number: 48
+My PE[0/48]: imax[129] 0jmax[129] 0kmax[172] 0it: 0
+My PE[1/48]: imax[129] 0jmax[129] 0kmax[173] 1it: 0
+My PE[2/48]: imax[129] 0jmax[129] 0kmax[171] 2it: 0
+My PE[3/48]: imax[129] 0jmax[130] 1kmax[172] 0it: 0
+My PE[45/48]: imax[129] 3jmax[129] 3kmax[172] 0it: 383
+My PE[12/48]: imax[130] 1jmax[129] 0kmax[172] 0it: 127
+My PE[36/48]: imax[129] 3jmax[129] 0kmax[172] 0it: 383
+My PE[39/48]: imax[129] 3jmax[130] 1kmax[172] 0it: 383
+My PE[27/48]: imax[130] 2jmax[130] 1kmax[172] 0it: 255
+My PE[42/48]: imax[129] 3jmax[130] 2kmax[172] 0it: 383
+My PE[20/48]: imax[130] 1jmax[130] 2kmax[171] 2it: 127
+My PE[16/48]: imax[130] 1jmax[130] 1kmax[173] 1it: 127
+My PE[33/48]: imax[130] 2jmax[129] 3kmax[172] 0it: 255
+My PE[4/48]: imax[129] 0jmax[130] 1kmax[173] 1it: 0
+My PE[8/48]: imax[129] 0jmax[130] 2kmax[171] 2it: 0
+My PE[30/48]: imax[130] 2jmax[130] 2kmax[172] 0it: 255
+My PE[24/48]: imax[130] 2jmax[129] 0kmax[172] 0it: 255
+My PE[31/48]: imax[130] 2jmax[130] 2kmax[173] 1it: 255
+My PE[40/48]: imax[129] 3jmax[130] 1kmax[173] 1it: 383
+My PE[28/48]: imax[130] 2jmax[130] 1kmax[173] 1it: 255
+My PE[9/48]: imax[129] 0jmax[129] 3kmax[172] 0it: 0
+My PE[46/48]: imax[129] 3jmax[129] 3kmax[173] 1it: 383
+My PE[37/48]: imax[129] 3jmax[129] 0kmax[173] 1it: 383
+My PE[13/48]: imax[130] 1jmax[129] 0kmax[173] 1it: 127
+My PE[43/48]: imax[129] 3jmax[130] 2kmax[173] 1it: 383
+My PE[17/48]: imax[130] 1jmax[130] 1kmax[171] 2it: 127
+My PE[25/48]: imax[130] 2jmax[129] 0kmax[173] 1it: 255
+My PE[21/48]: imax[130] 1jmax[129] 3kmax[172] 0it: 127
+My PE[34/48]: imax[130] 2jmax[129] 3kmax[173] 1it: 255
+My PE[5/48]: imax[129] 0jmax[130] 1kmax[171] 2it: 0
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+My PE[32/48]: imax[130] 2jmax[130] 2kmax[171] 2it: 255
+My PE[41/48]: imax[129] 3jmax[130] 1kmax[171] 2it: 383
+My PE[14/48]: imax[130] 1jmax[129] 0kmax[171] 2it: 127
+My PE[38/48]: imax[129] 3jmax[129] 0kmax[171] 2it: 383
+My PE[10/48]: imax[129] 0jmax[129] 3kmax[173] 1it: 0
+My PE[47/48]: imax[129] 3jmax[129] 3kmax[171] 2it: 383
+My PE[29/48]: imax[130] 2jmax[130] 1kmax[171] 2it: 255
+My PE[44/48]: imax[129] 3jmax[130] 2kmax[171] 2it: 383
+My PE[6/48]: imax[129] 0jmax[130] 2kmax[172] 0it: 0
+My PE[22/48]: imax[130] 1jmax[129] 3kmax[173] 1it: 127
+My PE[35/48]: imax[130] 2jmax[129] 3kmax[171] 2it: 255
+My PE[18/48]: imax[130] 1jmax[130] 2kmax[172] 0it: 127
+My PE[26/48]: imax[130] 2jmax[129] 0kmax[171] 2it: 255
+My PE[15/48]: imax[130] 1jmax[130] 1kmax[172] 0it: 127
+My PE[11/48]: imax[129] 0jmax[129] 3kmax[171] 2it: 0
+My PE[7/48]: imax[129] 0jmax[130] 2kmax[173] 1it: 0
+My PE[23/48]: imax[130] 1jmax[129] 3kmax[171] 2it: 127
+My PE[19/48]: imax[130] 1jmax[130] 2kmax[173] 1it: 127
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[3]: cudaSetDevice 1 on [c11u17.build.local]
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+		[1]: cudaSetDevice 1 on [c11u15.build.local]
+		[2]: cudaSetDevice 0 on [c11u15.build.local]
+	***Kernel: 0.800665
+		********iter: 0
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.755789
+		********iter: 0
+	***Kernel: 0.755297
+		********iter: 0
+	***Kernel: 0.754011
+	***Kernel: 0.749061
+		********iter: 0
+		********iter: 0
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+	***Kernel: 0.752756
+		********iter: 0
+	***Kernel: 0.804661
+		********iter: 0
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.752846
+		********iter: 0
+	***Kernel: 0.747322
+		********iter: 0
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+	***Kernel: 0.748176
+		********iter: 0
+	***Kernel: 0.813201
+		********iter: 0
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.750609
+		********iter: 0
+	***Kernel: 0.772829
+		********iter: 0
+	***Kernel: 0.758099
+		********iter: 0
+	***Kernel: 0.765825
+		********iter: 0
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+	***Kernel: 0.75877
+		********iter: 0
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+	***Kernel: 0.808901
+		********iter: 0
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.760836
+		********iter: 0
+	***Kernel: 0.757831
+		********iter: 0
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+	***Kernel: 0.755145
+		********iter: 0
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.79881
+		********iter: 0
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.742313
+		********iter: 0
+	***Kernel: 0.745523
+		********iter: 0
+	***Kernel: 0.765443
+		********iter: 0
+	***Kernel: 0.750639
+		********iter: 0
+	***Kernel: 0.744175
+		********iter: 0
+	***Kernel: 0.795371
+	***Kernel: 0.745685
+		********iter: 0
+		********iter: 0
+	***Kernel: 0.743126
+		********iter: 0
+		###### Migration !!!
+	***Kernel: 0.751481
+		********iter: 0
+		###### Migration !!!
+		###### Migration !!!
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.809406
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		********iter: 0
+		###### Migration !!!
+	***Kernel: 2.88732
+		********iter: 0
+	***Kernel: 2.8709
+		********iter: 0
+		###### Migration !!!
+		###### Migration !!!
+		[3]: cudaSetDevice 1 on [c11u17.build.local]
+	***Kernel: 2.90503
+		********iter: 0
+		###### Migration !!!
+	***Kernel: 2.92779
+		[2]: cudaSetDevice 0 on [c11u15.build.local]
+		********iter: 0
+		[1]: cudaSetDevice 1 on [c11u15.build.local]
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+		###### Migration !!!
+	***Kernel: 0.742729
+		********iter: 0
+		###### Migration !!!
+	***Kernel: 2.86499
+		********iter: 0
+		###### Migration !!!
+	***Kernel: 2.90358
+		********iter: 0
+		###### Migration !!!
+	***Kernel: 2.87103
+		********iter: 0
+		[2]: cudaSetDevice 0 on [c11u15.build.local]
+		###### Migration !!!
+		[3]: cudaSetDevice 1 on [c11u17.build.local]
+	***Kernel: 2.89249
+		********iter: 0
+		[1]: cudaSetDevice 1 on [c11u15.build.local]
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.88111
+		********iter: 0
+		###### Migration !!!
+	***Kernel: 2.86954
+		********iter: 0
+		###### Migration !!!
+		[2]: cudaSetDevice 0 on [c11u15.build.local]
+	***Kernel: 2.88622
+		********iter: 0
+		###### Migration !!!
+		[3]: cudaSetDevice 1 on [c11u17.build.local]
+		[1]: cudaSetDevice 1 on [c11u15.build.local]
+	***Kernel: 2.90934
+		********iter: 0
+		###### Migration !!!
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.84839
+		********iter: 0
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.90969
+		********iter: 0
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.90361
+		********iter: 0
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.92657
+		********iter: 0
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+gosa: 0.001831
+
+CharmLB> RefineLB: PE [0] step 0 starting at 13.764838 Memory: 170347.347656 MB
+CharmLB> RefineLB: PE [0] strategy starting at 13.860917
+		###### Migration !!!
+		###### Migration !!!
+dMinOverload: 1.001000 dMaxOverload: 2.051000
+Testing curOverload 52 = 1.521000 [min,max]= 0, 105
+Testing curOverload 26 = 1.261000 [min,max]= 0, 52
+Testing curOverload 13 = 1.131000 [min,max]= 0, 26
+Testing curOverload 6 = 1.061000 [min,max]= 0, 13
+Testing curOverload 3 = 1.031000 [min,max]= 0, 6
+Testing curOverload 4 = 1.041000 [min,max]= 3, 6
+Testing curOverload 5 = 1.051000 [min,max]= 4, 6
+CharmLB> RefineLB: PE [0] Memory: LBManager: 920 KB CentralLB: 25 KB
+CharmLB> RefineLB: PE [0] #Objects migrating: 13, LBMigrateMsg size: 0.00 MB
+CharmLB> RefineLB: PE [0] strategy finished at 13.860978 duration 0.000061 s
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[1]: cudaSetDevice 1 on [c11u15.build.local]
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+		[2]: cudaSetDevice 0 on [c11u15.build.local]
+		[3]: cudaSetDevice 1 on [c11u17.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		###### Migration !!!
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.804316
+		********iter: 1
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.746995
+		********iter: 1
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.815207
+		********iter: 1
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.746747
+		********iter: 1
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+	***Kernel: 0.810691
+		********iter: 1
+	***Kernel: 0.753244
+		********iter: 1
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+	***Kernel: 0.755009
+		********iter: 1
+	***Kernel: 0.75034
+		********iter: 1
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+	***Kernel: 0.799165
+		********iter: 1
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+	***Kernel: 0.760601
+		********iter: 1
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.752369
+		********iter: 1
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+	***Kernel: 0.750954
+	***Kernel: 0.747527
+		********iter: 1
+		********iter: 1
+	***Kernel: 0.749112
+		********iter: 1
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+	***Kernel: 2.86566
+	***Kernel: 2.87035
+		********iter: 1
+		********iter: 1
+	***Kernel: 2.89195
+		********iter: 1
+		[2]: cudaSetDevice 0 on [c11u15.build.local]
+	***Kernel: 2.90513
+		[1]: cudaSetDevice 1 on [c11u15.build.local]
+		********iter: 1
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+		[3]: cudaSetDevice 1 on [c11u17.build.local]
+	***Kernel: 0.755397
+		********iter: 1
+	***Kernel: 0.80169
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		********iter: 1
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.751905
+		********iter: 1
+	***Kernel: 0.743929
+		********iter: 1
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+	***Kernel: 0.743636
+		********iter: 1
+	***Kernel: 0.751355
+		********iter: 1
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.804707
+		********iter: 1
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.74569
+		********iter: 1
+	***Kernel: 0.750758
+		********iter: 1
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+	***Kernel: 0.752149
+		********iter: 1
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+	***Kernel: 0.747682
+		********iter: 1
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+	***Kernel: 0.82356
+		********iter: 1
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.746932
+		********iter: 1
+	***Kernel: 0.751473
+		********iter: 1
+	***Kernel: 0.7454
+		********iter: 1
+	***Kernel: 0.756006
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		********iter: 1
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+	***Kernel: 0.815907
+		********iter: 1
+CharmLB> RefineLB: PE [0] step 0 finished at 18.292765 duration 4.527927 s
+
+	***Kernel: 0.753726
+		********iter: 1
+	***Kernel: 0.748545
+		********iter: 1
+	***Kernel: 0.746406
+		********iter: 1
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		###### Migration !!!
+	***Kernel: 0.759748
+		********iter: 1
+		###### Migration !!!
+	***Kernel: 0.818399
+		********iter: 1
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.762002
+		********iter: 1
+	***Kernel: 0.749798
+		********iter: 1
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.752271
+		********iter: 1
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.7616
+		********iter: 1
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.84847
+		********iter: 1
+		###### Migration !!!
+	***Kernel: 2.88665
+		********iter: 1
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.87042
+		********iter: 1
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.90892
+		********iter: 1
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+gosa: 766501.250000
+
+CharmLB> RefineLB: PE [0] step 1 starting at 19.835143 Memory: 170518.515625 MB
+CharmLB> RefineLB: PE [0] strategy starting at 19.863154
+dMinOverload: 1.001000 dMaxOverload: 1.401000
+Testing curOverload 20 = 1.201000 [min,max]= 0, 40
+Testing curOverload 30 = 1.301000 [min,max]= 20, 40
+Testing curOverload 35 = 1.351000 [min,max]= 30, 40
+Testing curOverload 37 = 1.371000 [min,max]= 35, 40
+Testing curOverload 38 = 1.381000 [min,max]= 37, 40
+Testing curOverload 39 = 1.391000 [min,max]= 38, 40
+CharmLB> RefineLB: PE [0] Memory: LBManager: 920 KB CentralLB: 22 KB
+CharmLB> RefineLB: PE [0] #Objects migrating: 2, LBMigrateMsg size: 0.00 MB
+CharmLB> RefineLB: PE [0] strategy finished at 19.863193 duration 0.000039 s
+		###### Migration !!!
+		###### Migration !!!
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[3]: cudaSetDevice 1 on [c11u17.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[1]: cudaSetDevice 1 on [c11u15.build.local]
+		[2]: cudaSetDevice 0 on [c11u15.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.746411
+	***Kernel: 0.745527
+	***Kernel: 0.751003
+	***Kernel: 0.751522
+		********iter: 2
+		********iter: 2
+		********iter: 2
+		********iter: 2
+	***Kernel: 0.754492
+	***Kernel: 0.756811
+	***Kernel: 0.758161
+		********iter: 2
+		********iter: 2
+		********iter: 2
+	***Kernel: 0.771872
+		********iter: 2
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+	***Kernel: 0.804742
+		********iter: 2
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.807689
+		********iter: 2
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.743612
+		********iter: 2
+	***Kernel: 0.745492
+		********iter: 2
+	***Kernel: 0.748027
+		********iter: 2
+	***Kernel: 0.753354
+	***Kernel: 0.750966
+		********iter: 2
+	***Kernel: 0.751766
+		********iter: 2
+	***Kernel: 0.755521
+		********iter: 2
+		********iter: 2
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+	***Kernel: 0.758493
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		********iter: 2
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+	***Kernel: 0.8163
+		********iter: 2
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.812039
+		********iter: 2
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.75104
+		********iter: 2
+	***Kernel: 0.754415
+		********iter: 2
+	***Kernel: 0.744537
+	***Kernel: 0.752429
+		********iter: 2
+		********iter: 2
+	***Kernel: 0.751902
+	***Kernel: 0.750365
+		********iter: 2
+		********iter: 2
+	***Kernel: 0.751213
+		********iter: 2
+	***Kernel: 0.748508
+		********iter: 2
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+	***Kernel: 0.799097
+		********iter: 2
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.81197
+		********iter: 2
+	***Kernel: 2.86491
+		********iter: 2
+	***Kernel: 2.86976
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		********iter: 2
+		[2]: cudaSetDevice 0 on [c11u15.build.local]
+	***Kernel: 2.90404
+		********iter: 2
+		[1]: cudaSetDevice 1 on [c11u15.build.local]
+		[3]: cudaSetDevice 1 on [c11u17.build.local]
+		###### Migration !!!
+	***Kernel: 0.74595
+		********iter: 2
+	***Kernel: 0.750643
+		###### Migration !!!
+		********iter: 2
+	***Kernel: 0.766197
+		********iter: 2
+	***Kernel: 0.770989
+		********iter: 2
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.77578
+		********iter: 2
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.808947
+		********iter: 2
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		###### Migration !!!
+	***Kernel: 0.81141
+		********iter: 2
+		###### Migration !!!
+		###### Migration !!!
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		###### Migration !!!
+	***Kernel: 0.754804
+		********iter: 2
+		###### Migration !!!
+		###### Migration !!!
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.812345
+		********iter: 2
+CharmLB> RefineLB: PE [0] step 1 finished at 24.044544 duration 4.209401 s
+
+		###### Migration !!!
+	***Kernel: 0.808439
+		********iter: 2
+		###### Migration !!!
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.771736
+		********iter: 2
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.805313
+		********iter: 2
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.84883
+		********iter: 2
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.88857
+		********iter: 2
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.87054
+		********iter: 2
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+gosa: 388349.125000
+
+CharmLB> RefineLB: PE [0] step 2 starting at 25.712765 Memory: 170528.078125 MB
+CharmLB> RefineLB: PE [0] strategy starting at 25.715081
+dMinOverload: 1.001000 dMaxOverload: 1.511000
+Testing curOverload 25 = 1.251000 [min,max]= 0, 51
+Testing curOverload 38 = 1.381000 [min,max]= 25, 51
+Testing curOverload 44 = 1.441000 [min,max]= 38, 51
+Testing curOverload 47 = 1.471000 [min,max]= 44, 51
+Testing curOverload 49 = 1.491000 [min,max]= 47, 51
+Testing curOverload 50 = 1.501000 [min,max]= 49, 51
+CharmLB> RefineLB: PE [0] Memory: LBManager: 920 KB CentralLB: 22 KB
+CharmLB> RefineLB: PE [0] #Objects migrating: 2, LBMigrateMsg size: 0.00 MB
+CharmLB> RefineLB: PE [0] strategy finished at 25.715139 duration 0.000058 s
+		###### Migration !!!
+		###### Migration !!!
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[1]: cudaSetDevice 1 on [c11u15.build.local]
+		[2]: cudaSetDevice 0 on [c11u15.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+	***Kernel: 0.749051
+	***Kernel: 0.75018
+	***Kernel: 0.746635
+	***Kernel: 0.750081
+	***Kernel: 0.751412
+		********iter: 3
+		********iter: 3
+	***Kernel: 0.751055
+		********iter: 3
+		********iter: 3
+		********iter: 3
+		********iter: 3
+	***Kernel: 0.753464
+		********iter: 3
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.807125
+	***Kernel: 0.80751
+		********iter: 3
+		********iter: 3
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.754601
+		********iter: 3
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+	***Kernel: 0.743561
+	***Kernel: 0.744689
+		********iter: 3
+		********iter: 3
+	***Kernel: 0.750703
+		********iter: 3
+	***Kernel: 0.752496
+	***Kernel: 0.753503
+	***Kernel: 0.75902
+		********iter: 3
+	***Kernel: 0.74958
+		********iter: 3
+		********iter: 3
+		********iter: 3
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.799608
+		********iter: 3
+	***Kernel: 0.809176
+		********iter: 3
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.764058
+		********iter: 3
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+	***Kernel: 0.747051
+		********iter: 3
+	***Kernel: 0.751648
+		********iter: 3
+	***Kernel: 0.748477
+	***Kernel: 0.75526
+		********iter: 3
+	***Kernel: 0.748316
+	***Kernel: 0.751392
+		********iter: 3
+		********iter: 3
+		********iter: 3
+	***Kernel: 0.754032
+		********iter: 3
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.814778
+		********iter: 3
+	***Kernel: 0.807046
+		********iter: 3
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.749194
+		********iter: 3
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+	***Kernel: 2.86494
+		********iter: 3
+	***Kernel: 2.86995
+		********iter: 3
+		[2]: cudaSetDevice 0 on [c11u15.build.local]
+		[1]: cudaSetDevice 1 on [c11u15.build.local]
+	***Kernel: 0.752085
+		********iter: 3
+	***Kernel: 0.751572
+		********iter: 3
+	***Kernel: 0.760342
+	***Kernel: 0.746268
+		********iter: 3
+	***Kernel: 0.759399
+		********iter: 3
+		********iter: 3
+		###### Migration !!!
+		###### Migration !!!
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.811067
+	***Kernel: 0.807172
+		********iter: 3
+		********iter: 3
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.751064
+		********iter: 3
+		###### Migration !!!
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.756993
+		********iter: 3
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.805109
+	***Kernel: 0.806892
+		********iter: 3
+		********iter: 3
+CharmLB> RefineLB: PE [0] step 2 finished at 29.886588 duration 4.173823 s
+
+		###### Migration !!!
+		###### Migration !!!
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.745753
+		********iter: 3
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.775288
+		********iter: 3
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.813161
+		********iter: 3
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.84755
+		********iter: 3
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.88585
+		********iter: 3
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+gosa: 234476.046875
+
+CharmLB> RefineLB: PE [0] step 3 starting at 31.548543 Memory: 170537.578125 MB
+CharmLB> RefineLB: PE [0] strategy starting at 31.551021
+dMinOverload: 1.001000 dMaxOverload: 1.591000
+Testing curOverload 29 = 1.291000 [min,max]= 0, 59
+Testing curOverload 44 = 1.441000 [min,max]= 29, 59
+Testing curOverload 51 = 1.511000 [min,max]= 44, 59
+Testing curOverload 55 = 1.551000 [min,max]= 51, 59
+Testing curOverload 57 = 1.571000 [min,max]= 55, 59
+Testing curOverload 58 = 1.581000 [min,max]= 57, 59
+CharmLB> RefineLB: PE [0] Memory: LBManager: 920 KB CentralLB: 21 KB
+CharmLB> RefineLB: PE [0] #Objects migrating: 2, LBMigrateMsg size: 0.00 MB
+CharmLB> RefineLB: PE [0] strategy finished at 31.551066 duration 0.000045 s
+		###### Migration !!!
+		###### Migration !!!
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[2]: cudaSetDevice 0 on [c11u15.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+	***Kernel: 0.742329
+	***Kernel: 0.748834
+		********iter: 4
+	***Kernel: 0.749508
+	***Kernel: 0.749366
+	***Kernel: 0.749596
+		********iter: 4
+		********iter: 4
+		********iter: 4
+		********iter: 4
+	***Kernel: 0.751661
+	***Kernel: 0.756309
+		********iter: 4
+		********iter: 4
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+	***Kernel: 0.802893
+		********iter: 4
+	***Kernel: 0.80777
+		********iter: 4
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.748186
+		********iter: 4
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+	***Kernel: 0.74652
+		********iter: 4
+	***Kernel: 0.748738
+	***Kernel: 0.748036
+		********iter: 4
+		********iter: 4
+	***Kernel: 0.759226
+		********iter: 4
+	***Kernel: 0.76018
+	***Kernel: 0.75534
+		********iter: 4
+		********iter: 4
+	***Kernel: 0.765747
+		********iter: 4
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+	***Kernel: 0.799861
+		********iter: 4
+	***Kernel: 0.809929
+		********iter: 4
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.745823
+		********iter: 4
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+	***Kernel: 0.752359
+		********iter: 4
+	***Kernel: 0.753421
+	***Kernel: 0.748343
+	***Kernel: 0.744684
+		********iter: 4
+	***Kernel: 0.753574
+		********iter: 4
+	***Kernel: 0.743732
+		********iter: 4
+		********iter: 4
+		********iter: 4
+	***Kernel: 0.752071
+		********iter: 4
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+	***Kernel: 0.800606
+		********iter: 4
+	***Kernel: 0.813579
+		********iter: 4
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.751758
+		********iter: 4
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+	***Kernel: 2.86558
+		********iter: 4
+		[2]: cudaSetDevice 0 on [c11u15.build.local]
+	***Kernel: 0.753931
+		********iter: 4
+	***Kernel: 0.744303
+		********iter: 4
+	***Kernel: 0.760634
+		********iter: 4
+	***Kernel: 0.759825
+	***Kernel: 0.75212
+		********iter: 4
+		********iter: 4
+	***Kernel: 0.776362
+		********iter: 4
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		###### Migration !!!
+	***Kernel: 0.806941
+		********iter: 4
+	***Kernel: 0.819115
+		********iter: 4
+		###### Migration !!!
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.748245
+		********iter: 4
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.747222
+		********iter: 4
+		###### Migration !!!
+	***Kernel: 0.743793
+		********iter: 4
+		###### Migration !!!
+		###### Migration !!!
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.805126
+		********iter: 4
+CharmLB> RefineLB: PE [0] step 3 finished at 35.713317 duration 4.164774 s
+
+	***Kernel: 0.80722
+		********iter: 4
+		###### Migration !!!
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.770806
+		********iter: 4
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.753627
+		********iter: 4
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.810843
+		********iter: 4
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.84878
+		********iter: 4
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+gosa: 153282.515625
+
+CharmLB> RefineLB: PE [0] step 4 starting at 37.338282 Memory: 170545.546875 MB
+CharmLB> RefineLB: PE [0] strategy starting at 37.340945
+dMinOverload: 1.001000 dMaxOverload: 1.741000
+Testing curOverload 37 = 1.371000 [min,max]= 0, 74
+Testing curOverload 55 = 1.551000 [min,max]= 37, 74
+Testing curOverload 64 = 1.641000 [min,max]= 55, 74
+Testing curOverload 69 = 1.691000 [min,max]= 64, 74
+Testing curOverload 71 = 1.711000 [min,max]= 69, 74
+Testing curOverload 72 = 1.721000 [min,max]= 71, 74
+Testing curOverload 73 = 1.731000 [min,max]= 72, 74
+CharmLB> RefineLB: PE [0] Memory: LBManager: 920 KB CentralLB: 21 KB
+CharmLB> RefineLB: PE [0] #Objects migrating: 2, LBMigrateMsg size: 0.00 MB
+CharmLB> RefineLB: PE [0] strategy finished at 37.341004 duration 0.000059 s
+		###### Migration !!!
+		###### Migration !!!
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+	***Kernel: 0.748286
+	***Kernel: 0.744509
+		********iter: 5
+		********iter: 5
+	***Kernel: 0.74954
+	***Kernel: 0.754005
+	***Kernel: 0.754675
+		********iter: 5
+		********iter: 5
+	***Kernel: 0.756815
+		********iter: 5
+		********iter: 5
+	***Kernel: 0.770574
+		********iter: 5
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+	***Kernel: 0.803549
+	***Kernel: 0.806733
+		********iter: 5
+		********iter: 5
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.750326
+		********iter: 5
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+	***Kernel: 0.747172
+		********iter: 5
+	***Kernel: 0.748033
+		********iter: 5
+	***Kernel: 0.751054
+	***Kernel: 0.750728
+	***Kernel: 0.753682
+		********iter: 5
+		********iter: 5
+		********iter: 5
+	***Kernel: 0.755488
+	***Kernel: 0.743309
+		********iter: 5
+		********iter: 5
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+	***Kernel: 0.796534
+		********iter: 5
+	***Kernel: 0.815789
+		********iter: 5
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.754487
+		********iter: 5
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+	***Kernel: 0.748904
+		********iter: 5
+	***Kernel: 0.749268
+	***Kernel: 0.752057
+	***Kernel: 0.750701
+		********iter: 5
+	***Kernel: 0.753271
+		********iter: 5
+	***Kernel: 0.744838
+		********iter: 5
+		********iter: 5
+		********iter: 5
+	***Kernel: 0.751919
+		********iter: 5
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+	***Kernel: 0.812312
+		********iter: 5
+	***Kernel: 0.799058
+		********iter: 5
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.748096
+		********iter: 5
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+	***Kernel: 0.754591
+		********iter: 5
+	***Kernel: 0.743422
+	***Kernel: 0.751182
+		********iter: 5
+		********iter: 5
+	***Kernel: 0.753259
+		********iter: 5
+	***Kernel: 0.753437
+		********iter: 5
+	***Kernel: 0.75995
+		********iter: 5
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.80374
+		********iter: 5
+	***Kernel: 0.813451
+		********iter: 5
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		###### Migration !!!
+	***Kernel: 0.772357
+		********iter: 5
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		###### Migration !!!
+	***Kernel: 0.743766
+		********iter: 5
+		###### Migration !!!
+	***Kernel: 0.749446
+		********iter: 5
+		###### Migration !!!
+	***Kernel: 0.769595
+		********iter: 5
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.8102
+	***Kernel: 0.805844
+		********iter: 5
+		********iter: 5
+CharmLB> RefineLB: PE [0] step 4 finished at 41.509700 duration 4.171418 s
+
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.746462
+		********iter: 5
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.758565
+		********iter: 5
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.812048
+		********iter: 5
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.74295
+		********iter: 5
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+gosa: 109547.171875
+		###### Migration !!!
+		###### Migration !!!
+
+CharmLB> RefineLB: PE [0] step 5 starting at 42.468853 Memory: 170554.929688 MB
+CharmLB> RefineLB: PE [0] strategy starting at 42.471872
+dMinOverload: 1.001000 dMaxOverload: 1.661000
+Testing curOverload 33 = 1.331000 [min,max]= 0, 66
+Testing curOverload 49 = 1.491000 [min,max]= 33, 66
+Testing curOverload 57 = 1.571000 [min,max]= 49, 66
+Testing curOverload 61 = 1.611000 [min,max]= 57, 66
+Testing curOverload 63 = 1.631000 [min,max]= 61, 66
+Testing curOverload 64 = 1.641000 [min,max]= 63, 66
+Testing curOverload 65 = 1.651000 [min,max]= 64, 66
+CharmLB> RefineLB: PE [0] Memory: LBManager: 920 KB CentralLB: 21 KB
+CharmLB> RefineLB: PE [0] #Objects migrating: 6, LBMigrateMsg size: 0.00 MB
+CharmLB> RefineLB: PE [0] strategy finished at 42.471915 duration 0.000043 s
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.74949
+	***Kernel: 0.750122
+		********iter: 6
+	***Kernel: 0.751706
+	***Kernel: 0.748025
+	***Kernel: 0.748329
+		********iter: 6
+		********iter: 6
+	***Kernel: 0.754676
+	***Kernel: 0.754666
+		********iter: 6
+		********iter: 6
+		********iter: 6
+	***Kernel: 0.757941
+		********iter: 6
+		********iter: 6
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		###### Migration !!!
+	***Kernel: 0.804643
+		********iter: 6
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+	***Kernel: 0.744026
+		********iter: 6
+	***Kernel: 0.742734
+		********iter: 6
+	***Kernel: 0.74861
+	***Kernel: 0.750824
+	***Kernel: 0.75329
+		********iter: 6
+	***Kernel: 0.749526
+		********iter: 6
+	***Kernel: 0.75761
+		********iter: 6
+		********iter: 6
+	***Kernel: 0.754706
+		********iter: 6
+		********iter: 6
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.815507
+		********iter: 6
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.7514
+		********iter: 6
+	***Kernel: 0.750247
+		********iter: 6
+	***Kernel: 0.750302
+	***Kernel: 0.748631
+	***Kernel: 0.748342
+	***Kernel: 0.747243
+		********iter: 6
+	***Kernel: 0.753908
+		********iter: 6
+		********iter: 6
+		********iter: 6
+		********iter: 6
+	***Kernel: 0.756823
+		********iter: 6
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.799358
+		********iter: 6
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.752482
+		********iter: 6
+	***Kernel: 0.765739
+	***Kernel: 0.754168
+	***Kernel: 0.751024
+	***Kernel: 0.75402
+		********iter: 6
+		********iter: 6
+		********iter: 6
+		********iter: 6
+	***Kernel: 0.759709
+		********iter: 6
+	***Kernel: 0.746934
+		********iter: 6
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.806914
+		********iter: 6
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.746153
+		********iter: 6
+		###### Migration !!!
+	***Kernel: 0.747918
+	***Kernel: 0.757226
+		********iter: 6
+		********iter: 6
+	***Kernel: 0.756094
+		********iter: 6
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		###### Migration !!!
+	***Kernel: 2.8812
+		********iter: 6
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+		###### Migration !!!
+	***Kernel: 0.80277
+		********iter: 6
+CharmLB> RefineLB: PE [0] step 5 finished at 46.637525 duration 4.168672 s
+
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.739221
+		********iter: 6
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.754358
+		********iter: 6
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.84857
+		********iter: 6
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.92628
+		********iter: 6
+		###### Migration !!!
+		###### Migration !!!
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+		###### Migration !!!
+	***Kernel: 2.92627
+		********iter: 6
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+	***Kernel: 2.89284
+		********iter: 6
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+	***Kernel: 2.91033
+		********iter: 6
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+gosa: 82041.570312
+
+CharmLB> RefineLB: PE [0] step 6 starting at 49.564707 Memory: 170564.308594 MB
+CharmLB> RefineLB: PE [0] strategy starting at 61.238811
+dMinOverload: 1.001000 dMaxOverload: 4.531000
+Testing curOverload 176 = 2.761000 [min,max]= 0, 353
+Testing curOverload 264 = 3.641000 [min,max]= 176, 353
+Testing curOverload 308 = 4.081000 [min,max]= 264, 353
+Testing curOverload 330 = 4.301000 [min,max]= 308, 353
+Testing curOverload 341 = 4.411000 [min,max]= 330, 353
+Testing curOverload 347 = 4.471000 [min,max]= 341, 353
+Testing curOverload 350 = 4.501000 [min,max]= 347, 353
+Testing curOverload 351 = 4.511000 [min,max]= 350, 353
+Testing curOverload 352 = 4.521000 [min,max]= 351, 353
+CharmLB> RefineLB: PE [0] Memory: LBManager: 920 KB CentralLB: 21 KB
+CharmLB> RefineLB: PE [0] #Objects migrating: 6, LBMigrateMsg size: 0.00 MB
+CharmLB> RefineLB: PE [0] strategy finished at 61.238877 duration 0.000066 s
+		###### Migration !!!
+		###### Migration !!!
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.746979
+	***Kernel: 0.74657
+	***Kernel: 0.749372
+		********iter: 7
+	***Kernel: 0.746597
+		********iter: 7
+		********iter: 7
+	***Kernel: 0.750817
+	***Kernel: 0.750798
+		********iter: 7
+		********iter: 7
+		********iter: 7
+	***Kernel: 0.755537
+	***Kernel: 0.752034
+		********iter: 7
+		********iter: 7
+		###### Migration !!!
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+	***Kernel: 0.803912
+		********iter: 7
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.744415
+		********iter: 7
+	***Kernel: 0.745431
+		********iter: 7
+	***Kernel: 0.748814
+	***Kernel: 0.750969
+	***Kernel: 0.755648
+		********iter: 7
+		********iter: 7
+	***Kernel: 0.757572
+		********iter: 7
+	***Kernel: 0.750804
+		********iter: 7
+	***Kernel: 0.750922
+		********iter: 7
+		********iter: 7
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+	***Kernel: 0.815507
+		********iter: 7
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.807307
+		********iter: 7
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.751376
+		********iter: 7
+	***Kernel: 0.745459
+	***Kernel: 0.745949
+	***Kernel: 0.753228
+		********iter: 7
+		********iter: 7
+	***Kernel: 0.747323
+		********iter: 7
+	***Kernel: 0.754275
+		********iter: 7
+	***Kernel: 0.744861
+		********iter: 7
+		********iter: 7
+	***Kernel: 0.754854
+		********iter: 7
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.797528
+		********iter: 7
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.799667
+		********iter: 7
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.744323
+		********iter: 7
+	***Kernel: 0.754231
+		********iter: 7
+	***Kernel: 0.752776
+	***Kernel: 0.755587
+	***Kernel: 0.750096
+		********iter: 7
+		********iter: 7
+		********iter: 7
+	***Kernel: 0.748648
+		********iter: 7
+	***Kernel: 0.772056
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		********iter: 7
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+	***Kernel: 0.815289
+		********iter: 7
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.811584
+		********iter: 7
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.755447
+		********iter: 7
+	***Kernel: 0.746036
+		********iter: 7
+		###### Migration !!!
+	***Kernel: 0.747563
+		********iter: 7
+		###### Migration !!!
+	***Kernel: 0.756912
+		********iter: 7
+		###### Migration !!!
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[7]: cudaSetDevice 1 on [c11u21.build.local]
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.819673
+		********iter: 7
+CharmLB> RefineLB: PE [0] step 6 finished at 65.430417 duration 15.865710 s
+
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.810566
+		********iter: 7
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.743895
+		********iter: 7
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.764431
+		********iter: 7
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.804643
+		********iter: 7
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.806602
+		********iter: 7
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+gosa: 64119.960938
+
+CharmLB> RefineLB: PE [0] step 7 starting at 65.978139 Memory: 170573.691406 MB
+CharmLB> RefineLB: PE [0] strategy starting at 67.307051
+dMinOverload: 1.001000 dMaxOverload: 1.661000
+Testing curOverload 33 = 1.331000 [min,max]= 0, 66
+Testing curOverload 49 = 1.491000 [min,max]= 33, 66
+Testing curOverload 57 = 1.571000 [min,max]= 49, 66
+Testing curOverload 61 = 1.611000 [min,max]= 57, 66
+Testing curOverload 63 = 1.631000 [min,max]= 61, 66
+Testing curOverload 64 = 1.641000 [min,max]= 63, 66
+Testing curOverload 65 = 1.651000 [min,max]= 64, 66
+CharmLB> RefineLB: PE [0] Memory: LBManager: 920 KB CentralLB: 21 KB
+CharmLB> RefineLB: PE [0] #Objects migrating: 6, LBMigrateMsg size: 0.00 MB
+CharmLB> RefineLB: PE [0] strategy finished at 67.307093 duration 0.000042 s
+		###### Migration !!!
+		###### Migration !!!
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.745851
+	***Kernel: 0.750114
+	***Kernel: 0.748033
+	***Kernel: 0.751404
+		********iter: 8
+		********iter: 8
+	***Kernel: 0.753873
+		********iter: 8
+		********iter: 8
+	***Kernel: 0.755965
+		********iter: 8
+	***Kernel: 0.758127
+		********iter: 8
+		********iter: 8
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+	***Kernel: 0.805007
+		********iter: 8
+		###### Migration !!!
+	***Kernel: 0.822003
+		********iter: 8
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+	***Kernel: 0.743021
+	***Kernel: 0.746047
+		********iter: 8
+		********iter: 8
+	***Kernel: 0.749523
+		********iter: 8
+	***Kernel: 0.755297
+	***Kernel: 0.753779
+	***Kernel: 0.759502
+		********iter: 8
+		********iter: 8
+		********iter: 8
+	***Kernel: 0.765991
+		********iter: 8
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+	***Kernel: 0.814742
+		********iter: 8
+	***Kernel: 0.80992
+		********iter: 8
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.749837
+		********iter: 8
+	***Kernel: 0.752816
+		********iter: 8
+	***Kernel: 0.751129
+	***Kernel: 0.747654
+	***Kernel: 0.751738
+	***Kernel: 0.749563
+		********iter: 8
+		********iter: 8
+	***Kernel: 0.74876
+		********iter: 8
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		********iter: 8
+		********iter: 8
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+	***Kernel: 0.799743
+		********iter: 8
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.818779
+		********iter: 8
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.767769
+		********iter: 8
+	***Kernel: 0.752821
+		********iter: 8
+	***Kernel: 0.750593
+		********iter: 8
+	***Kernel: 0.743756
+	***Kernel: 0.745409
+		********iter: 8
+		********iter: 8
+	***Kernel: 0.772091
+		********iter: 8
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.804827
+		********iter: 8
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.813728
+		********iter: 8
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.75202
+	***Kernel: 0.743242
+		********iter: 8
+		********iter: 8
+		###### Migration !!!
+	***Kernel: 0.749335
+		********iter: 8
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.90948
+		********iter: 8
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.799262
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+		********iter: 8
+		###### Migration !!!
+CharmLB> RefineLB: PE [0] step 7 finished at 71.464320 duration 5.486181 s
+
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.80621
+		********iter: 8
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.762938
+		********iter: 8
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.806055
+		********iter: 8
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 2.92655
+		********iter: 8
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+		###### Migration !!!
+	***Kernel: 2.89201
+		********iter: 8
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+		###### Migration !!!
+	***Kernel: 2.90285
+		********iter: 8
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+	***Kernel: 2.86431
+		********iter: 8
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[4]: cudaSetDevice 0 on [c11u17.build.local]
+		###### Migration !!!
+	***Kernel: 2.8468
+		********iter: 8
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+gosa: 51719.132812
+
+CharmLB> RefineLB: PE [0] step 8 starting at 86.037219 Memory: 170583.988281 MB
+CharmLB> RefineLB: PE [0] strategy starting at 86.043496
+dMinOverload: 1.001000 dMaxOverload: 4.471000
+Testing curOverload 173 = 2.731000 [min,max]= 0, 347
+Testing curOverload 260 = 3.601000 [min,max]= 173, 347
+Testing curOverload 303 = 4.031000 [min,max]= 260, 347
+Testing curOverload 325 = 4.251000 [min,max]= 303, 347
+Testing curOverload 336 = 4.361000 [min,max]= 325, 347
+Testing curOverload 341 = 4.411000 [min,max]= 336, 347
+Testing curOverload 344 = 4.441000 [min,max]= 341, 347
+Testing curOverload 345 = 4.451000 [min,max]= 344, 347
+Testing curOverload 346 = 4.461000 [min,max]= 345, 347
+CharmLB> RefineLB: PE [0] Memory: LBManager: 920 KB CentralLB: 21 KB
+CharmLB> RefineLB: PE [0] #Objects migrating: 6, LBMigrateMsg size: 0.00 MB
+CharmLB> RefineLB: PE [0] strategy finished at 86.043570 duration 0.000074 s
+		###### Migration !!!
+		###### Migration !!!
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.746198
+		********iter: 9
+	***Kernel: 0.7483
+		********iter: 9
+	***Kernel: 0.745802
+		********iter: 9
+	***Kernel: 0.75177
+	***Kernel: 0.755751
+		********iter: 9
+		********iter: 9
+	***Kernel: 0.760711
+		********iter: 9
+		###### Migration !!!
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+	***Kernel: 0.805861
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		********iter: 9
+	***Kernel: 0.812401
+		********iter: 9
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		###### Migration !!!
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+	***Kernel: 0.744181
+		********iter: 9
+	***Kernel: 0.751072
+		********iter: 9
+	***Kernel: 0.748279
+		********iter: 9
+	***Kernel: 0.752759
+	***Kernel: 0.752518
+	***Kernel: 0.758435
+		********iter: 9
+		********iter: 9
+		********iter: 9
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+	***Kernel: 0.808112
+		********iter: 9
+	***Kernel: 0.814653
+		********iter: 9
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.75257
+		********iter: 9
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+	***Kernel: 0.749757
+	***Kernel: 0.747931
+		********iter: 9
+		********iter: 9
+	***Kernel: 0.744763
+	***Kernel: 0.754359
+	***Kernel: 0.746215
+		********iter: 9
+		********iter: 9
+		********iter: 9
+	***Kernel: 0.753063
+		********iter: 9
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+		[11]: cudaSetDevice 0 on [c12u13.build.local]
+		[6]: cudaSetDevice 0 on [c11u19.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		[10]: cudaSetDevice 0 on [c12u11.build.local]
+	***Kernel: 0.813191
+		********iter: 9
+	***Kernel: 0.799124
+		********iter: 9
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+	***Kernel: 0.746847
+		********iter: 9
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+	***Kernel: 0.751313
+		********iter: 9
+	***Kernel: 0.765459
+	***Kernel: 0.744478
+		********iter: 9
+		********iter: 9
+	***Kernel: 0.750393
+		********iter: 9
+	***Kernel: 0.758256
+		********iter: 9
+		[12]: cudaSetDevice 0 on [c12u15.build.local]
+	***Kernel: 0.766005
+		********iter: 9
+		[9]: cudaSetDevice 0 on [c12u9.build.local]
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+	***Kernel: 0.810125
+		********iter: 9
+	***Kernel: 0.819068
+		********iter: 9
+		[0]: cudaSetDevice 0 on [c11u13.build.local]
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+	***Kernel: 0.751612
+		********iter: 9
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+	***Kernel: 0.746971
+		********iter: 9
+	***Kernel: 0.747368
+		********iter: 9
+	***Kernel: 0.757607
+		********iter: 9
+		[5]: cudaSetDevice 1 on [c11u19.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.80408
+		********iter: 9
+CharmLB> RefineLB: PE [0] step 8 finished at 90.224762 duration 4.187543 s
+
+	***Kernel: 0.806154
+		********iter: 9
+		[13]: cudaSetDevice 0 on [c11u11.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.747024
+		********iter: 9
+		###### Migration !!!
+		###### Migration !!!
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+	***Kernel: 0.759246
+		********iter: 9
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.808619
+		********iter: 9
+		###### Migration !!!
+	***Kernel: 0.750618
+		********iter: 9
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.74605
+		********iter: 9
+		###### Migration !!!
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+		###### Migration !!!
+		###### Migration !!!
+	***Kernel: 0.772127
+		********iter: 9
+		###### Migration !!!
+		###### Migration !!!
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+	***Kernel: 0.755824
+		********iter: 9
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		[8]: cudaSetDevice 0 on [c11u21.build.local]
+	***Kernel: 0.74427
+		###### Migration !!!
+		********iter: 9
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+gosa: 42101.375000
+
+CharmLB> RefineLB: PE [0] step 9 starting at 94.615133 Memory: 170594.824219 MB
+CharmLB> RefineLB: PE [0] strategy starting at 94.624023
+dMinOverload: 1.001000 dMaxOverload: 2.471000
+Testing curOverload 73 = 1.731000 [min,max]= 0, 147
+Testing curOverload 110 = 2.101000 [min,max]= 73, 147
+Testing curOverload 128 = 2.281000 [min,max]= 110, 147
+Testing curOverload 137 = 2.371000 [min,max]= 128, 147
+Testing curOverload 142 = 2.421000 [min,max]= 137, 147
+Testing curOverload 144 = 2.441000 [min,max]= 142, 147
+Testing curOverload 145 = 2.451000 [min,max]= 144, 147
+Testing curOverload 146 = 2.461000 [min,max]= 145, 147
+CharmLB> RefineLB: PE [0] Memory: LBManager: 920 KB CentralLB: 21 KB
+CharmLB> RefineLB: PE [0] #Objects migrating: 9, LBMigrateMsg size: 0.00 MB
+CharmLB> RefineLB: PE [0] strategy finished at 94.624070 duration 0.000047 s
+		###### Migration !!!
+		###### Migration !!!
+CharmLB> RefineLB: PE [0] step 9 finished at 94.626557 duration 0.011424 s
+
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+		###### Migration !!!
+Time: 94.926648

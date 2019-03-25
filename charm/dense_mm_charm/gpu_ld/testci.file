@@ -1,0 +1,21 @@
+mainmodule matmul {
+    include "matmul.h";
+    readonly CProxy_Main mainProxy;
+    mainchare Main {
+        entry Main(CkArgMsg *m);
+        entry void done();
+    };
+
+    array [1D] Data{
+        entry Data(PRECISION inidataA[height*width], PRECISION inidataB[width*height], int wheight, int wwidth, int height, int width, int peset, int workportion, int iternum_);
+        entry void print_info();        
+        entry void matRun() {
+            atomic {
+                print_info();
+            }
+
+        };
+    };
+
+};
+

@@ -1,0 +1,18 @@
+mainmodule nw {
+    readonly CProxy_Main mainProxy;
+    mainchare Main {
+        entry Main(CkArgMsg *m);
+        entry void done();
+    };
+    include "nw.h";
+    array [1D] Data{
+        entry Data(_CONF_ config, int penum_);
+        entry void doWork();
+        entry void nwRun() {
+            atomic {
+                doWork();
+            }
+        };
+    };
+};
+

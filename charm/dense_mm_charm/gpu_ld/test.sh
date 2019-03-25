@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+#TEMPSBATCH -p GPU -N 10
+#SBATCH -p GPU -w "c11u11 c11u13 c11u19 c11u21 c12u9 c12u11 c12u13 c12u15 c11u15 c11u17"
+
+echo $SLURM_NODELIST
+
+export SLURM_NODELIST="c11u11,c11u13,c11u19,c11u21,c12u9,c12u11,c12u13,c12u15,c11u15,c11u17"
+echo $SLURM_NODELIST

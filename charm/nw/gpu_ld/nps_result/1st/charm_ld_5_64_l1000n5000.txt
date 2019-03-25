@@ -1,0 +1,4428 @@
+Charm++> Running on MPI version: 3.1
+Charm++> level of thread support used: MPI_THREAD_SINGLE (desired: MPI_THREAD_SINGLE)
+Charm++> Running in non-SMP mode: numPes 64
+Converse/Charm++ Commit ID: v6.8.0-beta1-281-g9823be9
+Warning> Randomization of virtual memory (ASLR) is turned on in the kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try running with '+isomalloc_sync'.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 4 unique compute nodes (16-way SMP).
+Charm++> cpu topology info is gathered in 0.097 seconds.
+[0] GreedyLB created
+flag0!
+flag1!
+==============================================
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+Error: line 256 out of memory
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+Error: line 256 out of memory
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+Error: line 256 out of memory
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+Error: line 256 out of memory
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+Error: line 256 out of memory
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+Error: line 256 out of memory
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 0.514495
+			----kernel: 0.514878
+			----kernel: 1.02928
+			----kernel: 1.54372
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+			----kernel: 2.05812
+			----kernel: 2.57257
+			----kernel: 3.08698
+			----kernel: 3.6014
+			----kernel: 4.11583
+			----kernel: 4.63023
+Error: line 217 an illegal memory access was encountered
+			----kernel: 4.65095
+Error: line 332 an illegal memory access was encountered
+Error: line 334 an illegal memory access was encountered
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 4.64956
+Error: line 332 an illegal memory access was encountered
+Error: line 334 an illegal memory access was encountered
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 4.65025
+Error: line 332 an illegal memory access was encountered
+Error: line 334 an illegal memory access was encountered
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 4.65927
+Error: line 332 an illegal memory access was encountered
+Error: line 334 an illegal memory access was encountered
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 4.66001
+Error: line 332 an illegal memory access was encountered
+Error: line 334 an illegal memory access was encountered
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 4.68941
+Error: line 332 an illegal memory access was encountered
+Error: line 334 an illegal memory access was encountered
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 0.962758
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 2.23144
+			----kernel: 0.286503
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 2.4427
+			----kernel: 2.4454
+			----kernel: 2.47714
+			----kernel: 0.254917
+			----kernel: 2.50209
+			----kernel: 2.49429
+			----kernel: 2.52984
+			----kernel: 2.51205
+			----kernel: 2.5318
+			----kernel: 2.52013
+			----kernel: 2.51065
+			----kernel: 2.51217
+			----kernel: 2.51146
+			----kernel: 2.49765
+			----kernel: 2.49888
+			----kernel: 2.49354
+			----kernel: 0.509706
+			----kernel: 0.96263
+			----kernel: 0.255263
+			----kernel: 0.509964
+			----kernel: 0.764858
+			----kernel: 1.01968
+			----kernel: 1.92502
+			----kernel: 1.27434
+			----kernel: 1.52931
+			----kernel: 1.78411
+			----kernel: 2.03895
+			----kernel: 0.96327
+			----kernel: 2.29387
+			----kernel: 2.54859
+			----kernel: 2.8034
+			----kernel: 1.92572
+			----kernel: 3.0582
+			----kernel: 3.31313
+			----kernel: 2.88813
+			----kernel: 3.85067
+			----kernel: 4.81313
+			----kernel: 5.77558
+			----kernel: 6.73793
+			----kernel: 7.70041
+			----kernel: 8.66288
+			----kernel: 9.62549
+			----kernel: 10.5879
+			----kernel: 11.5503
+			----kernel: 12.5128
+Resume iteration at step 0
+Element 0 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 2 pause for LB on PE 2
+Element 15 pause for LB on PE 15
+Element 6 pause for LB on PE 6
+Element 13 pause for LB on PE 13
+Element 14 pause for LB on PE 14
+Element 10 pause for LB on PE 10
+Element 8 pause for LB on PE 8
+Element 3 pause for LB on PE 3
+Element 11 pause for LB on PE 11
+Element 5 pause for LB on PE 5
+Element 12 pause for LB on PE 12
+Element 4 pause for LB on PE 4
+Element 7 pause for LB on PE 7
+Element 45 pause for LB on PE 45
+Element 16 pause for LB on PE 16
+Element 34 pause for LB on PE 34
+Element 51 pause for LB on PE 51
+Element 36 pause for LB on PE 36
+Element 29 pause for LB on PE 29
+Element 57 pause for LB on PE 57
+Element 33 pause for LB on PE 33
+Element 30 pause for LB on PE 30
+Element 50 pause for LB on PE 50
+Element 46 pause for LB on PE 46
+Element 26 pause for LB on PE 26
+Element 56 pause for LB on PE 56
+Element 44 pause for LB on PE 44
+Element 23 pause for LB on PE 23
+Element 61 pause for LB on PE 61
+Element 42 pause for LB on PE 42
+Element 20 pause for LB on PE 20
+Element 48 pause for LB on PE 48
+Element 43 pause for LB on PE 43
+Element 31 pause for LB on PE 31
+Element 58 pause for LB on PE 58
+Element 41 pause for LB on PE 41
+Element 21 pause for LB on PE 21
+Element 52 pause for LB on PE 52
+Element 35 pause for LB on PE 35
+Element 24 pause for LB on PE 24
+Element 63 pause for LB on PE 63
+Element 47 pause for LB on PE 47
+Element 18 pause for LB on PE 18
+Element 59 pause for LB on PE 59
+Element 17 pause for LB on PE 17
+Element 53 pause for LB on PE 53
+Element 22 pause for LB on PE 22
+Element 49 pause for LB on PE 49
+Element 32 pause for LB on PE 32
+Element 28 pause for LB on PE 28
+Element 54 pause for LB on PE 54
+Element 19 pause for LB on PE 19
+Element 60 pause for LB on PE 60
+Element 25 pause for LB on PE 25
+Element 55 pause for LB on PE 55
+Element 27 pause for LB on PE 27
+Element 62 pause for LB on PE 62
+Element 9 pause for LB on PE 9
+Element 37 pause for LB on PE 37
+Element 38 pause for LB on PE 38
+Element 39 pause for LB on PE 39
+Element 40 pause for LB on PE 40
+Resume iteration at step 1
+cuda0
+cuda0
+cuda0
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.40667e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.5974e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 2.19345e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.3113e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.19209e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.40667e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 5: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 2: 52104052
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 0.297819
+			----kernel: 0.514454
+			----kernel: 0.557579
+			----kernel: 0.254052
+			----kernel: 0.962616
+			----kernel: 0.514728
+			----kernel: 0.253895
+			----kernel: 0.507293
+			----kernel: 1.02913
+			----kernel: 0.760665
+			----kernel: 1.01411
+			----kernel: 1.92559
+			----kernel: 1.54357
+			----kernel: 1.26751
+			----kernel: 1.52091
+			----kernel: 2.44088
+			----kernel: 2.05797
+			----kernel: 2.5759
+			----kernel: 1.77432
+			----kernel: 2.5769
+			----kernel: 2.57781
+			----kernel: 2.57885
+			----kernel: 2.5799
+			----kernel: 2.58091
+			----kernel: 2.58192
+			----kernel: 2.58291
+			----kernel: 2.58177
+			----kernel: 2.58277
+			----kernel: 2.58389
+			----kernel: 2.58489
+			----kernel: 2.58588
+			----kernel: 2.58689
+			----kernel: 2.58789
+			----kernel: 2.02774
+			----kernel: 1.92549
+			----kernel: 2.57241
+			----kernel: 2.28118
+			----kernel: 2.53461
+			----kernel: 3.08681
+			----kernel: 2.78806
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 0.963126
+			----kernel: 3.04143
+			----kernel: 3.60125
+			----kernel: 0.254975
+			----kernel: 3.60119
+			----kernel: 1.92558
+			----kernel: 4.11564
+			----kernel: 2.888
+			----kernel: 3.85033
+			----kernel: 4.81273
+			----kernel: 5.77507
+			----kernel: 6.73748
+			----kernel: 7.69984
+			----kernel: 8.66243
+			----kernel: 9.62497
+			----kernel: 10.5874
+			----kernel: 11.5497
+			----kernel: 12.5121
+Resume iteration at step 1
+Element 25 pause for LB on PE 0
+Element 21 pause for LB on PE 2
+Element 19 pause for LB on PE 10
+Element 47 pause for LB on PE 3
+Element 26 pause for LB on PE 4
+Element 42 pause for LB on PE 15
+Element 35 pause for LB on PE 9
+Element 38 pause for LB on PE 12
+Element 37 pause for LB on PE 14
+Element 33 pause for LB on PE 11
+Element 52 pause for LB on PE 18
+Element 45 pause for LB on PE 13
+Element 28 pause for LB on PE 16
+Element 54 pause for LB on PE 49
+Element 2 pause for LB on PE 17
+Element 49 pause for LB on PE 39
+Element 23 pause for LB on PE 20
+Element 61 pause for LB on PE 40
+Element 16 pause for LB on PE 19
+Element 36 pause for LB on PE 58
+Element 24 pause for LB on PE 41
+Element 29 pause for LB on PE 57
+Element 55 pause for LB on PE 42
+Element 44 pause for LB on PE 63
+Element 56 pause for LB on PE 38
+Element 59 pause for LB on PE 53
+Element 30 pause for LB on PE 45
+Element 48 pause for LB on PE 48
+Element 53 pause for LB on PE 46
+Element 40 pause for LB on PE 62
+Element 14 pause for LB on PE 37
+Element 12 pause for LB on PE 61
+Element 20 pause for LB on PE 47
+Element 50 pause for LB on PE 56
+Element 46 pause for LB on PE 44
+Element 13 pause for LB on PE 52
+Element 58 pause for LB on PE 43
+Element 8 pause for LB on PE 60
+Element 31 pause for LB on PE 50
+Element 22 pause for LB on PE 55
+Element 43 pause for LB on PE 51
+Element 63 pause for LB on PE 59
+Element 57 pause for LB on PE 54
+Element 32 pause for LB on PE 1
+Element 17 pause for LB on PE 8
+Element 39 pause for LB on PE 5
+Element 27 pause for LB on PE 6
+Element 34 pause for LB on PE 7
+Element 1 pause for LB on PE 21
+Element 60 pause for LB on PE 34
+Element 0 pause for LB on PE 29
+Element 3 pause for LB on PE 29
+Element 4 pause for LB on PE 35
+Element 9 pause for LB on PE 23
+Element 51 pause for LB on PE 36
+Element 15 pause for LB on PE 26
+Element 62 pause for LB on PE 32
+Element 18 pause for LB on PE 24
+Element 11 pause for LB on PE 33
+Element 41 pause for LB on PE 31
+Element 10 pause for LB on PE 22
+Element 5 pause for LB on PE 28
+Element 6 pause for LB on PE 30
+Element 7 pause for LB on PE 27
+Resume iteration at step 2
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.88351e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 2.5034e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.38283e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 3.29018e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.69277e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 0: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 1: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 4: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 0.255025
+			----kernel: 0.514442
+			----kernel: 0.255472
+			----kernel: 0.510404
+			----kernel: 0.962817
+			----kernel: 0.514709
+			----kernel: 0.510399
+			----kernel: 0.765328
+			----kernel: 1.0291
+			----kernel: 1.02029
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 1.27519
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 1.92502
+			----kernel: 1.53011
+			----kernel: 1.54364
+			----kernel: 1.78504
+			----kernel: 2.48836
+			----kernel: 2.03994
+			----kernel: 2.05793
+			----kernel: 2.59979
+			----kernel: 2.61135
+			----kernel: 2.61224
+			----kernel: 2.61318
+			----kernel: 2.61411
+			----kernel: 2.61501
+			----kernel: 2.61601
+			----kernel: 2.61696
+			----kernel: 2.61776
+			----kernel: 2.61658
+			----kernel: 2.6175
+			----kernel: 2.61843
+			----kernel: 2.61938
+			----kernel: 2.61814
+			----kernel: 2.61906
+			----kernel: 2.29489
+			----kernel: 2.88739
+			----kernel: 2.54982
+			----kernel: 2.0579
+			----kernel: 2.80476
+			----kernel: 3.05971
+			----kernel: 2.57231
+			----kernel: 0.253588
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 3.84971
+			----kernel: 0.507081
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 3.08674
+			----kernel: 0.254959
+			----kernel: 0.254943
+			----kernel: 3.60119
+			----kernel: 4.81199
+			----kernel: 3.84992
+			----kernel: 0.962853
+			----kernel: 1.92494
+			----kernel: 2.8873
+			----kernel: 3.84961
+			----kernel: 4.81181
+			----kernel: 5.77404
+			----kernel: 5.77409
+			----kernel: 1.92503
+			----kernel: 2.88702
+			----kernel: 2.88674
+Resume iteration at step 2
+Element 43 pause for LB on PE 2
+Element 29 pause for LB on PE 1
+Element 30 pause for LB on PE 0
+Element 48 pause for LB on PE 11
+Element 10 pause for LB on PE 15
+Element 22 pause for LB on PE 4
+Element 18 pause for LB on PE 5
+Element 21 pause for LB on PE 7
+Element 9 pause for LB on PE 3
+Element 16 pause for LB on PE 12
+Element 7 pause for LB on PE 10
+Element 15 pause for LB on PE 14
+Element 32 pause for LB on PE 6
+Element 31 pause for LB on PE 21
+Element 62 pause for LB on PE 58
+Element 50 pause for LB on PE 45
+Element 2 pause for LB on PE 17
+Element 24 pause for LB on PE 49
+Element 41 pause for LB on PE 32
+Element 39 pause for LB on PE 18
+Element 58 pause for LB on PE 51
+Element 47 pause for LB on PE 44
+Element 3 pause for LB on PE 19
+Element 35 pause for LB on PE 52
+Element 1 pause for LB on PE 36
+Element 27 pause for LB on PE 22
+Element 33 pause for LB on PE 22
+Element 38 pause for LB on PE 22
+Element 49 pause for LB on PE 50
+Element 42 pause for LB on PE 47
+Element 25 pause for LB on PE 24
+Element 51 pause for LB on PE 60
+Element 12 pause for LB on PE 41
+Element 23 pause for LB on PE 28
+Element 60 pause for LB on PE 56
+Element 13 pause for LB on PE 46
+Element 44 pause for LB on PE 27
+Element 6 pause for LB on PE 59
+Element 63 pause for LB on PE 34
+Element 26 pause for LB on PE 20
+Element 37 pause for LB on PE 20
+Element 17 pause for LB on PE 20
+Element 53 pause for LB on PE 61
+Element 0 pause for LB on PE 35
+Element 54 pause for LB on PE 23
+Element 55 pause for LB on PE 63
+Element 61 pause for LB on PE 42
+Element 28 pause for LB on PE 16
+Element 20 pause for LB on PE 48
+Element 14 pause for LB on PE 33
+Element 52 pause for LB on PE 30
+Element 19 pause for LB on PE 62
+Element 36 pause for LB on PE 43
+Element 46 pause for LB on PE 31
+Element 56 pause for LB on PE 55
+Element 57 pause for LB on PE 26
+Element 45 pause for LB on PE 57
+Element 4 pause for LB on PE 53
+Element 11 pause for LB on PE 54
+Element 59 pause for LB on PE 9
+Element 40 pause for LB on PE 38
+Element 5 pause for LB on PE 37
+Element 34 pause for LB on PE 39
+Element 8 pause for LB on PE 40
+Resume iteration at step 3
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+cuda0
+Error: line 217 an illegal memory access was encountered
+	PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+		----kernel: 1.78814e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+			----kernel: 2.28882e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+cuda0
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+SIZE 0: 13000
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 1: 13000
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+----kernel: 1.19209e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.81198e-05
+Error: line 332 invalid resource handle
+cuda0
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 2: 52104052
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 0.253616
+			----kernel: 0.514457
+			----kernel: 0.254116
+			----kernel: 0.254124
+			----kernel: 0.962802
+			----kernel: 0.514709
+			----kernel: 0.507617
+			----kernel: 0.761104
+			----kernel: 1.01462
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 1.02915
+			----kernel: 1.2681
+			----kernel: 1.92473
+			----kernel: 1.5216
+			----kernel: 1.54358
+			----kernel: 1.7751
+			----kernel: 2.0286
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 2.05799
+			----kernel: 2.63623
+			----kernel: 2.64544
+			----kernel: 2.66748
+			----kernel: 2.67272
+			----kernel: 2.68418
+			----kernel: 2.68695
+			----kernel: 2.6854
+			----kernel: 2.68597
+			----kernel: 2.68443
+			----kernel: 2.68281
+			----kernel: 2.68337
+			----kernel: 2.68395
+			----kernel: 2.68451
+			----kernel: 2.68506
+			----kernel: 2.6834
+			----kernel: 2.68148
+			----kernel: 2.28212
+			----kernel: 2.88721
+			----kernel: 2.5356
+			----kernel: 2.57242
+			----kernel: 2.78911
+			----kernel: 3.04257
+			----kernel: 3.08685
+			----kernel: 3.29609
+			----kernel: 3.84961
+			----kernel: 3.5496
+			----kernel: 3.60127
+			----kernel: 0.255043
+			----kernel: 0.50999
+			----kernel: 4.11569
+			----kernel: 4.81194
+			----kernel: 4.63014
+			----kernel: 5.77436
+			----kernel: 6.7367
+			----kernel: 5.77509
+			----kernel: 6.73749
+			----kernel: 7.69992
+			----kernel: 8.66203
+			----kernel: 9.62408
+			----kernel: 8.66121
+			----kernel: 7.69846
+			----kernel: 8.66071
+			----kernel: 7.69833
+Resume iteration at step 3
+Element 39 pause for LB on PE 1
+Element 60 pause for LB on PE 2
+Element 57 pause for LB on PE 0
+Element 18 pause for LB on PE 8
+Element 12 pause for LB on PE 12
+Element 58 pause for LB on PE 9
+Element 40 pause for LB on PE 13
+Element 28 pause for LB on PE 10
+Element 43 pause for LB on PE 3
+Element 49 pause for LB on PE 5
+Element 55 pause for LB on PE 6
+Element 45 pause for LB on PE 15
+Element 38 pause for LB on PE 4
+Element 23 pause for LB on PE 7
+Element 62 pause for LB on PE 21
+Element 6 pause for LB on PE 46
+Element 24 pause for LB on PE 23
+Element 5 pause for LB on PE 48
+Element 54 pause for LB on PE 30
+Element 9 pause for LB on PE 61
+Element 17 pause for LB on PE 35
+Element 22 pause for LB on PE 17
+Element 15 pause for LB on PE 17
+Element 61 pause for LB on PE 49
+Element 46 pause for LB on PE 47
+Element 1 pause for LB on PE 16
+Element 10 pause for LB on PE 53
+Element 53 pause for LB on PE 34
+Element 34 pause for LB on PE 25
+Element 25 pause for LB on PE 62
+Element 59 pause for LB on PE 45
+Element 48 pause for LB on PE 24
+Element 7 pause for LB on PE 56
+Element 26 pause for LB on PE 39
+Element 51 pause for LB on PE 22
+Element 8 pause for LB on PE 55
+Element 19 pause for LB on PE 37
+Element 63 pause for LB on PE 19
+Element 14 pause for LB on PE 50
+Element 56 pause for LB on PE 33
+Element 44 pause for LB on PE 27
+Element 13 pause for LB on PE 51
+Element 20 pause for LB on PE 38
+Element 33 pause for LB on PE 31
+Element 47 pause for LB on PE 63
+Element 4 pause for LB on PE 32
+Element 35 pause for LB on PE 26
+Element 42 pause for LB on PE 54
+Element 52 pause for LB on PE 40
+Element 16 pause for LB on PE 28
+Element 32 pause for LB on PE 28
+Element 41 pause for LB on PE 52
+Element 31 pause for LB on PE 42
+Element 21 pause for LB on PE 20
+Element 37 pause for LB on PE 43
+Element 36 pause for LB on PE 18
+Element 27 pause for LB on PE 36
+Element 29 pause for LB on PE 29
+Element 2 pause for LB on PE 41
+Element 30 pause for LB on PE 44
+Element 50 pause for LB on PE 58
+Element 0 pause for LB on PE 59
+Element 11 pause for LB on PE 57
+Element 3 pause for LB on PE 60
+Resume iteration at step 4
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+cuda0
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.09673e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.90735e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.50204e-05
+Error: line 332 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.40667e-05
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.19209e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 2.09808e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 0.282023
+			----kernel: 0.51451
+			----kernel: 0.255561
+			----kernel: 0.509069
+			----kernel: 0.962493
+			----kernel: 0.514662
+			----kernel: 0.763999
+			----kernel: 1.01896
+			----kernel: 0.514619
+			----kernel: 1.2739
+			----kernel: 1.52888
+			----kernel: 0.963183
+			----kernel: 1.02904
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 1.78386
+			----kernel: 2.03882
+			----kernel: 2.53328
+			----kernel: 2.53653
+			----kernel: 1.54347
+			----kernel: 2.56504
+			----kernel: 2.29378
+			----kernel: 2.59134
+			----kernel: 2.59868
+			----kernel: 2.60177
+			----kernel: 2.60486
+			----kernel: 2.60363
+			----kernel: 2.60456
+			----kernel: 2.60336
+			----kernel: 2.60644
+			----kernel: 2.60524
+			----kernel: 2.6019
+			----kernel: 2.59641
+			----kernel: 2.59081
+			----kernel: 2.59183
+			----kernel: 2.54876
+			----kernel: 1.92552
+			----kernel: 2.0579
+			----kernel: 2.80374
+			----kernel: 3.05872
+			----kernel: 2.57233
+			----kernel: 3.31226
+			----kernel: 2.88801
+			----kernel: 3.56725
+			----kernel: 3.08675
+			----kernel: 3.82224
+			----kernel: 0.514447
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 3.85047
+			----kernel: 0.514456
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 0.514454
+			----kernel: 4.81288
+			----kernel: 5.7753
+			----kernel: 6.7378
+			----kernel: 7.70015
+			----kernel: 7.70005
+			----kernel: 8.66261
+			----kernel: 9.62505
+			----kernel: 10.5875
+			----kernel: 11.55
+			----kernel: 12.5124
+Resume iteration at step 4
+Element 16 pause for LB on PE 1
+Element 38 pause for LB on PE 0
+Element 55 pause for LB on PE 0
+Element 18 pause for LB on PE 0
+Element 12 pause for LB on PE 0
+Element 22 pause for LB on PE 3
+Element 29 pause for LB on PE 2
+Element 42 pause for LB on PE 4
+Element 10 pause for LB on PE 6
+Element 43 pause for LB on PE 10
+Element 44 pause for LB on PE 13
+Element 0 pause for LB on PE 5
+Element 34 pause for LB on PE 15
+Element 21 pause for LB on PE 12
+Element 60 pause for LB on PE 14
+Element 46 pause for LB on PE 11
+Element 41 pause for LB on PE 16
+Element 24 pause for LB on PE 58
+Element 36 pause for LB on PE 41
+Element 1 pause for LB on PE 29
+Element 11 pause for LB on PE 62
+Element 8 pause for LB on PE 47
+Element 33 pause for LB on PE 25
+Element 2 pause for LB on PE 61
+Element 32 pause for LB on PE 32
+Element 3 pause for LB on PE 18
+Element 37 pause for LB on PE 55
+Element 9 pause for LB on PE 43
+Element 4 pause for LB on PE 31
+Element 20 pause for LB on PE 57
+Element 23 pause for LB on PE 42
+Element 51 pause for LB on PE 22
+Element 19 pause for LB on PE 50
+Element 54 pause for LB on PE 40
+Element 39 pause for LB on PE 26
+Element 28 pause for LB on PE 53
+Element 63 pause for LB on PE 37
+Element 5 pause for LB on PE 28
+Element 31 pause for LB on PE 52
+Element 57 pause for LB on PE 44
+Element 13 pause for LB on PE 17
+Element 45 pause for LB on PE 59
+Element 62 pause for LB on PE 45
+Element 52 pause for LB on PE 21
+Element 40 pause for LB on PE 51
+Element 26 pause for LB on PE 46
+Element 49 pause for LB on PE 19
+Element 17 pause for LB on PE 49
+Element 61 pause for LB on PE 39
+Element 35 pause for LB on PE 24
+Element 30 pause for LB on PE 54
+Element 15 pause for LB on PE 30
+Element 27 pause for LB on PE 48
+Element 7 pause for LB on PE 20
+Element 53 pause for LB on PE 63
+Element 6 pause for LB on PE 27
+Element 58 pause for LB on PE 56
+Element 25 pause for LB on PE 23
+Element 56 pause for LB on PE 60
+Element 59 pause for LB on PE 8
+Element 47 pause for LB on PE 33
+Element 50 pause for LB on PE 34
+Element 14 pause for LB on PE 35
+Element 48 pause for LB on PE 36
+Resume iteration at step 5
+cuda0
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.09673e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 2.00272e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.3113e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.28746e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.38283e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Error: line 245 an illegal memory access was encountered
+SIZE 0: 13000
+Error: line 251 an illegal memory access was encountered
+SIZE 1: 13000
+Error: line 256 an illegal memory access was encountered
+SIZE 2: 52104052
+Error: line 261 an illegal memory access was encountered
+SIZE 3: 56
+Error: line 267 an illegal memory access was encountered
+SIZE 4: 56
+Error: line 273 an illegal memory access was encountered
+SIZE 5: 56
+Error: line 280 an illegal memory access was encountered
+Error: line 286 an illegal memory access was encountered
+Error: line 292 an illegal memory access was encountered
+Error: line 297 an illegal memory access was encountered
+Error: line 302 an illegal memory access was encountered
+Error: line 310 an illegal memory access was encountered
+Error: line 217 an illegal memory access was encountered
+			----kernel: 1.69277e-05
+Error: line 332 invalid resource handle
+Error: line 334 invalid resource handle
+Error: line 337 an illegal memory access was encountered
+Error: line 339 an illegal memory access was encountered
+Error: line 341 an illegal memory access was encountered
+Error: line 343 an illegal memory access was encountered
+Error: line 345 an illegal memory access was encountered
+Error: line 347 an illegal memory access was encountered
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+cuda0
+SIZE 0: 13000
+SIZE 1: 13000
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 1: 13000
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 5: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 2: 52104052
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 0.253853
+			----kernel: 0.514525
+			----kernel: 0.254222
+			----kernel: 0.254181
+			----kernel: 0.963393
+			----kernel: 0.514692
+			----kernel: 0.507737
+			----kernel: 0.761274
+			----kernel: 1.01479
+			----kernel: 0.514655
+			----kernel: 1.26835
+			----kernel: 1.92589
+			----kernel: 0.762705
+			----kernel: 1.02908
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 1.01629
+			----kernel: 2.4119
+			----kernel: 1.26986
+			----kernel: 1.54346
+			----kernel: 2.55225
+			----kernel: 2.5564
+			----kernel: 2.5584
+			----kernel: 2.57944
+			----kernel: 2.57712
+			----kernel: 2.57915
+			----kernel: 2.579
+			----kernel: 2.58101
+			----kernel: 2.58513
+			----kernel: 2.58714
+			----kernel: 2.58914
+			----kernel: 2.59113
+			----kernel: 2.5932
+			----kernel: 2.59521
+			----kernel: 2.59548
+			----kernel: 1.52343
+			----kernel: 2.88824
+			----kernel: 1.77697
+			----kernel: 2.05793
+			----kernel: 2.03197
+			----kernel: 2.28552
+			----kernel: 2.57235
+			----kernel: 2.53909
+			----kernel: 3.85021
+			----kernel: 2.53912
+			----kernel: 3.08678
+			----kernel: 3.60121
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 13000
+SIZE 1: 13000
+SIZE 2: 52104052
+SIZE 3: 56
+SIZE 4: 56
+SIZE 5: 56
+			----kernel: 4.81276
+			----kernel: 0.514462
+			----kernel: 0.514459
+			----kernel: 5.77525
+			----kernel: 6.73779
+			----kernel: 7.70015
+			----kernel: 8.66252
+			----kernel: 6.73698
+			----kernel: 6.73693
+			----kernel: 7.6992
+			----kernel: 7.69915
+			----kernel: 6.73645
+			----kernel: 7.69839
+Resume iteration at step 5
+Time: 100.794028
+[Partition 0][Node 0] End of program

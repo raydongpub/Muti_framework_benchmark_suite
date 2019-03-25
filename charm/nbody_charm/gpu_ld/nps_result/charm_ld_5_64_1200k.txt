@@ -1,0 +1,23 @@
+Charm++> Running on MPI version: 3.1
+Charm++> level of thread support used: MPI_THREAD_SINGLE (desired: MPI_THREAD_SINGLE)
+Charm++> Running in non-SMP mode: numPes 64
+Converse/Charm++ Commit ID: v6.8.0-beta1-281-g9823be9
+Warning> Randomization of virtual memory (ASLR) is turned on in the kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try running with '+isomalloc_sync'.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 4 unique compute nodes (16-way SMP).
+Charm++> cpu topology info is gathered in 0.081 seconds.
+[0] RefineLB created
+		PENUM: 64
+		Configurtion Complete
+DataFile: dset1200.nn
+		DataLoad Complete640.000000
+
+
+Cluster env.    	yes
+time ressolu.		0.001000
+Duration.		0.020000
+
+
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node nps1 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

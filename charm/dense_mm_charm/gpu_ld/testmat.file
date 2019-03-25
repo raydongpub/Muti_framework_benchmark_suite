@@ -1,0 +1,184 @@
+#include "matmul.decl.h"
+#include "rand48_replacement.h"
+#include "matmul.h"
+#include <math.h>
+CProxy_Main mainProxy;
+extern void cudaMatMul(int heg, int wid, int wh, int off, int subnum, PRECISION *matA, PRECISION *matB, PRECISION *matC, int peid_, int pid);
+void cudaIniVar(int heg, int wid, int wh, int off, int subnum, PRECISION *matA, PRECISION *matB, PRECISION *matC, int id) {
+    int peid   = id;
+    int offset = peid * off;
+    cudaMatMul(heg, wid, wh, offset, subnum, matA, matB, matC, peid, CkMyPe());
+}
+void display_mat(PRECISION *mat, int heg, int wid, int woid) {
+    int total;
+    switch (woid) {
+        case 0:
+            total = heg * heg;
+            for (int i=0; i<total; i++) {
+                if (i%heg == 0) {
+                    cout << "\t\t" << endl;
+                }
+                cout << mat[i] << " "; 
+            }
+            cout << endl; break;
+        case 1:
+            total = heg * wid;
+            for (int i=0; i<total; i++) {
+                if (i%heg == 0) {
+                    cout << "\t\t" << endl;
+                }
+                cout << mat[i] << " ";
+            }
+            cout << endl; break;
+        case 2:
+            total = wid * wid;
+            for (int i=0; i<total; i++) {
+                 if (i%wid == 0) {
+                 cout << "\t\t" << endl;
+            }
+            cout << mat[i] << " ";
+            }
+            cout << endl; break;
+    }
+}
+class Main : public CBase_Main {
+    double      startTime, midTime;
+    PRECISION   *dataA, *dataB;
+    int         height, width, workw, workh, peset;
+    int         iter, parnum, subnum;
+    int         worksplit, workheg, workwid;
+    CProxy_Data c;
+    char        *pDatasetFile;
+public:
+    Main(CkArgMsg* m) {
+        startTime = CkWallTimer();
+        if (m->argc > 6) {
+            height       = atoi(m->argv[1]);
+            width        = atoi(m->argv[2]);
+            workh        = atoi(m->argv[3]); 
+            workw        = atoi(m->argv[4]); 
+            peset        = atoi(m->argv[5]); 
+            pDatasetFile = m->argv[6];
+        } else {
+            CkAbort("Usage: matmul dimension");
+        }
+        int total_num = height * width;
+        int penum = CkNumPes();
+        if (height % workh != 0) {
+            CkAbort("Warning: Matrix cannot be divided equaly by Height Partition");
+        } else {
+            workheg = height/workh;
+        }
+        if (width % workw != 0) {
+            CkAbort("Warning: Matrix cannot be divided equaly by Width Partition");
+        } else {
+            workwid = width/workw;
+        }
+        if (workwid % peset != 0) {
+            CkAbort("Warning: Matrix cannot be divided equaly by PEs");
+        } else {
+            worksplit = workwid/peset;
+        }
+        mainProxy = thisProxy; 
+        iter = 0; 
+        subnum = workheg * worksplit; 
+        parnum = workh * workw;
+        MatrixDataset * pMatrix = new MatrixDataset(pDatasetFile);
+        ckout << "The total number of PEs: " << penum << " and Partion is: " << parnum << endl;
+        ckout << "The workportion is: " << subnum << endl;        
+                  
+        dataA = pMatrix->mpMatrix.elements;
+        dataB = dataA + total_num; 
+        for (int i=0; i<width; i++) {
+            for (int j=(i*width+i%width+1); j<(i+1)*width; j++) {
+                int tmp = dataB[j];
+                dataB[j] = dataB[(j%width)*width + (j/width)];
+                dataB[(j%width)*width + (j/width)] = tmp;
+            }
+        }
+
+        int offset0  = (iter/workw) * workheg * width;
+        int offset1  = (iter%workw) * workwid * height;
+        c = CProxy_Data::ckNew((dataA+offset0), (dataB+offset1), 
+            workheg, workwid, height, width, peset, worksplit, parnum, peset);
+        c.matRun();
+    }
+    void done() {
+        iter++;
+        if (iter == peset) {
+            double endTime = CkWallTimer();
+            CkPrintf("Time: %f\n", endTime, endTime - startTime);
+            ckout << "Time: " << (endTime, endTime - startTime) << endl;
+            CkExit();
+        }
+   }
+};
+class Data : public CBase_Data {
+    int height, width, wheg, wwid, workdata, inid, petotal, iternum, iter, pid;
+    int sizeA, sizeB, sizeRes, renum;
+    double timestep;
+    PRECISION *matA, *matB, *matC;
+    Data_SDAG_CODE
+public:
+    Data(PRECISION *inidataA, PRECISION *inidataB, int wheight_, int wwidth_, int height_, int width_, int peset, int workportion, int iternum_): 
+        height(height_), width(width_), wheg(wheight_), wwid(wwidth_), workdata(workportion) {
+        usesAtSync = true;
+        int totalnum = height * width;
+        sizeA        = wheg * width;
+        sizeB        = workdata * height;
+        renum        = workdata * wheg;
+        iternum      = iternum_;
+        iter         = 0;
+        int workid   = thisIndex; 
+        int penum    = CkNumPes();
+        inid         = thisIndex;
+        pid          = CkMyPe();
+        petotal      = peset;
+        sizeRes      = renum;
+        matA = new PRECISION[sizeA];
+        matB = new PRECISION[sizeB];
+        matC = new PRECISION[renum];
+        int offsetB = workid * workdata * height;
+        for (int i=0; i<sizeA; i++) { 
+            matA[i] = inidataA[i];    
+        }
+        for (int i=0; i<sizeB; i++) {
+            matB[i] = inidataB[i + offsetB];
+        }
+        for (int i=0; i<renum; i++) {
+             matC[i] = 0.0;
+        }
+        char hostname[128];
+        gethostname(hostname, 128);
+    }        
+    void pup(PUP::er &p) {
+        CBase_Data::pup(p);
+        __sdag_pup(p);
+        p|height; p|width; p|wheg; p|wwid; p|workdata; p|renum; p|iternum; p|iter;
+        p|sizeA; p|sizeB; p|sizeRes; p|petotal; p|inid; p|pid;
+        if (p.isUnpacking()) {
+            matA = new PRECISION[sizeA];
+            matB = new PRECISION[sizeB];
+            matC = new PRECISION[sizeRes];
+        }
+        p(matA, sizeA);
+        p(matB, sizeB);
+        p(matC, sizeRes);
+    }
+    Data (CkMigrateMessage*) {}
+    void print_info () {
+        if (iter == iternum)
+           mainProxy.done(); 
+        if (thisIndex==0)
+            CkPrintf("\t\t****** iteration %d/%d ******\n", iter, iternum);
+        ckout << "My PE[" << thisIndex << "/" 
+            << petotal << "]" << endl;
+        cudaIniVar(height,workdata, wheg, workdata, renum, matA, matB, matC, inid);
+        iter++;
+        AtSync();
+    }
+    void ResumeFromSync() {
+       print_info();
+    }
+};
+#include "matmul.def.h"

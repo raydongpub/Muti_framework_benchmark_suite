@@ -1,0 +1,1 @@
+rm -rf charm-matmul.*;make clean;srun -p gpu3 -N1 make;

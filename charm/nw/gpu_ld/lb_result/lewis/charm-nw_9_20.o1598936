@@ -1,0 +1,958 @@
+Charmrun> scalable start enabled. 
+Converse/Charm++ Commit ID: v6.7.0-1-gca55e1d
+Charm++> scheduler running in netpoll mode.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 9 unique compute nodes (20-way SMP).
+Charm++> cpu topology info is gathered in 0.012 seconds.
+[0] RefineLB created
+flag0!
+flag1!
+==============================================
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 3.76879
+cuda0
+PE:0[lewis4-r730-gpu3-node476]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 3.77339
+cuda0
+PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 3.46655
+cuda0
+PE:0[lewis4-r730-gpu3-node435]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 3.7736
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 3.77375
+cuda0
+PE:0[lewis4-r730-gpu3-node433]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 3.77363
+cuda0
+PE:0[lewis4-r730-gpu3-node434]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 3.77347
+cuda0
+PE:0[lewis4-r730-gpu3-node431]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 3.77365
+cuda0
+PE:0[lewis4-r730-gpu3-node432]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 3.77327
+cuda0
+PE:0[lewis4-r730-gpu3-node429]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node431]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node434]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node476]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node432]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node435]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node433]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node429]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.10318
+			----kernel: 3.42822
+			----kernel: 3.76883
+			----kernel: 6.9752
+			----kernel: 3.76899
+			----kernel: 3.76885
+			----kernel: 3.76873
+			----kernel: 3.76862
+			----kernel: 3.76898
+			----kernel: 6.60284
+			----kernel: 7.54566
+Resume iteration at step 0
+Element 1 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 2 pause for LB on PE 2
+Element 4 pause for LB on PE 4
+Element 3 pause for LB on PE 3
+Element 8 pause for LB on PE 8
+Element 5 pause for LB on PE 5
+Element 17 pause for LB on PE 17
+Element 16 pause for LB on PE 16
+Element 9 pause for LB on PE 9
+Element 6 pause for LB on PE 6
+Element 7 pause for LB on PE 7
+Element 18 pause for LB on PE 18
+Element 19 pause for LB on PE 19
+Element 12 pause for LB on PE 12
+Element 13 pause for LB on PE 13
+Element 10 pause for LB on PE 10
+Element 11 pause for LB on PE 11
+Element 14 pause for LB on PE 14
+Element 15 pause for LB on PE 15
+Resume iteration at step 1
+cuda0
+PE:0[lewis4-r730-gpu3-node433]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node429]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node431]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node434]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node435]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node476]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node476]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node431]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node432]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node435]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node432]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node433]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node429]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node434]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.07308
+			----kernel: 6.10318
+			----kernel: 6.60317
+			----kernel: 6.60344
+			----kernel: 6.6035
+			----kernel: 6.60359
+			----kernel: 6.60402
+			----kernel: 6.60403
+			----kernel: 6.93676
+			----kernel: 6.9752
+			----kernel: 7.54623
+			----kernel: 7.54632
+			----kernel: 7.54662
+			----kernel: 7.54628
+			----kernel: 7.54704
+			----kernel: 7.54692
+			----kernel: 12.264
+			----kernel: 13.2068
+			----kernel: 14.1497
+			----kernel: 15.0928
+Resume iteration at step 1
+cuda0
+PE:0[lewis4-r730-gpu3-node432]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 3.77366
+cuda0
+PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.07374
+cuda0
+PE:0[lewis4-r730-gpu3-node429]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.1032
+cuda0
+PE:0[lewis4-r730-gpu3-node431]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.60307
+cuda0
+PE:0[lewis4-r730-gpu3-node434]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.60314
+cuda0
+PE:0[lewis4-r730-gpu3-node435]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.60324
+cuda0
+PE:0[lewis4-r730-gpu3-node433]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.60416
+cuda0
+PE:0[lewis4-r730-gpu3-node476]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.60416
+cuda0
+PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.93741
+cuda0
+PE:0[lewis4-r730-gpu3-node429]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.97515
+cuda0
+PE:0[lewis4-r730-gpu3-node432]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 3.76926
+cuda0
+PE:0[lewis4-r730-gpu3-node431]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 7.54613
+cuda0
+PE:0[lewis4-r730-gpu3-node435]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 7.54607
+cuda0
+PE:0[lewis4-r730-gpu3-node434]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 7.5462
+cuda0
+PE:0[lewis4-r730-gpu3-node433]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 7.54703
+cuda0
+PE:0[lewis4-r730-gpu3-node476]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 7.54737
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 12.2636
+			----kernel: 13.2066
+			----kernel: 14.1494
+			----kernel: 15.0923
+Resume iteration at step 2
+Element 0 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 2 pause for LB on PE 2
+Element 4 pause for LB on PE 4
+Element 9 pause for LB on PE 9
+Element 3 pause for LB on PE 3
+Element 8 pause for LB on PE 8
+Element 17 pause for LB on PE 17
+Element 16 pause for LB on PE 16
+Element 5 pause for LB on PE 5
+Element 12 pause for LB on PE 12
+Element 6 pause for LB on PE 6
+Element 18 pause for LB on PE 18
+Element 13 pause for LB on PE 13
+Element 7 pause for LB on PE 7
+Element 19 pause for LB on PE 19
+Element 10 pause for LB on PE 10
+Element 14 pause for LB on PE 14
+Element 15 pause for LB on PE 15
+Element 11 pause for LB on PE 11
+Resume iteration at step 3
+cuda0
+PE:0[lewis4-r730-gpu3-node429]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node433]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node431]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node434]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node435]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node476]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node431]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node476]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node432]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node435]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node432]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node433]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node429]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node434]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.0727
+			----kernel: 6.10316
+			----kernel: 6.60344
+			----kernel: 6.60343
+			----kernel: 6.60364
+			----kernel: 6.60416
+			----kernel: 6.60417
+			----kernel: 6.60348
+			----kernel: 6.93629
+			----kernel: 6.97515
+			----kernel: 7.54644
+			----kernel: 7.54651
+			----kernel: 7.54651
+			----kernel: 7.54698
+			----kernel: 7.54718
+			----kernel: 7.54651
+			----kernel: 8.49107
+			----kernel: 12.2638
+			----kernel: 13.2069
+			----kernel: 13.2069
+Resume iteration at step 3
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 3.77374
+cuda0
+PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.07076
+cuda0
+PE:0[lewis4-r730-gpu3-node429]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.10309
+cuda0
+PE:0[lewis4-r730-gpu3-node476]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.60316
+cuda0
+PE:0[lewis4-r730-gpu3-node433]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.60348
+cuda0
+PE:0[lewis4-r730-gpu3-node431]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.60361
+cuda0
+PE:0[lewis4-r730-gpu3-node435]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.60336
+cuda0
+PE:0[lewis4-r730-gpu3-node434]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.60354
+cuda0
+PE:0[lewis4-r730-gpu3-node432]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.60427
+cuda0
+PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.93415
+cuda0
+PE:0[lewis4-r730-gpu3-node429]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.97504
+cuda0
+PE:0[lewis4-r730-gpu3-node476]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 7.54614
+cuda0
+PE:0[lewis4-r730-gpu3-node433]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 7.54636
+cuda0
+PE:0[lewis4-r730-gpu3-node431]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 7.54641
+cuda0
+PE:0[lewis4-r730-gpu3-node435]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 7.54641
+cuda0
+PE:0[lewis4-r730-gpu3-node434]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 7.54642
+cuda0
+PE:0[lewis4-r730-gpu3-node432]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 7.54703
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+cuda0
+PE:0[lewis4-r730-gpu3-node428]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 9.43393
+			----kernel: 10.377
+			----kernel: 11.3199
+Resume iteration at step 4
+Time: 77.131174

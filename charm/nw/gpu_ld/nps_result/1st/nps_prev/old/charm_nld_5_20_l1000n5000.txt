@@ -1,0 +1,1002 @@
+Charm++> Running on MPI version: 3.1
+Charm++> level of thread support used: MPI_THREAD_SINGLE (desired: MPI_THREAD_SINGLE)
+Charm++> Running in non-SMP mode: numPes 20
+Converse/Charm++ Commit ID: v6.8.0-beta1-281-g9823be9
+Warning> Randomization of virtual memory (ASLR) is turned on in the kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try running with '+isomalloc_sync'.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 4 unique compute nodes (16-way SMP).
+Charm++> cpu topology info is gathered in 0.035 seconds.
+flag0!
+flag1!
+==============================================
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+			----kernel: 2.05399
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+			----kernel: 1.29879
+			----kernel: 1.33285
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+			----kernel: 1.33565
+			----kernel: 1.32165
+			----kernel: 1.29767
+			----kernel: 4.10791
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 0.712216
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 6.16178
+			----kernel: 0.663291
+			----kernel: 8.21568
+			----kernel: 1.48007
+			----kernel: 1.73185
+			----kernel: 1.98362
+			----kernel: 3.91063
+			----kernel: 10.2696
+			----kernel: 12.7085
+			----kernel: 13.6859
+			----kernel: 14.6632
+			----kernel: 15.6406
+Resume iteration at step 0
+Element 0 pause for LB on PE 0
+Element 4 pause for LB on PE 4
+Element 2 pause for LB on PE 2
+Element 3 pause for LB on PE 3
+Element 1 pause for LB on PE 1
+Element 17 pause for LB on PE 17
+Element 5 pause for LB on PE 5
+Element 15 pause for LB on PE 15
+Element 11 pause for LB on PE 11
+Resume iteration at step 1
+cuda0
+Element 19 pause for LB on PE 19
+Element 10 pause for LB on PE 10
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Element 16 pause for LB on PE 16
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Element 9 pause for LB on PE 9
+Element 18 pause for LB on PE 18
+Element 14 pause for LB on PE 14
+Element 7 pause for LB on PE 7
+Element 13 pause for LB on PE 13
+Element 6 pause for LB on PE 6
+Element 12 pause for LB on PE 12
+Element 8 pause for LB on PE 8
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 1.10674
+			----kernel: 1.39804
+			----kernel: 1.3987
+			----kernel: 1.39932
+			----kernel: 1.4
+			----kernel: 1.40081
+			----kernel: 2.05391
+			----kernel: 2.58727
+			----kernel: 2.39367
+			----kernel: 2.64412
+			----kernel: 2.89458
+			----kernel: 2.05402
+			----kernel: 4.10791
+			----kernel: 6.1618
+			----kernel: 6.16177
+			----kernel: 15.6428
+			----kernel: 16.6199
+			----kernel: 17.5971
+			----kernel: 18.5742
+			----kernel: 19.5513
+Resume iteration at step 1
+Element 0 pause for LB on PE 0
+Element 2 pause for LB on PE 2
+Element 4 pause for LB on PE 4
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 3
+Element 5 pause for LB on PE 5
+Element 17 pause for LB on PE 17
+Element 12 pause for LB on PE 12
+Resume iteration at step 2
+cuda0
+Element 19 pause for LB on PE 19
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Element 18 pause for LB on PE 18
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Element 9 pause for LB on PE 9
+Element 15 pause for LB on PE 15
+Element 7 pause for LB on PE 7
+Element 16 pause for LB on PE 16
+Element 10 pause for LB on PE 10
+Element 8 pause for LB on PE 8
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Element 11 pause for LB on PE 11
+Element 6 pause for LB on PE 6
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Element 13 pause for LB on PE 13
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Element 14 pause for LB on PE 14
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 0.663834
+			----kernel: 1.33559
+			----kernel: 1.34477
+			----kernel: 1.34583
+			----kernel: 1.34424
+			----kernel: 1.34274
+			----kernel: 1.32387
+			----kernel: 2.05392
+			----kernel: 1.73558
+			----kernel: 1.98802
+			----kernel: 1.57845
+			----kernel: 3.9107
+			----kernel: 2.054
+			----kernel: 4.10788
+			----kernel: 6.16176
+			----kernel: 8.21565
+			----kernel: 11.7308
+			----kernel: 12.7079
+			----kernel: 12.7073
+			----kernel: 13.6844
+Resume iteration at step 2
+Element 0 pause for LB on PE 0
+Element 4 pause for LB on PE 4
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 3
+Element 2 pause for LB on PE 2
+Element 7 pause for LB on PE 7
+Element 19 pause for LB on PE 19
+Resume iteration at step 3
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Element 9 pause for LB on PE 9
+Element 15 pause for LB on PE 15
+Element 11 pause for LB on PE 11
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Element 5 pause for LB on PE 5
+Element 17 pause for LB on PE 17
+Element 14 pause for LB on PE 14
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Element 8 pause for LB on PE 8
+Element 16 pause for LB on PE 16
+Element 13 pause for LB on PE 13
+Element 6 pause for LB on PE 6
+Element 18 pause for LB on PE 18
+Element 12 pause for LB on PE 12
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Element 10 pause for LB on PE 10
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 1.08722
+			----kernel: 1.34304
+			----kernel: 1.34578
+			----kernel: 1.34948
+			----kernel: 1.35145
+			----kernel: 1.35157
+			----kernel: 1.74835
+			----kernel: 2.05393
+			----kernel: 2.39322
+			----kernel: 2.23365
+			----kernel: 2.48412
+			----kernel: 2.05403
+			----kernel: 4.10792
+			----kernel: 6.16181
+			----kernel: 8.2157
+			----kernel: 13.6875
+			----kernel: 14.6647
+			----kernel: 17.5976
+			----kernel: 16.6186
+			----kernel: 17.5957
+Resume iteration at step 3
+Element 0 pause for LB on PE 0
+Element 2 pause for LB on PE 2
+Element 3 pause for LB on PE 3
+Element 1 pause for LB on PE 1
+Element 4 pause for LB on PE 4
+Resume iteration at step 4
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Element 5 pause for LB on PE 5
+Element 15 pause for LB on PE 15
+Element 11 pause for LB on PE 11
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps1.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+Element 9 pause for LB on PE 9
+Element 17 pause for LB on PE 17
+Element 14 pause for LB on PE 14
+Element 8 pause for LB on PE 8
+Element 18 pause for LB on PE 18
+Element 10 pause for LB on PE 10
+Element 6 pause for LB on PE 6
+Element 16 pause for LB on PE 16
+Element 13 pause for LB on PE 13
+Element 7 pause for LB on PE 7
+Element 19 pause for LB on PE 19
+Element 12 pause for LB on PE 12
+cuda0
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps5.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+cuda0
+PE:0[nps4.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+PE:0[nps2.ece.ncsu.edu]: RUN: Device[0]penalty: -10 64:512
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 0: 50000
+SIZE 1: 50000
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 2: 200400200
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+SIZE 3: 204
+SIZE 4: 204
+SIZE 5: 204
+			----kernel: 0.662227
+			----kernel: 1.39589
+			----kernel: 1.41615
+			----kernel: 1.41762
+			----kernel: 1.41886
+			----kernel: 1.41906
+			----kernel: 2.05399
+			----kernel: 1.48642
+			----kernel: 2.14828
+			----kernel: 2.40015
+			----kernel: 2.2407
+			----kernel: 2.05399
+			----kernel: 2.054
+			----kernel: 4.1079
+			----kernel: 9.77691
+			----kernel: 4.10785
+			----kernel: 15.6412
+			----kernel: 16.6184
+			----kernel: 16.6183
+			----kernel: 17.5954
+Resume iteration at step 4
+Time: 104.274525
+[Partition 0][Node 0] End of program

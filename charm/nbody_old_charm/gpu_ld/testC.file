@@ -1,0 +1,273 @@
+#include "nbody.decl.h"
+#include "nbody.h"
+char * pConfigFile  = (char *) "nn.conf";
+char * pDatasetFile = (char *) NULL;
+char * pLibFile     = (char *) "libnn.so";
+int    peset;
+#define CHK_ERR(str)                                             \
+    do {                                                         \
+        cudaError_t ce = str;                                    \
+        if (ce != cudaSuccess) {                                 \
+            ckout << "Error: " << cudaGetErrorString(ce) << endl; \
+        }                                                        \
+    } while (0)
+char sEMSG[][ECFG_MSG_LEN] = {
+    "Success",
+    "Unknown argument",
+    "Configuration file not specified",
+    "Library not specified"
+};
+void ShowConfiguration(NbodyConfig * pConf) {
+    ckout << endl << endl << "Cluster env.    \t";
+    if (pConf->mParams.cluster) {
+        ckout << "yes" << endl;
+    }
+    else
+        ckout << "no" << endl;
+    ckout << "Time ressolu.\t\t" << pConf->mParams.timeRes << endl;
+    ckout << "Duration.\t\t" << pConf->mParams.duration << endl;
+    ckout << endl << endl;
+}
+inline int SetPreference(int argc, char ** argv) {
+#define IS_OPTION(str) (!strcmp(argv[idx], str))
+    int idx = 1;
+    while (idx < argc) {
+        if IS_OPTION("-c") {
+            if ((idx + 1) >= argc)
+                return E_FILE_ARG;
+            pConfigFile = argv[++idx];
+        }
+        else if IS_OPTION("--config") {
+            if ((idx + 1) >= argc)
+                return E_FILE_ARG;
+            pConfigFile = argv[++idx];
+        }
+        else if IS_OPTION("-l") {
+            if ((idx + 1) >= argc)
+                return E_LIB_ARG;
+            pLibFile = argv[++idx];
+        }
+        else if IS_OPTION("--library") {
+            if ((idx + 1) >= argc)
+                return E_LIB_ARG;
+            pLibFile = argv[++idx];
+        }
+        else if IS_OPTION("-s") {
+            if ((idx + 1) >= argc)
+                return E_LIB_ARG;
+            peset = atoi(argv[++idx]);
+        }
+        else {
+            return E_UNKNOWN_ARG;
+        }
+        idx++;
+    }
+    return E_SUCCESS;
+#undef IS_OPTION
+}
+const char * GetEMSG(int errId) {
+    return sEMSG[errId - E_SUCCESS];
+}
+CProxy_Main mainProxy;
+class Main : public CBase_Main {
+    double startTime;
+    int numParticles, penum;
+    CProxy_Data dst;
+    ParticleDataset * pDataset;
+    NbodyConfig     * pConfig;
+    int iter;
+    GPU_ParticleDataset::GPUConfig gConfig;
+    PRECISION sec, duration, step;
+public:
+    Main(CkArgMsg *m) {
+        int        mErrId;
+        bool       isCluster;
+        bool       isOshmem = false;
+        int        rank;
+        int        commSize;
+        char       name[218];
+        snprintf(name, sizeof(char) * 32, "app_%s",m->argv[0]);
+        if ((mErrId = SetPreference(m->argc, m->argv)) != E_SUCCESS) {
+            ckout << "Error: Main: "
+                 << GetEMSG(mErrId) << endl;
+            CkAbort("Error: Main");
+        }
+        penum = peset;
+        ckout << "\t\tPENUM: " << peset << endl;  
+        iter = 0;
+        try {
+            pConfig = new NbodyConfig(pConfigFile);
+        }
+        catch (int errId) {
+            ckout << "Error: "
+                  << NbodyConfig::GetClassID(errId) << ": "
+                  << NbodyConfig::GetEMSG(errId) << endl;
+
+            CkAbort("Error: pConfig allocation");
+        }
+        PRECISION grav = pConfig->gravCon;
+
+        ckout << "\t\tConfigurtion Complete" << endl;
+        pDatasetFile = const_cast<char *>(pConfig->GetValue(
+            pConfig->GetKeyString(_INITDATASET_)));
+        ckout << "DataFile: " << pDatasetFile << endl;
+        if (pDatasetFile != NULL) {
+            try {
+                pDataset     = new ParticleDataset(pDatasetFile);
+            }
+            catch (int errId) {
+                ckout << "Error: "
+                     << ParticleDataset::GetClassID(errId) << ": "
+                     << ParticleDataset::GetEMSG(errId) << endl;
+
+                CkAbort("Error: pDataset Initialization");
+            }
+        }
+        pDataset->SaveToFile(name);
+        ckout << "\t\tDataLoad Complete" << pDataset->mpParticle[2].xPos<< endl;
+        ShowConfiguration(pConfig);
+        sec = 0.0;
+        numParticles = pDataset->mNumParticles;
+        step         = pConfig->mParams.timeRes;
+        duration     = pConfig->mParams.duration;
+        dst = CProxy_Data::ckNew(pDataset->mpParticle, numParticles, grav, duration, step, penum, penum);
+        ckout << "Computation Begin" << endl;
+        dst.IterBegin(pDataset->mpParticle, numParticles,  
+            CkCallback(CkReductionTarget(Main, collect), thisProxy)); 
+
+    }
+    void collect(CkReductionMsg *msg) {
+        CkReduction::setElement *current = 
+            (CkReduction::setElement*) msg->getData();
+        while(current !=NULL) {
+            ParticleDataset::Particle * result = 
+                (ParticleDataset::Particle*) &current->data;
+            int localCnt  = result->localCnt;
+            int localDisp = result->localDisp;
+            int pid       = result->pid;
+            current = current->next();
+        }
+    }
+    void done(int peid_) {
+        iter++;
+        if (iter == penum) {
+            double endTime  = CkWallTimer();
+            pDataset->SaveToFile("charmgpu.bin"); 
+            CkPrintf("Time: %lf\n", endTime-startTime);
+            CkExit();
+        }
+       
+    }
+
+};
+class Data : public CBase_Data {
+    NbodyConfig * plConfig;
+    ParticleDataset * plDataset;
+    ParticleDataset::Particle * localBuf;
+    PRECISION sec;
+    int localCnt;
+    int localDisp;
+    int numParticles;
+    int penum, peid;
+    bool copy;
+    PRECISION grav, duration, step;
+    Data_SDAG_CODE
+    GPU_ParticleDataset::GPUConfig gConfig;
+public:
+    Data(ParticleDataset::Particle * pL, int numParticles_, PRECISION grav_, PRECISION duration_, PRECISION step_, int penum_) : numParticles(numParticles_) {
+        usesAtSync = true;
+        penum = penum_;
+        peid  = thisIndex;
+        bool copy = false;
+        grav      = grav_;
+        duration  = duration_;
+        step      = step_;
+        sec = 0.0;
+        plDataset = new ParticleDataset(numParticles); 
+        int divCnt = numParticles / penum;
+        int remCnt = numParticles % penum;
+        int total_pe = penum;
+        int idx = peid;
+        if (!remCnt) {
+            localCnt = divCnt;
+            localDisp = idx * divCnt;
+        }
+        else {
+            if (idx == total_pe-1)
+                localCnt = numParticles - (idx * (divCnt + 1));
+            else
+                localCnt = divCnt + 1;
+        localDisp = idx * (divCnt + 1);
+
+        }
+
+        localBuf  = new ParticleDataset::Particle[localCnt];
+        localBuf->localCnt  = localCnt;
+        localBuf->localDisp = localDisp;
+        localBuf->pid       = peid;
+        gConfig.localCnt    = localCnt;
+        gConfig.localDisp   = localDisp;
+        gConfig.pid         = peid;
+        gConfig.grav        = grav;
+        gConfig.dev         = CkMyPe();
+    }
+    void pup(PUP::er &p) {
+        CBase_Data::pup(p);
+        __sdag_pup(p);
+        p|localCnt; p|localDisp; p|penum; p|peid; p|numParticles;
+        p|grav; p|duration; p|step;p|sec;
+
+        if (p.isUnpacking()) {
+            plDataset = new ParticleDataset(numParticles);
+            localBuf  = new ParticleDataset::Particle[localCnt];
+        }
+        PUParray(p, plDataset->mpParticle, numParticles);
+        PUParray(p, localBuf, localCnt);
+    }
+    Data(CkMigrateMessage*) {}
+    void DataLoad(ParticleDataset::Particle *dPar, int numPar) {
+        ckout << "[" << peid << "/"<< penum << "]: " << localDisp << "/" << localCnt << " Data: "<< localBuf[1].xPos<<endl;
+    }
+    void CudaCompute() {
+#define SET_PARTICLE(str1, str2)        \
+    x##str1##Pos = localBuf[str2].xPos; \
+    y##str1##Pos = localBuf[str2].yPos; \
+    z##str1##Pos = localBuf[str2].zPos; \
+    x##str1##Vel = localBuf[str2].xVel; \
+    y##str1##Vel = localBuf[str2].yVel; \
+    z##str1##Vel = localBuf[str2].zVel; \
+    x##str1##Acc = localBuf[str2].xAcc; \
+    y##str1##Acc = localBuf[str2].yAcc; \
+    z##str1##Acc = localBuf[str2].zAcc; \
+    mass##str1 = localBuf[str2].mass
+#define SET_IPARTICLE(str1, str2)                   \
+    x##str1##Pos = plDataset->mpParticle[str2].xPos; \
+    y##str1##Pos = plDataset->mpParticle[str2].yPos; \
+    z##str1##Pos = plDataset->mpParticle[str2].zPos; \
+    mass##str1 = plDataset->mpParticle[str2].mass
+
+        int iIdx, jIdx;
+        PRECISION x1Pos, y1Pos, z1Pos;
+        PRECISION x1Vel, y1Vel, z1Vel;
+        PRECISION x1Acc, y1Acc, z1Acc;
+        PRECISION mass1;
+        PRECISION x2Pos, y2Pos, z2Pos;
+        PRECISION mass2;
+        PRECISION force, force_x, force_y, force_z;
+        PRECISION radius, radius_s;
+        int peid = thisIndex;
+        gConfig.step = step;
+        ckout << "secs: " << sec << "/" << duration << "\xd";
+        if (sec < duration) {
+            CHK_ERR(    ComputeParticleAttributes(plDataset, localBuf, gConfig, step, grav, CkMyPe(), peid, localCnt, localDisp, numParticles));
+            sec += step;
+        } else {
+            mainProxy.done(thisIndex);
+        }
+    }
+    void ResumeFromSync() {
+        IterBegin(plDataset->mpParticle, numParticles,
+            CkCallback(CkReductionTarget(Main, collect), mainProxy));
+    }
+};
+#include "nbody.def.h"

@@ -1,0 +1,2002 @@
+Charmrun> scalable start enabled. 
+Converse/Charm++ Commit ID: v6.7.0-1-gca55e1d
+Charm++> scheduler running in netpoll mode.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 9 unique compute nodes (20-way SMP).
+Charm++> cpu topology info is gathered in 0.010 seconds.
+		PE dimension: 4:4:4 and chare number: 64
+My PE[0/64]: imax[129] 0jmax[129] 0kmax[129] 0it: 0
+My PE[3/64]: imax[129] 0jmax[129] 0kmax[129] 3it: 0
+My PE[5/64]: imax[129] 0jmax[130] 1kmax[130] 1it: 0
+My PE[2/64]: imax[129] 0jmax[129] 0kmax[130] 2it: 0
+My PE[1/64]: imax[129] 0jmax[129] 0kmax[130] 1it: 0
+My PE[4/64]: imax[129] 0jmax[130] 1kmax[129] 0it: 0
+My PE[6/64]: imax[129] 0jmax[130] 1kmax[130] 2it: 0
+My PE[7/64]: imax[129] 0jmax[130] 1kmax[129] 3it: 0
+My PE[10/64]: imax[129] 0jmax[130] 2kmax[130] 2it: 0
+My PE[21/64]: imax[130] 1jmax[130] 1kmax[130] 1it: 127
+My PE[9/64]: imax[129] 0jmax[130] 2kmax[130] 1it: 0
+My PE[11/64]: imax[129] 0jmax[130] 2kmax[129] 3it: 0
+My PE[12/64]: imax[129] 0jmax[129] 3kmax[129] 0it: 0
+My PE[13/64]: imax[129] 0jmax[129] 3kmax[130] 1it: 0
+My PE[15/64]: imax[129] 0jmax[129] 3kmax[129] 3it: 0
+My PE[16/64]: imax[130] 1jmax[129] 0kmax[129] 0it: 127
+My PE[19/64]: imax[130] 1jmax[129] 0kmax[129] 3it: 127
+My PE[18/64]: imax[130] 1jmax[129] 0kmax[130] 2it: 127
+My PE[17/64]: imax[130] 1jmax[129] 0kmax[130] 1it: 127
+My PE[20/64]: imax[130] 1jmax[130] 1kmax[129] 0it: 127
+My PE[25/64]: imax[130] 1jmax[130] 2kmax[130] 1it: 127
+My PE[26/64]: imax[130] 1jmax[130] 2kmax[130] 2it: 127
+My PE[14/64]: imax[129] 0jmax[129] 3kmax[130] 2it: 0
+My PE[8/64]: imax[129] 0jmax[130] 2kmax[129] 0it: 0
+My PE[22/64]: imax[130] 1jmax[130] 1kmax[130] 2it: 127
+My PE[28/64]: imax[130] 1jmax[129] 3kmax[129] 0it: 127
+My PE[23/64]: imax[130] 1jmax[130] 1kmax[129] 3it: 127
+My PE[56/64]: imax[129] 3jmax[130] 2kmax[129] 0it: 383
+My PE[27/64]: imax[130] 1jmax[130] 2kmax[129] 3it: 127
+My PE[52/64]: imax[129] 3jmax[130] 1kmax[129] 0it: 383
+My PE[24/64]: imax[130] 1jmax[130] 2kmax[129] 0it: 127
+My PE[49/64]: imax[129] 3jmax[129] 0kmax[130] 1it: 383
+My PE[41/64]: imax[130] 2jmax[130] 2kmax[130] 1it: 255
+My PE[51/64]: imax[129] 3jmax[129] 0kmax[129] 3it: 383
+My PE[48/64]: imax[129] 3jmax[129] 0kmax[129] 0it: 383
+My PE[45/64]: imax[130] 2jmax[129] 3kmax[130] 1it: 255
+My PE[42/64]: imax[130] 2jmax[130] 2kmax[130] 2it: 255
+My PE[43/64]: imax[130] 2jmax[130] 2kmax[129] 3it: 255
+My PE[40/64]: imax[130] 2jmax[130] 2kmax[129] 0it: 255
+My PE[53/64]: imax[129] 3jmax[130] 1kmax[130] 1it: 383
+My PE[50/64]: imax[129] 3jmax[129] 0kmax[130] 2it: 383
+My PE[59/64]: imax[129] 3jmax[130] 2kmax[129] 3it: 383
+My PE[58/64]: imax[129] 3jmax[130] 2kmax[130] 2it: 383
+My PE[57/64]: imax[129] 3jmax[130] 2kmax[130] 1it: 383
+My PE[55/64]: imax[129] 3jmax[130] 1kmax[129] 3it: 383
+My PE[54/64]: imax[129] 3jmax[130] 1kmax[130] 2it: 383
+My PE[32/64]: imax[130] 2jmax[129] 0kmax[129] 0it: 255
+My PE[34/64]: imax[130] 2jmax[129] 0kmax[130] 2it: 255
+My PE[29/64]: imax[130] 1jmax[129] 3kmax[130] 1it: 127
+My PE[47/64]: imax[130] 2jmax[129] 3kmax[129] 3it: 255
+My PE[46/64]: imax[130] 2jmax[129] 3kmax[130] 2it: 255
+My PE[61/64]: imax[129] 3jmax[129] 3kmax[130] 1it: 383
+My PE[33/64]: imax[130] 2jmax[129] 0kmax[130] 1it: 255
+My PE[31/64]: imax[130] 1jmax[129] 3kmax[129] 3it: 127
+My PE[35/64]: imax[130] 2jmax[129] 0kmax[129] 3it: 255
+My PE[44/64]: imax[130] 2jmax[129] 3kmax[129] 0it: 255
+My PE[63/64]: imax[129] 3jmax[129] 3kmax[129] 3it: 383
+My PE[60/64]: imax[129] 3jmax[129] 3kmax[129] 0it: 383
+My PE[30/64]: imax[130] 1jmax[129] 3kmax[130] 2it: 127
+My PE[62/64]: imax[129] 3jmax[129] 3kmax[130] 2it: 383
+My PE[36/64]: imax[130] 2jmax[130] 1kmax[129] 0it: 255
+My PE[37/64]: imax[130] 2jmax[130] 1kmax[130] 1it: 255
+My PE[39/64]: imax[130] 2jmax[130] 1kmax[129] 3it: 255
+My PE[38/64]: imax[130] 2jmax[130] 1kmax[130] 2it: 255
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+	***Kernel: 4.35308
+		********iter: 0
+		[48]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+	***Kernel: 4.34125
+		********iter: 0
+		[55]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+	***Kernel: 4.37743
+		********iter: 0
+		[24]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 4.40946
+		********iter: 0
+		[57]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+	***Kernel: 4.6043
+		********iter: 0
+		[40]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+	***Kernel: 4.40575
+		********iter: 0
+		[61]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[63]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[58]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[62]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[42]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[37]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[38]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[41]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[36]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[39]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[59]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[47]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[44]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[28]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[56]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[50]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[52]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[25]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[49]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[53]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[54]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[51]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[33]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[30]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[34]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[31]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[29]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[35]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[32]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+	***Kernel: 4.37248
+		********iter: 0
+	***Kernel: 9.79659
+		********iter: 0
+	***Kernel: 9.79157
+		********iter: 0
+	***Kernel: 9.77643
+		********iter: 0
+	***Kernel: 9.75959
+		********iter: 0
+	***Kernel: 9.0108
+		********iter: 0
+	***Kernel: 9.0102
+		********iter: 0
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[21]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[20]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[23]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[26]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[27]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[22]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 22.5115
+		********iter: 0
+	***Kernel: 22.5137
+		********iter: 0
+	***Kernel: 22.5121
+		********iter: 0
+	***Kernel: 22.5131
+		********iter: 0
+	***Kernel: 22.5127
+		********iter: 0
+		[60]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 9.86431
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 9.81216
+	***Kernel: 13.35
+		[43]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+	***Kernel: 13.3496
+	***Kernel: 13.3491
+		[45]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[46]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+	***Kernel: 19.5654
+		********iter: 0
+	***Kernel: 19.5592
+		********iter: 0
+	***Kernel: 19.5597
+		********iter: 0
+	***Kernel: 19.5603
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 22.5031
+		********iter: 0
+	***Kernel: 22.5036
+		********iter: 0
+	***Kernel: 22.5041
+		********iter: 0
+	***Kernel: 22.5047
+		********iter: 0
+	***Kernel: 22.5053
+		********iter: 0
+	***Kernel: 26.928
+		********iter: 0
+	***Kernel: 26.8804
+		********iter: 0
+	***Kernel: 26.8808
+		********iter: 0
+	***Kernel: 26.8814
+		********iter: 0
+	***Kernel: 26.8819
+		********iter: 0
+	***Kernel: 26.8824
+		********iter: 0
+		********iter: 0
+	***Kernel: 13.6219
+		********iter: 0
+	***Kernel: 13.6218
+		********iter: 0
+	***Kernel: 13.6224
+		********iter: 0
+	***Kernel: 4.37779
+		********iter: 0
+	***Kernel: 18.0811
+		********iter: 0
+	***Kernel: 18.0817
+		********iter: 0
+	***Kernel: 18.0821
+		********iter: 0
+	***Kernel: 18.0827
+		********iter: 0
+	***Kernel: 27.3549
+		********iter: 0
+	***Kernel: 27.3072
+		********iter: 0
+	***Kernel: 27.3078
+		********iter: 0
+	***Kernel: 27.3083
+		********iter: 0
+	***Kernel: 27.3087
+		********iter: 0
+	***Kernel: 27.3093
+		********iter: 0
+	***Kernel: 31.5542
+		********iter: 0
+	***Kernel: 28.0932
+		********iter: 0
+	***Kernel: 28.0936
+		********iter: 0
+	***Kernel: 28.0954
+		********iter: 0
+	***Kernel: 28.0942
+		********iter: 0
+	***Kernel: 28.0948
+		********iter: 0
+	***Kernel: 28.0958
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 14.533
+		********iter: 0
+	***Kernel: 14.5335
+		********iter: 0
+	***Kernel: 14.534
+		********iter: 0
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+	***Kernel: 5.01486
+		********iter: 0
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+	***Kernel: 4.81912
+		********iter: 0
+gosa: 0.002441
+		[61]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[58]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[63]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[62]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[60]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[42]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[37]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[38]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[40]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[36]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[41]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[39]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[59]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[57]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[21]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[47]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[20]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[43]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[44]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[26]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[23]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[22]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[28]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[45]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[56]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[50]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[52]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[25]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[49]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[27]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[24]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[46]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[48]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[53]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[55]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[54]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[51]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[33]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[30]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[34]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[31]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[29]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[35]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[32]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+	***Kernel: 30.0663
+		********iter: 0
+	***Kernel: 31.2866
+		********iter: 0
+	***Kernel: 31.2871
+		********iter: 0
+	***Kernel: 31.2877
+		********iter: 0
+	***Kernel: 31.2882
+		********iter: 0
+	***Kernel: 31.2887
+		********iter: 0
+	***Kernel: 31.2893
+		********iter: 0
+	***Kernel: 31.2977
+		********iter: 0
+	***Kernel: 31.2988
+		********iter: 0
+	***Kernel: 31.2983
+		********iter: 0
+	***Kernel: 31.2994
+		********iter: 0
+	***Kernel: 31.2998
+	***Kernel: 31.3003
+		********iter: 0
+	***Kernel: 31.3008
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.4516
+		********iter: 0
+	***Kernel: 31.452
+		********iter: 0
+	***Kernel: 31.4526
+		********iter: 0
+	***Kernel: 31.4531
+		********iter: 0
+	***Kernel: 31.4536
+		********iter: 0
+	***Kernel: 31.4547
+		********iter: 0
+	***Kernel: 31.4541
+		********iter: 0
+	***Kernel: 31.5202
+	***Kernel: 31.5183
+	***Kernel: 31.5192
+	***Kernel: 31.5197
+	***Kernel: 31.5186
+	***Kernel: 31.5208
+	***Kernel: 31.5182
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.6311
+		********iter: 0
+	***Kernel: 31.6315
+		********iter: 0
+	***Kernel: 31.6319
+		********iter: 0
+	***Kernel: 31.6324
+		********iter: 0
+	***Kernel: 31.6329
+		********iter: 0
+	***Kernel: 31.6335
+		********iter: 0
+	***Kernel: 31.6341
+		********iter: 0
+	***Kernel: 31.7449
+		********iter: 0
+	***Kernel: 31.7454
+		********iter: 0
+	***Kernel: 31.7461
+		********iter: 0
+	***Kernel: 31.7466
+		********iter: 0
+	***Kernel: 31.7471
+		********iter: 0
+	***Kernel: 31.7475
+		********iter: 0
+	***Kernel: 31.748
+		********iter: 0
+	***Kernel: 34.1876
+		********iter: 0
+	***Kernel: 34.1881
+		********iter: 0
+	***Kernel: 34.1885
+		********iter: 0
+	***Kernel: 34.1889
+	***Kernel: 34.1894
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.1899
+		********iter: 0
+	***Kernel: 34.1905
+		********iter: 0
+	***Kernel: 34.3147
+		********iter: 0
+	***Kernel: 34.3151
+		********iter: 0
+	***Kernel: 34.3156
+		********iter: 0
+	***Kernel: 34.3161
+	***Kernel: 34.3166
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3171
+	***Kernel: 34.3177
+		********iter: 0
+		********iter: 0
+	***Kernel: 33.353
+		********iter: 0
+	***Kernel: 35.7993
+		********iter: 0
+	***Kernel: 35.8008
+		********iter: 0
+	***Kernel: 35.7988
+		********iter: 0
+	***Kernel: 35.7997
+		********iter: 0
+	***Kernel: 35.8002
+		********iter: 0
+	***Kernel: 35.7983
+		********iter: 0
+	***Kernel: 35.8013
+		********iter: 0
+gosa: 5867157.500000
+		[61]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[58]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[63]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[62]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[60]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[42]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[37]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[38]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[41]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[40]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[36]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[39]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[57]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[21]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[47]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[20]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[22]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[28]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[24]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[26]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[23]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[44]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[49]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[45]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[43]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[56]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[50]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[52]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[25]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[27]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[46]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[48]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[55]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[54]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[51]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[53]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[33]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[30]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[34]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[31]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[29]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[35]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[32]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[59]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+	***Kernel: 24.6187
+	***Kernel: 30.2435
+		********iter: 0
+	***Kernel: 31.2968
+		********iter: 0
+	***Kernel: 31.2978
+		********iter: 0
+	***Kernel: 31.2983
+		********iter: 0
+	***Kernel: 31.2988
+		********iter: 0
+	***Kernel: 31.2973
+		********iter: 0
+	***Kernel: 31.3011
+		********iter: 0
+	***Kernel: 31.2951
+		********iter: 0
+	***Kernel: 31.2956
+		********iter: 0
+	***Kernel: 31.2961
+		********iter: 0
+	***Kernel: 31.2967
+		********iter: 0
+	***Kernel: 31.2973
+	***Kernel: 31.2977
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.2981
+		********iter: 0
+		********iter: 0
+	***Kernel: 30.3906
+		********iter: 0
+	***Kernel: 30.3912
+		********iter: 0
+	***Kernel: 30.3916
+		********iter: 0
+	***Kernel: 31.4457
+	***Kernel: 31.4462
+		********iter: 0
+		********iter: 0
+	***Kernel: 20.1628
+		********iter: 0
+	***Kernel: 31.5213
+		********iter: 0
+	***Kernel: 31.5217
+		********iter: 0
+	***Kernel: 31.5221
+	***Kernel: 31.5227
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.5233
+		********iter: 0
+	***Kernel: 31.5237
+		********iter: 0
+	***Kernel: 31.524
+		********iter: 0
+	***Kernel: 30.6374
+		********iter: 0
+	***Kernel: 31.6978
+		********iter: 0
+	***Kernel: 31.6984
+		********iter: 0
+	***Kernel: 31.6989
+		********iter: 0
+	***Kernel: 31.6998
+		********iter: 0
+	***Kernel: 31.6994
+		********iter: 0
+	***Kernel: 31.7022
+		********iter: 0
+	***Kernel: 31.7755
+		********iter: 0
+	***Kernel: 31.7761
+		********iter: 0
+	***Kernel: 31.7766
+		********iter: 0
+	***Kernel: 31.7771
+		********iter: 0
+	***Kernel: 31.7777
+		********iter: 0
+	***Kernel: 31.7781
+		********iter: 0
+	***Kernel: 31.7784
+		********iter: 0
+	***Kernel: 33.0995
+		********iter: 0
+	***Kernel: 34.1681
+		********iter: 0
+	***Kernel: 34.1686
+		********iter: 0
+	***Kernel: 34.169
+	***Kernel: 34.1695
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.1699
+		********iter: 0
+	***Kernel: 34.1704
+		********iter: 0
+	***Kernel: 32.1578
+		********iter: 0
+	***Kernel: 33.2325
+		********iter: 0
+	***Kernel: 34.3119
+		********iter: 0
+	***Kernel: 34.3124
+		********iter: 0
+	***Kernel: 34.3135
+		********iter: 0
+	***Kernel: 34.3127
+		********iter: 0
+	***Kernel: 30.3814
+		********iter: 0
+	***Kernel: 35.8268
+		********iter: 0
+	***Kernel: 35.8272
+		********iter: 0
+	***Kernel: 35.8276
+		********iter: 0
+	***Kernel: 35.8281
+		********iter: 0
+	***Kernel: 35.8287
+		********iter: 0
+	***Kernel: 35.8291
+		********iter: 0
+	***Kernel: 35.8295
+		********iter: 0
+	***Kernel: 35.8301
+		********iter: 0
+gosa: 2939253.500000
+		[61]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[42]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[38]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[36]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[41]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[40]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[58]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[63]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[60]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[59]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[57]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[62]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+	***Kernel: 8.92655
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+	***Kernel: 8.92597
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[21]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[20]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[22]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[25]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[27]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[28]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[24]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[26]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[23]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[44]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[49]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[45]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[43]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[47]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[48]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[46]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[56]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[53]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[50]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[52]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[55]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[54]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[51]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[33]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[30]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[34]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[29]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[35]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[32]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+	***Kernel: 22.7134
+		********iter: 0
+	***Kernel: 22.7143
+		********iter: 0
+	***Kernel: 22.7147
+		********iter: 0
+	***Kernel: 22.7137
+		********iter: 0
+	***Kernel: 22.7139
+		********iter: 0
+	***Kernel: 23.6418
+	***Kernel: 23.6408
+		********iter: 0
+		********iter: 0
+	***Kernel: 27.1473
+		********iter: 0
+	***Kernel: 23.7719
+		********iter: 0
+	***Kernel: 23.7725
+		********iter: 0
+	***Kernel: 23.7729
+		********iter: 0
+		[37]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[39]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[31]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+	***Kernel: 31.2939
+		********iter: 0
+	***Kernel: 31.2935
+		********iter: 0
+	***Kernel: 31.2944
+		********iter: 0
+	***Kernel: 31.295
+		********iter: 0
+	***Kernel: 31.2956
+		********iter: 0
+	***Kernel: 31.296
+		********iter: 0
+	***Kernel: 31.2965
+		********iter: 0
+	***Kernel: 31.3065
+		********iter: 0
+	***Kernel: 31.307
+		********iter: 0
+	***Kernel: 31.308
+	***Kernel: 31.3075
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.3084
+	***Kernel: 31.309
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.3095
+		********iter: 0
+	***Kernel: 31.4566
+		********iter: 0
+	***Kernel: 31.457
+		********iter: 0
+	***Kernel: 31.4576
+		********iter: 0
+	***Kernel: 31.4581
+		********iter: 0
+	***Kernel: 31.4586
+	***Kernel: 31.4591
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.4597
+		********iter: 0
+	***Kernel: 30.4508
+		********iter: 0
+	***Kernel: 31.5101
+		********iter: 0
+	***Kernel: 31.5107
+		********iter: 0
+	***Kernel: 31.5111
+		********iter: 0
+	***Kernel: 31.5117
+		********iter: 0
+	***Kernel: 31.5121
+	***Kernel: 31.5126
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.4599
+		********iter: 0
+	***Kernel: 9.0284
+		********iter: 0
+	***Kernel: 9.02701
+		********iter: 0
+	***Kernel: 34.2415
+		********iter: 0
+	***Kernel: 34.2437
+		********iter: 0
+	***Kernel: 34.2425
+		********iter: 0
+	***Kernel: 34.2444
+		********iter: 0
+	***Kernel: 34.2433
+		********iter: 0
+	***Kernel: 34.242
+		********iter: 0
+	***Kernel: 34.2429
+		********iter: 0
+	***Kernel: 34.3763
+		********iter: 0
+	***Kernel: 34.3769
+		********iter: 0
+	***Kernel: 34.3774
+		********iter: 0
+	***Kernel: 34.378
+		********iter: 0
+	***Kernel: 34.3784
+	***Kernel: 34.3789
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3795
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 26.8842
+		********iter: 0
+	***Kernel: 26.8848
+		********iter: 0
+	***Kernel: 26.8853
+		********iter: 0
+	***Kernel: 26.8859
+		********iter: 0
+	***Kernel: 26.8866
+		********iter: 0
+	***Kernel: 26.887
+		********iter: 0
+gosa: 1739572.000000
+		[61]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[58]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[63]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[62]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[60]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[42]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[37]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[36]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[38]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[40]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[41]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[39]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[59]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[57]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[21]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[47]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[20]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[43]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[44]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[26]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[23]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[56]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[52]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[22]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[28]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[50]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[25]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[27]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[49]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[45]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[24]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[46]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[53]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[55]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[54]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[48]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[51]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[33]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[34]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+	***Kernel: 12.584
+		[30]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+	***Kernel: 12.5839
+		[31]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[29]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[35]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[32]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+	***Kernel: 31.2815
+		********iter: 0
+	***Kernel: 31.2821
+		********iter: 0
+	***Kernel: 31.2811
+		********iter: 0
+	***Kernel: 31.2826
+		********iter: 0
+	***Kernel: 31.2832
+		********iter: 0
+	***Kernel: 31.2837
+		********iter: 0
+	***Kernel: 31.284
+		********iter: 0
+	***Kernel: 31.3334
+		********iter: 0
+	***Kernel: 31.3339
+		********iter: 0
+	***Kernel: 31.3344
+		********iter: 0
+	***Kernel: 31.3354
+		********iter: 0
+	***Kernel: 31.3348
+		********iter: 0
+	***Kernel: 31.3358
+		********iter: 0
+	***Kernel: 31.3364
+		********iter: 0
+	***Kernel: 31.4345
+		********iter: 0
+	***Kernel: 31.4351
+		********iter: 0
+	***Kernel: 31.4356
+		********iter: 0
+	***Kernel: 31.4361
+	***Kernel: 31.4366
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.4371
+		********iter: 0
+	***Kernel: 31.4376
+		********iter: 0
+	***Kernel: 30.4659
+		********iter: 0
+	***Kernel: 31.5261
+		********iter: 0
+	***Kernel: 31.5266
+		********iter: 0
+	***Kernel: 31.5271
+		********iter: 0
+	***Kernel: 31.5276
+	***Kernel: 31.528
+	***Kernel: 31.5288
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 28.1719
+		********iter: 0
+	***Kernel: 18.9597
+		********iter: 0
+	***Kernel: 18.9601
+		********iter: 0
+	***Kernel: 18.9606
+		********iter: 0
+	***Kernel: 18.961
+		********iter: 0
+	***Kernel: 30.6759
+		********iter: 0
+	***Kernel: 31.7345
+		********iter: 0
+	***Kernel: 31.7351
+		********iter: 0
+	***Kernel: 31.7355
+		********iter: 0
+	***Kernel: 31.736
+	***Kernel: 31.7365
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.7373
+		********iter: 0
+	***Kernel: 33.1227
+	***Kernel: 33.2334
+	***Kernel: 33.2324
+	***Kernel: 33.2329
+		********iter: 0
+	***Kernel: 34.1999
+		********iter: 0
+	***Kernel: 34.2004
+		********iter: 0
+	***Kernel: 34.201
+	***Kernel: 34.2013
+	***Kernel: 34.2019
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.2023
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3088
+		********iter: 0
+	***Kernel: 34.3092
+		********iter: 0
+	***Kernel: 34.3098
+		********iter: 0
+	***Kernel: 26.4922
+		********iter: 0
+	***Kernel: 35.8063
+		********iter: 0
+	***Kernel: 35.8068
+		********iter: 0
+	***Kernel: 35.8074
+		********iter: 0
+	***Kernel: 35.8079
+		********iter: 0
+	***Kernel: 35.8084
+		********iter: 0
+	***Kernel: 35.8088
+		********iter: 0
+	***Kernel: 35.8094
+		********iter: 0
+	***Kernel: 35.81
+		********iter: 0
+gosa: 1150144.750000
+		[61]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[58]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[63]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[60]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[62]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[42]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[37]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[36]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[38]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[40]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[41]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[39]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[59]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[57]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[21]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[47]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[20]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[44]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[43]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[26]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[23]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[56]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[52]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[22]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[28]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[49]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[45]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[50]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[25]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[27]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[24]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[46]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[48]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[53]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[55]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[54]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[51]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[33]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[32]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+	***Kernel: 8.96656
+		[30]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[34]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[31]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[29]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[35]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+	***Kernel: 8.96539
+	***Kernel: 31.2938
+		********iter: 0
+	***Kernel: 31.2948
+		********iter: 0
+	***Kernel: 31.2958
+		********iter: 0
+	***Kernel: 31.2933
+		********iter: 0
+	***Kernel: 31.2952
+		********iter: 0
+	***Kernel: 31.2943
+		********iter: 0
+	***Kernel: 31.2962
+		********iter: 0
+	***Kernel: 31.3982
+		********iter: 0
+	***Kernel: 31.3987
+		********iter: 0
+	***Kernel: 31.3991
+		********iter: 0
+	***Kernel: 31.3996
+		********iter: 0
+	***Kernel: 31.4001
+		********iter: 0
+	***Kernel: 31.4006
+		********iter: 0
+	***Kernel: 31.4012
+		********iter: 0
+	***Kernel: 30.208
+		********iter: 0
+	***Kernel: 31.439
+		********iter: 0
+	***Kernel: 31.4401
+		********iter: 0
+	***Kernel: 31.4396
+		********iter: 0
+	***Kernel: 31.4406
+	***Kernel: 31.4412
+		********iter: 0
+	***Kernel: 31.4418
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.5087
+		********iter: 0
+	***Kernel: 31.5093
+		********iter: 0
+	***Kernel: 31.5098
+		********iter: 0
+	***Kernel: 31.5102
+		********iter: 0
+	***Kernel: 31.5108
+		********iter: 0
+	***Kernel: 31.5113
+		********iter: 0
+	***Kernel: 31.5119
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 23.6408
+		********iter: 0
+	***Kernel: 23.6414
+		********iter: 0
+	***Kernel: 23.6418
+		********iter: 0
+	***Kernel: 22.5894
+		********iter: 0
+	***Kernel: 22.5899
+		********iter: 0
+	***Kernel: 31.8038
+		********iter: 0
+	***Kernel: 31.8012
+		********iter: 0
+	***Kernel: 31.8018
+		********iter: 0
+	***Kernel: 31.8022
+		********iter: 0
+	***Kernel: 31.8034
+		********iter: 0
+	***Kernel: 31.8028
+		********iter: 0
+	***Kernel: 31.8038
+		********iter: 0
+	***Kernel: 32.0401
+		********iter: 0
+	***Kernel: 34.2343
+		********iter: 0
+	***Kernel: 34.2339
+		********iter: 0
+	***Kernel: 34.235
+		********iter: 0
+	***Kernel: 34.2355
+	***Kernel: 34.236
+		********iter: 0
+	***Kernel: 34.2365
+		********iter: 0
+		********iter: 0
+	***Kernel: 32.3416
+		********iter: 0
+	***Kernel: 34.3245
+		********iter: 0
+	***Kernel: 34.325
+		********iter: 0
+	***Kernel: 34.3255
+		********iter: 0
+	***Kernel: 34.3261
+		********iter: 0
+	***Kernel: 34.327
+	***Kernel: 34.3265
+		********iter: 0
+		********iter: 0
+	***Kernel: 32.5319
+		********iter: 0
+	***Kernel: 35.9025
+		********iter: 0
+	***Kernel: 35.9029
+		********iter: 0
+	***Kernel: 35.9036
+		********iter: 0
+	***Kernel: 35.9041
+		********iter: 0
+	***Kernel: 35.9047
+		********iter: 0
+	***Kernel: 35.9051
+		********iter: 0
+	***Kernel: 35.9056
+		********iter: 0
+gosa: 840918.625000
+		[61]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[58]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[63]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[60]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[62]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[42]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[37]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[36]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[41]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[40]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[38]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[39]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[59]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[57]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[26]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[23]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[56]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[50]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[52]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[22]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[25]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[28]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[24]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[49]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[27]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[48]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[53]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[55]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[54]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[51]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[33]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[29]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 9.78379
+		[21]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 9.78421
+		[47]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[20]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[44]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[43]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[45]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[46]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[30]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[34]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[31]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[35]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[32]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+	***Kernel: 18.97
+	***Kernel: 12.2453
+	***Kernel: 15.8845
+	***Kernel: 15.8845
+		********iter: 0
+		********iter: 0
+	***Kernel: 27.9825
+		********iter: 0
+	***Kernel: 24.63
+		********iter: 0
+	***Kernel: 24.6306
+		********iter: 0
+	***Kernel: 23.5743
+		********iter: 0
+	***Kernel: 22.35
+		********iter: 0
+	***Kernel: 31.3565
+		********iter: 0
+	***Kernel: 31.357
+		********iter: 0
+	***Kernel: 31.3574
+		********iter: 0
+	***Kernel: 31.3585
+		********iter: 0
+	***Kernel: 31.3579
+	***Kernel: 31.3589
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.3594
+		********iter: 0
+	***Kernel: 31.4573
+		********iter: 0
+	***Kernel: 31.457
+		********iter: 0
+	***Kernel: 31.4577
+		********iter: 0
+	***Kernel: 31.4583
+		********iter: 0
+	***Kernel: 31.4588
+		********iter: 0
+	***Kernel: 31.4593
+		********iter: 0
+	***Kernel: 31.4598
+		********iter: 0
+	***Kernel: 31.4938
+		********iter: 0
+	***Kernel: 31.4935
+		********iter: 0
+	***Kernel: 31.4943
+		********iter: 0
+	***Kernel: 31.4948
+		********iter: 0
+	***Kernel: 31.4952
+		********iter: 0
+	***Kernel: 31.4962
+		********iter: 0
+	***Kernel: 31.4958
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 28.16
+		********iter: 0
+	***Kernel: 28.1604
+		********iter: 0
+	***Kernel: 23.5691
+		********iter: 0
+	***Kernel: 23.5697
+		********iter: 0
+	***Kernel: 23.5701
+		********iter: 0
+	***Kernel: 31.7928
+		********iter: 0
+	***Kernel: 31.7934
+	***Kernel: 31.7938
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.7943
+		********iter: 0
+	***Kernel: 31.7948
+		********iter: 0
+	***Kernel: 31.7954
+		********iter: 0
+	***Kernel: 31.7974
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 24.3927
+		********iter: 0
+	***Kernel: 24.3932
+	***Kernel: 24.3936
+		********iter: 0
+		********iter: 0
+	***Kernel: 24.3941
+		********iter: 0
+	***Kernel: 24.3947
+		********iter: 0
+	***Kernel: 33.3822
+		********iter: 0
+	***Kernel: 33.3826
+		********iter: 0
+	***Kernel: 34.2935
+		********iter: 0
+	***Kernel: 34.2946
+		********iter: 0
+	***Kernel: 34.2941
+		********iter: 0
+	***Kernel: 30.3629
+	***Kernel: 34.2951
+		********iter: 0
+		********iter: 0
+	***Kernel: 35.8486
+		********iter: 0
+	***Kernel: 35.8492
+		********iter: 0
+	***Kernel: 35.8502
+		********iter: 0
+	***Kernel: 35.8497
+		********iter: 0
+	***Kernel: 35.8506
+		********iter: 0
+	***Kernel: 35.8512
+		********iter: 0
+	***Kernel: 35.8516
+		********iter: 0
+	***Kernel: 35.852
+		********iter: 0
+gosa: 557118.250000
+		[61]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[58]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[63]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[62]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[60]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[36]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[41]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[57]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[59]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[21]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[47]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[20]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[44]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[43]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[56]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[26]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[23]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[49]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[45]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[50]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[22]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[25]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[28]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[27]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[52]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[24]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[46]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[53]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[55]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[51]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[48]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[54]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[33]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[34]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[30]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[29]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[31]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[35]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[32]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[42]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[37]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[38]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+	***Kernel: 9.04069
+	***Kernel: 9.04126
+		[40]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[39]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+	***Kernel: 29.1985
+		********iter: 0
+	***Kernel: 31.3008
+		********iter: 0
+	***Kernel: 31.3014
+		********iter: 0
+	***Kernel: 31.3019
+	***Kernel: 31.303
+		********iter: 0
+	***Kernel: 31.3026
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.3034
+		********iter: 0
+	***Kernel: 31.3905
+		********iter: 0
+	***Kernel: 31.391
+		********iter: 0
+	***Kernel: 31.392
+		********iter: 0
+	***Kernel: 31.3915
+	***Kernel: 31.3924
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.393
+		********iter: 0
+	***Kernel: 31.3934
+		********iter: 0
+	***Kernel: 30.2282
+		********iter: 0
+	***Kernel: 31.4503
+		********iter: 0
+	***Kernel: 31.4515
+	***Kernel: 31.4507
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.452
+	***Kernel: 31.4523
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.4531
+		********iter: 0
+	***Kernel: 30.4639
+		********iter: 0
+	***Kernel: 31.5251
+		********iter: 0
+	***Kernel: 31.5262
+	***Kernel: 31.5257
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.5267
+		********iter: 0
+	***Kernel: 31.5271
+		********iter: 0
+	***Kernel: 31.5276
+		********iter: 0
+	***Kernel: 31.5453
+		********iter: 0
+	***Kernel: 31.5449
+		********iter: 0
+	***Kernel: 31.5459
+		********iter: 0
+	***Kernel: 31.5463
+		********iter: 0
+	***Kernel: 31.5469
+		********iter: 0
+	***Kernel: 31.5478
+	***Kernel: 31.5474
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 22.8209
+		********iter: 0
+	***Kernel: 22.8213
+	***Kernel: 22.8218
+		********iter: 0
+		********iter: 0
+	***Kernel: 22.8223
+		********iter: 0
+	***Kernel: 22.8227
+		********iter: 0
+	***Kernel: 34.2419
+		********iter: 0
+	***Kernel: 34.2428
+		********iter: 0
+	***Kernel: 34.2424
+		********iter: 0
+	***Kernel: 34.2433
+		********iter: 0
+	***Kernel: 34.2439
+		********iter: 0
+	***Kernel: 34.2444
+		********iter: 0
+	***Kernel: 34.2451
+		********iter: 0
+	***Kernel: 33.2457
+		********iter: 0
+	***Kernel: 34.3184
+		********iter: 0
+	***Kernel: 34.318
+		********iter: 0
+	***Kernel: 34.319
+		********iter: 0
+	***Kernel: 34.3196
+		********iter: 0
+	***Kernel: 34.3206
+	***Kernel: 34.3201
+		********iter: 0
+		********iter: 0
+	***Kernel: 35.8171
+		********iter: 0
+	***Kernel: 35.8182
+		********iter: 0
+	***Kernel: 35.8176
+		********iter: 0
+	***Kernel: 35.8186
+		********iter: 0
+	***Kernel: 35.819
+		********iter: 0
+	***Kernel: 35.8196
+	***Kernel: 35.8202
+		********iter: 0
+		********iter: 0
+	***Kernel: 35.8207
+		********iter: 0
+gosa: 448181.750000
+		[61]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[58]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[63]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[60]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[62]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[42]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[37]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[36]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[38]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[41]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[39]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[40]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[57]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[59]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[47]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[43]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[44]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[26]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[23]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[49]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[45]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[56]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[50]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[52]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[22]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[25]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[28]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[24]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[46]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[27]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[53]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[48]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[55]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[54]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[51]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[30]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[33]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[34]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[29]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[31]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[35]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[32]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+	***Kernel: 9.78156
+		********iter: 0
+	***Kernel: 9.78211
+		********iter: 0
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[21]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[20]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 24.3609
+	***Kernel: 24.3649
+	***Kernel: 24.3623
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+	***Kernel: 27.7753
+	***Kernel: 24.3619
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+	***Kernel: 24.3613
+		********iter: 0
+	***Kernel: 31.2941
+		********iter: 0
+	***Kernel: 31.2946
+		********iter: 0
+	***Kernel: 31.295
+		********iter: 0
+	***Kernel: 31.2955
+		********iter: 0
+	***Kernel: 31.2961
+		********iter: 0
+	***Kernel: 31.2966
+		********iter: 0
+	***Kernel: 31.3218
+		********iter: 0
+	***Kernel: 31.3224
+		********iter: 0
+	***Kernel: 31.3228
+		********iter: 0
+	***Kernel: 31.3239
+		********iter: 0
+	***Kernel: 31.3233
+		********iter: 0
+	***Kernel: 31.3243
+	***Kernel: 31.3249
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.4826
+		********iter: 0
+	***Kernel: 31.4821
+		********iter: 0
+	***Kernel: 31.483
+		********iter: 0
+	***Kernel: 31.4836
+		********iter: 0
+	***Kernel: 31.4841
+	***Kernel: 31.4846
+		********iter: 0
+		********iter: 0
+	***Kernel: 31.4852
+		********iter: 0
+	***Kernel: 31.4845
+		********iter: 0
+	***Kernel: 31.486
+		********iter: 0
+	***Kernel: 31.4851
+		********iter: 0
+	***Kernel: 31.4855
+		********iter: 0
+	***Kernel: 31.4861
+		********iter: 0
+	***Kernel: 31.4865
+		********iter: 0
+	***Kernel: 31.4871
+		********iter: 0
+	***Kernel: 30.4877
+		********iter: 0
+	***Kernel: 31.5443
+		********iter: 0
+	***Kernel: 31.5448
+		********iter: 0
+	***Kernel: 31.5455
+		********iter: 0
+	***Kernel: 31.546
+		********iter: 0
+	***Kernel: 31.5466
+		********iter: 0
+	***Kernel: 31.5471
+		********iter: 0
+	***Kernel: 31.7439
+		********iter: 0
+	***Kernel: 31.7445
+		********iter: 0
+	***Kernel: 31.7449
+		********iter: 0
+	***Kernel: 31.7454
+		********iter: 0
+	***Kernel: 31.7459
+		********iter: 0
+	***Kernel: 31.7465
+		********iter: 0
+	***Kernel: 31.747
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 24.4506
+		********iter: 0
+	***Kernel: 24.451
+		********iter: 0
+	***Kernel: 24.4515
+		********iter: 0
+	***Kernel: 24.452
+		********iter: 0
+	***Kernel: 24.4526
+		********iter: 0
+		********iter: 0
+	***Kernel: 9.93316
+		********iter: 0
+	***Kernel: 9.93205
+		********iter: 0
+	***Kernel: 35.8352
+		********iter: 0
+	***Kernel: 35.8356
+		********iter: 0
+	***Kernel: 35.8361
+		********iter: 0
+	***Kernel: 35.8371
+		********iter: 0
+	***Kernel: 35.8366
+		********iter: 0
+	***Kernel: 35.8381
+	***Kernel: 35.8377
+		********iter: 0
+	***Kernel: 35.8386
+		********iter: 0
+		********iter: 0
+gosa: 335099.875000
+		[61]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[58]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[60]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[42]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[37]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[36]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[38]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[41]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[40]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[39]: cudaSetDevice 0 on [lewis4-r730-gpu3-node433]
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[59]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[57]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[21]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[20]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+		[43]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[44]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node429]
+		[26]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[56]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[50]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[52]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[49]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[22]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[53]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[54]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[48]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[55]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[51]: cudaSetDevice 0 on [lewis4-r730-gpu3-node435]
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node428]
+		[33]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[30]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[34]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[31]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[29]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[35]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[32]: cudaSetDevice 0 on [lewis4-r730-gpu3-node432]
+		[63]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+		[62]: cudaSetDevice 0 on [lewis4-r730-gpu3-node476]
+	***Kernel: 9.25731
+		[23]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[28]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 9.25689
+		[25]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[27]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+		[24]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 17.7078
+		********iter: 0
+	***Kernel: 17.7073
+		********iter: 0
+	***Kernel: 17.7071
+		********iter: 0
+	***Kernel: 17.7067
+		********iter: 0
+		[47]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+		[45]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+	***Kernel: 9.01284
+		********iter: 0
+	***Kernel: 8.99759
+		********iter: 0
+	***Kernel: 31.2959
+		********iter: 0
+	***Kernel: 31.2963
+		********iter: 0
+	***Kernel: 31.2969
+		********iter: 0
+	***Kernel: 31.2979
+		********iter: 0
+	***Kernel: 31.2973
+		********iter: 0
+	***Kernel: 31.2984
+		********iter: 0
+	***Kernel: 31.2988
+		********iter: 0
+		[46]: cudaSetDevice 0 on [lewis4-r730-gpu3-node434]
+	***Kernel: 4.65405
+		********iter: 0
+	***Kernel: 27.9596
+		********iter: 0
+	***Kernel: 29.1858
+		********iter: 0
+	***Kernel: 31.456
+		********iter: 0
+	***Kernel: 31.4564
+		********iter: 0
+	***Kernel: 31.457
+		********iter: 0
+	***Kernel: 28.0725
+	***Kernel: 28.0729
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 22.2379
+		********iter: 0
+	***Kernel: 22.2389
+	***Kernel: 22.2385
+		********iter: 0
+		********iter: 0
+	***Kernel: 22.2394
+		********iter: 0
+	***Kernel: 22.2395
+		********iter: 0
+	***Kernel: 31.5239
+		********iter: 0
+	***Kernel: 31.5249
+		********iter: 0
+	***Kernel: 31.5244
+		********iter: 0
+	***Kernel: 31.5259
+		********iter: 0
+	***Kernel: 31.5254
+		********iter: 0
+	***Kernel: 31.5265
+		********iter: 0
+	***Kernel: 31.5287
+		********iter: 0
+	***Kernel: 31.7314
+		********iter: 0
+	***Kernel: 31.7326
+		********iter: 0
+	***Kernel: 31.7319
+		********iter: 0
+	***Kernel: 31.733
+		********iter: 0
+	***Kernel: 31.7336
+		********iter: 0
+	***Kernel: 31.7341
+		********iter: 0
+	***Kernel: 31.7346
+		********iter: 0
+	***Kernel: 32.3236
+	***Kernel: 34.189
+		********iter: 0
+	***Kernel: 34.1893
+		********iter: 0
+	***Kernel: 34.1899
+		********iter: 0
+	***Kernel: 34.1904
+	***Kernel: 34.1912
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.1908
+		********iter: 0
+	***Kernel: 34.1917
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.2972
+		********iter: 0
+	***Kernel: 34.2977
+		********iter: 0
+	***Kernel: 34.2988
+		********iter: 0
+	***Kernel: 34.2993
+	***Kernel: 34.2984
+	***Kernel: 34.2997
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 35.8322
+		********iter: 0
+	***Kernel: 35.8318
+		********iter: 0
+	***Kernel: 35.8328
+		********iter: 0
+	***Kernel: 35.8333
+		********iter: 0
+	***Kernel: 35.8338
+		********iter: 0
+	***Kernel: 35.8344
+	***Kernel: 35.8353
+		********iter: 0
+	***Kernel: 35.8349
+		********iter: 0
+		********iter: 0
+gosa: 252107.000000
+Time: 362.709967

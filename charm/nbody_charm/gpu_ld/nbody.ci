@@ -1,0 +1,38 @@
+mainmodule nbody {
+    readonly CProxy_Main mainProxy;
+    mainchare Main {
+        entry Main(CkArgMsg *m);
+        entry void collect(void);
+        entry [reductiontarget] void resumeIter(CkReductionMsg *msg);
+        //entry void done(int peid_);
+    };
+    include "nbody.h";
+    array[1D] Data {
+        entry Data(ParticleDataset::Particle pL[numParticles_], int numParticles_, PRECISION grav_, PRECISION duration_, PRECISION step_, int penum_, bool morwpe);
+        entry void pauseForLB();
+        entry void CudaCompute();
+        entry void SendInput(CProxy_Data output) {
+            atomic {
+                output.input(numParticles,plDataset->mpParticle);
+            }
+        };
+
+        entry void IterBegin(CkCallback &collect) {
+          when
+            input(int par_num, ParticleDataset::Particle ptl[par_num])
+            atomic {
+                DataLoad(par_num, plDataset->mpParticle, ptl);                
+                CudaCompute();
+            }
+            atomic {
+                CkPrintf("\t\tData: %f\n", localBuf[1].xPos);
+                contribute(localCnt*sizeof(ParticleDataset::Particle), localBuf, CkReduction::set, collect);
+            }
+
+        };
+        entry void input(int par_num, ParticleDataset::Particle ptl[par_num]);
+        entry [reductiontarget] void gather_res(CkReductionMsg *msg);
+    };
+
+
+};

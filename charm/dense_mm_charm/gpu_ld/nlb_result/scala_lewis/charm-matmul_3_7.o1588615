@@ -1,0 +1,46 @@
+Charmrun> scalable start enabled. 
+Converse/Charm++ Commit ID: v6.7.0-1-gca55e1d
+Charm++> scheduler running in netpoll mode.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 3 unique compute nodes (20-way SMP).
+Charm++> cpu topology info is gathered in 0.004 seconds.
+The total number of PEs: 7 and Partion is: 1
+The workportion is: 7
+		CID:0Hostname: : lewis4-r730-gpu3-node430
+		CID:5Hostname: : lewis4-r730-gpu3-node432
+		CID:6Hostname: : lewis4-r730-gpu3-node432
+		CID:4Hostname: : lewis4-r730-gpu3-node431
+		CID:3Hostname: : lewis4-r730-gpu3-node431
+		CID:1Hostname: : lewis4-r730-gpu3-node430
+		CID:2Hostname: : lewis4-r730-gpu3-node430
+		Total size: 252 wh: 7 wid: 1 subnum: 7
+		PE:6[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 9.7e-05
+		Total size: 252 wh: 7 wid: 1 subnum: 7
+		PE:5[lewis4-r730-gpu3-node432]: RUN: Device[0]
+ Launching
+Kernel time: 7.6e-05
+		Total size: 252 wh: 7 wid: 1 subnum: 7
+		PE:3[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 7.4e-05
+		Total size: 252 wh: 7 wid: 1 subnum: 7
+		PE:4[lewis4-r730-gpu3-node431]: RUN: Device[0]
+ Launching
+Kernel time: 5.7e-05
+		Total size: 252 wh: 7 wid: 1 subnum: 7
+		PE:0[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 6.6e-05
+		Total size: 252 wh: 7 wid: 1 subnum: 7
+		PE:2[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 6e-05
+		Total size: 252 wh: 7 wid: 1 subnum: 7
+		PE:1[lewis4-r730-gpu3-node430]: RUN: Device[0]
+ Launching
+Kernel time: 6.1e-05
+Resume iteration at step 0
+Time: 2.967193
+Time: 2.959364

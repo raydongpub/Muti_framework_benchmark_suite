@@ -1,0 +1,1019 @@
+Charmrun> scalable start enabled. 
+Converse/Charm++ Commit ID: v6.7.0-1-gca55e1d
+Charm++> scheduler running in netpoll mode.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 2 unique compute nodes (20-way SMP).
+Charm++> cpu topology info is gathered in 0.011 seconds.
+		PENUM: 20
+		Configurtion Complete
+DataFile: dset1200k.nn
+		DataLoad Complete537.000000
+
+
+Cluster env.    	yes
+Time ressolu.		0.001000
+Duration.		0.010000
+
+
+Computation Begin
+[0/20]: 0/60000 Data: 0.000000
+Memcpy Counter: 60000 and global: 1200000
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 16.9718 and number: 60000 and disp: 0 global: 1200000
+		Data: nan
+[1/20]: 60000/60000 Data: 0.000000
+[4/20]: 240000/60000 Data: 0.000000
+[2/20]: 120000/60000 Data: 0.000000
+[8/20]: 480000/60000 Data: 0.000000
+[16/20]: 960000/60000 Data: 0.000000
+Memcpy Counter: 60000 and global: 1200000
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 16.9733 and number: 60000 and disp: 60000 global: 1200000
+		Data: nan
+	***Kernel: 17.3565 and number: 60000 and disp: 960000 global: 1200000
+		Data: nan
+[17/20]: 1020000/60000 Data: 0.000000
+[18/20]: 1080000/60000 Data: 0.000000
+Memcpy Counter: 60000 and global: 1200000
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9454 and number: 60000 and disp: 120000 global: 1200000
+		Data: nan
+	***Kernel: 33.943 and number: 60000 and disp: 480000 global: 1200000
+		Data: nan
+[3/20]: 180000/60000 Data: 0.000000
+[9/20]: 540000/60000 Data: 0.000000
+[10/20]: 600000/60000 Data: 0.000000
+[12/20]: 720000/60000 Data: 0.000000
+	***Kernel: 34.7041 and number: 60000 and disp: 1080000 global: 1200000
+		Data: nan
+	***Kernel: 34.7122 and number: 60000 and disp: 1020000 global: 1200000
+		Data: nan
+[19/20]: 1140000/60000 Data: 0.000000
+Memcpy Counter: 60000 and global: 1200000
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 16.9724 and number: 60000 and disp: 240000 global: 1200000
+		Data: nan
+[5/20]: 300000/60000 Data: 0.000000
+[6/20]: 360000/60000 Data: 0.000000
+Memcpy Counter: 60000 and global: 1200000
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 16.9716 and number: 60000 and disp: 180000 global: 1200000
+		Data: nan
+	***Kernel: 34.7014 and number: 60000 and disp: 720000 global: 1200000
+		Data: nan
+	***Kernel: 34.658 and number: 60000 and disp: 600000 global: 1200000
+		Data: nan
+[11/20]: 660000/60000 Data: 0.000000
+[13/20]: 780000/60000 Data: 0.000000
+[14/20]: 840000/60000 Data: 0.000000
+Memcpy Counter: 60000 and global: 1200000
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 16.9727 and number: 60000 and disp: 540000 global: 1200000
+		Data: nan
+	***Kernel: 17.3553 and number: 60000 and disp: 1140000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 17.3556 and number: 60000 and disp: 840000 global: 1200000
+		Data: nan
+[15/20]: 900000/60000 Data: 0.000000
+Memcpy Counter: 60000 and global: 1200000
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9396 and number: 60000 and disp: 360000 global: 1200000
+		Data: nan
+	***Kernel: 33.9237 and number: 60000 and disp: 300000 global: 1200000
+		Data: nan
+[7/20]: 420000/60000 Data: 0.000000
+Memcpy Counter: 60000 and global: 1200000
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 16.9709 and number: 60000 and disp: 420000 global: 1200000
+		Data: nan
+	***Kernel: 34.7027 and number: 60000 and disp: 660000 global: 1200000
+		Data: nan
+	***Kernel: 34.6964 and number: 60000 and disp: 780000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 17.357 and number: 60000 and disp: 900000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[1/20]: 60000/60000 Data: nan
+secs: 0.000000/0.010000[0/20]: 0/60000 Data: nan
+secs: 0.000000/0.010000[8/20]: 480000/60000 Data: nan
+secs: 0.000000/0.010000[2/20]: 120000/60000 Data: nan
+secs: 0.000000/0.010000[4/20]: 240000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 33.9405 and number: 60000 and disp: 60000 global: 1200000
+		Data: nan
+	***Kernel: 33.9364 and number: 60000 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[16/20]: 960000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 17.3555 and number: 60000 and disp: 960000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[17/20]: 1020000/60000 Data: nan
+secs: 0.000000/0.010000[18/20]: 1080000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9414 and number: 60000 and disp: 240000 global: 1200000
+		Data: nan
+	***Kernel: 33.9413 and number: 60000 and disp: 120000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[5/20]: 300000/60000 Data: nan
+secs: 0.000000/0.010000[6/20]: 360000/60000 Data: nan
+secs: 0.000000/0.010000[3/20]: 180000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.6785 and number: 60000 and disp: 1080000 global: 1200000
+		Data: nan
+	***Kernel: 34.7016 and number: 60000 and disp: 1020000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[19/20]: 1140000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.8643 and number: 60000 and disp: 300000 global: 1200000
+		Data: nan
+	***Kernel: 33.943 and number: 60000 and disp: 480000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[9/20]: 540000/60000 Data: nan
+secs: 0.000000/0.010000[10/20]: 600000/60000 Data: nan
+secs: 0.000000/0.010000[12/20]: 720000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 18.9977 and number: 60000 and disp: 600000 global: 1200000
+		Data: nan
+	***Kernel: 34.7127 and number: 60000 and disp: 1140000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[11/20]: 660000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9413 and number: 60000 and disp: 180000 global: 1200000
+		Data: nan
+	***Kernel: 33.9412 and number: 60000 and disp: 360000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[7/20]: 420000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.7124 and number: 60000 and disp: 720000 global: 1200000
+		Data: nan
+	***Kernel: 34.6097 and number: 60000 and disp: 660000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[13/20]: 780000/60000 Data: nan
+secs: 0.000000/0.010000[14/20]: 840000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9433 and number: 60000 and disp: 540000 global: 1200000
+		Data: nan
+	***Kernel: 33.8445 and number: 60000 and disp: 420000 global: 1200000
+		Data: nan
+	***Kernel: 34.7116 and number: 60000 and disp: 780000 global: 1200000
+		Data: nan
+	***Kernel: 34.6913 and number: 60000 and disp: 840000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[15/20]: 900000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 17.3567 and number: 60000 and disp: 900000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[1/20]: 60000/60000 Data: nan
+secs: 0.000000/0.010000[0/20]: 0/60000 Data: nan
+secs: 0.000000/0.010000[8/20]: 480000/60000 Data: nan
+secs: 0.000000/0.010000[2/20]: 120000/60000 Data: nan
+secs: 0.000000/0.010000[4/20]: 240000/60000 Data: nan
+secs: 0.000000/0.010000[5/20]: 300000/60000 Data: nan
+secs: 0.000000/0.010000[6/20]: 360000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 33.9429 and number: 60000 and disp: 60000 global: 1200000
+		Data: nan
+	***Kernel: 33.9426 and number: 60000 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[17/20]: 1020000/60000 Data: nan
+secs: 0.000000/0.010000[16/20]: 960000/60000 Data: nan
+secs: 0.000000/0.010000[18/20]: 1080000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.7035 and number: 60000 and disp: 1020000 global: 1200000
+		Data: nan
+	***Kernel: 34.7107 and number: 60000 and disp: 960000 global: 1200000
+		Data: nan
+	***Kernel: 33.9431 and number: 60000 and disp: 120000 global: 1200000
+Memcpy Counter: 60000 and global: 1200000
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 17.3566 and number: 60000 and disp: 1080000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[19/20]: 1140000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 17.3553 and number: 60000 and disp: 1140000 global: 1200000
+		Data: nan
+		Data: nan
+	***Kernel: 84.8584 and number: 60000 and disp: 240000 global: 1200000
+		Data: nan
+	***Kernel: 84.8582 and number: 60000 and disp: 480000 global: 1200000
+		Data: nan
+	***Kernel: 84.8582 and number: 60000 and disp: 300000 global: 1200000
+		Data: nan
+	***Kernel: 84.8583 and number: 60000 and disp: 360000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[3/20]: 180000/60000 Data: nan
+secs: 0.000000/0.010000[7/20]: 420000/60000 Data: nan
+secs: 0.000000/0.010000[9/20]: 540000/60000 Data: nan
+secs: 0.000000/0.010000[10/20]: 600000/60000 Data: nan
+secs: 0.000000/0.010000[12/20]: 720000/60000 Data: nan
+secs: 0.000000/0.010000[13/20]: 780000/60000 Data: nan
+secs: 0.000000/0.010000[14/20]: 840000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 33.9435 and number: 60000 and disp: 420000 global: 1200000
+		Data: nan
+	***Kernel: 33.9409 and number: 60000 and disp: 180000 global: 1200000
+		Data: nan
+	***Kernel: 34.711 and number: 60000 and disp: 600000 global: 1200000
+		Data: nan
+	***Kernel: 34.6095 and number: 60000 and disp: 720000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+secs: 0.000000/0.010000[11/20]: 660000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 16.9718 and number: 60000 and disp: 540000 global: 1200000
+		Data: nan
+	***Kernel: 34.7024 and number: 60000 and disp: 840000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[15/20]: 900000/60000 Data: nan
+	***Kernel: 34.7127 and number: 60000 and disp: 780000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 34.7085 and number: 60000 and disp: 660000 global: 1200000
+		Data: nan
+	***Kernel: 34.6236 and number: 60000 and disp: 900000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[1/20]: 60000/60000 Data: nan
+secs: 0.000000/0.010000[0/20]: 0/60000 Data: nan
+secs: 0.000000/0.010000[4/20]: 240000/60000 Data: nan
+secs: 0.000000/0.010000[2/20]: 120000/60000 Data: nan
+secs: 0.000000/0.010000[8/20]: 480000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 33.9349 and number: 60000 and disp: 60000 global: 1200000
+		Data: nan
+	***Kernel: 33.9386 and number: 60000 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[17/20]: 1020000/60000 Data: nan
+secs: 0.000000/0.010000[16/20]: 960000/60000 Data: nan
+secs: 0.000000/0.010000[18/20]: 1080000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.7106 and number: 60000 and disp: 960000 global: 1200000
+		Data: nan
+	***Kernel: 34.7103 and number: 60000 and disp: 1020000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 50.9075 and number: 60000 and disp: 240000 global: 1200000
+		Data: nan
+	***Kernel: 50.9076 and number: 60000 and disp: 120000 global: 1200000
+		Data: nan
+	***Kernel: 50.9075 and number: 60000 and disp: 480000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[9/20]: 540000/60000 Data: nan
+secs: 0.000000/0.010000[3/20]: 180000/60000 Data: nan
+secs: 0.000000/0.010000[5/20]: 300000/60000 Data: nan
+secs: 0.000000/0.010000[6/20]: 360000/60000 Data: nan
+secs: 0.000000/0.010000[10/20]: 600000/60000 Data: nan
+secs: 0.000000/0.010000[12/20]: 720000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.708 and number: 60000 and disp: 1080000 global: 1200000
+		Data: nan
+	***Kernel: 18.5222 and number: 60000 and disp: 600000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[19/20]: 1140000/60000 Data: nan
+secs: 0.000000/0.010000[11/20]: 660000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9409 and number: 60000 and disp: 180000 global: 1200000
+		Data: nan
+	***Kernel: 33.9384 and number: 60000 and disp: 540000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 33.9425 and number: 60000 and disp: 300000 global: 1200000
+		Data: nan
+	***Kernel: 33.9425 and number: 60000 and disp: 360000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[7/20]: 420000/60000 Data: nan
+	***Kernel: 52.0671 and number: 60000 and disp: 720000 global: 1200000
+		Data: nan
+	***Kernel: 51.9641 and number: 60000 and disp: 660000 global: 1200000
+		Data: nan
+	***Kernel: 51.964 and number: 60000 and disp: 1140000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[13/20]: 780000/60000 Data: nan
+secs: 0.000000/0.010000[14/20]: 840000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 16.9726 and number: 60000 and disp: 420000 global: 1200000
+		Data: nan
+	***Kernel: 34.7028 and number: 60000 and disp: 840000 global: 1200000
+		Data: nan
+	***Kernel: 34.7118 and number: 60000 and disp: 780000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[15/20]: 900000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 17.3555 and number: 60000 and disp: 900000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[1/20]: 60000/60000 Data: nan
+secs: 0.000000/0.010000[0/20]: 0/60000 Data: nan
+secs: 0.000000/0.010000[2/20]: 120000/60000 Data: nan
+secs: 0.000000/0.010000[4/20]: 240000/60000 Data: nan
+secs: 0.000000/0.010000[8/20]: 480000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 33.9417 and number: 60000 and disp: 0 global: 1200000
+		Data: nan
+	***Kernel: 33.9415 and number: 60000 and disp: 60000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[17/20]: 1020000/60000 Data: nan
+secs: 0.000000/0.010000[16/20]: 960000/60000 Data: nan
+secs: 0.000000/0.010000[18/20]: 1080000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.7102 and number: 60000 and disp: 1020000 global: 1200000
+		Data: nan
+	***Kernel: 34.7107 and number: 60000 and disp: 960000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 50.9045 and number: 60000 and disp: 120000 global: 1200000
+		Data: nan
+	***Kernel: 50.9048 and number: 60000 and disp: 240000 global: 1200000
+		Data: nan
+	***Kernel: 50.9044 and number: 60000 and disp: 480000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[3/20]: 180000/60000 Data: nan
+secs: 0.000000/0.010000[9/20]: 540000/60000 Data: nan
+secs: 0.000000/0.010000[5/20]: 300000/60000 Data: nan
+secs: 0.000000/0.010000[6/20]: 360000/60000 Data: nan
+secs: 0.000000/0.010000[10/20]: 600000/60000 Data: nan
+secs: 0.000000/0.010000[12/20]: 720000/60000 Data: nan
+secs: 0.000000/0.010000[13/20]: 780000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.7111 and number: 60000 and disp: 1080000 global: 1200000
+		Data: nan
+	***Kernel: 18.4641 and number: 60000 and disp: 600000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[11/20]: 660000/60000 Data: nan
+secs: 0.000000/0.010000[19/20]: 1140000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9403 and number: 60000 and disp: 180000 global: 1200000
+		Data: nan
+	***Kernel: 33.9213 and number: 60000 and disp: 540000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.7113 and number: 60000 and disp: 720000 global: 1200000
+		Data: nan
+	***Kernel: 34.7112 and number: 60000 and disp: 780000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[14/20]: 840000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9385 and number: 60000 and disp: 300000 global: 1200000
+		Data: nan
+	***Kernel: 33.9359 and number: 60000 and disp: 360000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[7/20]: 420000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 16.9687 and number: 60000 and disp: 420000 global: 1200000
+		Data: nan
+	***Kernel: 34.706 and number: 60000 and disp: 660000 global: 1200000
+		Data: nan
+	***Kernel: 34.706 and number: 60000 and disp: 1140000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 17.3562 and number: 60000 and disp: 840000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[15/20]: 900000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 17.3509 and number: 60000 and disp: 900000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[1/20]: 60000/60000 Data: nan
+secs: 0.000000/0.010000[0/20]: 0/60000 Data: nan
+secs: 0.000000/0.010000[4/20]: 240000/60000 Data: nan
+secs: 0.000000/0.010000[2/20]: 120000/60000 Data: nan
+secs: 0.000000/0.010000[8/20]: 480000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 33.9335 and number: 60000 and disp: 60000 global: 1200000
+		Data: nan
+	***Kernel: 33.9356 and number: 60000 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[17/20]: 1020000/60000 Data: nan
+secs: 0.000000/0.010000[16/20]: 960000/60000 Data: nan
+secs: 0.000000/0.010000[18/20]: 1080000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 34.7111 and number: 60000 and disp: 1020000 global: 1200000
+		Data: nan
+	***Kernel: 34.7112 and number: 60000 and disp: 960000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 50.9048 and number: 60000 and disp: 480000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[12/20]: 720000/60000 Data: nan
+secs: 0.000000/0.010000[14/20]: 840000/60000 Data: nan
+secs: 0.000000/0.010000[10/20]: 600000/60000 Data: nan
+secs: 0.000000/0.010000[13/20]: 780000/60000 Data: nan
+	***Kernel: 50.9048 and number: 60000 and disp: 120000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[3/20]: 180000/60000 Data: nan
+	***Kernel: 50.9057 and number: 60000 and disp: 240000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[9/20]: 540000/60000 Data: nan
+secs: 0.000000/0.010000[5/20]: 300000/60000 Data: nan
+secs: 0.000000/0.010000[6/20]: 360000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.7121 and number: 60000 and disp: 1080000 global: 1200000
+		Data: nan
+	***Kernel: 18.4795 and number: 60000 and disp: 600000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[11/20]: 660000/60000 Data: nan
+secs: 0.000000/0.010000[19/20]: 1140000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9252 and number: 60000 and disp: 540000 global: 1200000
+		Data: nan
+	***Kernel: 33.9416 and number: 60000 and disp: 180000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 33.942 and number: 60000 and disp: 300000 global: 1200000
+		Data: nan
+	***Kernel: 33.9414 and number: 60000 and disp: 360000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[7/20]: 420000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 52.0686 and number: 60000 and disp: 720000 global: 1200000
+		Data: nan
+	***Kernel: 52.0686 and number: 60000 and disp: 840000 global: 1200000
+		Data: nan
+	***Kernel: 52.0686 and number: 60000 and disp: 780000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[15/20]: 900000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 16.971 and number: 60000 and disp: 420000 global: 1200000
+		Data: nan
+	***Kernel: 34.7115 and number: 60000 and disp: 660000 global: 1200000
+		Data: nan
+	***Kernel: 34.7115 and number: 60000 and disp: 1140000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 17.3505 and number: 60000 and disp: 900000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[1/20]: 60000/60000 Data: nan
+secs: 0.000000/0.010000[0/20]: 0/60000 Data: nan
+secs: 0.000000/0.010000[2/20]: 120000/60000 Data: nan
+secs: 0.000000/0.010000[4/20]: 240000/60000 Data: nan
+secs: 0.000000/0.010000[8/20]: 480000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 33.9428 and number: 60000 and disp: 60000 global: 1200000
+		Data: nan
+	***Kernel: 33.943 and number: 60000 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[17/20]: 1020000/60000 Data: nan
+secs: 0.000000/0.010000[16/20]: 960000/60000 Data: nan
+secs: 0.000000/0.010000[18/20]: 1080000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 34.7117 and number: 60000 and disp: 960000 global: 1200000
+		Data: nan
+	***Kernel: 34.7074 and number: 60000 and disp: 1020000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 50.9119 and number: 60000 and disp: 240000 global: 1200000
+		Data: nan
+	***Kernel: 50.9115 and number: 60000 and disp: 120000 global: 1200000
+		Data: nan
+	***Kernel: 50.9115 and number: 60000 and disp: 480000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[9/20]: 540000/60000 Data: nan
+secs: 0.000000/0.010000[3/20]: 180000/60000 Data: nan
+secs: 0.000000/0.010000[5/20]: 300000/60000 Data: nan
+secs: 0.000000/0.010000[6/20]: 360000/60000 Data: nan
+secs: 0.000000/0.010000[10/20]: 600000/60000 Data: nan
+secs: 0.000000/0.010000[12/20]: 720000/60000 Data: nan
+secs: 0.000000/0.010000[13/20]: 780000/60000 Data: nan
+secs: 0.000000/0.010000[14/20]: 840000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.713 and number: 60000 and disp: 1080000 global: 1200000
+		Data: nan
+	***Kernel: 18.5421 and number: 60000 and disp: 600000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[11/20]: 660000/60000 Data: nan
+secs: 0.000000/0.010000[19/20]: 1140000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9452 and number: 60000 and disp: 540000 global: 1200000
+		Data: nan
+	***Kernel: 33.9449 and number: 60000 and disp: 180000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.7115 and number: 60000 and disp: 840000 global: 1200000
+		Data: nan
+	***Kernel: 34.7119 and number: 60000 and disp: 720000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[15/20]: 900000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9424 and number: 60000 and disp: 300000 global: 1200000
+		Data: nan
+	***Kernel: 33.9406 and number: 60000 and disp: 360000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[7/20]: 420000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 16.9701 and number: 60000 and disp: 420000 global: 1200000
+		Data: nan
+	***Kernel: 34.6931 and number: 60000 and disp: 1140000 global: 1200000
+		Data: nan
+	***Kernel: 34.7091 and number: 60000 and disp: 780000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 34.696 and number: 60000 and disp: 900000 global: 1200000
+		Data: nan
+	***Kernel: 34.7068 and number: 60000 and disp: 660000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[1/20]: 60000/60000 Data: nan
+secs: 0.000000/0.010000[0/20]: 0/60000 Data: nan
+secs: 0.000000/0.010000[2/20]: 120000/60000 Data: nan
+secs: 0.000000/0.010000[4/20]: 240000/60000 Data: nan
+secs: 0.000000/0.010000[8/20]: 480000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 33.9399 and number: 60000 and disp: 0 global: 1200000
+		Data: nan
+	***Kernel: 33.937 and number: 60000 and disp: 60000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[17/20]: 1020000/60000 Data: nan
+secs: 0.000000/0.010000[16/20]: 960000/60000 Data: nan
+secs: 0.000000/0.010000[18/20]: 1080000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9383 and number: 60000 and disp: 120000 global: 1200000
+		Data: nan
+	***Kernel: 33.9392 and number: 60000 and disp: 240000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[3/20]: 180000/60000 Data: nan
+secs: 0.000000/0.010000[5/20]: 300000/60000 Data: nan
+secs: 0.000000/0.010000[6/20]: 360000/60000 Data: nan
+	***Kernel: 34.7057 and number: 60000 and disp: 960000 global: 1200000
+		Data: nan
+	***Kernel: 34.6959 and number: 60000 and disp: 1020000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 17.3566 and number: 60000 and disp: 1080000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[19/20]: 1140000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9405 and number: 60000 and disp: 480000 global: 1200000
+		Data: nan
+	***Kernel: 33.8433 and number: 60000 and disp: 180000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[9/20]: 540000/60000 Data: nan
+secs: 0.000000/0.010000[12/20]: 720000/60000 Data: nan
+secs: 0.000000/0.010000[10/20]: 600000/60000 Data: nan
+secs: 0.000000/0.010000[11/20]: 660000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 18.9419 and number: 60000 and disp: 720000 global: 1200000
+		Data: nan
+	***Kernel: 34.7077 and number: 60000 and disp: 1140000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[13/20]: 780000/60000 Data: nan
+secs: 0.000000/0.010000[14/20]: 840000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9408 and number: 60000 and disp: 360000 global: 1200000
+		Data: nan
+	***Kernel: 33.9408 and number: 60000 and disp: 300000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[7/20]: 420000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.7114 and number: 60000 and disp: 600000 global: 1200000
+		Data: nan
+	***Kernel: 34.7114 and number: 60000 and disp: 660000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.8538 and number: 60000 and disp: 420000 global: 1200000
+		Data: nan
+	***Kernel: 33.9404 and number: 60000 and disp: 540000 global: 1200000
+		Data: nan
+	***Kernel: 34.7057 and number: 60000 and disp: 780000 global: 1200000
+		Data: nan
+	***Kernel: 34.7063 and number: 60000 and disp: 840000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[15/20]: 900000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 17.3567 and number: 60000 and disp: 900000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[1/20]: 60000/60000 Data: nan
+secs: 0.000000/0.010000[0/20]: 0/60000 Data: nan
+secs: 0.000000/0.010000[4/20]: 240000/60000 Data: nan
+secs: 0.000000/0.010000[8/20]: 480000/60000 Data: nan
+secs: 0.000000/0.010000[2/20]: 120000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 33.945 and number: 60000 and disp: 60000 global: 1200000
+		Data: nan
+	***Kernel: 33.9453 and number: 60000 and disp: 0 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[17/20]: 1020000/60000 Data: nan
+secs: 0.000000/0.010000[16/20]: 960000/60000 Data: nan
+secs: 0.000000/0.010000[18/20]: 1080000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9429 and number: 60000 and disp: 120000 global: 1200000
+		Data: nan
+	***Kernel: 33.9435 and number: 60000 and disp: 240000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[3/20]: 180000/60000 Data: nan
+secs: 0.000000/0.010000[5/20]: 300000/60000 Data: nan
+secs: 0.000000/0.010000[6/20]: 360000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.7107 and number: 60000 and disp: 960000 global: 1200000
+		Data: nan
+	***Kernel: 34.7077 and number: 60000 and disp: 1020000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 17.3558 and number: 60000 and disp: 1080000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[19/20]: 1140000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.8449 and number: 60000 and disp: 180000 global: 1200000
+		Data: nan
+	***Kernel: 33.9429 and number: 60000 and disp: 480000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[9/20]: 540000/60000 Data: nan
+secs: 0.000000/0.010000[10/20]: 600000/60000 Data: nan
+secs: 0.000000/0.010000[12/20]: 720000/60000 Data: nan
+secs: 0.000000/0.010000[13/20]: 780000/60000 Data: nan
+secs: 0.000000/0.010000[14/20]: 840000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.712 and number: 60000 and disp: 1140000 global: 1200000
+		Data: nan
+	***Kernel: 18.9585 and number: 60000 and disp: 600000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[11/20]: 660000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9419 and number: 60000 and disp: 360000 global: 1200000
+		Data: nan
+	***Kernel: 33.9425 and number: 60000 and disp: 300000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[7/20]: 420000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.7114 and number: 60000 and disp: 840000 global: 1200000
+		Data: nan
+	***Kernel: 34.7118 and number: 60000 and disp: 720000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[15/20]: 900000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9402 and number: 60000 and disp: 540000 global: 1200000
+		Data: nan
+	***Kernel: 33.8251 and number: 60000 and disp: 420000 global: 1200000
+		Data: nan
+	***Kernel: 34.7076 and number: 60000 and disp: 780000 global: 1200000
+		Data: nan
+	***Kernel: 34.6966 and number: 60000 and disp: 660000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 17.3565 and number: 60000 and disp: 900000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[1/20]: 60000/60000 Data: nan
+secs: 0.000000/0.010000[0/20]: 0/60000 Data: nan
+secs: 0.000000/0.010000[2/20]: 120000/60000 Data: nan
+secs: 0.000000/0.010000[4/20]: 240000/60000 Data: nan
+secs: 0.000000/0.010000[8/20]: 480000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[1]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[0]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 33.9407 and number: 60000 and disp: 0 global: 1200000
+		Data: nan
+	***Kernel: 33.9346 and number: 60000 and disp: 60000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[17/20]: 1020000/60000 Data: nan
+secs: 0.000000/0.010000[16/20]: 960000/60000 Data: nan
+secs: 0.000000/0.010000[18/20]: 1080000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[2]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[4]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[17]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[16]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9406 and number: 60000 and disp: 120000 global: 1200000
+		Data: nan
+	***Kernel: 33.9406 and number: 60000 and disp: 240000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[3/20]: 180000/60000 Data: nan
+secs: 0.000000/0.010000[5/20]: 300000/60000 Data: nan
+secs: 0.000000/0.010000[6/20]: 360000/60000 Data: nan
+	***Kernel: 34.711 and number: 60000 and disp: 960000 global: 1200000
+		Data: nan
+	***Kernel: 34.703 and number: 60000 and disp: 1020000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[3]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[18]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[8]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 17.3562 and number: 60000 and disp: 1080000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[19/20]: 1140000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[19]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.8447 and number: 60000 and disp: 180000 global: 1200000
+		Data: nan
+	***Kernel: 33.9425 and number: 60000 and disp: 480000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[9/20]: 540000/60000 Data: nan
+secs: 0.000000/0.010000[10/20]: 600000/60000 Data: nan
+secs: 0.000000/0.010000[12/20]: 720000/60000 Data: nan
+secs: 0.000000/0.010000[13/20]: 780000/60000 Data: nan
+secs: 0.000000/0.010000[14/20]: 840000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[10]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[5]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[6]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.7023 and number: 60000 and disp: 1140000 global: 1200000
+		Data: nan
+	***Kernel: 18.9247 and number: 60000 and disp: 600000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[11/20]: 660000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[14]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[12]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.9429 and number: 60000 and disp: 300000 global: 1200000
+		Data: nan
+	***Kernel: 33.9423 and number: 60000 and disp: 360000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[7/20]: 420000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[7]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+Memcpy Counter: 60000 and global: 1200000
+		[9]: cudaSetDevice 0 on [lewis4-r730-gpu3-node430]
+	***Kernel: 34.7077 and number: 60000 and disp: 840000 global: 1200000
+		Data: nan
+	***Kernel: 34.708 and number: 60000 and disp: 720000 global: 1200000
+		Data: nan
+secs: 0.000000/0.010000[15/20]: 900000/60000 Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[13]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+Memcpy Counter: 60000 and global: 1200000
+		[11]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 33.8549 and number: 60000 and disp: 420000 global: 1200000
+		Data: nan
+	***Kernel: 33.9438 and number: 60000 and disp: 540000 global: 1200000
+		Data: nan
+	***Kernel: 34.7126 and number: 60000 and disp: 780000 global: 1200000
+		Data: nan
+	***Kernel: 34.7017 and number: 60000 and disp: 660000 global: 1200000
+		Data: nan
+Memcpy Counter: 60000 and global: 1200000
+		[15]: cudaSetDevice 0 on [lewis4-r730-gpu3-node431]
+	***Kernel: 17.3558 and number: 60000 and disp: 900000 global: 1200000
+		Data: nan
+Time: 2088.103102

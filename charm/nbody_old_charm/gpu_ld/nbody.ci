@@ -1,0 +1,30 @@
+mainmodule nbody {
+    readonly CProxy_Main mainProxy;
+    mainchare Main {
+        entry Main(CkArgMsg *m);
+        entry [reductiontarget] void collect(CkReductionMsg *msg);
+        entry [reductiontarget] void resumeIter(CkReductionMsg *msg);
+        //entry void done(int peid_);
+    };
+    include "nbody.h";
+    array[1D] Data {
+        entry Data(ParticleDataset::Particle pL[numParticles_], int numParticles_, PRECISION grav_, PRECISION duration_, PRECISION step_, int penum_);
+        entry void pauseForLB();
+        entry void DataLoad(ParticleDataset::Particle dPar[numPar], int numPar);
+        entry void CudaCompute();
+
+        entry void IterBegin(ParticleDataset::Particle dPar[numPar], int numPar, CkCallback collect) {
+            atomic {
+                DataLoad(dPar, numPar);                
+                CudaCompute();
+            }
+            atomic {
+                CkPrintf("\t\tData: %f\n", localBuf[1].xPos);
+                contribute(localCnt*sizeof(ParticleDataset::Particle), localBuf, CkReduction::set, collect);
+            }
+
+        };
+    };
+
+
+};

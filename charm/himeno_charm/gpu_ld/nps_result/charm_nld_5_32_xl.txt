@@ -1,0 +1,2313 @@
+Charm++> Running on MPI version: 3.1
+Charm++> level of thread support used: MPI_THREAD_SINGLE (desired: MPI_THREAD_SINGLE)
+Charm++> Running in non-SMP mode: numPes 32
+Converse/Charm++ Commit ID: v6.8.0-beta1-281-g9823be9
+Warning> Randomization of virtual memory (ASLR) is turned on in the kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try running with '+isomalloc_sync'.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 4 unique compute nodes (16-way SMP).
+Charm++> cpu topology info is gathered in 0.048 seconds.
+		PE dimension: 4:4:2 and chare number: 32
+My PE[0/32]: imax[129] 0jmax[129] 0kmax[257] 0it: 0
+My PE[1/32]: imax[129] 0jmax[129] 0kmax[257] 1it: 0
+My PE[3/32]: imax[129] 0jmax[130] 1kmax[257] 1it: 0
+My PE[5/32]: imax[129] 0jmax[130] 2kmax[257] 1it: 0
+My PE[7/32]: imax[129] 0jmax[129] 3kmax[257] 1it: 0
+My PE[4/32]: imax[129] 0jmax[130] 2kmax[257] 0it: 0
+My PE[6/32]: imax[129] 0jmax[129] 3kmax[257] 0it: 0
+My PE[2/32]: imax[129] 0jmax[130] 1kmax[257] 0it: 0
+My PE[13/32]: imax[130] 1jmax[130] 2kmax[257] 1it: 127
+My PE[16/32]: imax[130] 2jmax[129] 0kmax[257] 0it: 255
+My PE[25/32]: imax[129] 3jmax[129] 0kmax[257] 1it: 383
+My PE[17/32]: imax[130] 2jmax[129] 0kmax[257] 1it: 255
+My PE[14/32]: imax[130] 1jmax[129] 3kmax[257] 0it: 127
+My PE[27/32]: imax[129] 3jmax[130] 1kmax[257] 1it: 383
+My PE[18/32]: imax[130] 2jmax[130] 1kmax[257] 0it: 255
+My PE[15/32]: imax[130] 1jmax[129] 3kmax[257] 1it: 127
+My PE[29/32]: imax[129] 3jmax[130] 2kmax[257] 1it: 383
+My PE[19/32]: imax[130] 2jmax[130] 1kmax[257] 1it: 255
+My PE[8/32]: imax[130] 1jmax[129] 0kmax[257] 0it: 127
+My PE[30/32]: imax[129] 3jmax[129] 3kmax[257] 0it: 383
+My PE[20/32]: imax[130] 2jmax[130] 2kmax[257] 0it: 255
+My PE[9/32]: imax[130] 1jmax[129] 0kmax[257] 1it: 127
+My PE[31/32]: imax[129] 3jmax[129] 3kmax[257] 1it: 383
+My PE[21/32]: imax[130] 2jmax[130] 2kmax[257] 1it: 255
+My PE[10/32]: imax[130] 1jmax[130] 1kmax[257] 0it: 127
+My PE[24/32]: imax[129] 3jmax[129] 0kmax[257] 0it: 383
+My PE[22/32]: imax[130] 2jmax[129] 3kmax[257] 0it: 255
+My PE[11/32]: imax[130] 1jmax[130] 1kmax[257] 1it: 127
+My PE[26/32]: imax[129] 3jmax[130] 1kmax[257] 0it: 383
+My PE[23/32]: imax[130] 2jmax[129] 3kmax[257] 1it: 255
+My PE[12/32]: imax[130] 1jmax[130] 2kmax[257] 0it: 127
+My PE[28/32]: imax[129] 3jmax[130] 2kmax[257] 0it: 383
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 5.23445
+		********iter: 0
+	***Kernel: 5.25685
+		********iter: 0
+	***Kernel: 5.28171
+		********iter: 0
+	***Kernel: 5.28246
+	***Kernel: 5.28883
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.30189
+		********iter: 0
+	***Kernel: 5.29816
+	***Kernel: 5.32233
+		********iter: 0
+		********iter: 0
+	***Kernel: 3.43202
+	***Kernel: 3.36859
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.67167
+		********iter: 0
+	***Kernel: 18.3644
+	***Kernel: 18.3584
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.4242
+	***Kernel: 19.4135
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3601
+		********iter: 0
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.3727
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.6105
+		********iter: 0
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.6315
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		********iter: 0
+	***Kernel: 42.3019
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 42.2842
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 34.6096
+		********iter: 0
+	***Kernel: 34.366
+		********iter: 0
+	***Kernel: 34.3482
+	***Kernel: 34.6126
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 84.2355
+	***Kernel: 84.2364
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9555
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 83.9133
+	***Kernel: 83.9142
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 83.9619
+	***Kernel: 83.9628
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 0.016034
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 0 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Resume iteration at step 1
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.40454
+	***Kernel: 3.3793
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.71807
+		********iter: 0
+	***Kernel: 5.16592
+		********iter: 0
+	***Kernel: 5.16944
+		********iter: 0
+	***Kernel: 5.18422
+		********iter: 0
+	***Kernel: 5.18264
+		********iter: 0
+	***Kernel: 5.18392
+		********iter: 0
+	***Kernel: 5.2019
+		********iter: 0
+	***Kernel: 5.21207
+	***Kernel: 5.21309
+		********iter: 0
+		********iter: 0
+	***Kernel: 18.3628
+	***Kernel: 18.3636
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.3809
+	***Kernel: 19.374
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.345
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 41.966
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 42.3007
+	***Kernel: 68.963
+	***Kernel: 68.9635
+	***Kernel: 34.6182
+	***Kernel: 68.9674
+		********iter: 0
+		********iter: 0
+	***Kernel: 68.9678
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 68.9834
+	***Kernel: 68.9839
+		********iter: 0
+		********iter: 0
+	***Kernel: 84.2433
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 84.2435
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9918
+	***Kernel: 41.9543
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 84.2539
+	***Kernel: 84.2549
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 41.9876
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 5840789.000000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.4004
+	***Kernel: 3.37323
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.71574
+		********iter: 0
+	***Kernel: 5.18338
+		********iter: 0
+	***Kernel: 5.18975
+		********iter: 0
+	***Kernel: 5.19444
+		********iter: 0
+	***Kernel: 5.19607
+		********iter: 0
+	***Kernel: 5.19451
+		********iter: 0
+	***Kernel: 5.20093
+		********iter: 0
+	***Kernel: 5.21085
+		********iter: 0
+	***Kernel: 5.21632
+		********iter: 0
+	***Kernel: 18.3301
+	***Kernel: 18.3304
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.391
+	***Kernel: 19.3836
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.6044
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.611
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.6147
+	***Kernel: 42.2874
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 68.9566
+	***Kernel: 68.9571
+	***Kernel: 34.3439
+		********iter: 0
+	***Kernel: 34.355
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3676
+		********iter: 0
+		********iter: 0
+	***Kernel: 83.9488
+	***Kernel: 83.9497
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 126.19
+	***Kernel: 126.191
+	***Kernel: 126.192
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 42.3041
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 83.9477
+	***Kernel: 83.9487
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 3006648.250000
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Resume iteration at step 3
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.39854
+	***Kernel: 3.37274
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.71294
+		********iter: 0
+	***Kernel: 5.15033
+		********iter: 0
+	***Kernel: 5.16553
+		********iter: 0
+	***Kernel: 5.17573
+		********iter: 0
+	***Kernel: 5.17744
+		********iter: 0
+	***Kernel: 5.20304
+		********iter: 0
+	***Kernel: 5.20338
+		********iter: 0
+	***Kernel: 5.21459
+	***Kernel: 5.21482
+		********iter: 0
+		********iter: 0
+	***Kernel: 18.3562
+	***Kernel: 18.3566
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.3956
+	***Kernel: 19.3899
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3479
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 41.9561
+	***Kernel: 68.9426
+	***Kernel: 68.9431
+		********iter: 0
+		********iter: 0
+	***Kernel: 68.9633
+	***Kernel: 68.9638
+	***Kernel: 34.6145
+		********iter: 0
+	***Kernel: 68.9728
+	***Kernel: 68.9734
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 41.9689
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 84.243
+	***Kernel: 84.2439
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 84.2764
+	***Kernel: 84.2773
+	***Kernel: 41.9449
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 42.2958
+		********iter: 0
+	***Kernel: 41.9798
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 1701105.250000
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.40294
+	***Kernel: 3.37683
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.7064
+		********iter: 0
+	***Kernel: 5.14937
+		********iter: 0
+	***Kernel: 5.16462
+		********iter: 0
+	***Kernel: 5.1735
+	***Kernel: 5.17143
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.21476
+		********iter: 0
+	***Kernel: 5.22153
+	***Kernel: 5.22286
+	***Kernel: 5.22452
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 18.3604
+	***Kernel: 18.3606
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.3727
+	***Kernel: 19.3677
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3354
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9815
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 42.2793
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 68.9567
+	***Kernel: 68.9573
+	***Kernel: 68.9568
+	***Kernel: 68.9571
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.6245
+	***Kernel: 68.9648
+	***Kernel: 68.9654
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 83.9727
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 41.9692
+	***Kernel: 83.9311
+	***Kernel: 83.9322
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 126.256
+	***Kernel: 84.2702
+	***Kernel: 42.2919
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 1037595.812500
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Resume iteration at step 5
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+	***Kernel: 5.11975
+	***Kernel: 5.0927
+	***Kernel: 5.09307
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.16707
+	***Kernel: 5.16425
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.18254
+	***Kernel: 5.17971
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.18118
+		********iter: 0
+	***Kernel: 5.19504
+	***Kernel: 5.19757
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.20052
+		********iter: 0
+	***Kernel: 18.3408
+	***Kernel: 18.3397
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.4189
+	***Kernel: 19.413
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3529
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.3539
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.6129
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 41.9605
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.973
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 34.3548
+	***Kernel: 68.958
+	***Kernel: 68.9586
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.6148
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.618
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 42.3046
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 42.2996
+	***Kernel: 126.208
+	***Kernel: 126.209
+	***Kernel: 126.21
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 41.9802
+	***Kernel: 41.9477
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 753253.687500
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 5.09811
+	***Kernel: 5.06769
+	***Kernel: 5.06791
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.1483
+		********iter: 0
+	***Kernel: 5.15722
+		********iter: 0
+	***Kernel: 5.1641
+		********iter: 0
+	***Kernel: 5.16704
+		********iter: 0
+	***Kernel: 5.20008
+	***Kernel: 5.20032
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.21498
+	***Kernel: 5.2165
+		********iter: 0
+		********iter: 0
+	***Kernel: 18.3477
+	***Kernel: 18.3472
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.3596
+	***Kernel: 19.3512
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3429
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.3483
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 41.9853
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9679
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 42.266
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 34.6105
+		********iter: 0
+		********iter: 0
+	***Kernel: 68.9674
+	***Kernel: 68.9679
+	***Kernel: 34.624
+	***Kernel: 68.9743
+	***Kernel: 68.9748
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 42.2953
+	***Kernel: 83.912
+	***Kernel: 83.9129
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 84.2768
+	***Kernel: 84.2777
+	***Kernel: 41.9788
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 584869.000000
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Resume iteration at step 7
+Element 1 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.40542
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.37963
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.71369
+		********iter: 0
+	***Kernel: 5.15657
+		********iter: 0
+	***Kernel: 5.16792
+		********iter: 0
+	***Kernel: 5.17605
+		********iter: 0
+	***Kernel: 5.17746
+	***Kernel: 5.19207
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.19711
+		********iter: 0
+	***Kernel: 5.20739
+	***Kernel: 5.20781
+		********iter: 0
+		********iter: 0
+	***Kernel: 18.3405
+	***Kernel: 18.3413
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.3843
+	***Kernel: 19.3789
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3497
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 41.9714
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9702
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 42.2685
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 68.9524
+	***Kernel: 68.9529
+		********iter: 0
+		********iter: 0
+	***Kernel: 68.9683
+	***Kernel: 68.9688
+	***Kernel: 34.6191
+	***Kernel: 68.9781
+	***Kernel: 68.9788
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9833
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 42.287
+	***Kernel: 83.9421
+	***Kernel: 83.943
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 41.9842
+	***Kernel: 42.319
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 406032.125000
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 5.11416
+	***Kernel: 5.08853
+	***Kernel: 5.08838
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.16193
+		********iter: 0
+	***Kernel: 5.16553
+	***Kernel: 5.16496
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.17283
+		********iter: 0
+	***Kernel: 5.19347
+		********iter: 0
+	***Kernel: 5.2076
+		********iter: 0
+	***Kernel: 5.21538
+	***Kernel: 5.21592
+		********iter: 0
+		********iter: 0
+	***Kernel: 18.3676
+	***Kernel: 18.3684
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.391
+	***Kernel: 19.3866
+		********iter: 0
+		********iter: 0
+	***Kernel: 41.9542
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9726
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 41.953
+	***Kernel: 68.9506
+	***Kernel: 68.9512
+	***Kernel: 68.9587
+	***Kernel: 68.9591
+		********iter: 0
+		********iter: 0
+	***Kernel: 68.9766
+	***Kernel: 68.9772
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 68.978
+	***Kernel: 68.9782
+		********iter: 0
+		********iter: 0
+	***Kernel: 41.9776
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 84.2462
+	***Kernel: 84.2476
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 84.2622
+	***Kernel: 84.2633
+	***Kernel: 42.2791
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 335901.875000
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Resume iteration at step 9
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.39285
+	***Kernel: 3.36723
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.70745
+		********iter: 0
+	***Kernel: 5.1698
+		********iter: 0
+	***Kernel: 5.17831
+		********iter: 0
+	***Kernel: 5.18578
+	***Kernel: 5.18966
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.20271
+		********iter: 0
+	***Kernel: 5.20381
+		********iter: 0
+	***Kernel: 5.21088
+	***Kernel: 5.21363
+		********iter: 0
+		********iter: 0
+	***Kernel: 18.3549
+	***Kernel: 18.3558
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.3946
+	***Kernel: 19.3924
+		********iter: 0
+		********iter: 0
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9838
+	***Kernel: 41.9686
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 42.2882
+	***Kernel: 68.9588
+	***Kernel: 68.9594
+	***Kernel: 68.9678
+	***Kernel: 68.9683
+	***Kernel: 68.9689
+		********iter: 0
+	***Kernel: 68.9693
+	***Kernel: 68.9727
+	***Kernel: 68.9732
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 41.9444
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 41.9751
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 83.9092
+	***Kernel: 83.9101
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 42.2901
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 42.3044
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 290324.562500
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.39025
+	***Kernel: 3.36699
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.7093
+		********iter: 0
+	***Kernel: 5.14129
+		********iter: 0
+	***Kernel: 5.15577
+		********iter: 0
+	***Kernel: 5.17635
+	***Kernel: 5.17432
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.16773
+		********iter: 0
+	***Kernel: 5.1839
+		********iter: 0
+	***Kernel: 5.19101
+		********iter: 0
+	***Kernel: 5.19675
+		********iter: 0
+	***Kernel: 18.3412
+	***Kernel: 18.342
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.3913
+	***Kernel: 19.3852
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.6159
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.6392
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 41.9534
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 42.2729
+	***Kernel: 68.9635
+	***Kernel: 68.964
+		********iter: 0
+		********iter: 0
+	***Kernel: 68.9846
+	***Kernel: 68.9851
+	***Kernel: 34.3669
+		********iter: 0
+	***Kernel: 34.3498
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 83.9649
+	***Kernel: 83.9657
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 42.2837
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 83.9333
+	***Kernel: 83.9342
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 41.9788
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 42.3113
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 208277.140625
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Resume iteration at step 11
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.40457
+	***Kernel: 3.37961
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.71627
+		********iter: 0
+	***Kernel: 5.19055
+	***Kernel: 5.18688
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.19449
+	***Kernel: 5.19798
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.20023
+		********iter: 0
+	***Kernel: 5.21291
+		********iter: 0
+	***Kernel: 5.2221
+	***Kernel: 5.22312
+		********iter: 0
+		********iter: 0
+	***Kernel: 18.351
+	***Kernel: 18.3525
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.391
+	***Kernel: 19.3882
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.6171
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+	***Kernel: 41.9595
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9635
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9781
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 68.9506
+	***Kernel: 68.951
+		********iter: 0
+		********iter: 0
+	***Kernel: 68.9784
+	***Kernel: 68.9789
+	***Kernel: 68.9827
+	***Kernel: 68.9832
+	***Kernel: 34.3688
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 41.9747
+	***Kernel: 84.2443
+	***Kernel: 84.2452
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 84.2599
+	***Kernel: 84.2608
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 42.3011
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 179053.687500
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.4013
+	***Kernel: 3.37324
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.70855
+		********iter: 0
+	***Kernel: 5.15748
+		********iter: 0
+	***Kernel: 5.15917
+		********iter: 0
+	***Kernel: 5.16881
+		********iter: 0
+	***Kernel: 5.16791
+		********iter: 0
+	***Kernel: 5.19408
+		********iter: 0
+	***Kernel: 5.19267
+		********iter: 0
+	***Kernel: 5.2045
+	***Kernel: 5.20311
+		********iter: 0
+		********iter: 0
+	***Kernel: 18.3887
+	***Kernel: 18.389
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.4194
+	***Kernel: 19.4178
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3593
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.613
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.618
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+	***Kernel: 42.2795
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 68.9626
+	***Kernel: 68.9631
+	***Kernel: 34.3449
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3548
+	***Kernel: 34.6139
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 83.9469
+	***Kernel: 83.9475
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 84.274
+	***Kernel: 84.2746
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 41.9807
+	***Kernel: 41.9505
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 42.3035
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 41.9782
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 159574.046875
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+Resume iteration at step 13
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.40968
+	***Kernel: 3.38434
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.71252
+		********iter: 0
+	***Kernel: 5.18388
+		********iter: 0
+	***Kernel: 5.18265
+	***Kernel: 5.17965
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.18991
+		********iter: 0
+	***Kernel: 5.18832
+	***Kernel: 5.18749
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.20314
+	***Kernel: 5.20341
+		********iter: 0
+		********iter: 0
+	***Kernel: 18.3488
+	***Kernel: 18.348
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.3654
+	***Kernel: 19.3655
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.6047
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.614
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.6198
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 41.9554
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9784
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 42.2833
+	***Kernel: 34.351
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3599
+	***Kernel: 34.3541
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 68.9895
+	***Kernel: 68.99
+		********iter: 0
+		********iter: 0
+	***Kernel: 84.2301
+	***Kernel: 84.231
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 83.9368
+	***Kernel: 83.9377
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 84.2929
+	***Kernel: 84.2936
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 121729.000000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.40821
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.38126
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.71956
+		********iter: 0
+	***Kernel: 5.16163
+		********iter: 0
+	***Kernel: 5.17358
+		********iter: 0
+	***Kernel: 5.17963
+	***Kernel: 5.18001
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.20083
+	***Kernel: 5.20649
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.21009
+	***Kernel: 5.21271
+		********iter: 0
+		********iter: 0
+	***Kernel: 18.3645
+	***Kernel: 18.3642
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.3941
+	***Kernel: 19.3914
+		********iter: 0
+		********iter: 0
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.3483
+	***Kernel: 34.6029
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.623
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+	***Kernel: 41.9675
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9856
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 42.2745
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 68.948
+	***Kernel: 68.9485
+	***Kernel: 34.3414
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.6133
+	***Kernel: 34.3471
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 41.9918
+	***Kernel: 84.2283
+	***Kernel: 84.2295
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 84.2542
+	***Kernel: 84.2551
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 41.9616
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 110145.890625
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Resume iteration at step 15
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.40045
+	***Kernel: 3.37474
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.71627
+		********iter: 0
+	***Kernel: 5.1412
+		********iter: 0
+	***Kernel: 5.15673
+		********iter: 0
+	***Kernel: 5.16779
+		********iter: 0
+	***Kernel: 5.16824
+		********iter: 0
+	***Kernel: 5.21023
+		********iter: 0
+	***Kernel: 5.21747
+		********iter: 0
+	***Kernel: 5.23382
+	***Kernel: 5.23214
+		********iter: 0
+		********iter: 0
+	***Kernel: 18.3522
+	***Kernel: 18.353
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.3935
+	***Kernel: 19.3913
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.6189
+	***Kernel: 34.6179
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+	***Kernel: 41.9448
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9733
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 34.3396
+	***Kernel: 34.3436
+	***Kernel: 68.9721
+		********iter: 0
+	***Kernel: 68.9723
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 68.9818
+		********iter: 0
+		********iter: 0
+	***Kernel: 68.9821
+		********iter: 0
+		********iter: 0
+	***Kernel: 84.2508
+	***Kernel: 84.2517
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 126.202
+	***Kernel: 126.202
+	***Kernel: 126.203
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 84.2783
+	***Kernel: 84.2792
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 97974.250000
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 5.11758
+	***Kernel: 5.08789
+	***Kernel: 5.08819
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.13999
+	***Kernel: 5.13925
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.16639
+		********iter: 0
+	***Kernel: 5.16986
+		********iter: 0
+	***Kernel: 5.19271
+		********iter: 0
+	***Kernel: 5.20335
+		********iter: 0
+	***Kernel: 5.21028
+		********iter: 0
+	***Kernel: 5.21246
+		********iter: 0
+	***Kernel: 18.3438
+	***Kernel: 18.3445
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.3648
+	***Kernel: 19.3609
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3528
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.6126
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.6147
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9595
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 41.9775
+	***Kernel: 34.3509
+		********iter: 0
+		********iter: 0
+	***Kernel: 68.9714
+	***Kernel: 68.9719
+	***Kernel: 34.6227
+	***Kernel: 34.3676
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 83.9447
+	***Kernel: 83.9454
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 42.2697
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 42.2923
+	***Kernel: 41.9876
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 42.299
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 41.9907
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 88185.500000
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Resume iteration at step 17
+Element 1 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.40815
+	***Kernel: 3.38056
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.71368
+		********iter: 0
+	***Kernel: 5.16846
+		********iter: 0
+	***Kernel: 5.16936
+		********iter: 0
+	***Kernel: 5.17418
+		********iter: 0
+	***Kernel: 5.17535
+		********iter: 0
+	***Kernel: 5.1831
+		********iter: 0
+	***Kernel: 5.18827
+		********iter: 0
+	***Kernel: 5.19431
+		********iter: 0
+	***Kernel: 5.1971
+		********iter: 0
+	***Kernel: 18.3383
+	***Kernel: 18.3391
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.368
+	***Kernel: 19.3658
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.345
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.3433
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.6049
+	***Kernel: 34.6185
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9842
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 42.2924
+	***Kernel: 34.357
+	***Kernel: 34.6203
+		********iter: 0
+	***Kernel: 34.6292
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3514
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.967
+	***Kernel: 41.9473
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 126.233
+	***Kernel: 126.234
+	***Kernel: 126.235
+	***Kernel: 84.2892
+	***Kernel: 84.2896
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 78771.523438
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.39811
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.37092
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.709
+		********iter: 0
+	***Kernel: 5.16746
+	***Kernel: 5.16751
+		********iter: 0
+		********iter: 0
+	***Kernel: 5.18073
+		********iter: 0
+	***Kernel: 5.17989
+		********iter: 0
+	***Kernel: 5.19613
+		********iter: 0
+	***Kernel: 5.19542
+		********iter: 0
+	***Kernel: 5.20589
+	***Kernel: 5.20627
+		********iter: 0
+		********iter: 0
+	***Kernel: 18.3636
+	***Kernel: 18.3643
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.3637
+	***Kernel: 19.3619
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.345
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.6068
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+	***Kernel: 41.9696
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 41.9516
+	***Kernel: 42.2843
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 34.6002
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3388
+		********iter: 0
+		********iter: 0
+	***Kernel: 68.9615
+	***Kernel: 68.9618
+	***Kernel: 68.961
+	***Kernel: 68.9616
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 41.9833
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 41.9487
+	***Kernel: 41.9474
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 42.2825
+	***Kernel: 84.2793
+	***Kernel: 84.2806
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 73973.156250
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 0
+Element 0 pause for LB on PE 1
+Element 0 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Resume iteration at step 19
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 1
+Element 1 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Element 2 pause for LB on PE 0
+Element 1 pause for LB on PE 1
+Element 3 pause for LB on PE 0
+Element 2 pause for LB on PE 0
+Element 3 pause for LB on PE 1
+Element 3 pause for LB on PE 1
+		[29]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[31]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[25]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[27]: cudaSetDevice 1 on [nps5.ece.ncsu.edu]
+		[12]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[26]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[30]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[24]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[28]: cudaSetDevice 0 on [nps5.ece.ncsu.edu]
+		[18]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[21]: cudaSetDevice 0 on [nps4.ece.ncsu.edu]
+		[10]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[15]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		[13]: cudaSetDevice 1 on [nps2.ece.ncsu.edu]
+		[19]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[23]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[16]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+		[0]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+		[6]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+		[7]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[3]: cudaSetDevice 3 on [nps1.ece.ncsu.edu]
+		[5]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+		[11]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[8]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+		[14]: cudaSetDevice 2 on [nps2.ece.ncsu.edu]
+	***Kernel: 3.38922
+	***Kernel: 3.36047
+		[9]: cudaSetDevice 0 on [nps2.ece.ncsu.edu]
+		********iter: 0
+		********iter: 0
+	***Kernel: 1.70449
+		********iter: 0
+	***Kernel: 5.14956
+		********iter: 0
+	***Kernel: 5.17396
+		********iter: 0
+	***Kernel: 5.16426
+		********iter: 0
+	***Kernel: 5.16833
+		********iter: 0
+	***Kernel: 5.16924
+		********iter: 0
+	***Kernel: 5.20551
+		********iter: 0
+	***Kernel: 5.21596
+	***Kernel: 5.21543
+		********iter: 0
+		********iter: 0
+	***Kernel: 18.353
+	***Kernel: 18.3538
+		********iter: 0
+		********iter: 0
+	***Kernel: 19.3537
+	***Kernel: 19.3479
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.3469
+		[2]: cudaSetDevice 2 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.3508
+		[4]: cudaSetDevice 0 on [nps1.ece.ncsu.edu]
+	***Kernel: 34.6103
+		[1]: cudaSetDevice 1 on [nps1.ece.ncsu.edu]
+	***Kernel: 41.9802
+		[17]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+		[20]: cudaSetDevice 2 on [nps4.ece.ncsu.edu]
+	***Kernel: 68.9557
+	***Kernel: 68.9564
+	***Kernel: 34.3519
+		********iter: 0
+		********iter: 0
+	***Kernel: 34.6214
+	***Kernel: 34.6226
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 84.2743
+	***Kernel: 84.2752
+		[22]: cudaSetDevice 1 on [nps4.ece.ncsu.edu]
+	***Kernel: 84.2516
+	***Kernel: 84.2525
+		********iter: 0
+		********iter: 0
+	***Kernel: 41.968
+		********iter: 0
+		********iter: 0
+		********iter: 0
+		********iter: 0
+	***Kernel: 126.229
+	***Kernel: 126.23
+	***Kernel: 126.231
+		********iter: 0
+		********iter: 0
+		********iter: 0
+gosa: 59945.851562
+Time: 2535.236599
+[Partition 0][Node 0] End of program
