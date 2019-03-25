@@ -1,0 +1,5 @@
+#./nw-single-stream -n 500 -l 1000 -s 4  -b 64 -t 512 -ll:gpu 1 -ll:cpu 4 -ll:fsize 4000 -ll:csize 4000
+#mpirun -np 4 --oversubscribe -x CUDA_VISIBLE_DEVICES=0,1,2,3 nw-single-stream -n 40 -l 10 -s 4  -b 64 -t 512 -ll:gpu 1 -ll:cpu 4
+#gasnetrun_mpi -np 4 -v ./nw-single-stream 1 -n 40 -l 10 -s 4  -b 64 -t 512 -ll:gpu 1 -ll:cpu 1
+#./densemm -d 4800 -s 4 -b 16 -t 128 -ll:gpu 4 -ll:cpu 4  -ll:fsize 9000
+amudprun -n 1 ./densemm -d 2000 -s 4 -b 16 -t 128 -ll:gpu 4 -ll:cpu 4  -ll:fsize 1000
