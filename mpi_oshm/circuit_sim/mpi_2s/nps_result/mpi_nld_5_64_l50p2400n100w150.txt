@@ -1,0 +1,135 @@
+===========
+num_loops:20
+num_pieces:2432
+nodes_per_piece:100
+wires_per_piece:150
+==========
+Kernel Config: blocks:16, threads; 256
+Rank:4, on host: nps1.ece.ncsu.edu, device_id: 0, kernel time: 0.011147
+Time: 132.231774
+Rank:8, on host: nps1.ece.ncsu.edu, device_id: 0, kernel time: 0.011266
+Time: 132.228271
+Rank:12, on host: nps1.ece.ncsu.edu, device_id: 0, kernel time: 0.007466
+Time: 132.221370
+Rank:18, on host: nps2.ece.ncsu.edu, device_id: 0, kernel time: 0.005404
+Time: 132.236127
+Rank:3, on host: nps1.ece.ncsu.edu, device_id: 3, kernel time: 0.008732
+Time: 132.247063
+Rank:2, on host: nps1.ece.ncsu.edu, device_id: 2, kernel time: 0.008658
+Time: 132.238827
+Rank:1, on host: nps1.ece.ncsu.edu, device_id: 1, kernel time: 0.008726
+Time: 132.257623
+Rank:6, on host: nps1.ece.ncsu.edu, device_id: 2, kernel time: 0.008715
+Time: 132.239287
+Rank:7, on host: nps1.ece.ncsu.edu, device_id: 3, kernel time: 0.008795
+Time: 132.257391
+Rank:10, on host: nps1.ece.ncsu.edu, device_id: 2, kernel time: 0.012477
+Time: 132.237549
+Rank:5, on host: nps1.ece.ncsu.edu, device_id: 1, kernel time: 0.008829
+Time: 132.256600
+Rank:11, on host: nps1.ece.ncsu.edu, device_id: 3, kernel time: 0.008749
+Time: 132.256742
+Rank:14, on host: nps1.ece.ncsu.edu, device_id: 2, kernel time: 0.012425
+Time: 132.238884
+Rank:15, on host: nps1.ece.ncsu.edu, device_id: 3, kernel time: 0.008800
+Time: 132.259136
+Rank:9, on host: nps1.ece.ncsu.edu, device_id: 1, kernel time: 0.008887
+Time: 132.257815
+Rank:13, on host: nps1.ece.ncsu.edu, device_id: 1, kernel time: 0.008825
+Time: 132.259147
+Rank:17, on host: nps2.ece.ncsu.edu, device_id: 2, kernel time: 0.009812
+Time: 132.255839
+Rank:21, on host: nps2.ece.ncsu.edu, device_id: 0, kernel time: 0.006033
+Time: 132.260693
+Rank:16, on host: nps2.ece.ncsu.edu, device_id: 1, kernel time: 0.008754
+Time: 132.241853
+Rank:24, on host: nps2.ece.ncsu.edu, device_id: 0, kernel time: 0.006599
+Time: 132.242730
+Rank:27, on host: nps2.ece.ncsu.edu, device_id: 0, kernel time: 0.007900
+Time: 132.262447
+Rank:30, on host: nps2.ece.ncsu.edu, device_id: 0, kernel time: 0.007609
+Time: 132.243284
+Rank:32, on host: nps4.ece.ncsu.edu, device_id: 2, kernel time: 0.010895
+Time: 132.249059
+Rank:33, on host: nps4.ece.ncsu.edu, device_id: 0, kernel time: 0.008713
+Time: 132.269439
+Rank:20, on host: nps2.ece.ncsu.edu, device_id: 2, kernel time: 0.011348
+Time: 132.250544
+Rank:36, on host: nps4.ece.ncsu.edu, device_id: 0, kernel time: 0.010277
+Time: 132.250860
+Rank:23, on host: nps2.ece.ncsu.edu, device_id: 2, kernel time: 0.011419
+Time: 132.270394
+Rank:26, on host: nps2.ece.ncsu.edu, device_id: 2, kernel time: 0.011461
+Time: 132.251994
+Rank:29, on host: nps2.ece.ncsu.edu, device_id: 2, kernel time: 0.011263
+Time: 132.271167
+Rank:39, on host: nps4.ece.ncsu.edu, device_id: 0, kernel time: 0.008782
+Time: 132.269736
+Rank:45, on host: nps4.ece.ncsu.edu, device_id: 0, kernel time: 0.008295
+Time: 132.271337
+Rank:19, on host: nps2.ece.ncsu.edu, device_id: 1, kernel time: 0.013317
+Time: 132.271495
+Rank:42, on host: nps4.ece.ncsu.edu, device_id: 0, kernel time: 0.009898
+Time: 132.250215
+Rank:34, on host: nps4.ece.ncsu.edu, device_id: 1, kernel time: 0.011330
+Time: 132.253646
+Rank:22, on host: nps2.ece.ncsu.edu, device_id: 1, kernel time: 0.011702
+Time: 132.252168
+Rank:25, on host: nps2.ece.ncsu.edu, device_id: 1, kernel time: 0.012655
+Time: 132.273526
+Rank:28, on host: nps2.ece.ncsu.edu, device_id: 1, kernel time: 0.012736
+Time: 132.254677
+Rank:31, on host: nps2.ece.ncsu.edu, device_id: 1, kernel time: 0.009731
+Time: 132.273689
+Rank:37, on host: nps4.ece.ncsu.edu, device_id: 1, kernel time: 0.011780
+Time: 132.272810
+Rank:40, on host: nps4.ece.ncsu.edu, device_id: 1, kernel time: 0.011801
+Time: 132.252616
+Rank:48, on host: nps5.ece.ncsu.edu, device_id: 0, kernel time: 0.012376
+Time: 132.256546
+Rank:43, on host: nps4.ece.ncsu.edu, device_id: 1, kernel time: 0.011682
+Time: 132.274152
+Rank:46, on host: nps4.ece.ncsu.edu, device_id: 1, kernel time: 0.011623
+Time: 132.256413
+Rank:51, on host: nps5.ece.ncsu.edu, device_id: 1, kernel time: 0.014675
+Time: 132.277315
+Rank:50, on host: nps5.ece.ncsu.edu, device_id: 0, kernel time: 0.012834
+Time: 132.259105
+Rank:52, on host: nps5.ece.ncsu.edu, device_id: 0, kernel time: 0.011635
+Time: 132.258830
+Rank:56, on host: nps5.ece.ncsu.edu, device_id: 0, kernel time: 0.012546
+Time: 132.258714
+Rank:49, on host: nps5.ece.ncsu.edu, device_id: 1, kernel time: 0.014889
+Time: 132.274423
+Rank:54, on host: nps5.ece.ncsu.edu, device_id: 0, kernel time: 0.012596
+Time: 132.257779
+Rank:58, on host: nps5.ece.ncsu.edu, device_id: 0, kernel time: 0.012339
+Time: 132.259280
+Rank:60, on host: nps5.ece.ncsu.edu, device_id: 0, kernel time: 0.011383
+Time: 132.259443
+Rank:62, on host: nps5.ece.ncsu.edu, device_id: 0, kernel time: 0.012303
+Time: 132.259276
+Rank:53, on host: nps5.ece.ncsu.edu, device_id: 1, kernel time: 0.014766
+Time: 132.278783
+Rank:55, on host: nps5.ece.ncsu.edu, device_id: 1, kernel time: 0.013563
+Time: 132.278794
+Rank:57, on host: nps5.ece.ncsu.edu, device_id: 1, kernel time: 0.014917
+Time: 132.279311
+Rank:61, on host: nps5.ece.ncsu.edu, device_id: 1, kernel time: 0.013615
+Time: 132.278944
+Rank:59, on host: nps5.ece.ncsu.edu, device_id: 1, kernel time: 0.013735
+Time: 132.279150
+Rank:63, on host: nps5.ece.ncsu.edu, device_id: 1, kernel time: 0.011296
+Time: 132.279122
+Rank:35, on host: nps4.ece.ncsu.edu, device_id: 2, kernel time: 0.012728
+Time: 132.270774
+Rank:38, on host: nps4.ece.ncsu.edu, device_id: 2, kernel time: 0.012919
+Time: 132.262705
+Rank:41, on host: nps4.ece.ncsu.edu, device_id: 2, kernel time: 0.012811
+Time: 132.281169
+Rank:44, on host: nps4.ece.ncsu.edu, device_id: 2, kernel time: 0.012789
+Time: 132.252446
+Rank:47, on host: nps4.ece.ncsu.edu, device_id: 2, kernel time: 0.012792
+Time: 132.282910
+Rank:0, on host: nps1.ece.ncsu.edu, device_id: 0, kernel time: 0.000000
+Time: 132.265530

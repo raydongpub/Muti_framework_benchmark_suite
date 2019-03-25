@@ -1,0 +1,1 @@
+rm -rf oshm-himeno.*;rm -rf mpi-himeno.*;make clean;srun -p gpu3 -N1 make;

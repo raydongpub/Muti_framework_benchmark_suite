@@ -1,0 +1,103 @@
+===========
+num_loops:10
+num_pieces:2400
+nodes_per_piece:100
+wires_per_piece:150
+==========
+Kernel Config: blocks:16, threads; 256
+Rank:1, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.031580
+Time: 123.316061
+Rank:3, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.052882
+Time: 123.316076
+Rank:6, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.048365
+Time: 123.315943
+Rank:8, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.031559
+Time: 123.316143
+Rank:9, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.051604
+Time: 123.316293
+Rank:2, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.053100
+Time: 123.316141
+Rank:4, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.053478
+Time: 123.315915
+Rank:5, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.053290
+Time: 123.316070
+Rank:7, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.043162
+Time: 123.316054
+Rank:10, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.051798
+Time: 123.316151
+Rank:11, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.012762
+Time: 123.316244
+Rank:12, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.054815
+Time: 123.324287
+Rank:13, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.052584
+Time: 123.324417
+Rank:14, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.052798
+Time: 123.324413
+Rank:16, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.033832
+Time: 123.324717
+Rank:15, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.045006
+Time: 123.324519
+Rank:17, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.045414
+Time: 123.324722
+Rank:18, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.045624
+Time: 123.324661
+Rank:19, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.032584
+Time: 123.324662
+Rank:20, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.045836
+Time: 123.324440
+Rank:21, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.031367
+Time: 123.324590
+Rank:22, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.046246
+Time: 123.324474
+Rank:23, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.035109
+Time: 123.324553
+Rank:36, on host: lewis4-r730-gpu3-node433, device_id: 0, kernel time: 0.060161
+Time: 123.327890
+Rank:44, on host: lewis4-r730-gpu3-node433, device_id: 0, kernel time: 0.061810
+Time: 123.328008
+Rank:45, on host: lewis4-r730-gpu3-node433, device_id: 0, kernel time: 0.062013
+Time: 123.328011
+Rank:37, on host: lewis4-r730-gpu3-node433, device_id: 0, kernel time: 0.060385
+Time: 123.328200
+Rank:38, on host: lewis4-r730-gpu3-node433, device_id: 0, kernel time: 0.060587
+Time: 123.328096
+Rank:39, on host: lewis4-r730-gpu3-node433, device_id: 0, kernel time: 0.060792
+Time: 123.328141
+Rank:40, on host: lewis4-r730-gpu3-node433, device_id: 0, kernel time: 0.061002
+Time: 123.328229
+Rank:41, on host: lewis4-r730-gpu3-node433, device_id: 0, kernel time: 0.061203
+Time: 123.328511
+Rank:24, on host: lewis4-r730-gpu3-node432, device_id: 0, kernel time: 0.032816
+Time: 123.328415
+Rank:42, on host: lewis4-r730-gpu3-node433, device_id: 0, kernel time: 0.033266
+Time: 123.328237
+Rank:43, on host: lewis4-r730-gpu3-node433, device_id: 0, kernel time: 0.061608
+Time: 123.328301
+Rank:25, on host: lewis4-r730-gpu3-node432, device_id: 0, kernel time: 0.057600
+Time: 123.328535
+Rank:46, on host: lewis4-r730-gpu3-node433, device_id: 0, kernel time: 0.062220
+Time: 123.328031
+Rank:26, on host: lewis4-r730-gpu3-node432, device_id: 0, kernel time: 0.057809
+Time: 123.328422
+Rank:47, on host: lewis4-r730-gpu3-node433, device_id: 0, kernel time: 0.062447
+Time: 123.328101
+Rank:27, on host: lewis4-r730-gpu3-node432, device_id: 0, kernel time: 0.058017
+Time: 123.328470
+Rank:28, on host: lewis4-r730-gpu3-node432, device_id: 0, kernel time: 0.055570
+Time: 123.328215
+Rank:29, on host: lewis4-r730-gpu3-node432, device_id: 0, kernel time: 0.055776
+Time: 123.328257
+Rank:30, on host: lewis4-r730-gpu3-node432, device_id: 0, kernel time: 0.053269
+Time: 123.328259
+Rank:31, on host: lewis4-r730-gpu3-node432, device_id: 0, kernel time: 0.033537
+Time: 123.328321
+Rank:32, on host: lewis4-r730-gpu3-node432, device_id: 0, kernel time: 0.053668
+Time: 123.328583
+Rank:33, on host: lewis4-r730-gpu3-node432, device_id: 0, kernel time: 0.053877
+Time: 123.328509
+Rank:34, on host: lewis4-r730-gpu3-node432, device_id: 0, kernel time: 0.040550
+Time: 123.328433
+Rank:35, on host: lewis4-r730-gpu3-node432, device_id: 0, kernel time: 0.054277
+Time: 123.328434
+Rank:0, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.000000
+Time: 123.333795

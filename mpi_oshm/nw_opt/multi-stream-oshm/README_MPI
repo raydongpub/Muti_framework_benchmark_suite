@@ -1,0 +1,8 @@
+MPI version of NW
+
+Input type: 
+
+
+mpiexec -n 8 ./nw-single-stream -ds 2 -l 200 -n 160 
+
+mpiexec -n [NumberOfProcessors] ./nw-single-stream -ds [dataset size per iteration] -l [length] -n [Number of pairs which should be multiple of the number of processors]

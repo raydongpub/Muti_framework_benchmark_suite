@@ -1,0 +1,487 @@
+===========
+num_loops:1
+num_pieces:600
+nodes_per_piece:100
+wires_per_piece:100
+==========
+My Rank: 0, total pe: 7
+My Rank: 2, total pe: 7
+My Rank: 3, total pe: 7
+My Rank: 4, total pe: 7
+My Rank: 5, total pe: 7
+My Rank: 1, total pe: 7
+My Rank: 6, total pe: 7
+Rank:5, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.031286
+Time: 10.007273
+Rank:2, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.028209
+Time: 10.007267
+Rank:3, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.029069
+Time: 10.007269
+Rank:4, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.028080
+Time: 10.007277
+Rank:1, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.031837
+Time: 10.007272
+Rank:6, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.028741
+Time: 10.007266
+Rank:0, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.000000
+Time: 10.007368
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[48600,1],3]
+  Exit code:    1
+--------------------------------------------------------------------------
+===========
+num_loops:1
+num_pieces:1200
+nodes_per_piece:100
+wires_per_piece:100
+==========
+My Rank: 0, total pe: 7
+My Rank: 1, total pe: 7
+My Rank: 3, total pe: 7
+My Rank: 4, total pe: 7
+My Rank: 5, total pe: 7
+My Rank: 6, total pe: 7
+My Rank: 2, total pe: 7
+Rank:6, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.063881
+Time: 17.679277
+Rank:1, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.060260
+Time: 17.679280
+Rank:3, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.062143
+Time: 17.679273
+Rank:4, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.061283
+Time: 17.679267
+Rank:5, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.062795
+Time: 17.679276
+Rank:2, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.057093
+Time: 17.679281
+Rank:0, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.000000
+Time: 17.679499
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[48372,1],6]
+  Exit code:    1
+--------------------------------------------------------------------------
+===========
+num_loops:1
+num_pieces:2400
+nodes_per_piece:100
+wires_per_piece:100
+==========
+My Rank: 0, total pe: 7
+My Rank: 1, total pe: 7
+My Rank: 2, total pe: 7
+My Rank: 3, total pe: 7
+My Rank: 4, total pe: 7
+My Rank: 5, total pe: 7
+My Rank: 6, total pe: 7
+Rank:1, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.101944
+Time: 34.042531
+Rank:2, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.100223
+Time: 34.042527
+Rank:3, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.102348
+Time: 34.042531
+Rank:4, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.120014
+Time: 34.042532
+Rank:5, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.103450
+Time: 34.042534
+Rank:6, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.066563
+Time: 34.042516
+Rank:0, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.000000
+Time: 34.043209
+My Rank: 7, total pe: 11
+===========
+num_loops:1
+num_pieces:600
+nodes_per_piece:100
+wires_per_piece:100
+==========
+My Rank: 0, total pe: 11
+My Rank: 1, total pe: 11
+My Rank: 2, total pe: 11
+My Rank: 4, total pe: 11
+My Rank: 5, total pe: 11
+My Rank: 6, total pe: 11
+My Rank: 8, total pe: 11
+My Rank: 9, total pe: 11
+My Rank: 10, total pe: 11
+My Rank: 3, total pe: 11
+Rank:7, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.034589
+Time: 10.834055
+Rank:1, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.033259
+Time: 10.834070
+Rank:10, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.032110
+Time: 10.834064
+Rank:2, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.032619
+Time: 10.834061
+Rank:4, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.033667
+Time: 10.834067
+Rank:5, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.033195
+Time: 10.834053
+Rank:6, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.033715
+Time: 10.834066
+Rank:8, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.034113
+Time: 10.834075
+Rank:9, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.033130
+Time: 10.834059
+Rank:3, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.033031
+Time: 10.834058
+Rank:0, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.000000
+Time: 10.834238
+My Rank: 2, total pe: 11
+My Rank: 4, total pe: 11
+My Rank: 8, total pe: 11
+My Rank: 10, total pe: 11
+===========
+num_loops:1
+num_pieces:1200
+nodes_per_piece:100
+wires_per_piece:100
+==========
+My Rank: 0, total pe: 11
+My Rank: 5, total pe: 11
+My Rank: 7, total pe: 11
+My Rank: 9, total pe: 11
+My Rank: 1, total pe: 11
+My Rank: 3, total pe: 11
+My Rank: 6, total pe: 11
+Rank:10, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.065658
+Time: 19.280626
+Rank:9, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.063226
+Time: 19.280628
+Rank:1, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.063924
+Time: 19.280630
+Rank:2, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.065038
+Time: 19.280629
+Rank:3, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.063823
+Time: 19.280625
+Rank:5, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.063855
+Time: 19.280629
+Rank:4, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.062017
+Time: 19.280624
+Rank:7, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.065642
+Time: 19.280624
+Rank:8, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.064543
+Time: 19.280637
+Rank:6, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.065113
+Time: 19.280630
+Rank:0, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.000000
+Time: 19.280952
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[47274,1],8]
+  Exit code:    1
+--------------------------------------------------------------------------
+My Rank: 8, total pe: 11
+My Rank: 9, total pe: 11
+My Rank: 10, total pe: 11
+My Rank: 3, total pe: 11
+My Rank: 6, total pe: 11
+My Rank: 1, total pe: 11
+My Rank: 4, total pe: 11
+===========
+num_loops:1
+num_pieces:2400
+nodes_per_piece:100
+wires_per_piece:100
+==========
+My Rank: 0, total pe: 11
+My Rank: 2, total pe: 11
+My Rank: 5, total pe: 11
+My Rank: 7, total pe: 11
+Rank:4, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.125361
+Time: 36.114899
+Rank:6, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.125551
+Time: 36.114903
+Rank:10, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.123706
+Time: 36.114907
+Rank:1, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.129438
+Time: 36.114888
+Rank:2, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.122857
+Time: 36.114913
+Rank:3, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.127045
+Time: 36.114908
+Rank:5, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.120387
+Time: 36.114933
+Rank:8, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.122248
+Time: 36.114926
+Rank:9, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.120434
+Time: 36.114926
+Rank:7, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.127889
+Time: 36.114926
+Rank:0, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.000000
+Time: 36.115402
+My Rank: 3, total pe: 16
+My Rank: 6, total pe: 16
+My Rank: 8, total pe: 16
+My Rank: 11, total pe: 16
+My Rank: 13, total pe: 16
+My Rank: 2, total pe: 16
+My Rank: 12, total pe: 16
+My Rank: 14, total pe: 16
+My Rank: 7, total pe: 16
+My Rank: 1, total pe: 16
+My Rank: 10, total pe: 16
+My Rank: 5, total pe: 16
+My Rank: 15, total pe: 16
+===========
+num_loops:1
+num_pieces:600
+nodes_per_piece:100
+wires_per_piece:100
+==========
+My Rank: 0, total pe: 16
+My Rank: 4, total pe: 16
+My Rank: 9, total pe: 16
+Rank:15, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.037284
+Time: 11.280935
+Rank:3, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.034123
+Time: 11.280941
+Rank:14, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.032779
+Time: 11.280946
+Rank:6, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.034994
+Time: 11.280945
+Rank:4, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.035221
+Time: 11.280941
+Rank:1, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.033263
+Time: 11.280944
+Rank:8, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.032330
+Time: 11.280942
+Rank:2, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.032759
+Time: 11.280947
+Rank:11, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.032627
+Time: 11.280939
+Rank:12, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.032959
+Time: 11.280941
+Rank:5, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.032940
+Time: 11.280941
+Rank:9, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.033351
+Time: 11.280943
+Rank:7, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.032493
+Time: 11.280938
+Rank:13, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.037088
+Time: 11.280950
+Rank:10, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.033246
+Time: 11.280945
+Rank:0, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.000000
+Time: 11.281096
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[50439,1],6]
+  Exit code:    1
+--------------------------------------------------------------------------
+My Rank: 1, total pe: 16
+My Rank: 2, total pe: 16
+My Rank: 3, total pe: 16
+My Rank: 10, total pe: 16
+My Rank: 12, total pe: 16
+===========
+num_loops:1
+num_pieces:1200
+nodes_per_piece:100
+wires_per_piece:100
+==========
+My Rank: 0, total pe: 16
+My Rank: 4, total pe: 16
+My Rank: 8, total pe: 16
+My Rank: 11, total pe: 16
+My Rank: 13, total pe: 16
+My Rank: 6, total pe: 16
+My Rank: 15, total pe: 16
+My Rank: 5, total pe: 16
+My Rank: 7, total pe: 16
+My Rank: 9, total pe: 16
+My Rank: 14, total pe: 16
+Rank:12, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.061399
+Time: 20.394064
+Rank:1, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.065662
+Time: 20.394061
+Rank:2, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.062937
+Time: 20.394064
+Rank:15, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.065415
+Time: 20.394053
+Rank:13, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.066005
+Time: 20.394059
+Rank:5, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.066172
+Time: 20.394061
+Rank:4, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.064778
+Time: 20.394065
+Rank:7, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.063804
+Time: 20.394056
+Rank:3, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.063882
+Time: 20.394057
+Rank:8, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.068367
+Time: 20.394066
+Rank:10, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.066402
+Time: 20.394062
+Rank:11, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.062579
+Time: 20.394056
+Rank:9, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.068040
+Time: 20.394060
+Rank:6, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.065494
+Time: 20.394061
+Rank:14, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.063273
+Time: 20.394060
+Rank:0, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.000000
+Time: 20.394377
+My Rank: 4, total pe: 16
+My Rank: 15, total pe: 16
+My Rank: 1, total pe: 16
+My Rank: 5, total pe: 16
+My Rank: 2, total pe: 16
+My Rank: 8, total pe: 16
+My Rank: 11, total pe: 16
+My Rank: 13, total pe: 16
+My Rank: 9, total pe: 16
+===========
+num_loops:1
+num_pieces:2400
+nodes_per_piece:100
+wires_per_piece:100
+==========
+My Rank: 0, total pe: 16
+My Rank: 6, total pe: 16
+My Rank: 10, total pe: 16
+My Rank: 14, total pe: 16
+My Rank: 12, total pe: 16
+My Rank: 7, total pe: 16
+My Rank: 3, total pe: 16
+Rank:9, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.126726
+Time: 37.682373
+Rank:15, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.121439
+Time: 37.682364
+Rank:5, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.126729
+Time: 37.682373
+Rank:7, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.128037
+Time: 37.682370
+Rank:1, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.120530
+Time: 37.682376
+Rank:12, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.125594
+Time: 37.682374
+Rank:2, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.124916
+Time: 37.682372
+Rank:13, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.125078
+Time: 37.682372
+Rank:6, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.119323
+Time: 37.682366
+Rank:8, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.126273
+Time: 37.682375
+Rank:14, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.129200
+Time: 37.682363
+Rank:11, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.125007
+Time: 37.682374
+Rank:10, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.123673
+Time: 37.682361
+Rank:4, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.126837
+Time: 37.682376
+Rank:3, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.122387
+Time: 37.682374
+Rank:0, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.000000
+Time: 37.683085
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[50159,1],13]
+  Exit code:    1
+--------------------------------------------------------------------------
+WARNING: Using GASNet's mpi-conduit, which exists for portability convenience.
+WARNING: Support was detected for native GASNet conduits: ibv
+WARNING: You should *really* use the high-performance native GASNet conduit
+WARNING: if communication performance is at all important in this program run.
+
+real	0m17.958s
+user	0m8.317s
+sys	0m7.135s
+WARNING: Using GASNet's mpi-conduit, which exists for portability convenience.
+WARNING: Support was detected for native GASNet conduits: ibv
+WARNING: You should *really* use the high-performance native GASNet conduit
+WARNING: if communication performance is at all important in this program run.
+
+real	0m25.584s
+user	0m15.934s
+sys	0m10.264s
+WARNING: Using GASNet's mpi-conduit, which exists for portability convenience.
+WARNING: Support was detected for native GASNet conduits: ibv
+WARNING: You should *really* use the high-performance native GASNet conduit
+WARNING: if communication performance is at all important in this program run.
+
+real	0m46.429s
+user	3m28.975s
+sys	2m10.637s
+WARNING: Using GASNet's mpi-conduit, which exists for portability convenience.
+WARNING: Support was detected for native GASNet conduits: ibv
+WARNING: You should *really* use the high-performance native GASNet conduit
+WARNING: if communication performance is at all important in this program run.
+
+real	0m22.537s
+user	1m30.875s
+sys	2m10.649s
+WARNING: Using GASNet's mpi-conduit, which exists for portability convenience.
+WARNING: Support was detected for native GASNet conduits: ibv
+WARNING: You should *really* use the high-performance native GASNet conduit
+WARNING: if communication performance is at all important in this program run.
+
+real	0m32.401s
+user	0m17.645s
+sys	0m15.289s
+WARNING: Using GASNet's mpi-conduit, which exists for portability convenience.
+WARNING: Support was detected for native GASNet conduits: ibv
+WARNING: You should *really* use the high-performance native GASNet conduit
+WARNING: if communication performance is at all important in this program run.
+
+real	0m56.239s
+user	6m9.245s
+sys	4m26.871s
+WARNING: Using GASNet's mpi-conduit, which exists for portability convenience.
+WARNING: Support was detected for native GASNet conduits: ibv
+WARNING: You should *really* use the high-performance native GASNet conduit
+WARNING: if communication performance is at all important in this program run.
+
+real	0m28.845s
+user	0m8.384s
+sys	0m18.097s
+WARNING: Using GASNet's mpi-conduit, which exists for portability convenience.
+WARNING: Support was detected for native GASNet conduits: ibv
+WARNING: You should *really* use the high-performance native GASNet conduit
+WARNING: if communication performance is at all important in this program run.
+
+real	0m43.002s
+user	4m32.321s
+sys	6m8.162s
+WARNING: Using GASNet's mpi-conduit, which exists for portability convenience.
+WARNING: Support was detected for native GASNet conduits: ibv
+WARNING: You should *really* use the high-performance native GASNet conduit
+WARNING: if communication performance is at all important in this program run.
+
+real	1m4.746s
+user	0m34.761s
+sys	0m30.176s

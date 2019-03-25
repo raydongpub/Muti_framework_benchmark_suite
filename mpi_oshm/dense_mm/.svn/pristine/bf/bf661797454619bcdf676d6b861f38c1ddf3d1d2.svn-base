@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+#SBATCH -p GPU -N 9 -n 2 --mem=100g
+#sBATCH -w "c11u13 c11u15 c11u17 c11u19 c11u21 c12u9 c12u11 c12u13 c12u15"
+time mpirun -n 12 --hostfile hosts -x CUDA_VISIBLE_DEVICES=0,1,2,3 /home/ksajjapongse/data/benchmark/dense_mm/mm_mpicuda -m /home/ksajjapongse/data/benchmark/dense_mm/dset18200.nn

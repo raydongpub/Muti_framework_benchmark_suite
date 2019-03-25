@@ -1,0 +1,131 @@
+mainmodule circuit{
+    readonly CProxy_Main mainProxy;
+    readonly int num_pieces;
+    readonly int max_pe;
+    readonly int number_loops;
+    readonly int nodes_per_piece;
+    readonly int wires_per_piece;
+    readonly int pct_wire_in_piece;
+    readonly int random_seed;
+    readonly int num_blocks;
+    readonly int num_threads;
+    mainchare Main {
+        entry Main(CkArgMsg *m);
+        entry void done(void);
+        entry void post_run(void);
+    };
+    array [1D] Grid {
+        entry Grid(bool accept, int num_pieces_);
+        entry void cleanup(void);
+        entry void SendInput(CProxy_Grid output) {
+            atomic {
+                output.input(mem_size, mem_begin);
+            }
+        };
+        entry void SendPost(CProxy_Grid output) {
+            atomic {
+                CkPrintf("Rank: %d, SendPost--->\n", thisIndex);
+                output.input_pos(post_num, post_charge);
+                CkPrintf("SendPost complete--->");
+            }
+        };
+        entry void SendLoop(CProxy_Grid output) {
+            atomic {
+                CkPrintf("Rank: %d, SendLoop--->\n", thisIndex);
+                output.input_pos(post_shr_num, post_shr_voltage);
+                CkPrintf("SendLoop complete--->");
+            }
+        };
+        
+#if 0
+        entry void printout(int num, CkCallback &cb) {
+#endif
+        entry void pgmrun(CkCallback &cb) {
+            when
+                input(int c_num, unsigned char src[c_num])
+            atomic {
+                // init data for working PE
+                init_val(num_pieces*mem_pc_size, mem_begin, (src+thisIndex*num_pieces*mem_pc_size));
+ 
+                cudaInit(true, node_piece, wire_piece, transfer_buf, nodes_per_piece, wires_per_piece, num_pieces, thisIndex, num_blocks, num_threads);
+#if 0
+                for (int n=0; n<num_pieces; n++) {
+                    for (int it = 0; it<wires_per_piece; ++it) {
+                        CkPrintf("\t**node info **\n");
+                        CkPrintf("\tin_charge: %f, out_charge: %f\n", node_piece[n].charge[wire_piece[n].in_ptr[it]], node_piece[n].charge[wire_piece[n].out_ptr[it]]);
+                    }
+                }
+                CkPrintf("++++++++++++++++++++++++++++++++++++++++++++++++++\n");
+              // circuit info
+                for (int n=0; n<num_pieces; n++) {
+                    for (int i = 0; i<wires_per_piece; ++i) {
+                        CkPrintf( "Wire %d resistance: %f, inductance: %f, capacitance: %f\n", i, wire_piece[n].resistance[i], wire_piece[n].inductance[i], wire_piece[n].capacitance[i]);
+                        CkPrintf("** node info **\n");
+                        CkPrintf("in_ptr/node_type:%d, capacitance: %f\n", node_piece[n].node_attr[(wire_piece[n].in_ptr[i])], node_piece[n].capacitance[(wire_piece[n].in_ptr[i])]);
+                        CkPrintf("out_ptr/node_type:%d, capacitance: %f\n", node_piece[n].node_attr[(wire_piece[n].out_ptr[i])], node_piece[n].capacitance[(wire_piece[n].out_ptr[i])]);
+                    }
+                }
+#endif
+
+                contribute(transfer_size, transfer_buf, CkReduction::set, cb);
+            }
+        };
+        entry void pgmrunloop(CkCallback &cb) {
+            when
+                input_pos(int c_num, float src[c_num])
+            atomic {
+                // init data for working PE
+                init_post_shr(wire_piece, src, thisIndex, wires_per_piece, num_pieces);
+ 
+                cudaInit(true, node_piece, wire_piece, transfer_buf, nodes_per_piece, wires_per_piece, num_pieces, thisIndex, num_blocks, num_threads);
+#if 0
+                for (int n=0; n<num_pieces; n++) {
+                    for (int it = 0; it<wires_per_piece; ++it) {
+                        CkPrintf("\t**node info **\n");
+                        CkPrintf("\tin_charge: %f, out_charge: %f\n", node_piece[n].charge[wire_piece[n].in_ptr[it]], node_piece[n].charge[wire_piece[n].out_ptr[it]]);
+                    }
+                }
+                CkPrintf("++++++++++++++++++++++++++++++++++++++++++++++++++\n");
+              // circuit info
+                for (int n=0; n<num_pieces; n++) {
+                    for (int i = 0; i<wires_per_piece; ++i) {
+                        CkPrintf( "Wire %d resistance: %f, inductance: %f, capacitance: %f\n", i, wire_piece[n].resistance[i], wire_piece[n].inductance[i], wire_piece[n].capacitance[i]);
+                        CkPrintf("** node info **\n");
+                        CkPrintf("in_ptr/node_type:%d, capacitance: %f\n", node_piece[n].node_attr[(wire_piece[n].in_ptr[i])], node_piece[n].capacitance[(wire_piece[n].in_ptr[i])]);
+                        CkPrintf("out_ptr/node_type:%d, capacitance: %f\n", node_piece[n].node_attr[(wire_piece[n].out_ptr[i])], node_piece[n].capacitance[(wire_piece[n].out_ptr[i])]);
+                    }
+                }
+#endif
+
+                contribute(transfer_size, transfer_buf, CkReduction::set, cb);
+            }
+        };
+        entry void postrun(CkCallback &cb) {
+          when
+            input_pos(int c_num, float src[c_num])
+            atomic {
+                CkPrintf("My Rank:%d, postrun--->\n", thisIndex);
+                // Post work for working PEs
+                for (int i=0 ; i<num_pieces; i++) {
+                    for (int j=0; j<wires_per_piece; j++) {
+                        wire_piece[i].shr_charge[j] = 0.f;
+                    }
+                }
+                int post_per_pe_size =nodes_per_piece * sizeof(float);
+                init_post(node_piece, src, thisIndex, nodes_per_piece, num_pieces);
+                cudaInit(false, node_piece, wire_piece, result_buf, nodes_per_piece, wires_per_piece, num_pieces, thisIndex, num_blocks, num_threads);
+                contribute(result_size, result_buf, CkReduction::set, cb);
+            }
+        }; 
+#if 0
+        entry void input(int c_num, unsigned char src[c_num/sizeof(unsigned char)]);
+#else
+        entry void input(int c_num, unsigned char src[c_num]);
+#endif
+        entry void input_pos(int c_num, float src[c_num]);
+#if 1
+        entry [reductiontarget] void update_post(CkReductionMsg *msg);
+        entry [reductiontarget] void update_res(CkReductionMsg *msg);
+#endif
+    };
+};

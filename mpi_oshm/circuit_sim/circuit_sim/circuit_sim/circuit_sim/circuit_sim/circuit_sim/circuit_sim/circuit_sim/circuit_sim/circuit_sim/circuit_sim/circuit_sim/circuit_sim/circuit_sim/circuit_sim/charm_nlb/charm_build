@@ -1,0 +1,1 @@
+sudo ./build charm++ mpi-linux-x86_64 smp --incdir /usr/local/openmpi/include --libdir /usr/local/openmpi/lib --with-production -j8

@@ -1,0 +1,65 @@
++=============================================================================+
+|  Needleman-Wunsch ( Multi-stream GPU )                                       |
++=============================================================================+
+
+The tool includes a multi-stream GPU implementation of Needleman-Wunch algorith. Two GPU implementation of Needleman-Wunsch algorithm is described in the following paper:
+
+D. Li, K. Sajjapongse, H. Truong, G. Connant, M. Becchi, A Distributed CPU-GPU Framework for Pairwise Alignments on Large-Scale Sequence Datasets. In IEEE International Conference on Application-specific Systems, Architectures and Processors (ASAP '13) , Washington D.C., USA, June, 2013.
+
+Build Information
+=================
+
+The code can be compiled and built using the provided makefile.
+Targets:
+- all (default): builds the tool
+- clean: deletes all object files and executable
+
+The code has been compiled using g++ 4.4.6, nvcc 5.5, and under linux versions 2.6.32.
+
+Usage
+=====
+
+To see the usage, invoke "./nw-multi-stream" without arguments.
+
+> ./nw-multi-stream
+
+Usage: ./nw-multi-stream [options]
+		[--length|-l <length> ] - x and y length
+		[--penalty|-p <penalty>] - penalty (negative integer)
+		[--num_pairs|-n <pair number>] - number of pairs per stream
+		[--device|-d <device> ]- device ID
+		[--kernel|-k <kernel type> ]- 0: diagonal 1: tile
+		[--num_blocks|-b <blocks> ]- blocks number per grid
+		[--num_threads|-t <threads> ]- threads number per block
+		[--debug]- 0: no validation (default) 1: validation
+
+Note
+----
+* The input datasets are generated randomly. You can use "--num_pairs" (or "-n") followed by a nummber to control the number of pairs per stream. You can have multiple "-n xx" to configure multiple streams.
+
+Another important parameter is the length of sequences. You can use "--length" to change the default length (1600) of sequence pairs.
+
+Needleman-Wunsch algorithm will take two sequences and generate an alignment matrix. The space complexity is quadratic in the length of sequencs L: O(L^2)
+
+* The default number of threads per block is 32 (1 block = 1 warp). The default number of blocks is 28, which is roughly 2x of #SM.
+
+* The --debug option allows validating the results.
+
+* Two different kernels are provided (see nw_kernel_diagonal.cu and nw_kernel_tile.cu). By default, the main invokes the "diagonal" implementation. Different implementations can be invoked by using option "--kernel".
+
+* If you choose "tile" kernel, you may need to pay attention to another parameter "TILE_SIZE". It determines how much shared memory will be used per block. If you want to change it, go to "needle.h" and you can find the MACRO. Also, when using "tile" kernel, the sequence length should be multiple times of tile size.
+
+* "nw-multi-stream-test.sh" is a testing script. It contains a few examples.
+
+Examples
+========
+./nw-multi-stream -k 0 -n 1 -l 40 --debug
+./nw-multi-stream -k 0 -n 10 -n 100 -l 128 --debug
+./nw-multi-stream -k 0 -n 10 -t 96 -l 512 --debug
+./nw-multi-stream -k 0 -n 20 -t 96 -b 16 -l 1600 --debug
+
+./nw-multi-stream -k 1 -n 1 -l 32 --debug
+./nw-multi-stream -k 1 -n 10 -n 100 -l 128 --debug
+./nw-multi-stream -k 1 -n 10 -t 96 -l 512 --debug
+./nw-multi-stream -k 1 -n 20 -t 96 -b 16 -l 1600 --debug
+

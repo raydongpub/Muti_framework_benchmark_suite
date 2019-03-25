@@ -1,0 +1,154 @@
+#include "mmMpicudakernel.cuh"
+#include <sys/time.h>
+using namespace GPU_MatrixDataset;
+
+#define _DEBUG
+#ifdef _DEBUG
+#include <iostream>
+using namespace std;
+#endif //__DEBUG
+
+PRECISION * vec_a;
+PRECISION * vec_b;
+PRECISION * vec_c;
+GPUConfig gpuConfig;
+
+PRECISION * vec_a_d;
+PRECISION * vec_b_d;
+PRECISION * vec_c_d;
+
+
+__global__ void ComputeMatrixAttributes_Kernel (
+    PRECISION* veca, PRECISION * vecb, PRECISION * vecc, 
+    int width, int height, 
+    int abnum, int cnum) {
+
+    int gid     = (blockIdx.x * blockDim.x) + threadIdx.x;
+    int total   = gridDim.x * blockDim.x;
+    int idx, row, col;
+    PRECISION sum = 0.0;
+    for (int i = 0; i < cnum; i+=total) {
+        idx = i + gid;
+        row = idx / width;
+        col = idx % height;
+        if (idx < cnum){
+            for (int j = 0; j < width; j++) {
+                sum += veca[(row * width) + j] * 
+                    vecb[(col * width) + j];
+            }
+            vecc[idx] = sum;           
+            sum = 0.0;
+        }
+    }
+}
+
+#define CHK_ERR(str)           \
+    do {                       \
+        cudaError_t ce = str;  \
+        if (ce != cudaSuccess) \
+            return ce;         \
+    } while (0)
+
+cudaError_t ConvertHostToDevice() {
+    CHK_ERR(    cudaMemcpy(vec_a_d, vec_a,
+        gpuConfig.vec_size * sizeof(PRECISION), 
+        cudaMemcpyHostToDevice));
+    CHK_ERR(    cudaMemcpy(vec_b_d, vec_b,
+        gpuConfig.vec_size * sizeof(PRECISION), 
+        cudaMemcpyHostToDevice));
+    CHK_ERR(    cudaMemset(vec_c_d, 0,
+        gpuConfig.result_size * sizeof(PRECISION)));
+
+    return cudaSuccess;
+}
+
+cudaError_t ConvertDeviceToHost() {
+
+    CHK_ERR(    cudaMemcpy(vec_c, vec_c_d,
+        gpuConfig.result_size * sizeof(PRECISION), 
+        cudaMemcpyDeviceToHost));
+
+    return cudaSuccess;
+}
+
+cudaError_t InitializeMatrixLists() {
+
+    //Allocate space for cuda
+    CHK_ERR(    cudaMalloc(&(vec_a_d),  
+        gpuConfig.vec_size * sizeof(PRECISION)));
+    CHK_ERR(    cudaMalloc(&(vec_b_d),  
+        gpuConfig.vec_size * sizeof(PRECISION)));
+    CHK_ERR(    cudaMalloc(&(vec_c_d),  
+        gpuConfig.result_size * sizeof(PRECISION)));
+
+    ConvertHostToDevice();
+
+    return cudaSuccess;
+}
+
+cudaError_t DestroyMatrixLists() {
+    CHK_ERR(    cudaFree(vec_a_d));
+    CHK_ERR(    cudaFree(vec_b_d));
+    CHK_ERR(    cudaFree(vec_c_d));
+
+    return cudaSuccess;
+}
+
+cudaError_t CudaInitialize(PRECISION * veca, 
+                           PRECISION * vecb, 
+                           PRECISION * vecc, 
+                           parConfig * par, 
+                           int rank, int numpes) {
+
+    vec_a                 = veca;
+    vec_b                 = vecb;
+    vec_c                 = vecc;
+    gpuConfig.peidx       = rank;
+    gpuConfig.numpe       = numpes;
+    gpuConfig.width       = par->wid;
+    gpuConfig.height      = par->div_fac;
+    gpuConfig.vec_size    = par->mat_fraction;
+    gpuConfig.result_size = par->div_fac*par->div_fac;    
+
+    int deviceCnt = 0;
+    CHK_ERR(    cudaGetDeviceCount(&deviceCnt));
+    CHK_ERR(    cudaSetDevice(rank % deviceCnt));
+
+#ifdef _DEBUG
+    cout << "[" << rank << "]: cudaSetDevice " 
+         << rank % deviceCnt << " and total is: " 
+         << gpuConfig.numcom << endl;
+#endif
+
+    InitializeMatrixLists();
+
+    return cudaSuccess;
+}
+
+cudaError_t CudaClean() {
+
+    DestroyMatrixLists();
+
+    return cudaSuccess;
+}
+
+cudaError_t ComputeMatrixAttributes() {
+
+    timeval     time_begin, time_end;
+    double      time_period;
+    gettimeofday(&time_begin, NULL);
+    cout << "Launching" << endl;
+    ComputeMatrixAttributes_Kernel <<<32, 512>>> (
+        vec_a_d, vec_b_d, vec_c_d, 
+        gpuConfig.width, gpuConfig.height, 
+        gpuConfig.vec_size, gpuConfig.result_size);
+    CHK_ERR(    cudaDeviceSynchronize());
+    cout << "kernel complete" << endl;
+    gettimeofday(&time_end,NULL);
+    time_period = (time_end.tv_sec + time_end.tv_usec * 1e-6) -            (time_begin.tv_sec + time_begin.tv_usec * 1e-6);
+    printf("Time: %lf\n", time_period);
+    CHK_ERR(    ConvertDeviceToHost());
+
+    return cudaSuccess;
+}
+

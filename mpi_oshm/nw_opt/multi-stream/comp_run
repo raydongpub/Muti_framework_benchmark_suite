@@ -1,0 +1,1 @@
+rm -rf oshm-nw.*;rm -rf mpi-nw.*;make clean;srun -p gpu3 -N1 make;

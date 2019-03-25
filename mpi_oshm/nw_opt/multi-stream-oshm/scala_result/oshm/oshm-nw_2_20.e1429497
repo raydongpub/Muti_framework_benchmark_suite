@@ -1,0 +1,19 @@
+WARNING: Using GASNet's mpi-conduit, which exists for portability convenience.
+WARNING: Support was detected for native GASNet conduits: ibv
+WARNING: You should *really* use the high-performance native GASNet conduit
+WARNING: if communication performance is at all important in this program run.
+=============== Configuration ================
+device = 0
+kernel = 0
+stream number = 1
+Case 0 - sequence number = 5000
+sequence length = 1000
+penalty = -10
+block number = 64
+thread number = 512
+repeat = 1
+debug = 0
+
+real	3m36.939s
+user	24m40.196s
+sys	13m49.590s

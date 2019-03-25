@@ -1,0 +1,8 @@
+
+nb_mpicuda:42715 terminated with signal 11 at PC=40ddd8 SP=7fff1be1a070.  Backtrace:
+/home/ksajjapongse/data/benchmark/nbody/nb_mpicuda[0x40ddd8]
+/home/ksajjapongse/data/benchmark/nbody/nb_mpicuda[0x40eb90]
+/home/ksajjapongse/data/benchmark/nbody/nb_mpicuda[0x40ae6f]
+/home/ksajjapongse/data/benchmark/nbody/nb_mpicuda[0x40a444]
+/usr/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f30dbf13af5]
+/home/ksajjapongse/data/benchmark/nbody/nb_mpicuda[0x40a8e9]

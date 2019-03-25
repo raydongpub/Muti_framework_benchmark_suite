@@ -1,0 +1,405 @@
+#include <mpi.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/time.h>
+#include <cuda.h>
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+
+/**
+ * @ data type definition
+ */
+#define PRECISION float
+//#define DISABLE_MATH
+#define WIRE_SEGMENTS 10
+#define STEPS         10000
+#define DELTAT        1e-6
+
+#define INDEX_TYPE    unsigned
+#define INDEX_DIM     1
+
+/**
+ * @ check error function
+ */
+inline void checkError(int ret, const char * str) {
+    if (ret != 0) {
+        cerr << "Error: " << str << endl;
+        exit(-1);
+    }
+}
+
+inline void CheckCUDAError (cudaError_t ce) {
+    if (ce != cudaSuccess) {
+        cout << "CUDA_ERROR: " << cudaGetErrorString(ce) << endl;
+        exit(0);
+    }
+}
+
+
+/**
+ * @ structure of node and wire
+ */
+
+struct point;
+typedef vector<point> node;
+struct point {
+   PRECISION capacitance;
+   PRECISION leakage;
+   PRECISION charge;
+   PRECISION voltage; 
+   int       node_attr;
+};
+
+struct edge;
+typedef vector<edge> wire;
+struct edge {
+    PRECISION * currents;
+    PRECISION * voltages;
+    PRECISION   resistance;
+    PRECISION   inductance;
+    PRECISION   capacitance;
+ 
+    point     * in_ptr;
+    point     * out_ptr;
+     
+};
+
+/**
+ * @ Kernel Function
+ */
+
+__global__ void MatrixMul_Kernel(
+    PRECISION * va, PRECISION * vb,
+    PRECISION * vc, int vec_stp,
+    int mat_size, int vecc_num, int height) {
+
+    int gridsize = gridDim.x * blockDim.x;
+    int idx = (blockIdx.x * blockDim.x) + threadIdx.x;
+    int start, row, col;
+    PRECISION sum = 0.0;
+    for (int i = 0; i < vecc_num; i+= gridsize) {
+        start = i + vec_stp + idx;
+        row   = start / height;
+        col   = start % height;
+        if (start < (vecc_num+vec_stp)) {
+            for (int j = 0; j < mat_size; j++) {
+                sum  += va[row * mat_size + j] *
+                vb[col * mat_size + j];
+            }
+            vc[start] = sum;
+            sum = 0.0;
+        }
+    }
+    __syncthreads();
+
+}
+
+/**
+ * @ random function to get node
+ */
+
+point * random_element(vector<point> &vec)
+{
+  int index = int(drand48() * vec.size());
+  return &vec[index];
+}
+
+/**
+ * @ computation function
+ */
+void calculate_current_cpu(int num_pc, wire * wire_pc) {
+
+    // calculate currents
+    for (int n=0; n < num_pc; n++) {
+        // define temporaty variables
+        PRECISION temp_v[WIRE_SEGMENTS+1];
+        PRECISION temp_i[WIRE_SEGMENTS];
+        PRECISION old_i[WIRE_SEGMENTS];
+        PRECISION old_v[WIRE_SEGMENTS-1];
+        // access first wire in each wire_piece
+        //wire wire_head = first_wires[n];
+        int counter = 0;
+        for (vector<edge>::iterator it = wire_pc[n].begin(); it != wire_pc[n].end(); ++it) {
+#ifdef _DEBUG
+            // circuit info
+            printf("============Testify node: ============\n");
+            printf( "Wire %d resistance: %f, inductance: %f, capacitance: %f\n", counter++, it->resistance, it->inductance, it->capacitance);
+            printf("** node info **\n");
+            printf("in_ptr/node_type:%d, capacitance: %f\n", (it->in_ptr)->node_attr, (it->in_ptr)->capacitance);
+            printf("out_ptr/node_type:%d, capacitance: %f\n", (it->out_ptr)->node_attr, (it->out_ptr)->capacitance);
+#endif
+            // define calc parameters
+            PRECISION dt = DELTAT;
+            PRECISION recip_dt = 1.0f / dt;
+            int steps = STEPS;
+            // calc temporary variables
+            for (int i = 0; i < WIRE_SEGMENTS; i++) {
+                temp_i[i] = it->currents[i];
+                old_i[i]  = temp_i[i];
+            }
+            for (int i = 0; i < (WIRE_SEGMENTS-1); i++) {
+                temp_v[i+1] = it->voltages[i];
+                old_v[i]    = temp_v[i+1];
+            }
+            // calc outer voltages to the node voltages
+            temp_v[0] = (it->in_ptr)->voltage;
+            // Note: out-ptr need communication when parallel
+            temp_v[WIRE_SEGMENTS] = (it->out_ptr)->voltage;
+            // Solve the RLC model iteratively
+            PRECISION inductance = it->inductance;
+            PRECISION recip_resistance = 1.0f / (it->resistance);
+            PRECISION recip_capacitance = 1.0f / (it->capacitance);
+            for (int j = 0; j < steps; j++) {
+                // first, figure out the new current from the voltage differential
+                // and our inductance:
+                // dV = R*I + L*I' ==> I = (dV - L*I')/R
+                for (int i = 0; i < WIRE_SEGMENTS; i++) {
+                    temp_i[i] = ((temp_v[i+1] - temp_v[i]) - (inductance * (temp_i[i] - old_i[i]) * recip_dt)) * recip_resistance;
+                }
+                // Now update the inter-node voltages
+                for (int i = 0; i < (WIRE_SEGMENTS-1); i++) {
+                    temp_v[i+1] = old_v[i] + dt * (temp_i[i] - temp_i[i+1]) * recip_capacitance;
+                }
+            }
+            // Write out the results
+            for (int i = 0; i < WIRE_SEGMENTS; i++)
+                it->currents[i] = temp_i[i];
+            for (int i = 0; i < (WIRE_SEGMENTS-1); i++)
+                it->voltages[i] = temp_v[i+1];
+       } //for: iterate wires_per_piece
+
+    }// for: pieces, CN
+
+}
+
+void distributed_charge_cpu(int num_pc, wire * wire_pc) {
+    for (int n=0; n<num_pc; n++) {
+        for (vector<edge>::iterator it = wire_pc[n].begin(); it != wire_pc[n].end(); ++it) {
+            PRECISION dt = DELTAT;
+            PRECISION in_current = -dt * (it->currents[0]);
+            PRECISION out_current = -dt * (it->currents[WIRE_SEGMENTS-1]);
+            (it->in_ptr)->charge += in_current;
+            (it->out_ptr)->charge += out_current;
+        }//for: iterate wires_per_piece
+    }// for: pieces, DC
+}
+
+void update_voltage_cpu(int num_pc, node * node_pc) { 
+    for (int n=0; n<num_pc; n++) {
+        for (vector<point>::iterator it = node_pc[n].begin(); it != node_pc[n].end(); ++it) {
+            PRECISION voltage = it->voltage;
+            PRECISION charge = it->charge;
+            PRECISION capacitance = it->capacitance;
+            PRECISION leakage = it->leakage;
+            voltage += charge / capacitance;
+            voltage *= (1.f - leakage);
+            it->voltage = voltage;
+            it->charge  = 0.f;
+#ifdef _DEBUG
+            printf("\t**node info **\n");
+            printf("\tvoltage: %f, charge: %f\n", it->voltage, it->charge);
+#endif
+        }//for: iterate nodess_per_piece
+    }// for: pieces, DC
+}
+
+int main(int argc, char ** argv) {
+  
+/* parameter setting */
+    int num_loops         = 2;
+    int num_pieces        = 4;
+    int nodes_per_piece   = 10;
+    int wires_per_piece   = 20;
+    int pct_wire_in_piece = 95;
+    int random_seed       = 0;
+    // set random seed
+    srand48(random_seed);
+
+//    int random_seed       = 12345;
+    int steps             = STEPS;
+
+    long num_circuit_nodes = num_pieces * nodes_per_piece;
+    long num_circuit_wires = num_pieces * wires_per_piece;
+
+    // calculate currents
+    long operations = num_circuit_wires * (WIRE_SEGMENTS*6 + (WIRE_SEGMENTS-1)*4) * steps;
+    // distribute charge
+    operations += (num_circuit_wires * 4);
+    // update voltages
+    operations += (num_circuit_nodes * 4);
+    // multiply by the number of loops
+    operations *= num_loops;
+
+/* circuit graph building */
+    // node definition 
+    node * node_piece;
+    node * first_nodes;
+    node_piece  = new node[num_pieces];
+    first_nodes = new node[num_pieces];
+    vector<int> shared_nodes_piece(num_pieces, 0); 
+    // wire definition
+    wire * wire_piece;
+    wire * first_wires;
+    wire_piece = new wire[num_pieces];
+    first_wires = new wire[num_pieces];
+    
+    // node initialization
+    for (int n = 0; n < num_pieces; n++) {
+        for (int i = 0; i < nodes_per_piece; i++) {
+            // add node into node vector
+            node_piece[n].push_back(point());
+            // initialize node parameter
+            node_piece[n].back().capacitance = drand48() + 1.f;
+            node_piece[n].back().leakage     = 0.1f * drand48();
+            node_piece[n].back().charge      = 0.f;
+            node_piece[n].back().voltage     = 2*drand48() - 1.f;
+            // node_attr (0:private, 1:shared)
+            node_piece[n].back().node_attr   = 0;
+            
+            // set first node in each piece
+            if (i == 0)
+                first_nodes[n].push_back(node_piece[n].back());
+
+        }//for
+    }//for
+
+    // wire initialization
+    for (int n = 0; n < num_pieces; n++) {
+#ifdef _DEBUG
+        printf("=== List nodes in piece %d ===\n", n);
+#endif
+        for (int i = 0; i < wires_per_piece; i++) {
+            // add wire into wire vector
+            wire_piece[n].push_back(edge());
+            // init currents
+            wire_piece[n].back().currents = new PRECISION[WIRE_SEGMENTS];
+            for (int j = 0; j < WIRE_SEGMENTS; j++)
+                wire_piece[n].back().currents[j] = 0.f;
+            // init voltage
+            wire_piece[n].back().voltages = new PRECISION[WIRE_SEGMENTS-1];
+            for (int j = 0; j < WIRE_SEGMENTS-1; j++)
+                wire_piece[n].back().voltages[j] = 0.f;
+            wire_piece[n].back().resistance = drand48() * 10.0 + 1.0;
+            // Keep inductance on the order of 1e-3 * dt to avoid resonance problems
+            wire_piece[n].back().inductance = (drand48() + 0.1) * DELTAT * 1e-3;
+            wire_piece[n].back().capacitance = drand48() * 0.1;
+            // UNC init connection
+            wire_piece[n].back().in_ptr = random_element(node_piece[n]);
+            if ((100 * drand48()) < pct_wire_in_piece) {
+                wire_piece[n].back().out_ptr = random_element(node_piece[n]);
+            }//if
+            else {
+#ifdef _DEBUG
+                cout << "\t\tShared appear\n";
+#endif
+                // make node as shared
+                (*(wire_piece[n].back().in_ptr)).node_attr = 1;
+                // pick a random other piece and a node from there
+                int nn = int(drand48() * (num_pieces - 1));
+                if (nn >= n) nn++;
+                // pick an arbitrary node, except that if it's one that didn't used to be shared, make the 
+                //  sequentially next pointer shared instead so that each node's shared pointers stay compact
+                int idx = int(drand48() * node_piece[nn].size());
+                if (idx > shared_nodes_piece[nn])
+                    idx = shared_nodes_piece[nn]++;
+                // make node as shared
+                node_piece[nn][idx].node_attr = 1;
+                wire_piece[n].back().out_ptr = &(node_piece[nn][idx]);
+            }//else
+            // Record the first wire pointer for this piece
+            if (i == 0)
+                first_wires[n].push_back(wire_piece[n].back());
+#ifdef _DEBUG
+            // circuit info
+            printf( "Wire %d resistance: %f, inductance: %f, capacitance: %f\n", i, wire_piece[n][i].resistance, wire_piece[n][i].inductance, wire_piece[n][i].capacitance);
+            printf("** node info **\n");
+            printf("in_ptr/node_type:%d, capacitance: %f\n", (*(wire_piece[n][i].in_ptr)).node_attr, (*(wire_piece[n][i].in_ptr)).capacitance);
+            printf("out_ptr/node_type:%d, capacitance: %f\n", (*(wire_piece[n][i].out_ptr)).node_attr, (*(wire_piece[n][i].out_ptr)).capacitance);
+#endif
+        }//for: wire_per_piece
+    }//for : pieces
+
+/* Computing circuit graph */
+    // main loop
+    for (int iloop = 0; iloop < num_loops; iloop++) { 
+        // calculate currents
+        calculate_current_cpu(num_pieces, wire_piece);
+        // distributed charge
+        distributed_charge_cpu(num_pieces, wire_piece);
+#ifdef _DEBUG
+        for (int n=0; n<num_pieces; n++) {
+            for (vector<edge>::iterator it = wire_piece[n].begin(); it != wire_piece[n].end(); ++it) {
+                printf("\t**node info **\n");
+                printf("\tin_charge: %f, out_charge: %f\n", (it->in_ptr)->charge, (it->out_ptr)->charge);
+            }
+        }
+        printf("++++++++++++++++++++++++++++++++++++++++++++++++++\n");
+#endif
+        // update voltage
+        update_voltage_cpu(num_pieces, node_piece);
+    }// for: mainloop
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

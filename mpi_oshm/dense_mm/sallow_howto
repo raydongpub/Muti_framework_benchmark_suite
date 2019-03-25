@@ -1,0 +1,1 @@
+time salloc -p GPU -N 9 --mem-per-cpu=MaxMemPerNode --ntasks-per-node=2 mpirun -n 12 --hostfile ompihosts -x CUDA_VISIBLE_DEVICES=0,1,2,3 /home/ksajjapongse/data/benchmark/dense_mm/mm_mpicuda -m /home/ksajjapongse/data/benchmark/dense_mm/dset18200.nn

@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+#SBATCH -p GPU -N 9 --mem=100g
+time mpirun -x CUDA_VISIBLE_DEVICES=0,1,2,3 /home/ksajjapongse/data/benchmark/nbody/nb_mpicuda -c /home/ksajjapongse/data/benchmark/nbody/mpi.conf

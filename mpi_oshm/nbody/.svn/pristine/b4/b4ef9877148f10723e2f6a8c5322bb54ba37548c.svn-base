@@ -1,0 +1,51 @@
+#ifndef _MAIN_H_
+#define _MAIN_H_
+
+#include "NbodyConfig.h"
+#include "ParticleDataset.h"
+#include <iostream>
+#include <stdlib.h>
+#ifdef _IVM_MOD
+#include "ivm.h"
+#endif
+
+typedef int  (* LibSetupFn)   (NbodyConfig     * config,
+                               ParticleDataset * dataset);
+typedef void (* LibEntryFn)   (void * entryParam);
+typedef int  (* LibCleanUpFn) (void);
+
+#ifdef _IVM_MOD
+typedef struct {
+    pe_id      my_id;
+    ivm_node * node;
+    ivm_pe   * pe;
+    group_id   gid;    
+    int        num_pes, num_node;
+    int        argc;
+    char **    argv;
+    int        iter;
+    int        work_id;
+} ivm_params;
+#endif
+
+inline void checkError(int ret, const char * str) {
+    if (ret != 0) {
+        cerr << "Error: " << str << endl;
+        exit(-1);
+    }
+}
+
+extern "C" {
+
+int  LibSetup(NbodyConfig     * config,
+              ParticleDataset * dataset);
+
+void LibEntry(int argc, char **argv);
+#ifdef _IVM_MOD
+void LibEntry_IVM(ivm_params * ivmparams);
+#endif
+int  LibCleanUp(void);
+}
+
+#endif /* _MAIN_H_ */
+

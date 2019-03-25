@@ -1,0 +1,47 @@
+===========
+num_loops:10
+num_pieces:2400
+nodes_per_piece:100
+wires_per_piece:150
+==========
+Kernel Config: blocks:16, threads; 256
+Rank:1, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.037555
+Time: 240.204397
+Rank:2, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.060628
+Time: 240.225827
+Rank:4, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.078292
+Time: 240.226717
+Rank:5, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.063794
+Time: 240.226356
+Rank:3, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.077664
+Time: 240.225905
+Rank:6, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.063341
+Time: 240.226165
+Rank:7, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.061949
+Time: 240.225880
+Rank:8, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.062424
+Time: 240.226578
+Rank:9, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.053816
+Time: 240.226164
+Rank:10, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.060685
+Time: 240.249527
+Rank:11, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.075282
+Time: 240.250654
+Rank:12, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.075905
+Time: 240.251713
+Rank:13, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.062086
+Time: 240.251434
+Rank:14, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.062507
+Time: 240.251814
+Rank:15, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.062868
+Time: 240.251467
+Rank:16, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.063238
+Time: 240.251935
+Rank:17, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.051893
+Time: 240.231421
+Rank:18, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.064043
+Time: 240.251518
+Rank:19, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.025158
+Time: 240.251235
+Rank:0, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.000000
+Time: 240.254100

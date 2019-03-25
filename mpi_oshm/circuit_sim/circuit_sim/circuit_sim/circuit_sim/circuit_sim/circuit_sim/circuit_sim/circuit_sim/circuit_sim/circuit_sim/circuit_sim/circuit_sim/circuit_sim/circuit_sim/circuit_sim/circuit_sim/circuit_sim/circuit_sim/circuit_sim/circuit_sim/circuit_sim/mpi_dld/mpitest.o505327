@@ -1,0 +1,13 @@
+My rank: 0, Node name: lewis4-r730-gpu3-node426
+My rank: 2, Node name: lewis4-r730-gpu3-node426
+My rank: 1, Node name: lewis4-r730-gpu3-node428
+My rank: 0, Parent_rank: 2, Node name: lewis4-r730-gpu3-node426
+My rank: 1, Parent_rank: 2, Node name: lewis4-r730-gpu3-node426
+	PE[2], NODE[lewis4-r730-gpu3-node426], currwid[0]
+	End of computing---> children PE:1
+[lewis4-r730-gpu3-node428:161289] *** An error occurred in MPI_Comm_spawn
+[lewis4-r730-gpu3-node428:161289] *** reported by process [47081748037633,1]
+[lewis4-r730-gpu3-node428:161289] *** on communicator MPI_COMM_SELF
+[lewis4-r730-gpu3-node428:161289] *** MPI_ERR_SPAWN: could not spawn processes
+[lewis4-r730-gpu3-node428:161289] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[lewis4-r730-gpu3-node428:161289] ***    and potentially your MPI job)

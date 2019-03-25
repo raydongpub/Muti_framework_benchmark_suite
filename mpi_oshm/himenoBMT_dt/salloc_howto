@@ -1,0 +1,1 @@
+salloc -p GPU -N 9 --ntasks-per-node=2 mpirun -n 12 -x CUDA_VISIBLE_DEVICES=0,1,2,3 --hostfile ompihosts /home/ksajjapongse/data/benchmark/himenoBMT_dt/bmt_mpicuda -pe 1 3 4 -ds xl

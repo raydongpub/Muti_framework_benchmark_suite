@@ -1,0 +1,375 @@
+#include "commonBMT.h"
+#include "mpi.h"
+#include <iostream>
+#include <stdio.h>
+
+#ifdef _DOUBLE_PRECISION
+#define MPI_PRECISION MPI_DOUBLE
+#else
+#define MPI_PRECISION MPI_FLOAT
+#endif
+
+using namespace std;
+
+PRECISION **** a,    **** b,    **** c,   *** p;
+PRECISION  *** wrk1,  *** wrk2,  *** bnd;
+
+Matrix       * pa, * pb, * pc, * pp,   * pwrk1, * pwrk2, *pbnd;
+int            mx,   my,   mz,   imax,   jmax,    kmax,   it;
+PRECISION      omega = 0.8;
+
+//MPI
+typedef struct {
+    int l;
+    int r;
+} Neighbor;
+typedef struct {
+    Neighbor x;
+    Neighbor y;
+    Neighbor z;
+} Cart_Neighbor;
+
+int           numpes, peid, cartid[3];
+MPI_Comm      comm_cart;
+MPI_Datatype  jk_plane, ik_plane, ij_plane;
+Cart_Neighbor nb;
+
+//Initialize and assign ID for PEs according to cartesian coordiante.
+int bmtInitComm(int ndx, int ndy, int ndz) {
+
+    if ((ndx * ndy * ndz) != numpes) {
+        if (!peid) {
+            cerr << endl << "Error: Number of PEs in all dimensions do not "
+               << "match total number of PEs." << endl << endl;
+            MPI_Abort(MPI_COMM_WORLD, 1);
+        }
+    }
+
+    int idm[3] = {ndx, ndy, ndz}, 
+        ipd[3] = {0, 0, 0}, 
+        ir     = 0;
+
+    MPI_Cart_create(MPI_COMM_WORLD, 3, idm, ipd, ir, &comm_cart);
+    MPI_Cart_get(comm_cart, 3, idm, ipd, cartid);
+
+    if (ndx > 1) {
+        MPI_Cart_shift(comm_cart, 0, 1,
+            &(nb.x.l), &(nb.x.r));
+    }
+
+    if (ndy > 1) {
+        MPI_Cart_shift(comm_cart, 1, 1,
+            &(nb.y.l), &(nb.y.r));
+    }
+
+    if (ndz > 1) {
+        MPI_Cart_shift(comm_cart, 2, 1,
+            &(nb.z.l), &(nb.z.r));
+    }
+
+    return 0;
+}
+
+//Work division and assignment for PEs
+int bmtInitMax(int lmx, int lmy, int lmz) {
+
+    int * mx1, * my1, * mz1;
+    int * mx2, * my2, * mz2;
+    int   tmp;
+
+    mx1 = new int [config.mx0 + 1];
+    my1 = new int [config.my0 + 1];
+    mz1 = new int [config.mz0 + 1];
+
+    mx2 = new int [config.mx0 + 1];
+    my2 = new int [config.my0 + 1];
+    mz2 = new int [config.mz0 + 1];
+
+    tmp = mx / config.ndx0;
+    mx1[0] = 0;
+    for (int i=1;i<=config.ndx0;i++) {
+        if (i <= mx % config.ndx0)
+            mx1[i] = mx1[i - 1] + tmp + 1;
+        else
+            mx1[i] = mx1[i - 1] + tmp;
+    }
+
+    tmp = my / config.ndy0;
+    my1[0] = 0;
+    for (int i=1;i<=config.ndy0;i++) {
+        if (i <= my % config.ndy0)
+            my1[i] = my1[i - 1] + tmp + 1;
+        else
+            my1[i] = my1[i - 1] + tmp;
+    }
+
+    tmp = mz / config.ndz0;
+    mz1[0] = 0;
+    for (int i=1;i<=config.ndz0;i++) {
+        if (i <= mz % config.ndz0)
+            mz1[i] = mz1[i - 1] + tmp + 1;
+        else
+            mz1[i] = mz1[i - 1] + tmp;
+    }
+
+    //************************************************************************
+
+    for(int i=0;i<config.ndx0;i++) {
+        mx2[i] = mx1[i+1] - mx1[i];
+        if(i != 0)
+            mx2[i] = mx2[i] + 1;
+        if(i != config.ndx0-1)
+            mx2[i] = mx2[i] + 1;
+    }
+
+    for(int i=0;i<config.ndy0;i++) {
+        my2[i] = my1[i+1] - my1[i];
+        if(i != 0)
+            my2[i] = my2[i] + 1;
+        if(i != config.ndy0-1)
+            my2[i] = my2[i] + 1;
+    }
+
+    for(int i=0;i<config.ndz0;i++) {
+        mz2[i] = mz1[i+1] - mz1[i];
+        if(i != 0)
+            mz2[i] = mz2[i] + 1;
+        if(i != config.ndz0-1)
+            mz2[i] = mz2[i] + 1;
+    }
+
+    //************************************************************************
+
+    imax = mx2[cartid[0]];
+    jmax = my2[cartid[1]];
+    kmax = mz2[cartid[2]];
+
+    if (cartid[0] == 0)
+        it = mx1[cartid[0]];
+    else
+        it = mx1[cartid[0]] - 1;
+
+    if (config.ndx0 > 1) {
+        MPI_Type_vector(jmax, kmax, config.mkmax,
+            MPI_PRECISION, &jk_plane);
+        MPI_Type_commit(&jk_plane);
+    }
+
+    if (config.ndy0 > 1) {
+        MPI_Type_vector(imax, kmax, config.mjmax * config.mkmax,
+            MPI_PRECISION, &ik_plane);
+        MPI_Type_commit(&ik_plane);
+    }
+
+    if (config.ndz0 > 1) {
+        MPI_Type_vector(imax * jmax, 1, config.mkmax,
+            MPI_PRECISION, &ij_plane);
+        MPI_Type_commit(&ij_plane);
+    }
+
+    delete [] mz2;
+    delete [] my2;
+    delete [] mx2;
+
+    delete [] mz1;
+    delete [] my1;
+    delete [] mx1;
+
+    return 0;
+}
+
+int bmtExchange_jkPlane() {
+
+    MPI_Status  status[4];
+    MPI_Request request[4];
+
+    MPI_Irecv(&(p[imax-1][0][0]),
+        1, jk_plane, nb.x.r, 1, comm_cart, &request[0]);
+    MPI_Irecv(&(p[0][0][0]),
+        1, jk_plane, nb.x.l, 2, comm_cart, &request[1]);
+    MPI_Isend(&(p[1][0][0]),
+        1, jk_plane, nb.x.l, 1, comm_cart, &request[2]);
+    MPI_Isend(&(p[imax-2][0][0]),
+        1, jk_plane, nb.x.r, 2, comm_cart, &request[3]);
+
+    MPI_Waitall(4, request, status);
+
+    return 0;
+}
+
+int bmtExchange_ikPlane() {
+
+    MPI_Status  status[4];
+    MPI_Request request[4];
+
+    MPI_Irecv(&(p[0][jmax-1][0]),
+        1, ik_plane, nb.y.r, 1, comm_cart, &request[0]);
+    MPI_Irecv(&(p[0][0][0]),
+        1, ik_plane, nb.y.l, 2, comm_cart, &request[1]);
+    MPI_Isend(&(p[0][1][0]),
+        1, ik_plane, nb.y.l, 1, comm_cart, &request[2]);
+    MPI_Isend(&(p[0][jmax-2][0]),
+        1, ik_plane, nb.y.r, 2, comm_cart, &request[3]);
+
+    MPI_Waitall(4, request, status);
+
+    return 0;
+}
+
+int bmtExchange_ijPlane() {
+
+    MPI_Status  status[4];
+    MPI_Request request[4];
+
+    MPI_Irecv(&(p[0][0][kmax-1]),
+        1, ij_plane, nb.z.r, 1, comm_cart, &request[0]);
+    MPI_Irecv(&(p[0][0][0]),
+        1, ij_plane, nb.z.l, 2, comm_cart, &request[1]);
+    MPI_Isend(&(p[0][0][1]),
+        1, ij_plane, nb.z.l, 1, comm_cart, &request[2]);
+    MPI_Isend(&(p[0][0][kmax-2]),
+        1, ij_plane, nb.z.r, 2, comm_cart, &request[3]);
+
+    MPI_Waitall(4, request, status);
+
+    return 0;
+}
+
+int bmtExchange() {
+
+    if (config.ndx0 > 1)
+        bmtExchange_jkPlane();
+
+    if (config.ndy0 > 1) {
+        bmtExchange_ikPlane();
+    }
+
+    if (config.ndz0 > 1) {
+        bmtExchange_ijPlane();
+    }
+
+    return 0;
+}
+
+PRECISION bmtJacobi(int nn) {
+
+    int       n, i, j, k;
+    PRECISION gosa, wgosa, s0, ss;
+
+    for (n=0;n<nn;++n) {
+
+        gosa  = 0.0;
+        wgosa = 0.0;
+
+        for (i=1;i<imax-1;++i) {
+            for (j=1;j<jmax-1;++j) {
+                for (k=1;k<kmax-1;++k) {
+                    s0 = a[0][i][j][k] * p[i+1][j  ][k  ]
+                       + a[1][i][j][k] * p[i  ][j+1][k  ]
+                       + a[2][i][j][k] * p[i  ][j  ][k+1]
+                       + b[0][i][j][k] * ( p[i+1][j+1][k  ] - p[i+1][j-1][k  ]
+                                         - p[i-1][j+1][k  ] + p[i-1][j-1][k  ] )
+                       + b[1][i][j][k] * ( p[i  ][j+1][k+1] - p[i  ][j-1][k+1]
+                                         - p[i  ][j+1][k-1] + p[i  ][j-1][k-1] )
+                       + b[2][i][j][k] * ( p[i+1][j  ][k+1] - p[i-1][j  ][k+1]
+                                         - p[i+1][j  ][k-1] + p[i-1][j  ][k-1] )
+                       + c[0][i][j][k] * p[i-1][j  ][k  ]
+                       + c[1][i][j][k] * p[i  ][j-1][k  ]
+                       + c[2][i][j][k] * p[i  ][j  ][k-1]
+                       + wrk1[i][j][k];
+
+                    ss = ( s0 * a[3][i][j][k] - p[i][j][k] ) * bnd[i][j][k];
+                    wgosa += ss*ss;
+
+                    wrk2[i][j][k] = p[i][j][k] + omega * ss;
+                }
+            }
+        }
+
+        for (i=1;i<imax-1;++i) {
+            for (j=1;j<jmax-1;++j) {
+                for (k=1;k<kmax-1;++k) {
+                    p[i][j][k] = wrk2[i][j][k];
+                }
+            }
+        }
+
+        bmtExchange();
+
+        MPI_Allreduce(&wgosa, &gosa, 1, MPI_PRECISION,
+            MPI_SUM, MPI_COMM_WORLD);
+
+        if (!peid)
+            cout << n << ": " << gosa << endl;
+    }
+
+    return gosa;
+}
+
+int bmtSetup(int * argc, char *** argv) {
+    MPI_Init(argc, argv);
+    MPI_Comm_size(MPI_COMM_WORLD, &numpes);
+    MPI_Comm_rank(MPI_COMM_WORLD, &peid);
+
+    bool type_set = true;    
+
+    mx = config.mx0 - 1; my = config.my0 - 1; mz = config.mz0 - 1;
+
+    bmtInitComm(config.ndx0, config.ndy0, config.ndz0);
+
+    bmtInitMax(mx, my, mz);
+
+    pa    = new Matrix(4, config.mimax, config.mjmax, config.mkmax, type_set);
+    pb    = new Matrix(3, config.mimax, config.mjmax, config.mkmax, type_set);
+    pc    = new Matrix(3, config.mimax, config.mjmax, config.mkmax, type_set);
+    pp    = new Matrix(config.mimax, config.mjmax, config.mkmax, type_set);
+    pwrk1 = new Matrix(config.mimax, config.mjmax, config.mkmax, type_set);
+    pwrk2 = new Matrix(config.mimax, config.mjmax, config.mkmax, type_set);
+    pbnd  = new Matrix(config.mimax, config.mjmax, config.mkmax, type_set);
+
+    bmtInitMt(*pa,   *pb,    *pc, 
+              *pp,   *pwrk1, *pwrk2, 
+              *pbnd,  mx,     it,
+               config.mimax,  config.mjmax, config.mkmax,
+               imax,   jmax,  kmax);
+
+    a    = pa->GetPtr4D();
+    b    = pb->GetPtr4D();
+    c    = pc->GetPtr4D();
+    p    = pp->GetPtr3D();
+    wrk1 = pwrk1->GetPtr3D();
+    wrk2 = pwrk2->GetPtr3D();
+    bnd  = pbnd->GetPtr3D();
+
+    cout << "imax: " << imax << endl;
+    cout << "jmax: " << jmax << endl;
+    cout << "kmax: " << kmax << endl;
+    cout << "it:   " << it   << endl;
+
+    return 0;
+}
+
+int bmtStart(int num_blocks, int num_threads) {
+
+    MPI_Barrier(MPI_COMM_WORLD);
+    PRECISION gosa = bmtJacobi(200);
+
+    if (peid == 0)
+        cout << "Gosa: " << gosa << endl;
+
+    return 0;
+}
+
+int bmtClean() {
+
+    delete pa;   delete pb;    delete pc;
+    delete pp;   delete pwrk1; delete pwrk2;
+    delete pbnd;
+
+    MPI_Comm_free(&comm_cart);
+
+    MPI_Finalize();
+
+    return 0;
+}
+

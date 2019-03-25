@@ -1,0 +1,87 @@
+NODE_0=r730-node74
+NODE_1=r730-node75
+NODE_2=r730-node76
+NODE_3=r730-node77
+NODE_4=r730-node78
+NODE_5=r730-node79
+NODE_6=r730-node80
+NODE_7=r730-node81
+NODE_8=r730-node82
+NODE_9=r730-node83
+
+if [ "$#" -ne 1 ]
+    then
+    printf "Please specify the host.\n\n"
+    exit -1
+fi
+
+if [ $1 == "0" ]
+    then
+    clear
+    echo Logged to $NODE_0
+    srun --pty -p GPU -w $NODE_0 bash
+fi
+
+if [ $1 == "1" ]
+    then
+    clear
+    echo Logged to $NODE_1
+    srun --pty -p GPU -w $NODE_1 bash
+fi
+
+if [ $1 == "2" ]
+    then
+    clear
+    echo Logged to $NODE_2
+    srun --pty -p GPU -w $NODE_2 bash
+fi
+
+if [ $1 == "3" ]
+    then
+    clear
+    echo Logged to $NODE_3
+    srun --pty -p GPU -w $NODE_3 bash
+fi
+
+if [ $1 == "4" ]
+    then
+    clear
+    echo Logged to $NODE_4
+    srun --pty -p GPU -w $NODE_4 bash
+fi
+
+if [ $1 == "5" ]
+    then
+    clear
+    echo Logged to $NODE_5
+    srun --pty -p GPU -w $NODE_5 bash
+fi
+
+if [ $1 == "6" ]
+    then
+    clear
+    echo Logged to $NODE_6
+    srun --pty -p GPU -w $NODE_6 bash
+fi
+
+if [ $1 == "7" ]
+    then
+    clear
+    echo Logged to $NODE_7
+    srun --pty -p GPU -w $NODE_7 bash
+fi
+
+if [ $1 == "8" ]
+    then
+    clear
+    echo Logged to $NODE_8
+    srun --pty -p GPU -w $NODE_8 bash
+fi
+
+if [ $1 == "9" ]
+    then
+    clear
+    echo Logged to $NODE_9
+    srun --pty -p GPU -w $NODE_9 bash
+fi
+

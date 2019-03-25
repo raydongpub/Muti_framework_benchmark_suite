@@ -1,0 +1,52 @@
+##############################################################################
+# Nbody configuration file
+# Filename: dset1.nn
+##############################################################################
+
+##############################################################################
+# Specify whether you are using distributed computation
+##############################################################################
+Cluster			false  #'true' - cluster, 'false' - single node
+
+##############################################################################
+# Specify whether you are using OpenShmem
+##############################################################################
+Oshmem                  false  #'true' - Yes, 'false' - No
+
+##############################################################################
+# If you are using cluster, specify the number of nodes here
+##############################################################################
+ComputeNodesCount 	2
+
+Node_0_Name		nps103	# Hostname of the 1st node
+Node_0_UseGPU		true	# 'true' - use GPU w/ host, 'false' - host only
+Node_0_GPUCount		1	# Number of GPUs
+
+Node_1_Name		nps104	# Hostname of the 2nd node
+Node_1_UseGPU		true	# 'true' - use GPU w/ host, 'false' - host only
+Node_1_GPUCount		2 	# Number of GPUs
+
+##############################################################################
+# Gravitational constant
+##############################################################################
+GravConstant		0.001
+#GravConstant		10
+
+##############################################################################
+# Time resolution
+##############################################################################
+TimeResolution		100 ms
+Duration                1 s
+#TimeResolution		1 s
+#Duration                1 s
+
+##############################################################################
+# Specify the file that contains the initial dataset here
+##############################################################################
+InitialDataset		dset1.nn
+
+##############################################################################
+# Specify library for computation
+##############################################################################
+Library			/home/cluster14/apps/nbody/lib/libnnst.so
+

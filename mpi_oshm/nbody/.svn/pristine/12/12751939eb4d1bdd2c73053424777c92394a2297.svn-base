@@ -1,0 +1,368 @@
+#include "nbody_main.h"
+#include "ParticleDataset.h"
+#include "nnIVMCudaKernel.cuh"
+#include <math.h>
+#include <string.h>
+#include <iostream>
+
+#ifndef _DOUBLE_PRECISION
+#define MPI_PRECISION MPI_FLOAT
+#else //_DOUBLE_PRECISION
+#define MPI_PRECISION MPI_DOUBLE
+#endif //_DOUBLE_PRECISION
+
+#define MPI_NN_ROOT 0
+
+using namespace std;
+
+NbodyConfig               * plConfig;
+ParticleDataset           * plDataset;
+ParticleDataset           * shDataset;
+PRECISION                   sec = 0.0;
+int                       * numParticles;
+
+//CUDA
+GPU_ParticleDataset::GPUConfig gConfig;
+
+int LibSetup(NbodyConfig * config,
+        ParticleDataset * dataset) {
+    pe_id my_id;
+    checkError(    ivmGetMyId(&my_id), "ivmGetmyId()");
+    plConfig  = config;
+    plDataset = dataset;
+     
+    return 0;
+}
+
+inline void * CollectiveInitialize(int * localC, int * localD, ivm_params * ivmp) {
+    ParticleDataset::Particle * localB;
+// IVM Definition
+    int mid = ivmp->work_id;
+
+    //Determine number of particles handled locally.
+    int total_pe = ivmp->num_pes;
+    int idx = mid - 1;
+    int divCnt = *numParticles / total_pe;
+    int remCnt = *numParticles % total_pe;
+    //Adjust local particle-cpimnts and displacements.
+
+    if (!remCnt) {
+        *localC = divCnt;
+        *localD = idx * divCnt;
+    }
+    else {
+        if (idx == total_pe-1)
+            *localC = *numParticles - (idx * (divCnt + 1));
+        else
+            *localC = divCnt + 1;
+        *localD = idx * (divCnt + 1);
+       
+    }
+
+    localB  = new ParticleDataset::Particle[*localC];
+
+    printf("[%d]: %d/%d\n", plConfig->mParams.rank, 
+        *localD, *localC);
+
+    return localB;
+}
+
+inline void CollectiveClean(ParticleDataset::Particle *localB) {
+
+    delete [] localB;
+}
+
+void LibEntry_IVM(ivm_params * ivmparams) {
+#define SET_PARTICLE(str1, str2)        \
+    x##str1##Pos = localBuf[str2].xPos; \
+    y##str1##Pos = localBuf[str2].yPos; \
+    z##str1##Pos = localBuf[str2].zPos; \
+    x##str1##Vel = localBuf[str2].xVel; \
+    y##str1##Vel = localBuf[str2].yVel; \
+    z##str1##Vel = localBuf[str2].zVel; \
+    x##str1##Acc = localBuf[str2].xAcc; \
+    y##str1##Acc = localBuf[str2].yAcc; \
+    z##str1##Acc = localBuf[str2].zAcc; \
+    mass##str1 = localBuf[str2].mass
+
+#define SET_IPARTICLE(str1, str2)                   \
+    x##str1##Pos = shDataset->mpParticle[str2].xPos; \
+    y##str1##Pos = shDataset->mpParticle[str2].yPos; \
+    z##str1##Pos = shDataset->mpParticle[str2].zPos; \
+    mass##str1 = shDataset->mpParticle[str2].mass
+
+    ParticleDataset::Particle * localBuf;
+    int                         localCnt;
+    int                         localDisp;
+    int                         idx;
+
+    int  * sync_var;
+    int  * iter_fac;
+    int    sizeParticles;
+
+// IVM Parameter
+    ivm_params * ivmp = ivmparams;
+    int peid = ivmp->my_id;
+    int num_pes = ivmp->num_pes;
+    int sync_size = num_pes * sizeof(int);
+
+    if (peid == 0) {
+        bool sync_flag = false;
+// Synchronize var
+        checkError(    ivmMalloc((void **) &sync_var, sync_size, 
+            "SYNCNB"), "ivmMalloc(SYNCNB)");
+        sync_var[num_pes] = {false};
+        checkError(    ivmMalloc((void **) &iter_fac, sizeof(int),             "ITERNB"), "ivmMalloc(ITERNB)");
+        *iter_fac = 0;
+
+        checkError(    ivmMalloc((void **) &numParticles, 
+             sizeof(int), "NUM"), "ivmMalloc(NUM)");
+// Sync-up the number of total particles of main process
+        *numParticles = plDataset->mNumParticles;
+        sizeParticles = *numParticles * 
+            sizeof(ParticleDataset::Particle);
+// Construct a public shared Dataset object
+        shDataset = new ParticleDataset(*numParticles);
+// Allocate Memory for Particle variable in Dataset objec
+        checkError(    ivmMalloc((void **) 
+            &(shDataset->mpParticle),sizeParticles, "DATASET"), 
+            "ivmMalloc(DATASET)");
+        memcpy(shDataset->mpParticle, plDataset->mpParticle,
+            sizeParticles); 
+
+// Create node and pe
+        //c11u11
+        checkError(    ivmCreateNode(IVM_THIS_NODE, 
+            IVM_THIS_SERVICE, ivm_inet, ivm_gpu_0, &(ivmp->node[0])), "ivmCreateNode(gpu_0)");
+
+        //c11u13
+        checkError(    ivmCreateNode("10.49.160.149", 
+            IVM_THIS_SERVICE, ivm_inet, ivm_gpu_0, &(ivmp->node[1])), "ivmCreateNode(gpu_1)");
+
+        //c11u15
+        checkError(    ivmCreateNode("10.49.160.145", 
+            IVM_THIS_SERVICE, ivm_inet, ivm_gpu_0, &(ivmp->node[2])), "ivmCreateNode(gpu_2)");
+        checkError(    ivmCreateNode("10.49.160.145", 
+            IVM_THIS_SERVICE, ivm_inet, ivm_gpu_1, &(ivmp->node[3])), "ivmCreateNode(gpu_3)");
+
+        //c11u17
+        checkError(    ivmCreateNode("10.49.160.140", 
+            IVM_THIS_SERVICE, ivm_inet, ivm_gpu_0, &(ivmp->node[4])), "ivmCreateNode(gpu_4)");
+        checkError(    ivmCreateNode("10.49.160.140", 
+            IVM_THIS_SERVICE, ivm_inet, ivm_gpu_1, &(ivmp->node[5])), "ivmCreateNode(gpu_5)");
+
+        //c11u19
+        checkError(    ivmCreateNode("10.49.160.133", 
+            IVM_THIS_SERVICE, ivm_inet, ivm_gpu_0, &(ivmp->node[6])), "ivmCreateNode(gpu_6)");
+        checkError(    ivmCreateNode("10.49.160.133", 
+            IVM_THIS_SERVICE, ivm_inet, ivm_gpu_1, &(ivmp->node[7])), "ivmCreateNode(gpu_7)");
+
+        //c11u21
+        checkError(    ivmCreateNode("10.49.160.134", 
+            IVM_THIS_SERVICE, ivm_inet, ivm_gpu_0, &(ivmp->node[8])), "ivmCreateNode(gpu_8)");
+        checkError(    ivmCreateNode("10.49.160.134", 
+            IVM_THIS_SERVICE, ivm_inet, ivm_gpu_1, &(ivmp->node[9])), "ivmCreateNode(gpu_9)");
+
+        //c12u9
+        checkError(    ivmCreateNode("10.49.160.150", 
+            IVM_THIS_SERVICE, ivm_inet, ivm_gpu_0, &(ivmp->node[10])), "ivmCreateNode(gpu_10)");
+
+        //c12u11
+        checkError(    ivmCreateNode("10.49.160.147", 
+            IVM_THIS_SERVICE, ivm_inet, ivm_gpu_0, &(ivmp->node[11])), "ivmCreateNode(gpu_11)");
+
+        //c12u13
+        checkError(    ivmCreateNode("10.49.160.131", 
+            IVM_THIS_SERVICE, ivm_inet, ivm_gpu_0, &(ivmp->node[12])), "ivmCreateNode(gpu_12)");
+
+        //c12u15
+        checkError(    ivmCreateNode("10.49.160.146", 
+            IVM_THIS_SERVICE, ivm_inet, ivm_gpu_0, &(ivmp->node[13])), "ivmCreateNode(gpu_13)");
+
+        PRECISION step         = plConfig->mParams.timeRes;
+        PRECISION duration     = plConfig->mParams.duration;
+        PRECISION grav         = plConfig->mParams.gravConstant;
+
+        for (sec=0.0;sec<duration;sec+=step) {
+            checkError(    ivmSetMaxProcessID(num_pes * (*iter_fac+1)), "ivmSetMaxProcessID()");
+
+            checkError(    ivmSyncPutRoot(NULL, "ITERNB", iter_fac,
+                sizeof(int)), "ivmSyncGet(ITERNB)");
+// Sync Get all new data from main PE
+            int syntotal = *numParticles *
+                sizeof(ParticleDataset::Particle);
+//            checkError(    ivmSyncPutRoot(NULL, "DATASET",
+//                (shDataset->mpParticle), syntotal),
+//                "ivmSyncGet(DATASET)");
+
+
+            checkError(    ivmCreateProcess(ivmp->node[0], 
+                IVM_THIS_BINARY, 1, ivmp->argc, ivmp->argv, 
+                ivmp->pe), "ivmCreateProcess(gpu_0)");
+            checkError(    ivmCreateProcess(ivmp->node[1], 
+                IVM_THIS_BINARY, 1, ivmp->argc, ivmp->argv, 
+                ivmp->pe), "ivmCreateProcess(gpu_1)");
+            checkError(    ivmCreateProcess(ivmp->node[2], 
+                IVM_THIS_BINARY, 1, ivmp->argc, ivmp->argv, 
+                ivmp->pe), "ivmCreateProcess(gpu_2)");
+            checkError(    ivmCreateProcess(ivmp->node[3], 
+                IVM_THIS_BINARY, 1, ivmp->argc, ivmp->argv, 
+                ivmp->pe), "ivmCreateProcess(gpu_3)");
+            checkError(    ivmCreateProcess(ivmp->node[4], 
+                IVM_THIS_BINARY, 1, ivmp->argc, ivmp->argv, 
+                ivmp->pe), "ivmCreateProcess(gpu_0)");
+            checkError(    ivmCreateProcess(ivmp->node[5], 
+                IVM_THIS_BINARY, 1, ivmp->argc, ivmp->argv, 
+                ivmp->pe), "ivmCreateProcess(gpu_1)");
+            checkError(    ivmCreateProcess(ivmp->node[6], 
+                IVM_THIS_BINARY, 1, ivmp->argc, ivmp->argv, 
+                ivmp->pe), "ivmCreateProcess(gpu_0)");
+            checkError(    ivmCreateProcess(ivmp->node[7], 
+                IVM_THIS_BINARY, 1, ivmp->argc, ivmp->argv, 
+                ivmp->pe), "ivmCreateProcess(gpu_1)");
+            checkError(    ivmCreateProcess(ivmp->node[8], 
+                IVM_THIS_BINARY, 1, ivmp->argc, ivmp->argv, 
+                ivmp->pe), "ivmCreateProcess(gpu_0)");
+            checkError(    ivmCreateProcess(ivmp->node[9], 
+                IVM_THIS_BINARY, 1, ivmp->argc, ivmp->argv, 
+                ivmp->pe), "ivmCreateProcess(gpu_1)");
+            checkError(    ivmCreateProcess(ivmp->node[10], 
+                IVM_THIS_BINARY, 1, ivmp->argc, ivmp->argv, 
+                ivmp->pe), "ivmCreateProcess(gpu_0)");
+            checkError(    ivmCreateProcess(ivmp->node[11], 
+                IVM_THIS_BINARY, 1, ivmp->argc, ivmp->argv, 
+                ivmp->pe), "ivmCreateProcess(gpu_1)");
+            checkError(    ivmCreateProcess(ivmp->node[12], 
+                IVM_THIS_BINARY, 1, ivmp->argc, ivmp->argv, 
+                ivmp->pe), "ivmCreateProcess(gpu_0)");
+            checkError(    ivmCreateProcess(ivmp->node[13], 
+                IVM_THIS_BINARY, 1, ivmp->argc, ivmp->argv, 
+                ivmp->pe), "ivmCreateProcess(gpu_1)");
+#if 0
+#endif
+
+            cout << "secs: " << sec << "/" << duration << endl;
+            do {
+                sync_flag = false;
+                for (int i=0; i<num_pes; i++) {
+                    if (sync_var[i] == 0) {
+                        sync_flag = true;
+                    }
+                }   
+            } while(sync_flag); 
+            for (int i=0; i<num_pes; i++)
+                sync_var[i] = 0;
+            *iter_fac = (*iter_fac + 1);     
+        }
+// IVM-Wait
+    }
+    else {
+// Sync the variable and data for all PEs
+        checkError(    ivmMap((void **) &sync_var, sync_size, 
+            "SYNCNB"),"ivmMap(SYNCNB)");
+        checkError(    ivmMap((void **) &iter_fac, sizeof(int), 
+            "ITERNB"), "ivmMap(ITERNB)");
+        checkError(    ivmMap((void **) &numParticles, 
+            sizeof(int), "NUM"), "ivmMap(NUM)");
+        sizeParticles = *numParticles * 
+            sizeof(ParticleDataset::Particle);
+// Construct a public shared Dataset object
+        shDataset = new ParticleDataset(*numParticles);
+// Map to the Dataset object
+        checkError(    ivmMap((void **) &(shDataset->mpParticle), 
+            sizeParticles, "DATASET"), "ivmMap(DATASET)");
+
+        if (peid > num_pes) {
+            checkError(    ivmSyncGet("ITERNB", iter_fac, 
+                sizeof(int)), "ivmSyncGet(ITERNB)");   
+// Sync Get all new data from main PE
+            int syntotal = *numParticles * 
+                sizeof(ParticleDataset::Particle);
+            checkError(    ivmSyncGet("DATASET", 
+                (shDataset->mpParticle), syntotal), 
+                "ivmSyncGet(DATASET)");
+
+        }
+
+// Create node and pe
+        ivm_node_type node_type;
+        checkError(    ivmGetMyNodeType(&node_type), "ivmGetMyNodeType()");
+        checkError(    ivmCreateNode(IVM_THIS_NODE, 
+            IVM_THIS_SERVICE, ivm_inet, node_type, &(ivmp->node[0])),            "ivmCreateNode(own)");
+
+// SetDevice
+        int dev_id = 0;
+        switch(node_type) {
+        case ivm_gpu_0:
+            dev_id = 0; break;
+        case ivm_gpu_1:
+            dev_id = 1; break;
+        case ivm_gpu_2:
+            dev_id = 2; break;
+        case ivm_gpu_3:
+            dev_id = 3; break;
+        default:
+            dev_id = 0; break;
+        }
+        cudaSetDevice(dev_id);
+
+
+// Get work ID
+        ivmp->iter    = *iter_fac;
+        ivmp->work_id = peid - *iter_fac * num_pes;
+        int workid    = ivmp->work_id;        
+   
+        localBuf = (ParticleDataset::Particle *)
+            CollectiveInitialize(&localCnt, &localDisp, ivmp);
+    
+        cout << "[" << plConfig->mParams.rank << "/"
+            << plConfig->mParams.commSize << "]: "
+            << localCnt << " total: " << *numParticles << endl;
+
+        PRECISION step         = plConfig->mParams.timeRes;
+        PRECISION duration     = plConfig->mParams.duration;
+        PRECISION grav         = plConfig->mParams.gravConstant;
+
+// Get my pe_id
+        idx = ivmp->my_id;
+        printf("[%d]: %d/%d\n", plConfig->mParams.rank, 
+            localDisp, localCnt);
+
+//Info
+    //cout << "Length of structure is: " << sizeof(ParticleDataset::Particle) << endl;
+
+        gConfig.localCnt  = localCnt;
+        gConfig.localDisp = localDisp;
+        CHK_ERR(    CudaInitialize(shDataset, localBuf, plConfig, gConfig));
+
+        CHK_ERR(    ComputeParticleAttributes());
+
+
+        if (workid % num_pes != 0) {
+            checkError(    ivmCreateProcess(ivmp->node[0], 
+                IVM_THIS_BINARY, 1, ivmp->argc, ivmp->argv, 
+                ivmp->pe), "ivmCreateProcess(own)");
+        }
+
+// Sync back the data to main PE
+        int synsize=localCnt*sizeof(ParticleDataset::Particle);
+        checkError(    ivmSyncPut("DATASET", 
+            (shDataset->mpParticle + localDisp),synsize), 
+            "ivmSyncPut(DATASET)");
+        sync_var[workid-1] = 1;
+        checkError(    ivmSyncPut("SYNCNB", &(sync_var[workid-1]), sizeof(int)), "ivmSyncPut(SYNCNB)");
+
+        CHK_ERR(    CudaClean());
+        CollectiveClean(localBuf);
+    }
+}
+
+int LibCleanUp(void) {
+    pe_id my_id;
+    checkError(    ivmGetMyId(&my_id), "ivmGetMyId()");
+    if ((my_id) == 0)
+        shDataset->SaveToFile("ivmcuda.bin");
+//    shfree(numParticles);
+    return 0;
+}
+

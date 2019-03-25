@@ -1,0 +1,375 @@
+Charmrun> scalable start enabled. 
+Converse/Charm++ Commit ID: v6.7.0-1-gca55e1d
+Charm++> scheduler running in netpoll mode.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 9 unique compute nodes (20-way SMP).
+Charm++> cpu topology info is gathered in 0.004 seconds.
+[num_pieces:2400], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+Rank: 0, [num_pieces:2400], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node428
+Rank: 0, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node428
+Rank: 4, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node429
+Rank: 1, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node428
+Rank: 5, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node429
+Rank: 8, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node431
+Rank: 9, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node431
+Rank: 16, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node435
+Rank: 2, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node428
+Rank: 12, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node433
+Rank: 6, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node430
+Rank: 17, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node435
+Rank: 3, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node428
+Rank: 13, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node433
+Rank: 18, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node476
+Rank: 7, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node430
+Rank: 15, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node434
+Rank: 14, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node434
+Rank: 19, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node476
+Rank: 10, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node432
+Rank: 11, [num_pieces:120], [num_nodes:100], [num_wires:150], [num_loops:10], [max_pe:20]
+hostname:lewis4-r730-gpu3-node432
+Ieration at step 1
+Element 0 pause for LB on PE 0
+	Element 0 Complete transfer on PE 0
+Element 0 Resume from Sync on PE 0, transfer_size:120004, result_size:96004, num_pieces:2400, post_num:240000, post_shr_num:360000
+Element 0 Resume from Sync on PE 0, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 1 pause for LB on PE 1
+	Element 1 Complete transfer on PE 1
+Element 1 Resume from Sync on PE 1, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 3 pause for LB on PE 3
+Element 2 pause for LB on PE 2
+	Element 2 Complete transfer on PE 2
+Element 2 Resume from Sync on PE 2, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 3 Complete transfer on PE 3
+Element 3 Resume from Sync on PE 3, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 5 pause for LB on PE 5
+Element 4 pause for LB on PE 4
+	Element 4 Complete transfer on PE 4
+Element 4 Resume from Sync on PE 4, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 5 Complete transfer on PE 5
+Element 5 Resume from Sync on PE 5, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 9 pause for LB on PE 9
+Element 8 pause for LB on PE 8
+Element 6 pause for LB on PE 6
+	Element 8 Complete transfer on PE 8
+	Element 6 Complete transfer on PE 6
+Element 8 Resume from Sync on PE 8, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 6 Resume from Sync on PE 6, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 9 Complete transfer on PE 9
+Element 9 Resume from Sync on PE 9, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 16 pause for LB on PE 16
+Element 17 pause for LB on PE 17
+	Element 16 Complete transfer on PE 16
+Element 16 Resume from Sync on PE 16, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 17 Complete transfer on PE 17
+Element 17 Resume from Sync on PE 17, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Resume iteration at step 1
+Element 7 pause for LB on PE 7
+Element 10 pause for LB on PE 10
+	Element 7 Complete transfer on PE 7
+	Element 10 Complete transfer on PE 10
+Element 7 Resume from Sync on PE 7, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 10 Resume from Sync on PE 10, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 18 pause for LB on PE 18
+	Element 18 Complete transfer on PE 18
+Element 18 Resume from Sync on PE 18, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 11 pause for LB on PE 11
+	Element 11 Complete transfer on PE 11
+Element 11 Resume from Sync on PE 11, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 13 pause for LB on PE 13
+Element 12 pause for LB on PE 12
+	Element 12 Complete transfer on PE 12
+Element 12 Resume from Sync on PE 12, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 13 Complete transfer on PE 13
+Element 13 Resume from Sync on PE 13, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 19 pause for LB on PE 19
+	Element 19 Complete transfer on PE 19
+Element 19 Resume from Sync on PE 19, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 14 pause for LB on PE 14
+	Element 14 Complete transfer on PE 14
+Element 14 Resume from Sync on PE 14, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 15 pause for LB on PE 15
+	Element 15 Complete transfer on PE 15
+Element 15 Resume from Sync on PE 15, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Resume iteration at step 1
+Ieration at step 2
+Ieration at step 3
+Element 0 pause for LB on PE 0
+	Element 0 Complete transfer on PE 0
+Element 0 Resume from Sync on PE 0, transfer_size:120004, result_size:96004, num_pieces:2400, post_num:240000, post_shr_num:360000
+Element 0 Resume from Sync on PE 0, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Resume iteration at step 3
+Resume iteration at step 3
+Element 7 pause for LB on PE 7
+	Element 7 Complete transfer on PE 7
+Element 7 Resume from Sync on PE 7, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 6 pause for LB on PE 6
+	Element 6 Complete transfer on PE 6
+Element 6 Resume from Sync on PE 6, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 14 pause for LB on PE 14
+	Element 14 Complete transfer on PE 14
+Element 14 Resume from Sync on PE 14, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 15 pause for LB on PE 15
+	Element 15 Complete transfer on PE 15
+Element 15 Resume from Sync on PE 15, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 5 pause for LB on PE 5
+	Element 5 Complete transfer on PE 5
+Element 5 Resume from Sync on PE 5, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 4 pause for LB on PE 4
+	Element 4 Complete transfer on PE 4
+Element 4 Resume from Sync on PE 4, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 9 pause for LB on PE 9
+	Element 9 Complete transfer on PE 9
+Element 9 Resume from Sync on PE 9, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 8 pause for LB on PE 8
+	Element 8 Complete transfer on PE 8
+Element 8 Resume from Sync on PE 8, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 16 pause for LB on PE 16
+	Element 16 Complete transfer on PE 16
+Element 16 Resume from Sync on PE 16, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 17 pause for LB on PE 17
+	Element 17 Complete transfer on PE 17
+Element 17 Resume from Sync on PE 17, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 10 pause for LB on PE 10
+	Element 10 Complete transfer on PE 10
+Element 10 Resume from Sync on PE 10, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 11 pause for LB on PE 11
+	Element 11 Complete transfer on PE 11
+Element 11 Resume from Sync on PE 11, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 1 pause for LB on PE 1
+	Element 1 Complete transfer on PE 1
+Element 1 Resume from Sync on PE 1, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 3 pause for LB on PE 3
+	Element 3 Complete transfer on PE 3
+Element 3 Resume from Sync on PE 3, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 2 pause for LB on PE 2
+	Element 2 Complete transfer on PE 2
+Element 2 Resume from Sync on PE 2, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 12 pause for LB on PE 12
+	Element 12 Complete transfer on PE 12
+Element 12 Resume from Sync on PE 12, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 13 pause for LB on PE 13
+	Element 13 Complete transfer on PE 13
+Element 13 Resume from Sync on PE 13, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 19 pause for LB on PE 19
+	Element 19 Complete transfer on PE 19
+Element 19 Resume from Sync on PE 19, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 18 pause for LB on PE 18
+	Element 18 Complete transfer on PE 18
+Element 18 Resume from Sync on PE 18, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Ieration at step 4
+Ieration at step 5
+Element 0 pause for LB on PE 0
+	Element 0 Complete transfer on PE 0
+Element 0 Resume from Sync on PE 0, transfer_size:120004, result_size:96004, num_pieces:2400, post_num:240000, post_shr_num:360000
+Element 0 Resume from Sync on PE 0, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 5 pause for LB on PE 5
+Element 4 pause for LB on PE 4
+Element 16 pause for LB on PE 16
+	Element 16 Complete transfer on PE 16
+Element 16 Resume from Sync on PE 16, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 17 pause for LB on PE 17
+	Element 17 Complete transfer on PE 17
+Element 17 Resume from Sync on PE 17, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 1 pause for LB on PE 1
+	Element 1 Complete transfer on PE 1
+Element 1 Resume from Sync on PE 1, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 3 pause for LB on PE 3
+	Element 3 Complete transfer on PE 3
+Element 3 Resume from Sync on PE 3, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 2 pause for LB on PE 2
+	Element 2 Complete transfer on PE 2
+Element 2 Resume from Sync on PE 2, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 5 Complete transfer on PE 5
+	Element 4 Complete transfer on PE 4
+Element 5 Resume from Sync on PE 5, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 4 Resume from Sync on PE 4, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 9 pause for LB on PE 9
+Element 8 pause for LB on PE 8
+	Element 8 Complete transfer on PE 8
+Element 8 Resume from Sync on PE 8, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 9 Complete transfer on PE 9
+Element 9 Resume from Sync on PE 9, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 18 pause for LB on PE 18
+	Element 18 Complete transfer on PE 18
+Element 18 Resume from Sync on PE 18, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Resume iteration at step 5
+Element 6 pause for LB on PE 6
+	Element 6 Complete transfer on PE 6
+Element 6 Resume from Sync on PE 6, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 10 pause for LB on PE 10
+	Element 10 Complete transfer on PE 10
+Element 10 Resume from Sync on PE 10, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 19 pause for LB on PE 19
+	Element 19 Complete transfer on PE 19
+Element 19 Resume from Sync on PE 19, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 7 pause for LB on PE 7
+	Element 7 Complete transfer on PE 7
+Element 7 Resume from Sync on PE 7, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 11 pause for LB on PE 11
+	Element 11 Complete transfer on PE 11
+Element 11 Resume from Sync on PE 11, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 13 pause for LB on PE 13
+	Element 13 Complete transfer on PE 13
+Element 13 Resume from Sync on PE 13, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 12 pause for LB on PE 12
+	Element 12 Complete transfer on PE 12
+Element 12 Resume from Sync on PE 12, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 14 pause for LB on PE 14
+	Element 14 Complete transfer on PE 14
+Element 14 Resume from Sync on PE 14, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 15 pause for LB on PE 15
+	Element 15 Complete transfer on PE 15
+Element 15 Resume from Sync on PE 15, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Resume iteration at step 5
+Ieration at step 6
+Ieration at step 7
+Element 0 pause for LB on PE 0
+	Element 0 Complete transfer on PE 0
+Element 0 Resume from Sync on PE 0, transfer_size:120004, result_size:96004, num_pieces:2400, post_num:240000, post_shr_num:360000
+Element 0 Resume from Sync on PE 0, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 1 pause for LB on PE 1
+	Element 1 Complete transfer on PE 1
+Element 1 Resume from Sync on PE 1, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 3 pause for LB on PE 3
+	Element 3 Complete transfer on PE 3
+Element 3 Resume from Sync on PE 3, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 2 pause for LB on PE 2
+	Element 2 Complete transfer on PE 2
+Element 2 Resume from Sync on PE 2, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 17 pause for LB on PE 17
+Element 16 pause for LB on PE 16
+	Element 16 Complete transfer on PE 16
+Element 16 Resume from Sync on PE 16, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 17 Complete transfer on PE 17
+Element 17 Resume from Sync on PE 17, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 9 pause for LB on PE 9
+	Element 9 Complete transfer on PE 9
+Element 9 Resume from Sync on PE 9, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 8 pause for LB on PE 8
+	Element 8 Complete transfer on PE 8
+Element 8 Resume from Sync on PE 8, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 18 pause for LB on PE 18
+	Element 18 Complete transfer on PE 18
+Element 18 Resume from Sync on PE 18, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 5 pause for LB on PE 5
+Element 4 pause for LB on PE 4
+	Element 5 Complete transfer on PE 5
+Element 5 Resume from Sync on PE 5, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 4 Complete transfer on PE 4
+Element 4 Resume from Sync on PE 4, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 10 pause for LB on PE 10
+	Element 10 Complete transfer on PE 10
+Element 10 Resume from Sync on PE 10, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Resume iteration at step 7
+Element 19 pause for LB on PE 19
+Element 6 pause for LB on PE 6
+	Element 19 Complete transfer on PE 19
+Element 19 Resume from Sync on PE 19, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 6 Complete transfer on PE 6
+Element 6 Resume from Sync on PE 6, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 11 pause for LB on PE 11
+	Element 11 Complete transfer on PE 11
+Element 11 Resume from Sync on PE 11, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 12 pause for LB on PE 12
+Element 13 pause for LB on PE 13
+	Element 12 Complete transfer on PE 12
+Element 12 Resume from Sync on PE 12, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 7 pause for LB on PE 7
+	Element 13 Complete transfer on PE 13
+Element 13 Resume from Sync on PE 13, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 7 Complete transfer on PE 7
+Element 7 Resume from Sync on PE 7, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 14 pause for LB on PE 14
+Element 15 pause for LB on PE 15
+	Element 14 Complete transfer on PE 14
+Element 14 Resume from Sync on PE 14, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 15 Complete transfer on PE 15
+Element 15 Resume from Sync on PE 15, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Resume iteration at step 7
+Ieration at step 8
+Ieration at step 9
+Element 0 pause for LB on PE 0
+	Element 0 Complete transfer on PE 0
+Element 0 Resume from Sync on PE 0, transfer_size:120004, result_size:96004, num_pieces:2400, post_num:240000, post_shr_num:360000
+Element 0 Resume from Sync on PE 0, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 1 pause for LB on PE 1
+	Element 1 Complete transfer on PE 1
+Element 1 Resume from Sync on PE 1, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 3 pause for LB on PE 3
+	Element 3 Complete transfer on PE 3
+Element 3 Resume from Sync on PE 3, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 2 pause for LB on PE 2
+	Element 2 Complete transfer on PE 2
+Element 2 Resume from Sync on PE 2, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 16 pause for LB on PE 16
+Element 17 pause for LB on PE 17
+	Element 16 Complete transfer on PE 16
+Element 16 Resume from Sync on PE 16, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 17 Complete transfer on PE 17
+Element 17 Resume from Sync on PE 17, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 5 pause for LB on PE 5
+Element 4 pause for LB on PE 4
+	Element 4 Complete transfer on PE 4
+Element 4 Resume from Sync on PE 4, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 5 Complete transfer on PE 5
+Element 5 Resume from Sync on PE 5, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 6 pause for LB on PE 6
+	Element 6 Complete transfer on PE 6
+Element 6 Resume from Sync on PE 6, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 9 pause for LB on PE 9
+Element 8 pause for LB on PE 8
+	Element 8 Complete transfer on PE 8
+Element 8 Resume from Sync on PE 8, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 9 Complete transfer on PE 9
+Element 9 Resume from Sync on PE 9, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 18 pause for LB on PE 18
+	Element 18 Complete transfer on PE 18
+Element 18 Resume from Sync on PE 18, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Resume iteration at step 9
+Element 10 pause for LB on PE 10
+Element 7 pause for LB on PE 7
+	Element 10 Complete transfer on PE 10
+Element 10 Resume from Sync on PE 10, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 7 Complete transfer on PE 7
+Element 7 Resume from Sync on PE 7, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 19 pause for LB on PE 19
+	Element 19 Complete transfer on PE 19
+Element 19 Resume from Sync on PE 19, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 11 pause for LB on PE 11
+Element 13 pause for LB on PE 13
+Element 12 pause for LB on PE 12
+	Element 11 Complete transfer on PE 11
+Element 11 Resume from Sync on PE 11, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 12 Complete transfer on PE 12
+Element 12 Resume from Sync on PE 12, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+	Element 13 Complete transfer on PE 13
+Element 13 Resume from Sync on PE 13, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 14 pause for LB on PE 14
+	Element 14 Complete transfer on PE 14
+Element 14 Resume from Sync on PE 14, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Element 15 pause for LB on PE 15
+	Element 15 Complete transfer on PE 15
+Element 15 Resume from Sync on PE 15, transfer_size:120004, result_size:96004, num_pieces:120, post_num:240000, post_shr_num:360000
+Resume iteration at step 9
+Ieration at step 10
+End of program!

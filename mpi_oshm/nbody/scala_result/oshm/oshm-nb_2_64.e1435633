@@ -1,0 +1,38 @@
+WARNING: Using GASNet's mpi-conduit, which exists for portability convenience.
+WARNING: Support was detected for native GASNet conduits: ibv
+WARNING: You should *really* use the high-performance native GASNet conduit
+WARNING: if communication performance is at all important in this program run.
+[warn] Epoll ADD(4) on fd 144 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 159 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 155 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 156 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 133 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 147 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 123 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 150 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 142 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 33 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 169 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 151 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 162 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 148 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 126 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 129 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 157 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 158 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 131 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 143 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 171 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 0 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 120 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 164 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 172 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 134 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 161 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 165 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 132 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 149 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+
+real	48m25.825s
+user	671m22.856s
+sys	291m17.043s

@@ -1,0 +1,1 @@
+rm -rf oshm-cct.*;rm -rf mpi-cct.*;make clean;srun -p gpu3 -N1 make;

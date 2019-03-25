@@ -1,0 +1,56 @@
+include init.mk
+include common.mk
+include $(ROOT_DIR)/config.mk
+include $(ST_DIR)/config.mk
+include $(OSHM_DIR)/config.mk
+include $(OSHMCUDA_DIR)/config.mk
+include $(MPICUDA_DIR)/config.mk
+
+.PHONY: all show clean st oshm oshm_cuda mpi_cuda common
+
+all:    mpi_cuda common
+	@printf "Build successfully!\n\n"
+
+show:
+	@printf "$(MATRIXDATA_POBJ)\n\n"
+
+clean:  $(ST_MOD_CLEAN) $(OSHM_MOD_CLEAN) $(OSHMCUDA_MOD_CLEAN) $(MPICUDA_MOD_CLEAN) $(COMMON_CLEAN)
+	$(RM) $(RM_FLAGS) $(ST_MOD_FTARGET)
+	$(RM) $(RM_FLAGS) $(OSHM_MOD_FTARGET)
+	$(RM) $(RM_FLAGS) $(OSHMCUDA_MOD_FTARGET)
+	$(RM) $(RM_FLAGS) $(MPICUDA_MOD_FTARGET)
+	@printf "Clean complete\n"
+
+st:     $(ST_MOD_FTARGET)
+	@printf "\n"
+
+oshm:   $(OSHM_MOD_FTARGET)
+	@printf "\n"
+
+oshm_cuda: $(OSHMCUDA_MOD_FTARGET)
+	@printf "\n"
+
+mpi_cuda: $(MPICUDA_MOD_FTARGET)
+	@printf "\n"
+
+common: $(MATRIXDATA_PTARGET) $(SHOWPAR_PTARGET)
+	@printf "\n"
+
+$(ST_MOD_FTARGET): $(ST_MOD_PTARGET)
+	$(CP) $(CP_FLAGS) $< $@
+
+$(OSHM_MOD_FTARGET): $(OSHM_MOD_PTARGET)
+	$(CP) $(CP_FLAGS) $< $@
+
+$(OSHMCUDA_MOD_FTARGET): $(OSHMCUDA_MOD_PTARGET)
+	$(CP) $(CP_FLAGS) $< $@
+
+$(MPICUDA_MOD_FTARGET): $(MPICUDA_MOD_PTARGET)
+	$(CP) $(CP_FLAGS) $< $@
+
+include $(ROOT_DIR)/rules.mk
+include $(ST_DIR)/rules.mk
+include $(OSHM_DIR)/rules.mk
+include $(OSHMCUDA_DIR)/rules.mk
+include $(MPICUDA_DIR)/rules.mk
+include rules.mk

@@ -1,0 +1,34 @@
+mpiexec -f hosts1 -n 1 ./bmt_mpi -pe 1 1 1 -ds s >>data1;
+mpiexec -f hosts1 -n 1 ./bmt_mpi -pe 1 1 1 -ds s >>data1;
+mpiexec -f hosts1 -n 1 ./bmt_mpi -pe 1 1 1 -ds m >>data1;
+mpiexec -f hosts1 -n 1 ./bmt_mpi -pe 1 1 1 -ds m >>data1;
+mpiexec -f hosts1 -n 1 ./bmt_mpi -pe 1 1 1 -ds l >>data1;
+mpiexec -f hosts1 -n 1 ./bmt_mpi -pe 1 1 1 -ds l >>data1;
+
+mpiexec -f hosts2 -n 2 ./bmt_mpi -pe 1 1 2 -ds s >>data2;
+mpiexec -f hosts2 -n 2 ./bmt_mpi -pe 1 1 2 -ds s >>data2;
+mpiexec -f hosts2 -n 2 ./bmt_mpi -pe 1 1 2 -ds m >>data2;
+mpiexec -f hosts2 -n 2 ./bmt_mpi -pe 1 1 2 -ds m >>data2;
+mpiexec -f hosts2 -n 2 ./bmt_mpi -pe 1 1 2 -ds l >>data2;
+mpiexec -f hosts2 -n 2 ./bmt_mpi -pe 1 1 2 -ds l >>data2;
+
+mpiexec -f hosts4 -n 4 ./bmt_mpi -pe 1 2 2 -ds s >>data4;
+mpiexec -f hosts4 -n 4 ./bmt_mpi -pe 1 2 2 -ds s >>data4;
+mpiexec -f hosts4 -n 4 ./bmt_mpi -pe 1 2 2 -ds m >>data4;
+mpiexec -f hosts4 -n 4 ./bmt_mpi -pe 1 2 2 -ds m >>data4;
+mpiexec -f hosts4 -n 4 ./bmt_mpi -pe 1 2 2 -ds l >>data4;
+mpiexec -f hosts4 -n 4 ./bmt_mpi -pe 1 2 2 -ds l >>data4;
+
+mpiexec -f hosts8 -n 8 ./bmt_mpi -pe 2 2 2 -ds s >>data8;
+mpiexec -f hosts8 -n 8 ./bmt_mpi -pe 2 2 2 -ds s >>data8;
+mpiexec -f hosts8 -n 8 ./bmt_mpi -pe 2 2 2 -ds m >>data8;
+mpiexec -f hosts8 -n 8 ./bmt_mpi -pe 2 2 2 -ds m >>data8;
+mpiexec -f hosts8 -n 8 ./bmt_mpi -pe 2 2 2 -ds l >>data8;
+mpiexec -f hosts8 -n 8 ./bmt_mpi -pe 2 2 2 -ds l >>data8;
+
+mpiexec -f hosts16 -n 16 ./bmt_mpi -pe 4 2 2 -ds s >>data16;
+mpiexec -f hosts16 -n 16 ./bmt_mpi -pe 4 2 2 -ds s >>data16;
+mpiexec -f hosts16 -n 16 ./bmt_mpi -pe 4 2 2 -ds m >>data16;
+mpiexec -f hosts16 -n 16 ./bmt_mpi -pe 4 2 2 -ds m >>data16;
+mpiexec -f hosts16 -n 16 ./bmt_mpi -pe 4 2 2 -ds l >>data16;
+mpiexec -f hosts16 -n 16 ./bmt_mpi -pe 4 2 2 -ds l >>data16;

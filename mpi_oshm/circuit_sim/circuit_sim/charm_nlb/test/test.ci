@@ -1,0 +1,40 @@
+mainmodule test{
+    readonly CProxy_Main mainProxy;
+    mainchare Main {
+        entry Main(CkArgMsg *m);
+        entry void done(void);
+    };
+    array [1D] Grid {
+        entry Grid(bool accept, int work_num);
+        entry void SendInput(CProxy_Grid output) {
+            atomic {
+                output.input(number, data);
+            }
+        };
+        entry void printout(int num, CkCallback &cb) {
+          when
+            input(int c_num, int src[c_num])
+            atomic {
+                init_val(2, data, (src+thisIndex*2));
+                CkPrintf("My rank: %d\n", thisIndex);
+                for (int i=0; i<num; i++)
+                    CkPrintf("%d ", data[i]);
+                CkPrintf("\n");
+            }
+            atomic {
+                contribute(2*sizeof(int), data, CkReduction::set, cb);
+            }
+        };
+        entry void printmain(int num) {
+            atomic {
+                CkPrintf("My rank: %d\n", thisIndex);
+                for (int i=0; i<num; i++)
+                    CkPrintf("%d ", data[i]);
+                CkPrintf("\n");
+                mainProxy.done();
+            }
+        };
+        entry void input(int c_num, int src[c_num]);
+        entry [reductiontarget] void update_res(CkReductionMsg *msg);
+    };
+};

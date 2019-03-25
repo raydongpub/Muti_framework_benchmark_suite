@@ -1,0 +1,20 @@
+
+.PHONY: $(IVM_PC_MOD_CLEAN)
+
+$(IVM_PC_MOD_PTARGET) : $(IVM_PC_MOD_POBJ)
+	$(NVCC_LD) $(LD_IVM_PFLAGS) $^ -o $@ $(LD_IVM_SFLAGS)
+	@printf "\n***** IVM_PC modules built successfully *****\n\n"
+
+$(IVM_PC_DIR)/obj/%.o : $(IVM_PC_DIR)/%.cpp
+	$(CPP) $(C_IVM_FLAGS) $(C_WARNING_FLAGS) $(C_SHARED_FLAGS) $(C_DEP_FLAGS) $(IVM_PC_MOD_CINC)  $< -o $@
+
+$(IVM_PC_DIR)/obj/%.o : $(ROOT_DIR)/%.cpp
+	$(CPP) $(C_IVM_FLAGS) $(C_WARNING_FLAGS) $(C_SHARED_FLAGS) $(C_DEP_FLAGS) $(IVM_PC_MOD_CINC) $< -o $@
+
+include $(wildcard $(IVM_PC_DIR)/obj/*.d)
+
+$(IVM_PC_MOD_CLEAN) :
+	$(RM) $(RM_FLAGS) $(IVM_PC_MOD_POBJ) 
+	$(RM) $(RM_FLAGS) $(IVM_PC_MOD_PTARGET)
+	$(RM) $(RM_FLAGS) $(IVM_PC_DIR)/obj/*.d
+

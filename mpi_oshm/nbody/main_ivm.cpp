@@ -1,0 +1,313 @@
+#include "nbody_main.h"
+#include <dlfcn.h>
+#include <stdlib.h>
+#include <string.h>
+#include <iostream>
+#include <sys/time.h>
+#include "ivm.h"
+
+#define E_SUCCESS     0xFF00
+#define E_UNKNOWN_ARG 0XFF01
+#define E_FILE_ARG    0xFF02
+#define E_LIB_ARG     0xFF03
+
+
+//For building the version that uses various static libraries.
+#ifdef _USE_STATIC_LIB
+#ifdef _STATIC_MOD_ST
+#elif  _STATIC_MOD_MPI
+#elif  _STATIC_MOD_MPICUDA
+#endif //_STATIC_MOD_XXXXX
+#endif //_USE_STATIC_LIB
+
+using namespace std;
+
+char            * pConfigFile  = (char *) "nn.conf";
+char            * pDatasetFile = (char *) NULL;
+char            * pLibFile     = (char *) "libnn.so";
+
+NbodyConfig     * pConfig  = NULL;
+ParticleDataset * pDataset = NULL;
+
+char sEMSG[][ECFG_MSG_LEN] = {
+    "Success",
+    "Unknown argument",
+    "Configuration file not specified",
+    "Library not specified"
+};
+
+inline void ShowConfiguration() {
+
+    cout << endl << endl << "Cluster env.    \t";
+    if (pConfig->mParams.cluster) { 
+        cout << "yes" << endl;
+/*
+        len = pConfig->mParams.nodeCnt;
+        cout << "\tNum nodes    \t" << len << endl << endl;
+        for (idx=0;idx<len;idx++) {
+            cout << "\t===== Node# " << idx << "=====" << endl;
+            cout << "\tName    \t" 
+                 << pConfig->mParams.nodeSettings[idx].nodeName << endl;
+            cout << "\tGPU    \t\t";
+            if (pConfig->mParams.nodeSettings[idx].useGPU) {
+                cout << "yes" << endl;
+                cout << "\tNum GPU \t"
+                     << pConfig->mParams.nodeSettings[idx].gpuCnt << endl;
+            }
+            else
+                cout << "no" << endl;
+            cout << endl;
+        }
+*/
+    }
+    else 
+        cout << "no" << endl;
+    cout << "Time ressolu.\t\t" << pConfig->mParams.timeRes << endl;
+    cout << "Duration.\t\t" << pConfig->mParams.duration << endl;
+    cout << "Dataset\t\t\t" << pConfig->mParams.initialDatasetFile << endl;
+    cout << "Library\t\t\t" << pConfig->mParams.library << endl;
+    cout << endl << endl;
+    
+}
+
+inline int SetPreference(int argc, char ** argv) {
+#define IS_OPTION(str) (!strcmp(argv[idx], str))
+
+    int idx = 1;
+
+    while (idx < argc) {
+        if IS_OPTION("-c") {
+            if ((idx + 1) >= argc)
+                return E_FILE_ARG;
+            pConfigFile = argv[++idx];
+        }
+        else if IS_OPTION("--config") {
+            if ((idx + 1) >= argc)
+                return E_FILE_ARG;
+            pConfigFile = argv[++idx];
+        }
+        else if IS_OPTION("-l") {
+            if ((idx + 1) >= argc)
+                return E_LIB_ARG;
+            pLibFile = argv[++idx];
+        }
+        else if IS_OPTION("--library") {
+            if ((idx + 1) >= argc) 
+                return E_LIB_ARG;
+            pLibFile = argv[++idx];
+        }
+        else {
+            return E_UNKNOWN_ARG;
+        }
+
+        idx++;
+    }
+
+    return E_SUCCESS;
+
+#undef IS_OPTION
+}
+
+const char * GetEMSG(int errId) {
+    return sEMSG[errId - E_SUCCESS];
+}
+
+int main(int argc, char ** argv) {
+
+    int        mErrId;
+    timeval    time_begin, time_end;
+    double     time_period;
+    bool       isOshmem, isIVM, isCluster;
+    int        rank;
+    int        commSize;
+    char       name[218];
+// IVM definition
+    ivm_params * ivmp = new ivm_params[1];
+    ivmp->num_pes     = 64;
+    ivmp->num_node    = 20;
+    ivmp->node        = new ivm_node[ivmp->num_node];
+    ivmp->pe          = new ivm_pe[1];
+    ivmp->argc        = argc;
+    ivmp->argv        = argv; 
+
+    snprintf(name, sizeof(char) * 32, "app_%s",argv[0]);
+    if ((mErrId = SetPreference(argc, argv)) != E_SUCCESS) {
+        cerr << "Error: Main: "
+             << GetEMSG(mErrId) << endl;
+        exit(1);
+    }
+
+    /**
+     * Read configuration file.
+     */
+    try {
+        pConfig = new NbodyConfig(pConfigFile);
+    }
+    catch (int errId) {
+        cerr << "Error: "
+             << NbodyConfig::GetClassID(errId) << ": " 
+             << NbodyConfig::GetEMSG(errId) << endl;
+        exit(1);
+    }
+
+    /**
+     * Determine whether this is OpenShmem.
+     */
+    char * isOshmemStr = const_cast<char *>(pConfig->GetValue(pConfig->GetKeyString(_OSHMEM_)));
+    if (!strcmp(isOshmemStr, NBC_TRUE)) {
+        isOshmem = true;
+//        cout << endl << endl << "This is OpenShmem!"<< endl << endl;
+    }
+    else {
+        isOshmem = false;
+//        cout << endl << endl << "This is not OpenShmem!" << *isOshmemStr << endl << endl;
+    }
+
+    /**
+     ** Determine whether this is IVM.
+     **/
+    char * isIVMStr = const_cast<char *>(pConfig->GetValue(pConfig->GetKeyString(_IVM_)));
+    if (!strcmp(isIVMStr, NBC_TRUE)) {
+        isIVM = true;
+//        cout << endl << endl << "This is IVM!"<< endl << endl;
+    }
+    else {
+        isIVM = false;
+//        cout << endl << endl << "This is not IVM!" << *isOshmemStr << endl << endl;
+    }
+    /**
+     * Determine whether this is a distributed computation.
+     */
+    char * isClusterStr = const_cast<char *>(pConfig->GetValue(
+        pConfig->GetKeyString(_CLUSTER_)));
+
+    if (!strcmp(isClusterStr, NBC_TRUE) && isIVM) {
+        cout << "***** IVM_MOD *****" << endl;
+        isCluster = true;
+        checkError(    ivmEnter(argc, argv), 
+            "Initialize IVM-runtime");
+        checkError(    ivmGetMyId(&(ivmp->my_id)),
+            "ivmGetMyId()");
+        checkError(    ivmGetMyGroupId(&(ivmp->gid)),
+            "ivmGetMyGroupId()");
+        rank = ivmp->my_id;
+        commSize = ivmp->num_pes;
+        pConfig->mParams.rank     = rank;
+        pConfig->mParams.commSize = commSize; 
+        cout << "flag0" << endl;
+/*        if (ivmp->my_id == 0) {
+// Create node and pe
+        cout << "flag1" << endl;
+            checkError(    ivmCreateNode(IVM_THIS_NODE,
+                IVM_THIS_SERVICE, ivm_rdma, ivm_cpu, 
+                &(ivmp->node[0])), "ivmCreateNode(own)");
+        cout << "flag2" << endl;
+            checkError(    ivmCreateNode("192.168.1.151", 
+                IVM_THIS_SERVICE,ivm_rdma, ivm_cpu, 
+                &(ivmp->node[1])), "ivmCreateNode(nps3)");
+
+        cout << "flag3" << endl;
+            checkError(    ivmCreateProcess(ivmp->node[0],
+                IVM_THIS_BINARY, 2, argc, argv, 
+                ivmp->pe), "ivmCreateProcess(own)");
+        cout << "flag4" << endl;
+        }*/
+
+    }
+
+    cout << "My_peid: " << rank << endl;
+    /**
+     * Read dataset file.
+   */ 
+    if ((!isCluster) || (!rank)) {
+        /**
+         * Note: In MPI job, we will allocate space for dataset only
+         *       in the root. We leave allocations to the library
+         *       on the other ranks. We do not want to bind to a
+         *       specific implementation. Library must be free
+         *       to allocate working space as it wish.
+         */
+        pDatasetFile = const_cast<char *>(pConfig->GetValue(
+            pConfig->GetKeyString(_INITDATASET_)));
+
+        if (pDatasetFile != NULL) {
+            try {
+                pDataset     = new ParticleDataset(pDatasetFile);
+            }
+            catch (int errId) {
+                cerr << "Error: "
+                     << ParticleDataset::GetClassID(errId) << ": "
+                     << ParticleDataset::GetEMSG(errId) << endl;
+                exit(1);
+            }
+        }
+        pDataset->SaveToFile(name);
+    }
+
+    /**
+     * Retrieve and execute the specified computation library.
+     */
+#ifndef _USE_STATIC_LIB
+    void        * dlHandle;
+    LibSetupFn    libSetup;
+    LibEntryFn    libEntry;
+    LibCleanUpFn  libCleanUp;
+
+    pLibFile = const_cast<char *>(pConfig->GetValue(
+                                  pConfig->GetKeyString(_LIBRARY_)));
+    if (pLibFile != NULL) {
+        if (!rank)
+            ShowConfiguration();
+
+        dlHandle   = dlopen(pLibFile, RTLD_NOW);
+        if (dlHandle != NULL) {
+            libEntry_IVM= (LibentryFn) dlsym(dlHandle, "LibEntry");
+            libCleanUp = (LibCleanUpFn) dlsym(dlHandle, 
+                "LibCleanUp");
+
+            libSetup(pConfig, pDataset);
+
+            libEntry_IVM(ivmp);
+            libCleanUp();
+            dlclose(dlHandle);
+        }
+        else {
+            cerr << "Error: Main: " << dlerror() << endl;
+        }
+
+    }
+#else
+    if (!rank)
+        ShowConfiguration();
+//Info
+//    cout << endl << "Using Static!" << endl << endl;
+    LibSetup(pConfig, pDataset);
+
+    gettimeofday(&time_begin,NULL);
+    LibEntry_IVM(ivmp);
+    gettimeofday(&time_end,NULL);
+//Info
+//    cout << endl << "Get through!" <<endl;   
+    LibCleanUp();
+#endif
+    cout << "Clean Up Successfully!" << endl << endl;
+    time_period = (time_end.tv_sec + time_end.tv_usec * 1e-6) - (time_begin.tv_sec + time_begin.tv_usec * 1e-6);
+    printf("Time: %lf\n", time_period);
+    /**
+     * Finalize, if this is a distributed computation.
+     */
+    if (isCluster) {
+//info 
+        cout << "Is Cluster!" << endl;
+        checkError(    ivmExit(), "Finalize IVM-runtime");
+    }
+
+    if ((!isCluster) || (!rank)) {
+        delete pDataset;
+    }
+    if (isIVM && rank !=0)
+        delete pConfig;
+    else if (!isIVM)
+        delete pConfig;
+}
+

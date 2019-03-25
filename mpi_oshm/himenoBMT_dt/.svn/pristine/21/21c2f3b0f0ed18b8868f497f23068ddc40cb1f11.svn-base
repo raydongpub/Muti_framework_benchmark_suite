@@ -1,0 +1,281 @@
+#include "cudaBMTKernel_MultiDim.cuh"
+#include <iostream>
+#include <stdint.h>
+#include <stdio.h>
+
+//#define _DEBUG
+
+using namespace std;
+
+PRECISION    * fa_d,      * fb_d,      * fc_d, 
+             * fp_d,      * fwrk1_d,   * fwrk2_d,  * fbnd_d,
+             * gosa_d,
+             * gosa_h;
+
+int            mimax,       mjmax,       mkmax;
+
+typedef void * PtrObj;
+
+__global__ void bmtJacobiKernel(
+    PRECISION * a,     PRECISION * b,     PRECISION * c,
+    PRECISION * p,     PRECISION * wrk1,  PRECISION * wrk2,
+    PRECISION * bnd,   PRECISION * gosa,
+    int         imax,  int         jmax,  int         kmax,
+    int         mimax, int         mjmax, int        mkmax) {
+
+    int       i, j, k ,i_s, j_s, k_s, i_strides, j_strides, k_strides;
+    PRECISION s0, ss, omega = 0.8;
+
+//    __shared__ PRECISION wgosa;
+
+    int boffset_x = blockIdx.x * blockDim.x;
+    int boffset_y = blockIdx.y * blockDim.y;
+    int boffset_z = 0;
+
+    int totThreadsx = gridDim.x * blockDim.x;
+    int gThreadIdxx = boffset_x + threadIdx.x;
+    int totThreadsy = gridDim.y * blockDim.y;
+    int gThreadIdxy = boffset_y + threadIdx.y;
+    int totThreadsz = blockDim.z;
+    int gThreadIdxz = boffset_z + threadIdx.z;
+
+//    int tid = (threadIdx.z * (blockDim.y * blockDim.x)) +
+//              (threadIdx.y * blockDim.x) +
+//              threadIdx.x;
+
+//    if (tid == 0)
+//        wgosa = 0.0;
+//    __syncthreads();
+
+    i_strides = (imax / totThreadsx) + 1;
+    j_strides = (jmax / totThreadsy) + 1;
+    k_strides = (kmax / totThreadsz) + 1;
+
+    int om0 = 0;
+    int om1 = 1 * mimax * mjmax * mkmax;
+    int om2 = 2 * mimax * mjmax * mkmax;
+    int om3 = 3 * mimax * mjmax * mkmax;
+
+    for (i_s=0;i_s<i_strides;i_s++) {
+
+        i = (i_s * totThreadsx) + gThreadIdxx;
+        if ((i < 1) || (i > imax - 2))
+            continue;
+        int oi  = i * mjmax * mkmax;
+        int oi1 = (i + 1) * mjmax * mkmax;
+        int oin = (i - 1) * mjmax * mkmax;
+
+        for (j_s=0;j_s<j_strides;j_s++) {
+
+            j = (j_s * totThreadsy) + gThreadIdxy;
+            if ((j < 1) || (j > jmax - 2))
+                continue;
+            int oj  = j * mkmax;
+            int oj1 = (j + 1) * mkmax;
+            int ojn = (j - 1) * mkmax;
+
+            for (k_s=0;k_s<k_strides;k_s++) {
+
+                k = (k_s * totThreadsz) + gThreadIdxz;
+                if ((k < 1) || (k > kmax - 2))
+                    continue;
+                int ok  = k;
+                int ok1 = k + 1;
+                int okn = k - 1;
+                int temp = oi+oj+ok;
+
+                s0 = a[om0+temp] * p[oi1 + oj  + ok]
+                   + a[om1+temp] * p[oi  + oj1 + ok]
+                   + a[om2+temp] * p[oi  + oj  + ok1]
+                   + b[om0+temp] * ( p[oi1 + oj1 + ok ] - p[oi1 + ojn + ok ]
+                                   - p[oin + oj1 + ok ] + p[oin + ojn + ok ] )
+                   + b[om1+temp] * ( p[oi  + oj1 + ok1] - p[oi  + ojn + ok1]
+                                   - p[oi  + oj1 + okn] + p[oi  + ojn + okn] )
+                   + b[om2+temp] * ( p[oi1 + oj  + ok1] - p[oin + oj  + ok1]
+                                   - p[oi1 + oj  + okn] + p[oin + oj  + okn] )
+                   + c[om0+temp] * p[oin + oj  + ok ]
+                   + c[om1+temp] * p[oi  + ojn + ok ]
+                   + c[om2+temp] * p[oi  + oj  + okn]
+                   + wrk1[temp];
+
+                ss = ( s0 * a[om3+temp] - p[temp] ) * bnd[temp];
+                atomicAdd(gosa, ss*ss);
+
+                wrk2[temp] = p[temp] + omega * ss;
+            }
+        }
+    }
+
+//    __syncthreads();
+/*
+    for (i=1;i<imax-1;++i) {
+        for (j=1;j<jmax-1;++j) {
+            for (k=1;k<kmax-1;++k) {
+*/
+#if 0
+    for (i_s=0;i_s<i_strides;i_s++) {
+
+        i = (i_s * totThreadsx) + gThreadIdxx;
+        if ((i < 1) || (i > imax - 2))
+            continue;
+
+        for (j_s=0;j_s<j_strides;j_s++) {
+
+            j = (j_s * totThreadsy) + gThreadIdxy;
+            if ((j < 1) || (j > jmax - 2))
+                continue;
+
+            for (k_s=0;k_s<k_strides;k_s++) {
+
+                k = (k_s * totThreadsz) + gThreadIdxz;
+                if ((k < 1) || (k > kmax - 2))
+                    continue;
+
+                p[i][j][k] = wrk2[i][j][k];
+            }
+        }
+    }
+#endif
+#if 0
+    if (tid == 0) {
+        printf("gosa: %f\n", wgosa);
+        atomicAdd(gosa, wgosa);
+    }
+#endif
+}
+
+__global__ void bmtUpdatePressureKernel(
+    PRECISION * p, PRECISION * wrk2,
+    int imax,      int jmax,         int kmax,
+    int mimax,     int mjmax,        int mkmax) {
+
+    int       i, j, k ,i_s, j_s, k_s, i_strides, j_strides, k_strides;
+
+    int boffset_x = blockIdx.x * blockDim.x;
+    int boffset_y = blockIdx.y * blockDim.y;
+    int boffset_z = 0;
+
+    int totThreadsx = gridDim.x * blockDim.x;
+    int gThreadIdxx = boffset_x + threadIdx.x;
+    int totThreadsy = gridDim.y * blockDim.y;
+    int gThreadIdxy = boffset_y + threadIdx.y;
+    int totThreadsz = blockDim.z;
+    int gThreadIdxz = boffset_z + threadIdx.z;
+
+    i_strides = (imax / totThreadsx) + 1;
+    j_strides = (jmax / totThreadsy) + 1;
+    k_strides = (kmax / totThreadsz) + 1;
+
+    for (i_s=0;i_s<i_strides;i_s++) {
+
+        i = (i_s * totThreadsx) + gThreadIdxx;
+        if ((i < 1) || (i > imax - 2))
+            continue;
+        int oi = i * mjmax * mkmax;
+
+        for (j_s=0;j_s<j_strides;j_s++) {
+
+            j = (j_s * totThreadsy) + gThreadIdxy;
+            if ((j < 1) || (j > jmax - 2))
+                continue;
+            int oj = j * mkmax;
+
+            for (k_s=0;k_s<k_strides;k_s++) {
+
+                k = (k_s * totThreadsz) + gThreadIdxz;
+                if ((k < 1) || (k > kmax - 2))
+                    continue;
+                int temp = oi + oj + k;
+
+                p[temp] = wrk2[temp];
+            }
+        }
+    }
+}
+
+#define CHK_ERR(str)           \
+    do {                       \
+        cudaError_t ce = str;  \
+        if (ce != cudaSuccess) \
+            return ce;         \
+    } while (0)
+
+
+cudaError_t bmtInitDeviceMemory(
+    Matrix * pa,   Matrix * pb,    Matrix * pc,
+    Matrix * pp,   Matrix * pwrk1, Matrix * pwrk2,
+    Matrix * pbnd, int      peid) {
+
+    int devCnt = 0;
+    CHK_ERR(    cudaGetDeviceCount(&devCnt));
+    CHK_ERR(    cudaSetDevice(peid % devCnt));
+
+    gosa_h = new PRECISION();
+    CHK_ERR(    cudaMalloc(&gosa_d, sizeof(PRECISION)));
+
+    size_t memreq_3d = config.mimax * config.mjmax *
+                       config.mkmax * sizeof(PRECISION);
+    mimax = config.mimax;
+    mjmax = config.mjmax;
+    mkmax = config.mkmax;
+
+    CHK_ERR(    cudaMalloc(&fa_d, 4 * memreq_3d));
+    CHK_ERR(    cudaMalloc(&fb_d, 3 * memreq_3d));
+    CHK_ERR(    cudaMalloc(&fc_d, 3 * memreq_3d));
+    CHK_ERR(    cudaMalloc(&fp_d,     memreq_3d));
+    CHK_ERR(    cudaMalloc(&fwrk1_d,  memreq_3d));
+    CHK_ERR(    cudaMalloc(&fwrk2_d,  memreq_3d));
+    CHK_ERR(    cudaMalloc(&fbnd_d,   memreq_3d));
+
+    CHK_ERR(    cudaMemcpy(fa_d,    pa->mpVal,
+        4 * memreq_3d, cudaMemcpyHostToDevice));
+    CHK_ERR(    cudaMemcpy(fb_d,    pb->mpVal,
+        3 * memreq_3d, cudaMemcpyHostToDevice));
+    CHK_ERR(    cudaMemcpy(fc_d,    pc->mpVal,
+        3 * memreq_3d, cudaMemcpyHostToDevice));
+    CHK_ERR(    cudaMemcpy(fp_d,    pp->mpVal,
+        memreq_3d, cudaMemcpyHostToDevice));
+    CHK_ERR(    cudaMemcpy(fwrk1_d, pwrk1->mpVal,
+        memreq_3d, cudaMemcpyHostToDevice));
+    CHK_ERR(    cudaMemcpy(fwrk2_d, pwrk2->mpVal,
+        memreq_3d, cudaMemcpyHostToDevice));
+    CHK_ERR(    cudaMemcpy(fbnd_d,  pbnd->mpVal,
+        memreq_3d, cudaMemcpyHostToDevice));
+
+    return cudaSuccess;
+}
+
+cudaError_t bmtCudaJacobi(PRECISION * gosa, Matrix * pp,
+    int imax, int jmax, int kmax) {
+
+    dim3 grid(16, 16, 1);
+    dim3 block(1, 1, 64);
+
+    size_t memreq_3d = config.mimax * config.mjmax *
+                       config.mkmax * sizeof(PRECISION);
+        //Jacobi
+        CHK_ERR(    cudaMemset(gosa_d, 0, sizeof(PRECISION)));
+        bmtJacobiKernel <<<grid, block>>> (
+            fa_d,    fb_d,    fc_d,   fp_d, 
+            fwrk1_d, fwrk2_d, fbnd_d, gosa_d,
+            imax,    jmax,    kmax,
+            mimax,   mjmax,   mkmax);
+        CHK_ERR(    cudaDeviceSynchronize());
+
+        //Update Pressure Matrix
+        bmtUpdatePressureKernel <<<grid, block>>> (
+            fp_d,  fwrk2_d,
+            imax,  jmax,    kmax,
+            mimax, mjmax,   mkmax);
+        CHK_ERR(    cudaDeviceSynchronize());
+
+        CHK_ERR(    cudaMemcpy(gosa_h, gosa_d,
+            sizeof(PRECISION), cudaMemcpyDeviceToHost));
+
+        CHK_ERR(    cudaMemcpy(pp->mpVal, fp_d,
+            memreq_3d, cudaMemcpyDeviceToHost));
+
+        *gosa = *gosa_h;
+    return cudaSuccess;
+}
+

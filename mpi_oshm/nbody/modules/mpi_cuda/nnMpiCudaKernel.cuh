@@ -1,0 +1,35 @@
+#ifndef _NNMPICUDAKERNEL_CUH
+#define _NNMPICUDAKERNEL_CUH
+
+#include "cuda_runtime_api.h"
+#include "ParticleDataset.h"
+#include "NbodyConfig.h"
+
+namespace GPU_ParticleDataset {
+    typedef struct {
+        int localCnt;
+        int localDisp;
+    } GPUConfig;
+
+    typedef struct {
+        PRECISION * xPos;
+        PRECISION * yPos;
+        PRECISION * zPos;
+        PRECISION * xVel;
+        PRECISION * yVel;
+        PRECISION * zVel;
+        PRECISION * xAcc;
+        PRECISION * yAcc;
+        PRECISION * zAcc;
+        PRECISION * mass;
+    } ParticleList;
+};
+
+cudaError_t CudaInitialize(ParticleDataset * dataset,
+    ParticleDataset::Particle * locBuf, NbodyConfig * config,
+    GPU_ParticleDataset::GPUConfig gConfig);
+cudaError_t CudaClean();
+cudaError_t ComputeParticleAttributes(int num_blocks, int num_threads);
+
+#endif //_NNMPICUDAKERNEL_CUH
+

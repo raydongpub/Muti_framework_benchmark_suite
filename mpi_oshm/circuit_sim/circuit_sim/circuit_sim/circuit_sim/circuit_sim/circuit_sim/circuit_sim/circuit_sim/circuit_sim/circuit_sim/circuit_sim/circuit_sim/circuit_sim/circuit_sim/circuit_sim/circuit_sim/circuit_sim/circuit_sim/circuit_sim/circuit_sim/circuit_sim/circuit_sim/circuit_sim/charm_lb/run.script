@@ -1,0 +1,6 @@
+[num_pieces:4], [num_nodes:2], [num_wires:4], [num_loops:1], [max_pe:4]
+charmrun +p5 ++local ++verbose circuit_sim 4 2 4 1 4
+charmrun +p3 ++local ++verbose circuit_sim 4 2 4 2 2
+
+mpirun -n 3 circuitcuda -l 1 -p 4 -n 2 -w 4
+mpirun -n 3 circuitcuda -l 1 -p 4 -n 20 -w 40

@@ -1,0 +1,21 @@
+WARNING: Using GASNet's mpi-conduit, which exists for portability convenience.
+WARNING: Support was detected for native GASNet conduits: ibv
+WARNING: You should *really* use the high-performance native GASNet conduit
+WARNING: if communication performance is at all important in this program run.
+[warn] Epoll ADD(4) on fd 92 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 89 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 75 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 33 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 90 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 78 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 91 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 81 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 0 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 86 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 83 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 72 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 84 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+
+real	31m35.005s
+user	360m20.056s
+sys	180m45.902s

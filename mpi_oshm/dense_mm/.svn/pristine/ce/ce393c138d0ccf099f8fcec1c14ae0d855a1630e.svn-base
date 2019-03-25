@@ -1,0 +1,30 @@
+#ifndef _MMOSHMCUDAKERNEL_CUH
+#define _MMOSHMCUDAKERNEL_CUH
+
+#include "cuda_runtime_api.h"
+#include "matdataset.h"
+
+namespace GPU_MatrixDataset {
+    typedef struct {
+        int cstart;
+        int cnum;
+        int peidx;
+        int numpe;
+        int width;
+        int height;
+        int numcom;
+    } GPUConfig;
+
+    typedef struct {
+        PRECISION * elements;
+   } MatrixList;
+};
+
+cudaError_t CudaInitialize(MatrixDataset * dataset,
+    MatrixDataset * rdataset,int mstart, int mnum, 
+    int peid, int numpes);
+cudaError_t CudaClean();
+cudaError_t ComputeMatrixAttributes();
+
+#endif //_MMOSHMCUDAKERNEL_CUH
+

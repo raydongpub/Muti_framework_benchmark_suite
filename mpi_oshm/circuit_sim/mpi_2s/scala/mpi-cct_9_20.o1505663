@@ -1,0 +1,47 @@
+===========
+num_loops:10
+num_pieces:2400
+nodes_per_piece:100
+wires_per_piece:150
+==========
+Kernel Config: blocks:16, threads; 256
+Rank:1, on host: lewis4-r730-gpu3-node428, device_id: 0, kernel time: 0.008113
+Time: 59.407210
+Rank:2, on host: lewis4-r730-gpu3-node428, device_id: 0, kernel time: 0.012339
+Time: 59.425347
+Rank:6, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.012089
+Time: 59.425674
+Rank:7, on host: lewis4-r730-gpu3-node430, device_id: 0, kernel time: 0.008399
+Time: 59.425289
+Rank:18, on host: lewis4-r730-gpu3-node476, device_id: 0, kernel time: 0.014786
+Time: 59.428771
+Rank:19, on host: lewis4-r730-gpu3-node476, device_id: 0, kernel time: 0.005509
+Time: 59.428397
+Rank:14, on host: lewis4-r730-gpu3-node434, device_id: 0, kernel time: 0.014421
+Time: 59.428275
+Rank:15, on host: lewis4-r730-gpu3-node434, device_id: 0, kernel time: 0.005900
+Time: 59.428001
+Rank:8, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.015039
+Time: 59.446054
+Rank:9, on host: lewis4-r730-gpu3-node431, device_id: 0, kernel time: 0.015341
+Time: 59.445831
+Rank:12, on host: lewis4-r730-gpu3-node433, device_id: 0, kernel time: 0.014835
+Time: 59.446362
+Rank:13, on host: lewis4-r730-gpu3-node433, device_id: 0, kernel time: 0.015477
+Time: 59.446133
+Rank:10, on host: lewis4-r730-gpu3-node432, device_id: 0, kernel time: 0.014901
+Time: 59.446611
+Rank:11, on host: lewis4-r730-gpu3-node432, device_id: 0, kernel time: 0.015614
+Time: 59.446306
+Rank:16, on host: lewis4-r730-gpu3-node435, device_id: 0, kernel time: 0.015383
+Time: 59.446756
+Rank:17, on host: lewis4-r730-gpu3-node435, device_id: 0, kernel time: 0.015364
+Time: 59.428756
+Rank:3, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.005602
+Time: 59.464074
+Rank:4, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.021066
+Time: 59.464564
+Rank:5, on host: lewis4-r730-gpu3-node429, device_id: 0, kernel time: 0.021605
+Time: 59.446605
+Rank:0, on host: lewis4-r730-gpu3-node428, device_id: 0, kernel time: 0.000000
+Time: 59.478317

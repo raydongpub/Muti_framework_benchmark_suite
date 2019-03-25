@@ -1,0 +1,132 @@
+mainmodule circuit{
+    include "circuit.h";
+    readonly CProxy_Main mainProxy;
+    readonly int num_pieces;
+    readonly int max_pe;
+    readonly int number_loops;
+    readonly int nodes_per_piece;
+    readonly int wires_per_piece;
+    readonly int pct_wire_in_piece;
+    readonly int num_blocks;
+    readonly int num_threads;
+    mainchare Main {
+        entry Main(CkArgMsg *m);
+        entry void done(void);
+        entry void post_run(void);
+        entry [reductiontarget] void resumeIter(CkReductionMsg *msg);
+    };
+    array [1D] Grid {
+        entry Grid(bool accept, int num_pieces_);
+        entry void pauseForLB();
+        entry void SendInput(CProxy_Grid output) {
+            atomic {
+                output.input(mem_size, circuit_pc->mem_pool);
+            }
+        };
+        entry void SendPost(CProxy_Grid output) {
+            atomic {
+                //CkPrintf("Rank: %d, SendPost--->\n", thisIndex);
+                output.input_pos(post_num, post_charge);
+                //CkPrintf("SendPost complete--->\n");
+            }
+        };
+        entry void SendLoop(CProxy_Grid output) {
+            atomic {
+                //CkPrintf("Rank: %d, SendLoop--->\n", thisIndex);
+                output.input_pos_shr(post_shr_num, post_shr_voltage);
+                //CkPrintf("SendLoop complete--->\n");
+            }
+        };
+        
+        entry void pgmrun(CkCallback &cb) {
+            when
+                input(int c_num, unsigned char src[c_num])
+            atomic {
+                // init data for working PE
+                init_val(num_pieces*mem_pc_size, circuit_pc->mem_pool, (src+thisIndex*num_pieces*mem_pc_size));
+  
+                cudaInit(true, circuit_pc, transfer_buf, nodes_per_piece, wires_per_piece, num_pieces, thisIndex, num_blocks, num_threads);
+#if 0
+                for (int n=0; n<num_pieces; n++) {
+                    for (int it = 0; it<wires_per_piece; ++it) {
+                        CkPrintf("\t**node info **\n");
+                        CkPrintf("\tin_charge: %f, out_charge: %f\n", circuit_pc->nodep[n].charge[circuit_pc->wirep[n].in_ptr[it]], circuit_pc->nodep[n].charge[circuit_pc->wirep[n].out_ptr[it]]);
+                    }
+                }
+                CkPrintf("++++++++++++++++++++++++++++++++++++++++++++++++++\n");
+              // circuit info
+                for (int n=0; n<num_pieces; n++) {
+                    for (int i = 0; i<wires_per_piece; ++i) {
+                        CkPrintf( "Wire %d resistance: %f, inductance: %f, capacitance: %f\n", i, circuit_pc->wirep[n].resistance[i], circuit_pc->wirep[n].inductance[i], circuit_pc->wirep[n].capacitance[i]);
+                        CkPrintf("** node info **\n");
+                        CkPrintf("in_ptr/node_type:%d, capacitance: %f\n", circuit_pc->nodep[n].node_attr[(circuit_pc->wirep[n].in_ptr[i])], circuit_pc->nodep[n].capacitance[(circuit_pc->wirep[n].in_ptr[i])]);
+                        CkPrintf("out_ptr/node_type:%d, capacitance: %f\n", circuit_pc->nodep[n].node_attr[(circuit_pc->wirep[n].out_ptr[i])], circuit_pc->nodep[n].capacitance[(circuit_pc->wirep[n].out_ptr[i])]);
+                    }
+                }
+#endif
+
+                contribute(transfer_size, transfer_buf, CkReduction::set, cb);
+            }
+        };
+        entry void pgmrunloop(CkCallback &cb) {
+            when
+                input_pos_shr(int c_num, float src[c_num])
+            atomic {
+                // init data for working PE
+                init_post_shr(circuit_pc, src, thisIndex, wires_per_piece, num_pieces);
+ 
+                cudaInit(true, circuit_pc, transfer_buf, nodes_per_piece, wires_per_piece, num_pieces, thisIndex, num_blocks, num_threads);
+#if 0
+                for (int n=0; n<num_pieces; n++) {
+                    for (int it = 0; it<wires_per_piece; ++it) {
+                        CkPrintf("\t**node info **\n");
+                        CkPrintf("\tin_charge: %f, out_charge: %f\n", circuit_pc->nodep[n].charge[circuit_pc->wirep[n].in_ptr[it]], circuit_pc->nodep[n].charge[circuit_pc->wirep[n].out_ptr[it]]);
+                    }
+                }
+                CkPrintf("++++++++++++++++++++++++++++++++++++++++++++++++++\n");
+              // circuit info
+                for (int n=0; n<num_pieces; n++) {
+                    for (int i = 0; i<wires_per_piece; ++i) {
+                        CkPrintf( "Wire %d resistance: %f, inductance: %f, capacitance: %f\n", i, circuit_pc->wirep[n].resistance[i], circuit_pc->wirep[n].inductance[i], circuit_pc->wirep[n].capacitance[i]);
+                        CkPrintf("** node info **\n");
+                        CkPrintf("in_ptr/node_type:%d, capacitance: %f\n", circuit_pc->nodep[n].node_attr[(circuit_pc->wirep[n].in_ptr[i])], circuit_pc->nodep[n].capacitance[(circuit_pc->wirep[n].in_ptr[i])]);
+                        CkPrintf("out_ptr/node_type:%d, capacitance: %f\n", circuit_pc->nodep[n].node_attr[(circuit_pc->wirep[n].out_ptr[i])], circuit_pc->nodep[n].capacitance[(circuit_pc->wirep[n].out_ptr[i])]);
+                    }
+                }
+#endif
+                //CkPrintf("%d After cudaRun---->contribution, transfer_size:%d, transfer_buf_add:%lu\n", thisIndex, transfer_size, transfer_buf);
+                contribute(transfer_size, transfer_buf, CkReduction::set, cb);
+            }
+        };
+        entry void postrun(CkCallback &cb) {
+          when
+            input_pos(int c_num, float src[c_num])
+            atomic {
+                //CkPrintf("My Rank:%d, postrun--->\n", thisIndex);
+                // Post work for working PEs
+                for (int i=0 ; i<num_pieces; i++) {
+                    for (int j=0; j<wires_per_piece; j++) {
+                        circuit_pc->wirep[i].shr_charge[j] = 0.f;
+                    }
+                }
+                int post_per_pe_size =nodes_per_piece * sizeof(float);
+                init_post(circuit_pc, src, thisIndex, nodes_per_piece, num_pieces);
+                //CkPrintf("\tMy Rank:%d, cudaPost--->\n", thisIndex);
+                cudaInit(false, circuit_pc, result_buf, nodes_per_piece, wires_per_piece, num_pieces, thisIndex, num_blocks, num_threads);
+                //CkPrintf("\tMy Rank:%d, postComplete--->\n", thisIndex);
+                contribute(result_size, result_buf, CkReduction::set, cb);
+            }
+        }; 
+#if 0
+        entry void input(int c_num, unsigned char src[c_num/sizeof(unsigned char)]);
+#else
+        entry void input(int c_num, unsigned char src[c_num]);
+#endif
+        entry void input_pos(int c_num, float src[c_num]);
+        entry void input_pos_shr(int c_num, float src[c_num]);
+#if 1
+        entry [reductiontarget] void update_post(CkReductionMsg *msg);
+        entry [reductiontarget] void update_res(CkReductionMsg *msg);
+#endif
+    };
+};

@@ -1,0 +1,2 @@
+mpirun -n 3 circuitcuda -l 1 -p 4 -n 2 -w 4
+mpirun -n 3 circuitcuda -l 1 -p 4 -n 20 -w 40

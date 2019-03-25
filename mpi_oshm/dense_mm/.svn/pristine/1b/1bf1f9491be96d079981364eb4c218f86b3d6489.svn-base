@@ -1,0 +1,180 @@
+#include "mmoshmcudakernel.cuh"
+#include <sys/time.h>
+using namespace GPU_MatrixDataset;
+
+#define _DEBUG
+#ifdef _DEBUG
+#include <iostream>
+using namespace std;
+#endif //__DEBUG
+#include <sys/time.h>
+
+MatrixDataset           * hpDataset;
+MatrixDataset           * rsDataset;
+GPUConfig                 gpuConfig;
+
+MatrixList gMatrix_h;
+MatrixList gMatrix_d;
+MatrixList rMatrix_h;
+MatrixList rMatrix_d;
+
+__global__ void ComputeMatrixAttributes_Kernel(
+    PRECISION * comel, PRECISION * resel, int kstart,
+    int knum, int width, int height, int comnum) {
+
+    int gid     = (blockIdx.x * blockDim.x) + threadIdx.x;
+    int total   = gridDim.x * blockDim.x;
+    int idx, row, col;
+    PRECISION sum = 0.0;
+    for (int i = 0; i < knum; i+=total) {
+        idx = i + gid + kstart;
+        row = idx / width;
+        col = idx % width;
+        if (idx < comnum){
+        int eidx = kstart + idx;
+        row  = eidx / width;
+        col  = eidx % width;
+        PRECISION sum = 0.0;
+        if (eidx < comnum) {
+            for (int j = 0; j < width; j++) {
+                    sum += comel[row * width + j] * comel[comnum + col + j * width];
+            }           
+            resel[eidx] = sum;
+        }
+        }
+    }
+}
+
+#define CHK_ERR(str)           \
+    do {                       \
+        cudaError_t ce = str;  \
+        if (ce != cudaSuccess) \
+            return ce;         \
+    } while (0)
+
+cudaError_t ConvertHostToDevice() {
+
+    for (int idx=0;idx<hpDataset->mNumelements;idx++) {
+        gMatrix_h.elements[idx] = hpDataset->mpMatrix.elements[idx];
+    }
+
+    CHK_ERR(    cudaMemcpy(gMatrix_d.elements, gMatrix_h.elements,
+        hpDataset->mNumelements * sizeof(PRECISION), cudaMemcpyHostToDevice));
+    CHK_ERR(    cudaMemset(rMatrix_d.elements, 0,
+        rsDataset->mNumelements * sizeof(PRECISION)));
+
+    return cudaSuccess;
+}
+
+cudaError_t ConvertDeviceToHost() {
+
+    CHK_ERR(    cudaMemcpy(rMatrix_h.elements, rMatrix_d.elements,
+        gpuConfig.numcom * sizeof(PRECISION), cudaMemcpyDeviceToHost));
+
+    for (int idx=0; idx<gpuConfig.cnum; idx++) {
+        rsDataset->mpMatrix.elements[gpuConfig.cstart + idx] = rMatrix_h.elements[gpuConfig.cstart + idx];
+    }
+
+    return cudaSuccess;
+}
+
+cudaError_t InitializeMatrixLists() {
+
+    //Allocate space for storing entire hpDataset (GPU)
+    CHK_ERR(    cudaMalloc(&(gMatrix_d.elements), hpDataset->mNumelements *
+        sizeof(PRECISION)));
+    CHK_ERR(    cudaMalloc(&(rMatrix_d.elements), rsDataset->mNumelements *
+        sizeof(PRECISION)));
+
+#define CHK_HALLOC(var, size)        \
+    do {                             \
+        var = new PRECISION [size];  \
+        if (var == NULL)             \
+            return cudaErrorUnknown; \
+    } while (0);
+
+    //Allocate space for storing entire hpDataset (Host)
+    CHK_HALLOC(gMatrix_h.elements, hpDataset->mNumelements);
+    CHK_HALLOC(rMatrix_h.elements, rsDataset->mNumelements);
+
+#undef CHK_HALLOC
+
+    ConvertHostToDevice();
+
+    return cudaSuccess;
+}
+
+cudaError_t DestroyMatrixLists() {
+    CHK_ERR(    cudaFree(gMatrix_d.elements));
+    CHK_ERR(    cudaFree(rMatrix_d.elements));
+
+    delete [] gMatrix_h.elements;
+    delete [] rMatrix_h.elements;
+
+    return cudaSuccess;
+}
+
+cudaError_t CudaInitialize(MatrixDataset * dataset,
+    MatrixDataset * rdataset,int mstart, int mnum, 
+    int peid, int numpes) {
+
+    hpDataset        = dataset;
+    rsDataset        = rdataset;
+    gpuConfig.cstart = mstart;
+    gpuConfig.cnum   = mnum;
+    gpuConfig.peidx  = peid;
+    gpuConfig.numpe  = numpes;
+    gpuConfig.width  = dataset->mpMatrix.width;
+    gpuConfig.height = dataset->mpMatrix.height;
+    gpuConfig.numcom = rdataset->mNumelements;    
+
+    int deviceCnt = 0;
+    CHK_ERR(    cudaGetDeviceCount(&deviceCnt));
+    CHK_ERR(    cudaSetDevice(peid % deviceCnt));
+
+#ifdef _DEBUG
+    cout << "[" << peid << "]: cudaSetDevice " <<
+        peid % deviceCnt << " and start is: " << 
+        gpuConfig.cstart << " and number is: " << 
+        gpuConfig.cnum << "and total is: " << gpuConfig.numcom << endl;
+#endif
+
+    InitializeMatrixLists();
+
+    return cudaSuccess;
+}
+
+cudaError_t CudaClean() {
+
+    CHK_ERR(    ConvertDeviceToHost());
+    DestroyMatrixLists();
+
+    return cudaSuccess;
+}
+
+cudaError_t ComputeMatrixAttributes() {
+
+//    CHK_ERR(    ConvertHostToDevice());
+    timeval     time_begin, time_end;
+    double      time_period;
+    gettimeofday(&time_begin, NULL);
+    struct timeval s_tv, e_tv;
+    cout << "Launching" << endl;
+    gettimeofday(&s_tv, NULL);
+    ComputeMatrixAttributes_Kernel <<<32, 512>>> (
+        gMatrix_d.elements, rMatrix_d.elements, gpuConfig.cstart,
+        gpuConfig.cnum, gpuConfig.width, gpuConfig.height,
+        gpuConfig.numcom);
+    CHK_ERR(    cudaDeviceSynchronize());
+    gettimeofday(&e_tv, NULL);
+    cout << "kernel complete" << endl;
+
+    double s_usec = ((double) s_tv.tv_sec * 1000000.0) + (double) s_tv.tv_usec;
+    double e_usec = ((double) e_tv.tv_sec * 1000000.0) + (double) e_tv.tv_usec;
+    double time_usec = e_usec - s_usec;
+    cout << "Time (sec.): " << time_usec/1000000.0 << endl;
+
+
+    return cudaSuccess;
+}
+
